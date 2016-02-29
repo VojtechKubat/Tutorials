@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "bc8812e9c72c368308aeb7774bb5641e"
+build_time: [510052921, 142509000]
+inputs:
+  "/Users/kubat/Documents/Tutorials/Calculator/Calculator/ViewController.swift": [510052916, 0]
+  "/Users/kubat/Documents/Tutorials/Calculator/Calculator/AppDelegate.swift": [510052916, 0]
