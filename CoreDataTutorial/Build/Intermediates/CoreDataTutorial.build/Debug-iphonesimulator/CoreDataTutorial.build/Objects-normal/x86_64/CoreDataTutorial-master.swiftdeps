@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
 options: "f648bb31b2d7b8f30ccf80c0e6cc205c"
-build_time: [510768389, 197185000]
+build_time: [510843477, 312669000]
 inputs:
-  "/Users/kubat/Documents/Tutorials/CoreDataTutorial/CoreDataTutorial/ViewController.swift": [510768388, 0]
-  "/Users/kubat/Documents/Tutorials/CoreDataTutorial/CoreDataTutorial/AppDelegate.swift": [510760955, 0]
+  "/Users/kubat/Documents/Tutorials/CoreDataTutorial/CoreDataTutorial/AppDelegate.swift": [510843477, 0]
+  "/Users/kubat/Documents/Tutorials/CoreDataTutorial/CoreDataTutorial/ViewController.swift": [510843477, 0]

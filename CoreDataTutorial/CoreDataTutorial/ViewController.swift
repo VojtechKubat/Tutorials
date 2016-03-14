@@ -7,18 +7,35 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var names = [String]()
+//    var names = [String]()
+    var items = [NSManagedObject]()
     
     @IBOutlet weak var tableView: UITableView!
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        
+        let fetchRequest = NSFetchRequest(entityName: "Item")
+        
+        do {
+            let results = try managedContext.executeFetchRequest(fetchRequest)
+            self.items = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.automaticallyAdjustsScrollViewInsets = false
-        title = "\"The List\""
-//        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        self.automaticallyAdjustsScrollViewInsets = false
+        title = "The List"
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,10 +52,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             style: .Default,
             handler: {(action: UIAlertAction) -> Void in
                 let textField = alert.textFields!.first
-                self.names.append(textField!.text!)
-//                dispatch_async(dispatch_get_main_queue(), {
-                    self.tableView.reloadData()
-//                })
+                self.saveItem(textField!.text!)
+//                self.names.append(textField!.text!)
+                self.tableView.reloadData()
             }
         )
         
@@ -61,18 +77,43 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             completion: nil)
         
     }
+    
+    func saveItem(name:String) {
+        // managedContext was created in AppDelegate "Core Data Stack"
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+
+
+        // based on the managedContext, a specific entity description is received, and based on it a new ManagedObject is created
+        let entity = NSEntityDescription.entityForName("Item", inManagedObjectContext: managedContext)
+        let item = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        
+        // relevant data are assigned to the new ManagedObject
+        item.setValuesForKeysWithDictionary(["name": name])
+        
+        // all changes are commited
+        do {
+            try managedContext.save()
+            items.append(item)
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+    }
 
 // ---------------------------------------------------------
 // MARK: UITableViewDataSource
 // ---------------------------------------------------------
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return names.count
+        return items.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("mainCell")
-        cell?.textLabel?.text = names[indexPath.row]
+        
+        let item = items[indexPath.row]
+        
+        cell?.textLabel?.text = item.valueForKey("name") as? String
         
         return cell!
     }

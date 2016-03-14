@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bOh-Le-Gwc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PGF-aI-8pt">
-                                <rect key="frame" x="0.0" y="77" width="600" height="523"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mainCell" textLabel="2uO-Qs-Rsc" style="IBUITableViewCellStyleDefault" id="pMs-Lt-Yav">
@@ -44,22 +44,13 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="6e9-jl-UAf"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRr-pa-cWU">
-                                <rect key="frame" x="285" y="20" width="30" height="30"/>
-                                <state key="normal" title="Add"/>
-                                <connections>
-                                    <action selector="addName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3YA-Yh-9lt"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PGF-aI-8pt" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="24N-5H-OMj"/>
-                            <constraint firstItem="sRr-pa-cWU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="LbR-Ru-nVT"/>
                             <constraint firstAttribute="trailing" secondItem="PGF-aI-8pt" secondAttribute="trailing" id="gKp-7o-ehW"/>
                             <constraint firstItem="PGF-aI-8pt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="i9G-0Z-LdW"/>
-                            <constraint firstItem="sRr-pa-cWU" firstAttribute="centerX" secondItem="PGF-aI-8pt" secondAttribute="centerX" id="vdL-cs-KG6"/>
-                            <constraint firstItem="PGF-aI-8pt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="vp3-8P-QgB"/>
+                            <constraint firstItem="PGF-aI-8pt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vp3-8P-QgB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bHK-fI-AXD">
@@ -74,6 +65,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1953" y="387"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xi4-wS-zZ7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bOh-Le-Gwc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KoG-XT-3F1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CKV-N0-Zwi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Kb-PD-rQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1141" y="387"/>
         </scene>

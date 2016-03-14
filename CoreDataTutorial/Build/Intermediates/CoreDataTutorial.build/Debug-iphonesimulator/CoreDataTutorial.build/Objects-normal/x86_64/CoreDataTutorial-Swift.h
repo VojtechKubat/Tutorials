@@ -116,6 +116,7 @@ SWIFT_CLASS("_TtC16CoreDataTutorial11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSManagedObject;
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
@@ -124,11 +125,13 @@ SWIFT_CLASS("_TtC16CoreDataTutorial11AppDelegate")
 
 SWIFT_CLASS("_TtC16CoreDataTutorial14ViewController")
 @interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, copy) NSArray<NSString *> * __nonnull names;
+@property (nonatomic, copy) NSArray<NSManagedObject *> * __nonnull items;
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)addName:(id __nonnull)sender;
+- (void)saveItem:(NSString * __nonnull)name;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView didDeselectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
