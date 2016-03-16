@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0E51E8B77DCBD91268F7A0789832D949DF7FF594",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0E51E8B77DCBD91268F7A0789832D949DF7FF594" : 0,
+    "8884BD3B878631A1500EC9895E6A3CF4CB0AB3DB" : 0,
+    "958932E9D08E4465709D54DB1E7CECF23B0F442E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9A3D045F-62A7-410D-B48D-AE0E37AF8CC7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0E51E8B77DCBD91268F7A0789832D949DF7FF594" : "Tutorials\/",
+    "8884BD3B878631A1500EC9895E6A3CF4CB0AB3DB" : "Tutorials\/MRNotes\/MRNotes\/MagicalRecord\/Carthage\/Checkouts\/expecta\/",
+    "958932E9D08E4465709D54DB1E7CECF23B0F442E" : "Tutorials\/MRNotes\/MRNotes\/MagicalRecord\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MRNotes",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MRNotes\/MRNotes.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/VojtechKubat\/Tutorials.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0E51E8B77DCBD91268F7A0789832D949DF7FF594"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/specta\/expecta.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8884BD3B878631A1500EC9895E6A3CF4CB0AB3DB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/magicalpanda\/MagicalRecord.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "958932E9D08E4465709D54DB1E7CECF23B0F442E"
+    }
+  ]
+}

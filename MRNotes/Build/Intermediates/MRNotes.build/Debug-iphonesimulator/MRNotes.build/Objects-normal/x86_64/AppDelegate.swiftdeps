@@ -1,0 +1,286 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppDelegate"
+provides-nominal:
+- "C7MRNotes11AppDelegate"
+provides-member:
+- ["C7MRNotes11AppDelegate", ""]
+provides-dynamic-lookup:
+- "applicationWillEnterForeground"
+- "applicationWillTerminate"
+- "applicationWillResignActive"
+- "application"
+- "applicationDidEnterBackground"
+- "applicationDidBecomeActive"
+- "window"
+depends-top-level:
+- "Bool"
+- !private "BooleanLiteralType"
+- "AnyObject"
+- "AppDelegate"
+- "UIResponder"
+- "NSObject"
+- "UIWindow"
+- "UIApplicationDelegate"
+- "UIApplication"
+- !private "MagicalRecord"
+depends-member:
+- !private ["PSs9AnyObject", "MagicalRecord"]
+- ["PSs9AnyObject", "application"]
+- ["PSs9AnyObject", "applicationDidBecomeActive"]
+- ["PSs9AnyObject", "applicationDidEnterBackground"]
+- ["PSs9AnyObject", "applicationDidFinishLaunching"]
+- ["PSs9AnyObject", "applicationDidReceiveMemoryWarning"]
+- ["PSs9AnyObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs9AnyObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs9AnyObject", "applicationShouldRequestHealthAuthorization"]
+- ["PSs9AnyObject", "applicationSignificantTimeChange"]
+- ["PSs9AnyObject", "applicationWillEnterForeground"]
+- ["PSs9AnyObject", "applicationWillResignActive"]
+- ["PSs9AnyObject", "applicationWillTerminate"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "window"]
+- ["PSs9AnyObject", ""]
+- ["C7MRNotes11AppDelegate", "AnyObject"]
+- ["C7MRNotes11AppDelegate", "Bool"]
+- !private ["C7MRNotes11AppDelegate", "MagicalRecord"]
+- ["C7MRNotes11AppDelegate", "NSObject"]
+- ["C7MRNotes11AppDelegate", "UIApplication"]
+- ["C7MRNotes11AppDelegate", "UIWindow"]
+- ["C7MRNotes11AppDelegate", "application"]
+- ["C7MRNotes11AppDelegate", "applicationDidBecomeActive"]
+- ["C7MRNotes11AppDelegate", "applicationDidEnterBackground"]
+- ["C7MRNotes11AppDelegate", "applicationDidFinishLaunching"]
+- ["C7MRNotes11AppDelegate", "applicationDidReceiveMemoryWarning"]
+- ["C7MRNotes11AppDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["C7MRNotes11AppDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["C7MRNotes11AppDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["C7MRNotes11AppDelegate", "applicationSignificantTimeChange"]
+- ["C7MRNotes11AppDelegate", "applicationWillEnterForeground"]
+- ["C7MRNotes11AppDelegate", "applicationWillResignActive"]
+- ["C7MRNotes11AppDelegate", "applicationWillTerminate"]
+- ["C7MRNotes11AppDelegate", "deinit"]
+- ["C7MRNotes11AppDelegate", "init"]
+- ["C7MRNotes11AppDelegate", "window"]
+- !private ["PSs11CVarArgType", "MagicalRecord"]
+- ["PSs11CVarArgType", "application"]
+- ["PSs11CVarArgType", "applicationDidBecomeActive"]
+- ["PSs11CVarArgType", "applicationDidEnterBackground"]
+- ["PSs11CVarArgType", "applicationDidFinishLaunching"]
+- ["PSs11CVarArgType", "applicationDidReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs11CVarArgType", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs11CVarArgType", "applicationShouldRequestHealthAuthorization"]
+- ["PSs11CVarArgType", "applicationSignificantTimeChange"]
+- ["PSs11CVarArgType", "applicationWillEnterForeground"]
+- ["PSs11CVarArgType", "applicationWillResignActive"]
+- ["PSs11CVarArgType", "applicationWillTerminate"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "window"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "MagicalRecord"]
+- ["PSs23CustomStringConvertible", "application"]
+- ["PSs23CustomStringConvertible", "applicationDidBecomeActive"]
+- ["PSs23CustomStringConvertible", "applicationDidEnterBackground"]
+- ["PSs23CustomStringConvertible", "applicationDidFinishLaunching"]
+- ["PSs23CustomStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs23CustomStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs23CustomStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["PSs23CustomStringConvertible", "applicationSignificantTimeChange"]
+- ["PSs23CustomStringConvertible", "applicationWillEnterForeground"]
+- ["PSs23CustomStringConvertible", "applicationWillResignActive"]
+- ["PSs23CustomStringConvertible", "applicationWillTerminate"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "window"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "MagicalRecord"]
+- ["PSs9Equatable", "application"]
+- ["PSs9Equatable", "applicationDidBecomeActive"]
+- ["PSs9Equatable", "applicationDidEnterBackground"]
+- ["PSs9Equatable", "applicationDidFinishLaunching"]
+- ["PSs9Equatable", "applicationDidReceiveMemoryWarning"]
+- ["PSs9Equatable", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs9Equatable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs9Equatable", "applicationShouldRequestHealthAuthorization"]
+- ["PSs9Equatable", "applicationSignificantTimeChange"]
+- ["PSs9Equatable", "applicationWillEnterForeground"]
+- ["PSs9Equatable", "applicationWillResignActive"]
+- ["PSs9Equatable", "applicationWillTerminate"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "window"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "MagicalRecord"]
+- ["PSs8Hashable", "application"]
+- ["PSs8Hashable", "applicationDidBecomeActive"]
+- ["PSs8Hashable", "applicationDidEnterBackground"]
+- ["PSs8Hashable", "applicationDidFinishLaunching"]
+- ["PSs8Hashable", "applicationDidReceiveMemoryWarning"]
+- ["PSs8Hashable", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs8Hashable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs8Hashable", "applicationShouldRequestHealthAuthorization"]
+- ["PSs8Hashable", "applicationSignificantTimeChange"]
+- ["PSs8Hashable", "applicationWillEnterForeground"]
+- ["PSs8Hashable", "applicationWillResignActive"]
+- ["PSs8Hashable", "applicationWillTerminate"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "window"]
+- ["PSs8Hashable", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "MagicalRecord"]
+- ["CSo8NSObject", "NSObject"]
+- ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "UIWindow"]
+- ["CSo8NSObject", "application"]
+- ["CSo8NSObject", "applicationDidBecomeActive"]
+- ["CSo8NSObject", "applicationDidEnterBackground"]
+- ["CSo8NSObject", "applicationDidFinishLaunching"]
+- ["CSo8NSObject", "applicationDidReceiveMemoryWarning"]
+- ["CSo8NSObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo8NSObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo8NSObject", "applicationShouldRequestHealthAuthorization"]
+- ["CSo8NSObject", "applicationSignificantTimeChange"]
+- ["CSo8NSObject", "applicationWillEnterForeground"]
+- ["CSo8NSObject", "applicationWillResignActive"]
+- ["CSo8NSObject", "applicationWillTerminate"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "MagicalRecord"]
+- ["PSo16NSObjectProtocol", "application"]
+- ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
+- ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
+- ["PSo16NSObjectProtocol", "applicationDidFinishLaunching"]
+- ["PSo16NSObjectProtocol", "applicationDidReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo16NSObjectProtocol", "applicationShouldRequestHealthAuthorization"]
+- ["PSo16NSObjectProtocol", "applicationSignificantTimeChange"]
+- ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
+- ["PSo16NSObjectProtocol", "applicationWillResignActive"]
+- ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "window"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo21UIApplicationDelegate", "MagicalRecord"]
+- ["PSo21UIApplicationDelegate", "application"]
+- ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
+- ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
+- ["PSo21UIApplicationDelegate", "applicationDidFinishLaunching"]
+- ["PSo21UIApplicationDelegate", "applicationDidReceiveMemoryWarning"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo21UIApplicationDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["PSo21UIApplicationDelegate", "applicationSignificantTimeChange"]
+- ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
+- ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
+- ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- ["PSo21UIApplicationDelegate", "window"]
+- ["PSo21UIApplicationDelegate", ""]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "MagicalRecord"]
+- ["CSo11UIResponder", "NSObject"]
+- ["CSo11UIResponder", "UIApplication"]
+- ["CSo11UIResponder", "UIWindow"]
+- ["CSo11UIResponder", "application"]
+- ["CSo11UIResponder", "applicationDidBecomeActive"]
+- ["CSo11UIResponder", "applicationDidEnterBackground"]
+- ["CSo11UIResponder", "applicationDidFinishLaunching"]
+- ["CSo11UIResponder", "applicationDidReceiveMemoryWarning"]
+- ["CSo11UIResponder", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo11UIResponder", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo11UIResponder", "applicationShouldRequestHealthAuthorization"]
+- ["CSo11UIResponder", "applicationSignificantTimeChange"]
+- ["CSo11UIResponder", "applicationWillEnterForeground"]
+- ["CSo11UIResponder", "applicationWillResignActive"]
+- ["CSo11UIResponder", "applicationWillTerminate"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "window"]
+- ["CSo11UIResponder", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "C7MRNotes11AppDelegate"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo21UIApplicationDelegate"
+- "CSo11UIResponder"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/kubat/Documents/Tutorials/MRNotes/MRNotes/MRNotes-Bridging-Header.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/MRNotes/OldThing.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecord.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecordXcode7CompatibilityMacros.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecordInternal.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecordLogging.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecord+Options.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecord+Actions.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecordDeprecationMacros.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObjectContext+MagicalSaves.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecord+ErrorHandling.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecord+Setup.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecord+iCloud.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObject+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObject+MagicalRequests.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObject+MagicalFinders.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObject+MagicalAggregation.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObjectContext+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObjectContext+MagicalChainSave.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObjectContext+MagicalObserving.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObjectContext+MagicalThreading.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSPersistentStoreCoordinator+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObjectModel+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSPersistentStore+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalImportFunctions.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObject+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSNumber+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSObject+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSString+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSAttributeDescription+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSRelationshipDescription+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSEntityDescription+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSEntityDescription+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSRelationshipDescription+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSAttributeDescription+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSString+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSObject+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSNumber+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObject+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalImportFunctions.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSPersistentStore+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObjectModel+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSPersistentStoreCoordinator+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalThreading.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalObserving.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalChainSave.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObject+MagicalAggregation.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObject+MagicalFinders.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObject+MagicalRequests.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObject+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecord+iCloud.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecord+Setup.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecord+ErrorHandling.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalSaves.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecordDeprecationMacros.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecord+Actions.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecord+Options.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecordLogging.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecordInternal.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecordXcode7CompatibilityMacros.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Modules/module.modulemap"
+interface-hash: "eb6deb7e97b205db2b1f8c4c6c87743c"

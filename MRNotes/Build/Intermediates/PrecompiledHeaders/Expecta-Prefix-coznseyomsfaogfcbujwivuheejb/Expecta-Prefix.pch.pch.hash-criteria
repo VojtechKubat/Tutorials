@@ -1,0 +1,25 @@
+-x
+objective-c
+-arch
+x86_64
+-fmodules
+-gmodules
+-fmodules-cache-path=/Users/kubat/Library/Developer/Xcode/DerivedData/ModuleCache
+-Xclang
+-fmodule-implementation-of
+-Xclang
+Expecta
+-fpascal-strings
+-O0
+-DDEBUG
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk
+-fasm-blocks
+-mmacosx-version-min=10.10
+-g
+-I/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug/include
+-F/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug
+x86_64-apple-darwin15.3.0
+"4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81)"
+SDK_PRODUCT_BUILD_VERSION=15C43
+15C43

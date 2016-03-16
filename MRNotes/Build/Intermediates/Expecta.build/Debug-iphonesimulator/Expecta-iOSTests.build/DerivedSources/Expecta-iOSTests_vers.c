@@ -1,0 +1,1 @@
+ const unsigned char Expecta_iOSTestsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Expecta-iOSTests  PROJECT:Expecta-1" "\n"; const double Expecta_iOSTestsVersionNumber __attribute__ ((used)) = (double)1.;

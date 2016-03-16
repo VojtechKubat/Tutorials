@@ -1,0 +1,8 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "e75c03e1d0e95baa12776e3ff6881fd4"
+build_time: [511287105, 319395000]
+inputs:
+  "/Users/kubat/Documents/Tutorials/NotesAdvance/NotesAdvance/CoreDataStack.swift": [511286658, 0]
+  "/Users/kubat/Documents/Tutorials/NotesAdvance/NotesAdvance/ViewControllers/MainViewController.swift": !private [511287105, 0]
+  "/Users/kubat/Documents/Tutorials/NotesAdvance/NotesAdvance/AppDelegate.swift": [511286659, 0]
+  "/Users/kubat/Documents/Tutorials/NotesAdvance/NotesAdvance/ViewControllers/NoteSmallUITableViewCell.swift": [9223372036854775807, 0]

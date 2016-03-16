@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BD264BF8FFC349E89BBF4BD /* libPods-MRNotes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C71787FA002D64C4F62689E /* libPods-MRNotes.a */; };
+		BD82B1301C99990D009C3600 /* OldThing.m in Sources */ = {isa = PBXBuildFile; fileRef = BD82B12F1C99990D009C3600 /* OldThing.m */; };
+		BD82B1331C999E20009C3600 /* MRNotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD82B1311C999E20009C3600 /* MRNotesModel.xcdatamodeld */; };
+		BD82B1361C999F79009C3600 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82B1341C999F79009C3600 /* Note+CoreDataProperties.swift */; };
+		BD82B1371C999F79009C3600 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82B1351C999F79009C3600 /* Note.swift */; };
+		BD8995BD1C9990AF0080314C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8995BC1C9990AF0080314C /* AppDelegate.swift */; };
+		BD8995BF1C9990AF0080314C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8995BE1C9990AF0080314C /* ViewController.swift */; };
+		BD8995C21C9990AF0080314C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8995C01C9990AF0080314C /* Main.storyboard */; };
+		BD8995C41C9990AF0080314C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8995C31C9990AF0080314C /* Assets.xcassets */; };
+		BD8995C71C9990AF0080314C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8995C51C9990AF0080314C /* LaunchScreen.storyboard */; };
+		BD8995D21C9990AF0080314C /* MRNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8995D11C9990AF0080314C /* MRNotesTests.swift */; };
+		BD8995DD1C9990AF0080314C /* MRNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8995DC1C9990AF0080314C /* MRNotesUITests.swift */; };
+		BD8995EB1C9992260080314C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8995EA1C9992260080314C /* CoreData.framework */; };
+		BD89A0E81C99945D0080314C /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = BD89A0E71C99945D0080314C /* podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD8995CE1C9990AF0080314C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD8995B11C9990AE0080314C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD8995B81C9990AE0080314C;
+			remoteInfo = MRNotes;
+		};
+		BD8995D91C9990AF0080314C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD8995B11C9990AE0080314C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD8995B81C9990AE0080314C;
+			remoteInfo = MRNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C0A0909F9AD5F0FD92DADCD /* Pods-MRNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRNotes/Pods-MRNotes.release.xcconfig"; sourceTree = "<group>"; };
+		8C71787FA002D64C4F62689E /* libPods-MRNotes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRNotes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABFC28BE297B70B67D63699B /* Pods-MRNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRNotes/Pods-MRNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		BD82B12D1C99990C009C3600 /* MRNotes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MRNotes-Bridging-Header.h"; sourceTree = "<group>"; };
+		BD82B12E1C99990D009C3600 /* OldThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldThing.h; sourceTree = "<group>"; };
+		BD82B12F1C99990D009C3600 /* OldThing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldThing.m; sourceTree = "<group>"; };
+		BD82B1321C999E20009C3600 /* MRNotesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MRNotesModel.xcdatamodel; sourceTree = "<group>"; };
+		BD82B1341C999F79009C3600 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BD82B1351C999F79009C3600 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		BD8995B91C9990AE0080314C /* MRNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8995BC1C9990AF0080314C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD8995BE1C9990AF0080314C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD8995C11C9990AF0080314C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD8995C31C9990AF0080314C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD8995C61C9990AF0080314C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD8995C81C9990AF0080314C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD8995CD1C9990AF0080314C /* MRNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MRNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8995D11C9990AF0080314C /* MRNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRNotesTests.swift; sourceTree = "<group>"; };
+		BD8995D31C9990AF0080314C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD8995D81C9990AF0080314C /* MRNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MRNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8995DC1C9990AF0080314C /* MRNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRNotesUITests.swift; sourceTree = "<group>"; };
+		BD8995DE1C9990AF0080314C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD8995EA1C9992260080314C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BD89A0E71C99945D0080314C /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD8995B61C9990AE0080314C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8995EB1C9992260080314C /* CoreData.framework in Frameworks */,
+				0BD264BF8FFC349E89BBF4BD /* libPods-MRNotes.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8995CA1C9990AF0080314C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8995D51C9990AF0080314C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD8995B01C9990AE0080314C = {
+			isa = PBXGroup;
+			children = (
+				BD89A0E71C99945D0080314C /* podfile */,
+				BD8995BB1C9990AF0080314C /* MRNotes */,
+				BD8995D01C9990AF0080314C /* MRNotesTests */,
+				BD8995DB1C9990AF0080314C /* MRNotesUITests */,
+				BD8995BA1C9990AE0080314C /* Products */,
+				F47B166789CAE1C2E6B877C4 /* Pods */,
+				D430893B6D6B0D4EB2C0C2A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD8995BA1C9990AE0080314C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD8995B91C9990AE0080314C /* MRNotes.app */,
+				BD8995CD1C9990AF0080314C /* MRNotesTests.xctest */,
+				BD8995D81C9990AF0080314C /* MRNotesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD8995BB1C9990AF0080314C /* MRNotes */ = {
+			isa = PBXGroup;
+			children = (
+				BD8995EC1C9992390080314C /* Frameworks */,
+				BD8995BC1C9990AF0080314C /* AppDelegate.swift */,
+				BD8995BE1C9990AF0080314C /* ViewController.swift */,
+				BD8995C01C9990AF0080314C /* Main.storyboard */,
+				BD8995C31C9990AF0080314C /* Assets.xcassets */,
+				BD8995C51C9990AF0080314C /* LaunchScreen.storyboard */,
+				BD8995C81C9990AF0080314C /* Info.plist */,
+				BD82B12E1C99990D009C3600 /* OldThing.h */,
+				BD82B12F1C99990D009C3600 /* OldThing.m */,
+				BD82B12D1C99990C009C3600 /* MRNotes-Bridging-Header.h */,
+				BD82B1311C999E20009C3600 /* MRNotesModel.xcdatamodeld */,
+				BD82B1341C999F79009C3600 /* Note+CoreDataProperties.swift */,
+				BD82B1351C999F79009C3600 /* Note.swift */,
+			);
+			path = MRNotes;
+			sourceTree = "<group>";
+		};
+		BD8995D01C9990AF0080314C /* MRNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD8995D11C9990AF0080314C /* MRNotesTests.swift */,
+				BD8995D31C9990AF0080314C /* Info.plist */,
+			);
+			path = MRNotesTests;
+			sourceTree = "<group>";
+		};
+		BD8995DB1C9990AF0080314C /* MRNotesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD8995DC1C9990AF0080314C /* MRNotesUITests.swift */,
+				BD8995DE1C9990AF0080314C /* Info.plist */,
+			);
+			path = MRNotesUITests;
+			sourceTree = "<group>";
+		};
+		BD8995EC1C9992390080314C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD8995EA1C9992260080314C /* CoreData.framework */,
+			);
+			path = Frameworks;
+			sourceTree = SOURCE_ROOT;
+		};
+		D430893B6D6B0D4EB2C0C2A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C71787FA002D64C4F62689E /* libPods-MRNotes.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F47B166789CAE1C2E6B877C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABFC28BE297B70B67D63699B /* Pods-MRNotes.debug.xcconfig */,
+				7C0A0909F9AD5F0FD92DADCD /* Pods-MRNotes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD8995B81C9990AE0080314C /* MRNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD8995E11C9990AF0080314C /* Build configuration list for PBXNativeTarget "MRNotes" */;
+			buildPhases = (
+				8DE4FD92634626C5E720EC14 /* Check Pods Manifest.lock */,
+				BD8995B51C9990AE0080314C /* Sources */,
+				BD8995B61C9990AE0080314C /* Frameworks */,
+				BD8995B71C9990AE0080314C /* Resources */,
+				106F374C8DA9D9BA11CFEBA7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRNotes;
+			productName = MRNotes;
+			productReference = BD8995B91C9990AE0080314C /* MRNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD8995CC1C9990AF0080314C /* MRNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD8995E41C9990AF0080314C /* Build configuration list for PBXNativeTarget "MRNotesTests" */;
+			buildPhases = (
+				BD8995C91C9990AF0080314C /* Sources */,
+				BD8995CA1C9990AF0080314C /* Frameworks */,
+				BD8995CB1C9990AF0080314C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD8995CF1C9990AF0080314C /* PBXTargetDependency */,
+			);
+			name = MRNotesTests;
+			productName = MRNotesTests;
+			productReference = BD8995CD1C9990AF0080314C /* MRNotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD8995D71C9990AF0080314C /* MRNotesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD8995E71C9990AF0080314C /* Build configuration list for PBXNativeTarget "MRNotesUITests" */;
+			buildPhases = (
+				BD8995D41C9990AF0080314C /* Sources */,
+				BD8995D51C9990AF0080314C /* Frameworks */,
+				BD8995D61C9990AF0080314C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD8995DA1C9990AF0080314C /* PBXTargetDependency */,
+			);
+			name = MRNotesUITests;
+			productName = MRNotesUITests;
+			productReference = BD8995D81C9990AF0080314C /* MRNotesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD8995B11C9990AE0080314C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "CertiCon a.s.";
+				TargetAttributes = {
+					BD8995B81C9990AE0080314C = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					BD8995CC1C9990AF0080314C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = BD8995B81C9990AE0080314C;
+					};
+					BD8995D71C9990AF0080314C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = BD8995B81C9990AE0080314C;
+					};
+				};
+			};
+			buildConfigurationList = BD8995B41C9990AE0080314C /* Build configuration list for PBXProject "MRNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD8995B01C9990AE0080314C;
+			productRefGroup = BD8995BA1C9990AE0080314C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD8995B81C9990AE0080314C /* MRNotes */,
+				BD8995CC1C9990AF0080314C /* MRNotesTests */,
+				BD8995D71C9990AF0080314C /* MRNotesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD8995B71C9990AE0080314C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8995C71C9990AF0080314C /* LaunchScreen.storyboard in Resources */,
+				BD8995C41C9990AF0080314C /* Assets.xcassets in Resources */,
+				BD89A0E81C99945D0080314C /* podfile in Resources */,
+				BD8995C21C9990AF0080314C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8995CB1C9990AF0080314C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8995D61C9990AF0080314C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		106F374C8DA9D9BA11CFEBA7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRNotes/Pods-MRNotes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DE4FD92634626C5E720EC14 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD8995B51C9990AE0080314C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8995BF1C9990AF0080314C /* ViewController.swift in Sources */,
+				BD82B1301C99990D009C3600 /* OldThing.m in Sources */,
+				BD82B1331C999E20009C3600 /* MRNotesModel.xcdatamodeld in Sources */,
+				BD8995BD1C9990AF0080314C /* AppDelegate.swift in Sources */,
+				BD82B1361C999F79009C3600 /* Note+CoreDataProperties.swift in Sources */,
+				BD82B1371C999F79009C3600 /* Note.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8995C91C9990AF0080314C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8995D21C9990AF0080314C /* MRNotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8995D41C9990AF0080314C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8995DD1C9990AF0080314C /* MRNotesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD8995CF1C9990AF0080314C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD8995B81C9990AE0080314C /* MRNotes */;
+			targetProxy = BD8995CE1C9990AF0080314C /* PBXContainerItemProxy */;
+		};
+		BD8995DA1C9990AF0080314C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD8995B81C9990AE0080314C /* MRNotes */;
+			targetProxy = BD8995D91C9990AF0080314C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD8995C01C9990AF0080314C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD8995C11C9990AF0080314C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD8995C51C9990AF0080314C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD8995C61C9990AF0080314C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD8995DF1C9990AF0080314C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD8995E01C9990AF0080314C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD8995E21C9990AF0080314C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABFC28BE297B70B67D63699B /* Pods-MRNotes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/MagicalRecord/Build/Products/Debug",
+				);
+				INFOPLIST_FILE = MRNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.certicon.MRNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MRNotes/MRNotes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD8995E31C9990AF0080314C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C0A0909F9AD5F0FD92DADCD /* Pods-MRNotes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/MagicalRecord/Build/Products/Debug",
+				);
+				INFOPLIST_FILE = MRNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.certicon.MRNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MRNotes/MRNotes-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		BD8995E51C9990AF0080314C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MRNotesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.certicon.MRNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MRNotes.app/MRNotes";
+			};
+			name = Debug;
+		};
+		BD8995E61C9990AF0080314C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MRNotesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.certicon.MRNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MRNotes.app/MRNotes";
+			};
+			name = Release;
+		};
+		BD8995E81C9990AF0080314C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MRNotesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.certicon.MRNotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MRNotes;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BD8995E91C9990AF0080314C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MRNotesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.certicon.MRNotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MRNotes;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD8995B41C9990AE0080314C /* Build configuration list for PBXProject "MRNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8995DF1C9990AF0080314C /* Debug */,
+				BD8995E01C9990AF0080314C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD8995E11C9990AF0080314C /* Build configuration list for PBXNativeTarget "MRNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8995E21C9990AF0080314C /* Debug */,
+				BD8995E31C9990AF0080314C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD8995E41C9990AF0080314C /* Build configuration list for PBXNativeTarget "MRNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8995E51C9990AF0080314C /* Debug */,
+				BD8995E61C9990AF0080314C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD8995E71C9990AF0080314C /* Build configuration list for PBXNativeTarget "MRNotesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8995E81C9990AF0080314C /* Debug */,
+				BD8995E91C9990AF0080314C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD82B1311C999E20009C3600 /* MRNotesModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD82B1321C999E20009C3600 /* MRNotesModel.xcdatamodel */,
+			);
+			currentVersion = BD82B1321C999E20009C3600 /* MRNotesModel.xcdatamodel */;
+			path = MRNotesModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BD8995B11C9990AE0080314C /* Project object */;
+}

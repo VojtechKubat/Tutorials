@@ -1,0 +1,1 @@
+ const unsigned char libExpectaTestsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:libExpectaTests  PROJECT:Expecta-1" "\n"; const double libExpectaTestsVersionNumber __attribute__ ((used)) = (double)1.;

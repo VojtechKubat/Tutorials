@@ -1,0 +1,23 @@
+-x
+objective-c
+-arch
+x86_64
+-fmodules
+-gmodules
+-fmodules-cache-path=/Users/kubat/Library/Developer/Xcode/DerivedData/ModuleCache
+-fpascal-strings
+-O0
+-DDEBUG
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.2.sdk
+-fasm-blocks
+-mios-simulator-version-min=5.1.1
+-g
+-fobjc-abi-version=2
+-fobjc-legacy-dispatch
+-I/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/include
+-F/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator
+x86_64-apple-darwin15.3.0
+"4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81)"
+SDK_PRODUCT_BUILD_VERSION=13C75
+13C75

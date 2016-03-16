@@ -1,0 +1,5 @@
+platform :ios, "8.2"
+
+target 'MRNotes' do
+    pod 'MagicalRecord'
+end

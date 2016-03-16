@@ -1,0 +1,183 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "MagicalImportFunctions.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/DataImport/MagicalImportFunctions.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+Actions.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Core/MagicalRecord+Actions.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+ErrorHandling.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Core/MagicalRecord+ErrorHandling.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+Options.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Core/MagicalRecord+Options.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+Setup.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Core/MagicalRecord+Setup.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+iCloud.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Core/MagicalRecord+iCloud.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord-Swift.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecord-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecordDeprecationMacros.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Core/MagicalRecordDeprecationMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecordInternal.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Core/MagicalRecordInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecordLogging.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Core/MagicalRecordLogging.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecordShorthandMethodAliases.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Core/MagicalRecordShorthandMethodAliases.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecordXcode7CompatibilityMacros.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Core/MagicalRecordXcode7CompatibilityMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSAttributeDescription+MagicalDataImport.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSEntityDescription+MagicalDataImport.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalAggregation.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalDataImport.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalFinders.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalRecord.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalRequests.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalChainSave.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalObserving.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalRecord.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalSaves.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalThreading.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectModel+MagicalRecord.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSNumber+MagicalDataImport.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+MagicalDataImport.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSPersistentStore+MagicalRecord.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/NSPersistentStore+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSPersistentStoreCoordinator+MagicalRecord.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSRelationshipDescription+MagicalDataImport.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+MagicalDataImport.h",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Frameworks/MagicalRecord/MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/kubat/Documents/Tutorials/MRNotes/Build/Intermediates/MagicalRecord.build/Debug-iphonesimulator/MagicalRecord for iOS.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

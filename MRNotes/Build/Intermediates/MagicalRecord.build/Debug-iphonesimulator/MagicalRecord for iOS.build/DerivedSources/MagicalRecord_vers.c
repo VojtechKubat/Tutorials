@@ -1,0 +1,1 @@
+ const unsigned char MagicalRecordVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:MagicalRecord  PROJECT:MagicalRecord-2.3.3" "\n"; const double MagicalRecordVersionNumber __attribute__ ((used)) = (double)2.3;
