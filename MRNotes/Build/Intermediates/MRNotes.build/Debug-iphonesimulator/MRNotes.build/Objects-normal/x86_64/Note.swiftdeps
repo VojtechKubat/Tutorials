@@ -7,8 +7,8 @@ provides-member:
 - ["C7MRNotes4Note", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Note"
 - "NSManagedObject"
+- "Note"
 depends-member:
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", ""]

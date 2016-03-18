@@ -1,0 +1,181 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PartyMemberTCViewController"
+provides-nominal:
+- "C11DungeonGame27PartyMemberTCViewController"
+provides-member:
+- ["C11DungeonGame27PartyMemberTCViewController", ""]
+provides-dynamic-lookup:
+- "crewNameLabel"
+- "height"
+depends-top-level:
+- "CGFloat"
+- "UITableViewCell"
+- "PartyMemberTCViewController"
+- "UILabel"
+depends-member:
+- ["PSs16AbsoluteValuable", "init"]
+- ["PSs9AnyObject", "CGFloat"]
+- ["PSs9AnyObject", "crewNameLabel"]
+- ["PSs9AnyObject", "height"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", ""]
+- ["V12CoreGraphics7CGFloat", "init"]
+- ["PSs11CVarArgType", "CGFloat"]
+- ["PSs11CVarArgType", "crewNameLabel"]
+- ["PSs11CVarArgType", "height"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", ""]
+- ["PSs10Comparable", "init"]
+- ["PSs23CustomStringConvertible", "CGFloat"]
+- ["PSs23CustomStringConvertible", "crewNameLabel"]
+- ["PSs23CustomStringConvertible", "height"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "CGFloat"]
+- ["PSs9Equatable", "crewNameLabel"]
+- ["PSs9Equatable", "height"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", ""]
+- ["PSs23FloatLiteralConvertible", "init"]
+- ["PSs17FloatingPointType", "init"]
+- ["PSs8Hashable", "CGFloat"]
+- ["PSs8Hashable", "crewNameLabel"]
+- ["PSs8Hashable", "height"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", ""]
+- ["PSs25IntegerLiteralConvertible", "init"]
+- ["PSo8NSCoding", "CGFloat"]
+- ["PSo8NSCoding", "crewNameLabel"]
+- ["PSo8NSCoding", "height"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "crewNameLabel"]
+- ["CSo8NSObject", "height"]
+- ["CSo8NSObject", "init"]
+- ["PSo16NSObjectProtocol", "CGFloat"]
+- ["PSo16NSObjectProtocol", "crewNameLabel"]
+- ["PSo16NSObjectProtocol", "height"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C11DungeonGame27PartyMemberTCViewController", "CGFloat"]
+- ["C11DungeonGame27PartyMemberTCViewController", "UILabel"]
+- ["C11DungeonGame27PartyMemberTCViewController", "crewNameLabel"]
+- ["C11DungeonGame27PartyMemberTCViewController", "deinit"]
+- ["C11DungeonGame27PartyMemberTCViewController", "height"]
+- ["C11DungeonGame27PartyMemberTCViewController", "init"]
+- ["PSs16SignedNumberType", "init"]
+- ["PSs10Strideable", "init"]
+- ["PSo29UIAccessibilityIdentification", "CGFloat"]
+- ["PSo29UIAccessibilityIdentification", "crewNameLabel"]
+- ["PSo29UIAccessibilityIdentification", "height"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "CGFloat"]
+- ["PSo12UIAppearance", "crewNameLabel"]
+- ["PSo12UIAppearance", "height"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "CGFloat"]
+- ["PSo21UIAppearanceContainer", "crewNameLabel"]
+- ["PSo21UIAppearanceContainer", "height"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo17UICoordinateSpace", "CGFloat"]
+- ["PSo17UICoordinateSpace", "crewNameLabel"]
+- ["PSo17UICoordinateSpace", "height"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "CGFloat"]
+- ["PSo13UIDynamicItem", "crewNameLabel"]
+- ["PSo13UIDynamicItem", "height"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "CGFloat"]
+- ["PSo18UIFocusEnvironment", "crewNameLabel"]
+- ["PSo18UIFocusEnvironment", "height"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo27UIGestureRecognizerDelegate", "CGFloat"]
+- ["PSo27UIGestureRecognizerDelegate", "crewNameLabel"]
+- ["PSo27UIGestureRecognizerDelegate", "height"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "CGFloat"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "crewNameLabel"]
+- ["CSo11UIResponder", "height"]
+- ["CSo11UIResponder", "init"]
+- ["CSo15UITableViewCell", "CGFloat"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "crewNameLabel"]
+- ["CSo15UITableViewCell", "height"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", ""]
+- ["PSo18UITraitEnvironment", "CGFloat"]
+- ["PSo18UITraitEnvironment", "crewNameLabel"]
+- ["PSo18UITraitEnvironment", "height"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "CGFloat"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "crewNameLabel"]
+- ["CSo6UIView", "height"]
+- ["CSo6UIView", "init"]
+- ["PSs19_CVarArgAlignedType", "init"]
+- ["PSs22_CVarArgPassedAsDouble", "init"]
+- ["PSs21_ObjectiveCBridgeable", "init"]
+- ["PSs12_Reflectable", "CGFloat"]
+- ["PSs12_Reflectable", "crewNameLabel"]
+- ["PSs12_Reflectable", "height"]
+- ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", ""]
+- ["PSs11_Strideable", "init"]
+depends-nominal:
+- "PSs16AbsoluteValuable"
+- "PSs9AnyObject"
+- "V12CoreGraphics7CGFloat"
+- "PSs11CVarArgType"
+- "PSs10Comparable"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs23FloatLiteralConvertible"
+- "PSs17FloatingPointType"
+- "PSs8Hashable"
+- "PSs25IntegerLiteralConvertible"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C11DungeonGame27PartyMemberTCViewController"
+- "PSs16SignedNumberType"
+- "PSs10Strideable"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- "CSo11UIResponder"
+- "CSo15UITableViewCell"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "PSs19_CVarArgAlignedType"
+- "PSs22_CVarArgPassedAsDouble"
+- "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
+- "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "3022347c18037ae8c6e6974689a86a7d"

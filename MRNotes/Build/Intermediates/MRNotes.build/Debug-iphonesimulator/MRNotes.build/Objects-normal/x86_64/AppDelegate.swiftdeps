@@ -6,24 +6,25 @@ provides-nominal:
 provides-member:
 - ["C7MRNotes11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillEnterForeground"
-- "applicationWillTerminate"
 - "applicationWillResignActive"
-- "application"
 - "applicationDidEnterBackground"
+- "applicationWillEnterForeground"
 - "applicationDidBecomeActive"
+- "application"
+- "applicationWillTerminate"
 - "window"
 depends-top-level:
-- "Bool"
 - !private "BooleanLiteralType"
-- "AnyObject"
-- "AppDelegate"
 - "UIResponder"
+- !private "storeName"
 - "NSObject"
 - "UIWindow"
-- "UIApplicationDelegate"
 - "UIApplication"
+- "AnyObject"
 - !private "MagicalRecord"
+- "AppDelegate"
+- "UIApplicationDelegate"
+- "Bool"
 depends-member:
 - !private ["PSs9AnyObject", "MagicalRecord"]
 - ["PSs9AnyObject", "application"]
@@ -39,6 +40,7 @@ depends-member:
 - ["PSs9AnyObject", "applicationWillResignActive"]
 - ["PSs9AnyObject", "applicationWillTerminate"]
 - ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "storeName"]
 - ["PSs9AnyObject", "window"]
 - ["PSs9AnyObject", ""]
 - ["C7MRNotes11AppDelegate", "AnyObject"]
@@ -61,6 +63,7 @@ depends-member:
 - ["C7MRNotes11AppDelegate", "applicationWillTerminate"]
 - ["C7MRNotes11AppDelegate", "deinit"]
 - ["C7MRNotes11AppDelegate", "init"]
+- !private ["C7MRNotes11AppDelegate", "storeName"]
 - ["C7MRNotes11AppDelegate", "window"]
 - !private ["PSs11CVarArgType", "MagicalRecord"]
 - ["PSs11CVarArgType", "application"]
@@ -76,6 +79,7 @@ depends-member:
 - ["PSs11CVarArgType", "applicationWillResignActive"]
 - ["PSs11CVarArgType", "applicationWillTerminate"]
 - ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "storeName"]
 - ["PSs11CVarArgType", "window"]
 - ["PSs11CVarArgType", ""]
 - !private ["PSs23CustomStringConvertible", "MagicalRecord"]
@@ -92,6 +96,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "applicationWillResignActive"]
 - ["PSs23CustomStringConvertible", "applicationWillTerminate"]
 - ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "storeName"]
 - ["PSs23CustomStringConvertible", "window"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["PSs9Equatable", "MagicalRecord"]
@@ -108,6 +113,7 @@ depends-member:
 - ["PSs9Equatable", "applicationWillResignActive"]
 - ["PSs9Equatable", "applicationWillTerminate"]
 - ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "storeName"]
 - ["PSs9Equatable", "window"]
 - ["PSs9Equatable", ""]
 - !private ["PSs8Hashable", "MagicalRecord"]
@@ -124,6 +130,7 @@ depends-member:
 - ["PSs8Hashable", "applicationWillResignActive"]
 - ["PSs8Hashable", "applicationWillTerminate"]
 - ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "storeName"]
 - ["PSs8Hashable", "window"]
 - ["PSs8Hashable", ""]
 - ["CSo8NSObject", "AnyObject"]
@@ -145,6 +152,7 @@ depends-member:
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "storeName"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "MagicalRecord"]
 - ["PSo16NSObjectProtocol", "application"]
@@ -160,6 +168,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "storeName"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo21UIApplicationDelegate", "MagicalRecord"]
@@ -175,6 +184,7 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "storeName"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "AnyObject"]
@@ -196,6 +206,7 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "storeName"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
 depends-nominal:

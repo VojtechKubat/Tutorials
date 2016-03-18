@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BD264BF8FFC349E89BBF4BD /* libPods-MRNotes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C71787FA002D64C4F62689E /* libPods-MRNotes.a */; };
+		BD70CC731C99B59000ECC378 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD70CC721C99B59000ECC378 /* Constants.swift */; };
 		BD82B1301C99990D009C3600 /* OldThing.m in Sources */ = {isa = PBXBuildFile; fileRef = BD82B12F1C99990D009C3600 /* OldThing.m */; };
 		BD82B1331C999E20009C3600 /* MRNotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD82B1311C999E20009C3600 /* MRNotesModel.xcdatamodeld */; };
 		BD82B1361C999F79009C3600 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82B1341C999F79009C3600 /* Note+CoreDataProperties.swift */; };
@@ -44,6 +45,7 @@
 		7C0A0909F9AD5F0FD92DADCD /* Pods-MRNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRNotes/Pods-MRNotes.release.xcconfig"; sourceTree = "<group>"; };
 		8C71787FA002D64C4F62689E /* libPods-MRNotes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRNotes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFC28BE297B70B67D63699B /* Pods-MRNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRNotes/Pods-MRNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		BD70CC721C99B59000ECC378 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BD82B12D1C99990C009C3600 /* MRNotes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MRNotes-Bridging-Header.h"; sourceTree = "<group>"; };
 		BD82B12E1C99990D009C3600 /* OldThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldThing.h; sourceTree = "<group>"; };
 		BD82B12F1C99990D009C3600 /* OldThing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldThing.m; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				BD82B1311C999E20009C3600 /* MRNotesModel.xcdatamodeld */,
 				BD82B1341C999F79009C3600 /* Note+CoreDataProperties.swift */,
 				BD82B1351C999F79009C3600 /* Note.swift */,
+				BD70CC721C99B59000ECC378 /* Constants.swift */,
 			);
 			path = MRNotes;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				BD82B1301C99990D009C3600 /* OldThing.m in Sources */,
 				BD82B1331C999E20009C3600 /* MRNotesModel.xcdatamodeld in Sources */,
 				BD8995BD1C9990AF0080314C /* AppDelegate.swift in Sources */,
+				BD70CC731C99B59000ECC378 /* Constants.swift in Sources */,
 				BD82B1361C999F79009C3600 /* Note+CoreDataProperties.swift in Sources */,
 				BD82B1371C999F79009C3600 /* Note.swift in Sources */,
 			);

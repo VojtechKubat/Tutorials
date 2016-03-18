@@ -1,8 +1,9 @@
 version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
 options: "70a4989453eb5c3bc7108428dfe604d5"
-build_time: [511453046, 778490000]
+build_time: [511529750, 619302000]
 inputs:
-  "/Users/kubat/Documents/Tutorials/MRNotes/MRNotes/Note+CoreDataProperties.swift": [511452281, 0]
-  "/Users/kubat/Documents/Tutorials/MRNotes/MRNotes/AppDelegate.swift": !private [511453009, 0]
+  "/Users/kubat/Documents/Tutorials/MRNotes/MRNotes/AppDelegate.swift": !private [511529750, 0]
+  "/Users/kubat/Documents/Tutorials/MRNotes/MRNotes/Constants.swift": [511458073, 0]
+  "/Users/kubat/Documents/Tutorials/MRNotes/MRNotes/ViewController.swift": [511529338, 0]
   "/Users/kubat/Documents/Tutorials/MRNotes/MRNotes/Note.swift": [511452281, 0]
-  "/Users/kubat/Documents/Tutorials/MRNotes/MRNotes/ViewController.swift": [511451936, 0]
+  "/Users/kubat/Documents/Tutorials/MRNotes/MRNotes/Note+CoreDataProperties.swift": [511452281, 0]

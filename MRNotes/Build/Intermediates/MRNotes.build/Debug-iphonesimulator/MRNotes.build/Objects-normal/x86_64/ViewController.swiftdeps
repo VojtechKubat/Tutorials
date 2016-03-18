@@ -6,74 +6,103 @@ provides-nominal:
 provides-member:
 - ["C7MRNotes14ViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
+- !private "OldThing"
+- !private "StringLiteralType"
 - "UIViewController"
 - "ViewController"
 depends-member:
+- !private ["PSs9AnyObject", "OldThing"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "name"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
+- !private ["PSs11CVarArgType", "OldThing"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
 - ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "name"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "OldThing"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "name"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "OldThing"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
 - ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "name"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "OldThing"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
 - ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "name"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["PSo8NSCoding", "OldThing"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "OldThing"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "OldThing"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "name"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "OldThing"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "name"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["CSo8OldThing", "init"]
+- !private ["CSo8OldThing", "name"]
+- !private ["PSo21UIAppearanceContainer", "OldThing"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "OldThing"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "OldThing"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "OldThing"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "OldThing"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "OldThing"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo16UIViewController", "OldThing"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["C7MRNotes14ViewController", "OldThing"]
 - ["C7MRNotes14ViewController", "deinit"]
 - ["C7MRNotes14ViewController", "didReceiveMemoryWarning"]
 - ["C7MRNotes14ViewController", "init"]
@@ -84,10 +113,12 @@ depends-nominal:
 - "PSs23CustomStringConvertible"
 - "PSs9Equatable"
 - "PSs8Hashable"
+- !private "SQ"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "CSo8OldThing"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
 - "PSo18UIFocusEnvironment"

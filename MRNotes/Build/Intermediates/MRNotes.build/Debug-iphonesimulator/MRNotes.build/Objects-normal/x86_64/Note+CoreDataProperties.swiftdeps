@@ -10,12 +10,12 @@ provides-member:
 provides-dynamic-lookup:
 - "date"
 - "keywords"
-- "body"
 - "title"
+- "body"
 depends-top-level:
 - "NSDate"
-- "Note"
 - "String"
+- "Note"
 depends-member:
 - ["PSs9AnyObject", "body"]
 - ["PSs9AnyObject", "date"]

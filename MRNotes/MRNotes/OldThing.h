@@ -10,4 +10,6 @@
 
 @interface OldThing : NSObject
 
+@property (atomic) NSString *name;
+
 @end
