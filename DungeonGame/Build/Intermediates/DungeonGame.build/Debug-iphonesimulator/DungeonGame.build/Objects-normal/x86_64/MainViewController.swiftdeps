@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C11DungeonGame18MainViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
 - "UIViewController"
 - "MainViewController"

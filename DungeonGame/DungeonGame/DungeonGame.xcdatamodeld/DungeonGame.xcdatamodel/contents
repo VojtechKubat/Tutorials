@@ -5,10 +5,11 @@
     </entity>
     <entity name="EquipmentSet" syncable="YES"/>
     <entity name="Item" syncable="YES"/>
-    <entity name="Modifiers" syncable="YES">
+    <entity name="Modifier" syncable="YES">
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="duration" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="multiplier" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="multiplier" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="affectsElement" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Element" syncable="YES"/>
     </entity>
     <entity name="Move" syncable="YES">
@@ -22,7 +23,7 @@
         <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="level" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
         <attribute name="name" attributeType="String" defaultValueString="N/A" syncable="YES"/>
-        <relationship name="influencedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Modifiers" syncable="YES"/>
+        <relationship name="influencedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Modifier" syncable="YES"/>
         <relationship name="isType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Type" syncable="YES"/>
         <relationship name="relatedToPartyMember" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PartyMember" inverseName="representedByNpc" inverseEntity="PartyMember" syncable="YES"/>
     </entity>
@@ -42,14 +43,14 @@
         <relationship name="hasMove" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Move" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PartyMember" positionX="45" positionY="-99" width="108" height="88"/>
-        <element name="NPC" positionX="-182" positionY="83" width="128" height="133"/>
-        <element name="Modifiers" positionX="-506" positionY="243" width="128" height="103"/>
         <element name="Element" positionX="-389" positionY="441" width="128" height="60"/>
-        <element name="Player" positionX="-425" positionY="-216" width="128" height="103"/>
-        <element name="Type" positionX="-288" positionY="278" width="128" height="73"/>
-        <element name="Move" positionX="-54" positionY="362" width="128" height="118"/>
         <element name="EquipmentSet" positionX="-371" positionY="-18" width="128" height="43"/>
         <element name="Item" positionX="-504" positionY="74" width="128" height="43"/>
+        <element name="Modifier" positionX="-506" positionY="243" width="128" height="118"/>
+        <element name="Move" positionX="-54" positionY="362" width="128" height="118"/>
+        <element name="NPC" positionX="-182" positionY="83" width="128" height="133"/>
+        <element name="PartyMember" positionX="45" positionY="-99" width="108" height="88"/>
+        <element name="Player" positionX="-425" positionY="-216" width="128" height="103"/>
+        <element name="Type" positionX="-288" positionY="278" width="128" height="73"/>
     </elements>
 </model>

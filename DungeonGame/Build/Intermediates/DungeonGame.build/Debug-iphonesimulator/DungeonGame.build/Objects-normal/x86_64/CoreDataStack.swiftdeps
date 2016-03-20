@@ -7,24 +7,24 @@ provides-member:
 - ["C11DungeonGame13CoreDataStack", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "NSFileManager"
+- !private "NSLocalizedDescriptionKey"
 - "NSPersistentStoreCoordinator"
+- "NSURL"
+- !private "NSLocalizedFailureReasonErrorKey"
 - "CoreDataStack"
-- !private "NSError"
+- "StringLiteralType"
+- !private "NSBundle"
+- "NSManagedObjectContext"
 - "NSManagedObjectModel"
+- !private "NSSQLiteStoreType"
+- !private "NSError"
+- !private "-"
+- !private "String"
+- !private "NSLog"
 - !private "NSUnderlyingErrorKey"
 - !private "AnyObject"
-- "NSURL"
-- !private "NSLocalizedDescriptionKey"
-- !private "NSLog"
-- !private "NSBundle"
-- !private "-"
-- !private "NSLocalizedFailureReasonErrorKey"
-- "NSManagedObjectContext"
-- !private "NSFileManager"
 - !private "abort"
-- "StringLiteralType"
-- !private "NSSQLiteStoreType"
-- !private "String"
 depends-member:
 - !private ["PSs9AnyObject", "AnyObject"]
 - !private ["PSs9AnyObject", "NSBundle"]
