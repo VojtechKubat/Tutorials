@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 - ["C11DungeonGame27PartyMemberTCViewController", ""]
 provides-dynamic-lookup:
-- "height"
 - "crewNameLabel"
+- "height"
 depends-top-level:
-- "UILabel"
-- "CGFloat"
 - "UITableViewCell"
 - "PartyMemberTCViewController"
+- "CGFloat"
+- "UILabel"
 depends-member:
 - ["PSs16AbsoluteValuable", "init"]
 - ["PSs9AnyObject", "CGFloat"]

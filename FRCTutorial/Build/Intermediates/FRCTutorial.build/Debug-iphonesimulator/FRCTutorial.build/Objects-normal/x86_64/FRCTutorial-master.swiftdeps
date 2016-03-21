@@ -1,0 +1,8 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "77d408e25aef627fdc870928708b61b0"
+build_time: [511891907, 533540000]
+inputs:
+  "/Users/kubat/Documents/Garbage/FRCTutorial/FRCTutorial/ViewController.swift": [511891904, 0]
+  "/Users/kubat/Documents/Garbage/FRCTutorial/FRCTutorial/TodoCell.swift": [511889368, 0]
+  "/Users/kubat/Documents/Garbage/FRCTutorial/FRCTutorial/NewItemViewController.swift": [511890844, 0]
+  "/Users/kubat/Documents/Garbage/FRCTutorial/FRCTutorial/AppDelegate.swift": [511888993, 0]

@@ -17,22 +17,31 @@ class Game {
 // MARK: Dummy core data operations
     func fillInDummyData () {
 //        listAllNPCs()
+        
         for i in 0...10 {
             addDummyNPC(i)
             addDummyModifiers(i)
+            addDummyParyMember(i)
         }
         listAllNPCs()
         listAllModifiers()
-        addDummyComplex(2)
+        listAllPartyMembers()
+        
+//        addDummyComplexOneToMany(2)
 //        deleteNPCOnIndex(1)
 //        listAllNPCs()
-        listAllNPCs()
         
+//        listAllNPCs()
     }
     
-    func addDummyComplex (seed: Int) {
+    func addDummyComplexOneToMany (seed: Int) {
+        
+// One      - to -  many
+// One NPC  - to -  many Modifiers
+        
+    // Get NPC with name "John"
+        
         let npcED = NSEntityDescription.entityForName("NPC", inManagedObjectContext: coreDataStack.managedObjectContext)
-//        let predicate = NSPredicate(format: "%K == %@", "name", "John")
         
         let key = "name"
         let value = "John"
@@ -51,20 +60,21 @@ class Game {
             print(error)
         }
         
-        print("-----------------")
-        print(">>> looking for NPC John")
-        print(">>> predicate: \(predicate.description)")
-        print(">>> total NPC results: \(resultNPC.count)")
-        
-        for current in resultNPC {
             print("-----------------")
-            print(">>> NPC name: \(current.valueForKey("name")!)")
-            print(">>> level: \(current.valueForKey("level")!)")
-            print(">>> bio: \(current.valueForKey("bio")!)")
-            print(">>> modifiers count: \(current.valueForKey("influencedBy")?.count)")
-        }
-        print("-----------------")
+            print(">>> looking for NPC John")
+            print(">>> predicate: \(predicate.description)")
+            print(">>> total NPC results: \(resultNPC.count)")
+            
+            for current in resultNPC {
+                print("-----------------")
+                print(">>> NPC name: \(current.valueForKey("name")!)")
+                print(">>> level: \(current.valueForKey("level")!)")
+                print(">>> bio: \(current.valueForKey("bio")!)")
+                print(">>> modifiers count: \(current.valueForKey("influencedBy")?.count)")
+            }
+            print("-----------------")
         
+    // Get modifiers with name "permanent boost" OR "penalty"
         
         let theModifiers = NSFetchRequest()
         let modifierED = NSEntityDescription.entityForName("Modifier", inManagedObjectContext: coreDataStack.managedObjectContext)
@@ -81,19 +91,21 @@ class Game {
             print(error)
         }
 
-        print("-----------------")
-        print(">>> looking for some modifiers")
-        print(">>> predicate: \(modifPredicate.description)")
-        print(">>> total modifiers results: \(resultNPC.count)")
-        print("-----------------")
-        for current in resultModifiers {
             print("-----------------")
-            let modifier = current as! NSManagedObject
-            print(">>> name: \(modifier.valueForKey("name")!)")
-            print(">>> multiplier: \(modifier.valueForKey("multiplier")!)")
-            print(">>> duration: \(modifier.valueForKey("duration")!)")
-        }
-        print("-----------------")
+            print(">>> looking for some modifiers")
+            print(">>> predicate: \(modifPredicate.description)")
+            print(">>> total modifiers results: \(resultNPC.count)")
+            print("-----------------")
+            for current in resultModifiers {
+                print("-----------------")
+                let modifier = current as! NSManagedObject
+                print(">>> name: \(modifier.valueForKey("name")!)")
+                print(">>> multiplier: \(modifier.valueForKey("multiplier")!)")
+                print(">>> duration: \(modifier.valueForKey("duration")!)")
+            }
+            print("-----------------")
+
+    // assign the found modifiers to the NPC
         
         (resultNPC.last as! NSManagedObject).setValue(NSSet(array: resultModifiers), forKey: "influencedBy")
         do {
@@ -102,6 +114,58 @@ class Game {
             print(error)
         }
         
+    }
+    
+    func addDummyComplexOneToOne (seed: Int) {
+        
+    }
+    
+    func addDummyParyMember (seed: Int) {
+        let partyMemberED = NSEntityDescription.entityForName("PartyMember", inManagedObjectContext: coreDataStack.managedObjectContext)
+        
+        let allPartyMembers = NSFetchRequest()
+        allPartyMembers.entity = partyMemberED
+        var resultAllMembers = [AnyObject]()
+        
+        do {
+            resultAllMembers = try coreDataStack.managedObjectContext.executeFetchRequest(allPartyMembers)
+        } catch {
+            print(error)
+        }
+        
+        let npcED = NSEntityDescription.entityForName("NPC", inManagedObjectContext: coreDataStack.managedObjectContext)
+        let allNpcs = NSFetchRequest()
+        allNpcs.entity = npcED
+        var resultAllNpcs = [AnyObject]()
+        
+        do {
+            resultAllNpcs = try coreDataStack.managedObjectContext.executeFetchRequest(allNpcs)
+        } catch {
+            print(error)
+        }
+        
+        if (resultAllMembers.count < 2) {
+            let newPMember = NSManagedObject(entity: partyMemberED!, insertIntoManagedObjectContext: coreDataStack.managedObjectContext)
+
+            switch seed {
+            case 0:
+                newPMember.setValue("First companion", forKey: "name")
+                newPMember.setValue(resultAllNpcs[seed] as! NSManagedObject, forKey: "representedByNpc")
+            case 1:
+                newPMember.setValue("Main healer of the party", forKey: "name")
+                newPMember.setValue(resultAllNpcs[seed] as! NSManagedObject, forKey: "representedByNpc")
+            default:
+                newPMember.setValue("Default party member", forKey: "name")
+                newPMember.setValue(resultAllNpcs[seed] as! NSManagedObject, forKey: "representedByNpc")
+            }
+            
+            do {
+                try newPMember.managedObjectContext?.save()
+            } catch {
+                print(error)
+            }
+        }
+    
     }
     
     func addDummyNPC (seed: Int) {
@@ -124,7 +188,7 @@ class Game {
             case 0:
                 dummyNPC.setValue("Bob", forKey: "name")
                 dummyNPC.setValue("Something, something.", forKey: "bio")
-                dummyNPC.setValue(1, forKey: "level")
+                dummyNPC.setValue(50, forKey: "level")
 
             case 1:
                 dummyNPC.setValue("Alice", forKey: "name")
@@ -139,12 +203,12 @@ class Game {
             case 3:
                 dummyNPC.setValue("Jane", forKey: "name")
                 dummyNPC.setValue("Bla bla something something. Nothing usefull.", forKey: "bio")
-                dummyNPC.setValue(4, forKey: "level")
+                dummyNPC.setValue(30, forKey: "level")
 
             case 4:
                 dummyNPC.setValue("John", forKey: "name")
                 dummyNPC.setValue("The most important character in the world!", forKey: "bio")
-                dummyNPC.setValue(21, forKey: "level")
+                dummyNPC.setValue(8, forKey: "level")
                 
             case 5:
                 dummyNPC.setValue("Paul", forKey: "name")
@@ -224,6 +288,24 @@ class Game {
         
     }
     
+    func listAllPartyMembers () {
+        let partyMemberED = NSEntityDescription.entityForName("PartyMember", inManagedObjectContext: coreDataStack.managedObjectContext)
+        let allPM = NSFetchRequest()
+        allPM.entity = partyMemberED
+        var result = [AnyObject]()
+        
+        do {
+            result = try coreDataStack.managedObjectContext.executeFetchRequest(allPM)
+        } catch {
+            print(error)
+        }
+        
+        print("All Party Members")
+        for current in result {
+            listPartyMember(current as! NSManagedObject)
+        }
+    }
+    
     func listAllNPCs () {
         var results = [AnyObject]()
         let fetchRequest = NSFetchRequest()
@@ -233,20 +315,21 @@ class Game {
         // use the entity description for new request
         fetchRequest.entity = entityDescriptionRequest
         
+        // sort the fetch by level
+        let sortByLevel = NSSortDescriptor(key: "level", ascending: true)
+        let sortByName = NSSortDescriptor(key: "name", ascending: true)
+        fetchRequest.sortDescriptors = [sortByLevel, sortByName]
+        
         // execute the request
         do {
             results = try coreDataStack.managedObjectContext.executeFetchRequest(fetchRequest)
         } catch {
             print(error)
         }
-        print(">>> All NPCs")
+        print("All NPCs")
         // process the results
         for current in results {
-            print("-----------------")
-            print(">>> NPC name: \(current.valueForKey("name")!)")
-            print(">>> level: \(current.valueForKey("level")!)")
-            print(">>> bio: \(current.valueForKey("bio")!)")
-            print(">>> modifiers count: \(current.valueForKey("influencedBy")?.count)")
+            listNPC(current as! NSManagedObject)
         }
         print("-----------------")
     }
@@ -263,15 +346,9 @@ class Game {
             print(error)
         }
         
-        print(">>> All modifiers")
+        print("All modifiers")
         for current in results {
-            print("-----------------")
-            if current is NSManagedObject {
-                let modifier = current as! NSManagedObject
-                print(">>> name: \(modifier.valueForKey("name")!)")
-                print(">>> multiplier: \(modifier.valueForKey("multiplier")!)")
-                print(">>> duration: \(modifier.valueForKey("duration")!)")
-            }
+            listModifier(current as! NSManagedObject)
         }
         print("-----------------")
     }
@@ -306,5 +383,33 @@ class Game {
         }
         print("total: \(results.count)")
         print("------------------------------------------------------------")
+    }
+    
+    func listNPC (npc: NSManagedObject) {
+        print(">>> ---------- NPC ----------")
+        print(">>> NPC name: \(npc.valueForKey("name")!)")
+        print(">>> level: \(npc.valueForKey("level")!)")
+        print(">>> bio: \(npc.valueForKey("bio")!)")
+        print(">>> modifiers count: \(npc.valueForKey("influencedBy")?.count)")
+        print(">>> -------------------------")
+    }
+    
+    func listModifier (modifier: NSManagedObject) {
+        print(">>> ------- modifier --------")
+        print(">>> name: \(modifier.valueForKey("name")!)")
+        print(">>> multiplier: \(modifier.valueForKey("multiplier")!)")
+        print(">>> duration: \(modifier.valueForKey("duration")!)")
+        print(">>> -------------------------")
+    }
+    
+    func listPartyMember (partyMember: NSManagedObject) {
+        print(">>> ----- party member ------")
+        print(">>> name: \(partyMember.valueForKey("name")!)")
+
+        let representedByNpc = partyMember.valueForKey("representedByNpc") as! NSManagedObject
+        print(">>> reprsented by NPC - level: \(representedByNpc.valueForKey("level")!)")
+        print(">>> reprsented by NPC - bio: \(representedByNpc.valueForKey("bio")!)")
+        print(">>> -------------------------")
+
     }
 }

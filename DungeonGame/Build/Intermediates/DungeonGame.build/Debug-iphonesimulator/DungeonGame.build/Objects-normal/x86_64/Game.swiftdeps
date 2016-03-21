@@ -7,27 +7,30 @@ provides-member:
 - ["C11DungeonGame4Game", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "print"
+- "UIApplication"
 - !private "StringLiteralType"
+- !private ">"
+- !private "UnicodeScalarType"
+- !private "NSFetchRequest"
+- "Game"
 - !private "*"
 - !private "NSEntityDescription"
-- "Int"
-- !private ">="
-- "UIApplication"
 - !private "~="
-- !private "NSFetchRequest"
-- !private "NSManagedObject"
-- "Game"
-- "AppDelegate"
-- !private "AnyObject"
-- !private "..."
-- !private ">"
-- !private "!"
 - !private "+"
-- !private "NSPredicate"
-- !private "<"
 - !private "NSSet"
-- !private "UnicodeScalarType"
+- "NSManagedObject"
+- !private "NSPredicate"
+- !private "AnyObject"
+- !private "Array"
+- !private "BooleanLiteralType"
+- !private "!"
+- "Int"
+- "AppDelegate"
+- !private "print"
+- !private "<"
+- !private "..."
+- !private ">="
+- !private "NSSortDescriptor"
 depends-member:
 - !private ["PSs9AnyObject", "AnyObject"]
 - ["PSs9AnyObject", "Game"]
@@ -36,10 +39,11 @@ depends-member:
 - !private ["PSs9AnyObject", "NSManagedObject"]
 - !private ["PSs9AnyObject", "NSPredicate"]
 - !private ["PSs9AnyObject", "NSSet"]
+- !private ["PSs9AnyObject", "NSSortDescriptor"]
 - ["PSs9AnyObject", "UIApplication"]
-- !private ["PSs9AnyObject", "addDummyComplex"]
 - !private ["PSs9AnyObject", "addDummyModifiers"]
 - !private ["PSs9AnyObject", "addDummyNPC"]
+- !private ["PSs9AnyObject", "addDummyParyMember"]
 - ["PSs9AnyObject", "coreDataStack"]
 - !private ["PSs9AnyObject", "count"]
 - !private ["PSs9AnyObject", "deinit"]
@@ -52,15 +56,21 @@ depends-member:
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "listAllModifiers"]
 - !private ["PSs9AnyObject", "listAllNPCs"]
+- !private ["PSs9AnyObject", "listAllPartyMembers"]
+- !private ["PSs9AnyObject", "listModifier"]
+- !private ["PSs9AnyObject", "listNPC"]
+- !private ["PSs9AnyObject", "listPartyMember"]
 - !private ["PSs9AnyObject", "managedObjectContext"]
 - !private ["PSs9AnyObject", "predicate"]
 - !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "save"]
 - !private ["PSs9AnyObject", "setValue"]
 - ["PSs9AnyObject", "sharedApplication"]
+- !private ["PSs9AnyObject", "sortDescriptors"]
 - !private ["PSs9AnyObject", "valueForKey"]
 - ["PSs9AnyObject", ""]
 - ["C11DungeonGame11AppDelegate", "coreDataStack"]
+- !private ["Sa", "Element"]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "SubSequence"]
@@ -70,6 +80,7 @@ depends-member:
 - !private ["Sa", "init"]
 - !private ["Sa", "last"]
 - !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
 - !private ["PSs23ArrayLiteralConvertible", "Generator"]
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
 - !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
@@ -106,9 +117,11 @@ depends-member:
 - !private ["PSs11CVarArgType", "save"]
 - !private ["PSs11CVarArgType", "setValue"]
 - ["PSs11CVarArgType", "sharedApplication"]
+- !private ["PSs11CVarArgType", "sortDescriptors"]
 - !private ["PSs11CVarArgType", "valueForKey"]
 - !private ["VSs9Character", "deinit"]
 - !private ["VSs14ClosedInterval", "deinit"]
+- !private ["PSs14CollectionType", "Element"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Index"]
 - !private ["PSs14CollectionType", "SubSequence"]
@@ -122,6 +135,7 @@ depends-member:
 - !private ["PSs10Comparable", "_DisabledRangeIndex"]
 - !private ["PSs10Comparable", "init"]
 - !private ["C11DungeonGame13CoreDataStack", "managedObjectContext"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
@@ -131,6 +145,7 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "last"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Element"]
 - !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
@@ -153,6 +168,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "save"]
 - !private ["PSs23CustomStringConvertible", "setValue"]
 - ["PSs23CustomStringConvertible", "sharedApplication"]
+- !private ["PSs23CustomStringConvertible", "sortDescriptors"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "valueForKey"]
 - !private ["Sd", "deinit"]
@@ -174,6 +190,7 @@ depends-member:
 - !private ["PSs9Equatable", "save"]
 - !private ["PSs9Equatable", "setValue"]
 - ["PSs9Equatable", "sharedApplication"]
+- !private ["PSs9Equatable", "sortDescriptors"]
 - !private ["PSs9Equatable", "valueForKey"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Sf", "deinit"]
@@ -186,13 +203,16 @@ depends-member:
 - ["C11DungeonGame4Game", "Int"]
 - !private ["C11DungeonGame4Game", "NSEntityDescription"]
 - !private ["C11DungeonGame4Game", "NSFetchRequest"]
-- !private ["C11DungeonGame4Game", "NSManagedObject"]
+- ["C11DungeonGame4Game", "NSManagedObject"]
 - !private ["C11DungeonGame4Game", "NSPredicate"]
 - !private ["C11DungeonGame4Game", "NSSet"]
+- !private ["C11DungeonGame4Game", "NSSortDescriptor"]
 - ["C11DungeonGame4Game", "UIApplication"]
-- ["C11DungeonGame4Game", "addDummyComplex"]
+- ["C11DungeonGame4Game", "addDummyComplexOneToMany"]
+- ["C11DungeonGame4Game", "addDummyComplexOneToOne"]
 - ["C11DungeonGame4Game", "addDummyModifiers"]
 - ["C11DungeonGame4Game", "addDummyNPC"]
+- ["C11DungeonGame4Game", "addDummyParyMember"]
 - ["C11DungeonGame4Game", "coreDataStack"]
 - ["C11DungeonGame4Game", "deinit"]
 - ["C11DungeonGame4Game", "deleteNPCOnIndex"]
@@ -200,6 +220,10 @@ depends-member:
 - ["C11DungeonGame4Game", "init"]
 - ["C11DungeonGame4Game", "listAllModifiers"]
 - ["C11DungeonGame4Game", "listAllNPCs"]
+- ["C11DungeonGame4Game", "listAllPartyMembers"]
+- ["C11DungeonGame4Game", "listModifier"]
+- ["C11DungeonGame4Game", "listNPC"]
+- ["C11DungeonGame4Game", "listPartyMember"]
 - !private ["C11DungeonGame4Game", "print"]
 - ["C11DungeonGame4Game", "sharedInstance"]
 - !private ["PSs13GeneratorType", "Element"]
@@ -220,7 +244,9 @@ depends-member:
 - !private ["PSs8Hashable", "save"]
 - !private ["PSs8Hashable", "setValue"]
 - ["PSs8Hashable", "sharedApplication"]
+- !private ["PSs8Hashable", "sortDescriptors"]
 - !private ["PSs8Hashable", "valueForKey"]
+- !private ["PSs9Indexable", "Element"]
 - !private ["PSs9Indexable", "Generator"]
 - !private ["PSs9Indexable", "Index"]
 - !private ["PSs9Indexable", "SubSequence"]
@@ -251,6 +277,7 @@ depends-member:
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
 - !private ["PSs14MirrorPathType", "_DisabledRangeIndex"]
 - !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs21MutableCollectionType", "Element"]
 - !private ["PSs21MutableCollectionType", "Generator"]
 - !private ["PSs21MutableCollectionType", "Index"]
 - !private ["PSs21MutableCollectionType", "SubSequence"]
@@ -259,6 +286,7 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "init"]
 - !private ["PSs21MutableCollectionType", "last"]
 - !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableIndexable", "Element"]
 - !private ["PSs16MutableIndexable", "Generator"]
 - !private ["PSs16MutableIndexable", "Index"]
 - !private ["PSs16MutableIndexable", "SubSequence"]
@@ -267,6 +295,7 @@ depends-member:
 - !private ["PSs16MutableIndexable", "init"]
 - !private ["PSs16MutableIndexable", "last"]
 - !private ["PSs16MutableIndexable", "subscript"]
+- !private ["PSs16MutableSliceable", "Element"]
 - !private ["PSs16MutableSliceable", "Generator"]
 - !private ["PSs16MutableSliceable", "Index"]
 - !private ["PSs16MutableSliceable", "SubSequence"]
@@ -283,17 +312,20 @@ depends-member:
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "predicate"]
 - !private ["PSo8NSCoding", "save"]
+- !private ["PSo8NSCoding", "sortDescriptors"]
 - !private ["PSo9NSCopying", "description"]
 - !private ["PSo9NSCopying", "entity"]
 - !private ["PSo9NSCopying", "entityForName"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "predicate"]
+- !private ["PSo9NSCopying", "sortDescriptors"]
 - !private ["CSo19NSEntityDescription", "entityForName"]
 - !private ["PSo17NSFastEnumeration", "entityForName"]
 - !private ["PSo17NSFastEnumeration", "init"]
 - !private ["CSo14NSFetchRequest", "entity"]
 - !private ["CSo14NSFetchRequest", "init"]
 - !private ["CSo14NSFetchRequest", "predicate"]
+- !private ["CSo14NSFetchRequest", "sortDescriptors"]
 - !private ["PSo9NSLocking", "deleteObject"]
 - !private ["PSo9NSLocking", "executeFetchRequest"]
 - !private ["PSo9NSLocking", "save"]
@@ -320,6 +352,7 @@ depends-member:
 - !private ["CSo8NSObject", "save"]
 - !private ["CSo8NSObject", "setValue"]
 - ["CSo8NSObject", "sharedApplication"]
+- !private ["CSo8NSObject", "sortDescriptors"]
 - !private ["CSo8NSObject", "valueForKey"]
 - ["PSo16NSObjectProtocol", "coreDataStack"]
 - ["PSo16NSObjectProtocol", "delegate"]
@@ -334,15 +367,18 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "save"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
 - ["PSo16NSObjectProtocol", "sharedApplication"]
+- !private ["PSo16NSObjectProtocol", "sortDescriptors"]
 - !private ["PSo16NSObjectProtocol", "valueForKey"]
 - !private ["CSo24NSPersistentStoreRequest", "entity"]
 - !private ["CSo24NSPersistentStoreRequest", "init"]
 - !private ["CSo24NSPersistentStoreRequest", "predicate"]
+- !private ["CSo24NSPersistentStoreRequest", "sortDescriptors"]
 - !private ["CSo11NSPredicate", "description"]
 - !private ["CSo11NSPredicate", "init"]
 - !private ["PSo14NSSecureCoding", "description"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo5NSSet", "init"]
+- !private ["CSo16NSSortDescriptor", "init"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo7NSValue", "deinit"]
@@ -356,6 +392,7 @@ depends-member:
 - !private ["VSs5Range", "Generator"]
 - !private ["VSs5Range", "deinit"]
 - !private ["VSs14RangeGenerator", "Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "Generator"]
 - !private ["PSs30RangeReplaceableCollectionType", "Index"]
 - !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
@@ -404,6 +441,7 @@ depends-member:
 - !private ["VSs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs10_ArrayType", "Element"]
 - !private ["PSs10_ArrayType", "Generator"]
 - !private ["PSs10_ArrayType", "Index"]
 - !private ["PSs10_ArrayType", "SubSequence"]
@@ -421,6 +459,7 @@ depends-member:
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
@@ -439,6 +478,7 @@ depends-member:
 - !private ["PSs12_IntegerType", "IntegerLiteralType"]
 - !private ["PSs12_IntegerType", "_DisabledRangeIndex"]
 - !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "Generator"]
 - !private ["PSs21_ObjectiveCBridgeable", "Index"]
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
@@ -455,6 +495,7 @@ depends-member:
 - !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["PSs22_RandomAccessAmbiguity", "_DisabledRangeIndex"]
 - !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Element"]
 - !private ["PSs12_Reflectable", "Generator"]
 - !private ["PSs12_Reflectable", "Index"]
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
@@ -529,6 +570,7 @@ depends-nominal:
 - !private "CSo11NSPredicate"
 - !private "PSo14NSSecureCoding"
 - !private "CSo5NSSet"
+- !private "CSo16NSSortDescriptor"
 - !private "CSo8NSString"
 - !private "CSo7NSValue"
 - !private "PSs21NilLiteralConvertible"
@@ -576,8 +618,8 @@ depends-nominal:
 - !private "PSs18_SignedIntegerType"
 - !private "PSs11_Strideable"
 depends-dynamic-lookup:
-- !private "valueForKey"
 - !private "managedObjectContext"
+- !private "valueForKey"
 - !private "count"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -589,4 +631,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-interface-hash: "7b9384ed249207fee0ac1344ff55ce4c"
+interface-hash: "61e1e94827c951b9d9487aa50e2e73eb"

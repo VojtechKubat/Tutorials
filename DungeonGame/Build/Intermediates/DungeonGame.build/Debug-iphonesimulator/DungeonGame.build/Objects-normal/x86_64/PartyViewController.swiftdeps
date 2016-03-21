@@ -10,17 +10,17 @@ provides-dynamic-lookup:
 - "tableView"
 - "tableView"
 depends-top-level:
-- "CGFloat"
-- !private "StringLiteralType"
-- "Int"
-- "UITableView"
-- "UITableViewCell"
-- !private "PartyMemberTCViewController"
-- "NSIndexPath"
 - "UITableViewDataSource"
-- "UITableViewDelegate"
+- !private "StringLiteralType"
 - "UIViewController"
+- "NSIndexPath"
+- "UITableViewDelegate"
 - "PartyViewController"
+- "Int"
+- !private "PartyMemberTCViewController"
+- "UITableViewCell"
+- "UITableView"
+- "CGFloat"
 depends-member:
 - !private ["PSs9AnyObject", "PartyMemberTCViewController"]
 - !private ["PSs9AnyObject", "crewNameLabel"]

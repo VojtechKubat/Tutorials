@@ -1,0 +1,179 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NewItemViewController"
+provides-nominal:
+- "C11FRCTutorial21NewItemViewController"
+provides-member:
+- ["C11FRCTutorial21NewItemViewController", ""]
+provides-dynamic-lookup:
+- "textField"
+- "add"
+- "cancel"
+- "labelMain"
+depends-top-level:
+- "AnyObject"
+- "UITextField"
+- !private "BooleanLiteralType"
+- "NewItemViewController"
+- "UIViewController"
+- "UILabel"
+depends-member:
+- ["PSs9AnyObject", "add"]
+- ["PSs9AnyObject", "cancel"]
+- !private ["PSs9AnyObject", "dismissViewControllerAnimated"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "labelMain"]
+- ["PSs9AnyObject", "textField"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "add"]
+- ["PSs11CVarArgType", "cancel"]
+- !private ["PSs11CVarArgType", "dismissViewControllerAnimated"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "labelMain"]
+- ["PSs11CVarArgType", "textField"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "add"]
+- ["PSs23CustomStringConvertible", "cancel"]
+- !private ["PSs23CustomStringConvertible", "dismissViewControllerAnimated"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "labelMain"]
+- ["PSs23CustomStringConvertible", "textField"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "add"]
+- ["PSs9Equatable", "cancel"]
+- !private ["PSs9Equatable", "dismissViewControllerAnimated"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "labelMain"]
+- ["PSs9Equatable", "textField"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "add"]
+- ["PSs8Hashable", "cancel"]
+- !private ["PSs8Hashable", "dismissViewControllerAnimated"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "labelMain"]
+- ["PSs8Hashable", "textField"]
+- ["PSs8Hashable", ""]
+- ["PSo8NSCoding", "add"]
+- ["PSo8NSCoding", "cancel"]
+- !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "labelMain"]
+- ["PSo8NSCoding", "textField"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "add"]
+- ["PSo26NSExtensionRequestHandling", "cancel"]
+- !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "labelMain"]
+- ["PSo26NSExtensionRequestHandling", "textField"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "add"]
+- ["CSo8NSObject", "cancel"]
+- !private ["CSo8NSObject", "dismissViewControllerAnimated"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "labelMain"]
+- ["CSo8NSObject", "textField"]
+- ["PSo16NSObjectProtocol", "add"]
+- ["PSo16NSObjectProtocol", "cancel"]
+- !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "labelMain"]
+- ["PSo16NSObjectProtocol", "textField"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C11FRCTutorial21NewItemViewController", "AnyObject"]
+- ["C11FRCTutorial21NewItemViewController", "UILabel"]
+- ["C11FRCTutorial21NewItemViewController", "UITextField"]
+- ["C11FRCTutorial21NewItemViewController", "add"]
+- ["C11FRCTutorial21NewItemViewController", "cancel"]
+- ["C11FRCTutorial21NewItemViewController", "deinit"]
+- !private ["C11FRCTutorial21NewItemViewController", "dismissViewControllerAnimated"]
+- ["C11FRCTutorial21NewItemViewController", "init"]
+- ["C11FRCTutorial21NewItemViewController", "labelMain"]
+- ["C11FRCTutorial21NewItemViewController", "textField"]
+- ["PSo21UIAppearanceContainer", "add"]
+- ["PSo21UIAppearanceContainer", "cancel"]
+- !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "labelMain"]
+- ["PSo21UIAppearanceContainer", "textField"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "add"]
+- ["PSo18UIContentContainer", "cancel"]
+- !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "labelMain"]
+- ["PSo18UIContentContainer", "textField"]
+- ["PSo18UIContentContainer", ""]
+- ["PSo18UIFocusEnvironment", "add"]
+- ["PSo18UIFocusEnvironment", "cancel"]
+- !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "labelMain"]
+- ["PSo18UIFocusEnvironment", "textField"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "add"]
+- ["CSo11UIResponder", "cancel"]
+- !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "labelMain"]
+- ["CSo11UIResponder", "textField"]
+- ["PSo16UIStateRestoring", "add"]
+- ["PSo16UIStateRestoring", "cancel"]
+- !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "labelMain"]
+- ["PSo16UIStateRestoring", "textField"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "add"]
+- ["PSo18UITraitEnvironment", "cancel"]
+- !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "labelMain"]
+- ["PSo18UITraitEnvironment", "textField"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "add"]
+- ["CSo16UIViewController", "cancel"]
+- !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "labelMain"]
+- ["CSo16UIViewController", "textField"]
+- ["CSo16UIViewController", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C11FRCTutorial21NewItemViewController"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "8528dbe59916837a9067c819d8b9b751"

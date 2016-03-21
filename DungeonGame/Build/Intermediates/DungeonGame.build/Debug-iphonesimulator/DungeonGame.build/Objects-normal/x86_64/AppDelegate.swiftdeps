@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C11DungeonGame11AppDelegate", ""]
 provides-dynamic-lookup:
+- "applicationDidBecomeActive"
+- "applicationWillResignActive"
 - "applicationDidEnterBackground"
 - "window"
-- "applicationWillTerminate"
-- "applicationWillResignActive"
-- "applicationDidBecomeActive"
-- "application"
 - "applicationWillEnterForeground"
+- "applicationWillTerminate"
+- "application"
 depends-top-level:
-- "UIApplicationDelegate"
-- "UIResponder"
 - "AppDelegate"
-- !private "BooleanLiteralType"
-- "UIWindow"
-- "UIApplication"
 - "AnyObject"
-- "Bool"
-- "CoreDataStack"
-- !private "Game"
+- "UIWindow"
+- !private "BooleanLiteralType"
+- "UIResponder"
+- "UIApplicationDelegate"
 - "NSObject"
+- "CoreDataStack"
+- "UIApplication"
+- "Bool"
+- !private "Game"
 depends-member:
 - ["PSs9AnyObject", "CoreDataStack"]
 - !private ["PSs9AnyObject", "Game"]
