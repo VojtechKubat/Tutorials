@@ -1,0 +1,10 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "a6e88ac0be049712a648d51abedfaf77"
+build_time: [511967130, 764572000]
+inputs:
+  "/Users/kubat/Documents/Tutorials/MagicalRecordTut/MagicalRecordTut/ViewControllers/NoteDetailViewController.swift": [9223372036854775807, 0]
+  "/Users/kubat/Documents/Tutorials/MagicalRecordTut/MagicalRecordTut/ViewControllers/NoteTableViewCell.swift": [511966803, 0]
+  "/Users/kubat/Documents/Tutorials/MagicalRecordTut/MagicalRecordTut/AppDelegate.swift": [511965570, 0]
+  "/Users/kubat/Documents/Tutorials/MagicalRecordTut/MagicalRecordTut/ViewControllers/ViewController.swift": [511966204, 0]
+  "/Users/kubat/Documents/Tutorials/MagicalRecordTut/MagicalRecordTut/DataModel/Note+CoreDataProperties.swift": [511965461, 0]
+  "/Users/kubat/Documents/Tutorials/MagicalRecordTut/MagicalRecordTut/DataModel/Note.swift": [511965461, 0]

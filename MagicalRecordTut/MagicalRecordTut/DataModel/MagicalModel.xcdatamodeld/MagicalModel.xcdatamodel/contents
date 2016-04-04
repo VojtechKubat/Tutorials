@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="Note" representedClassName=".Note" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="taggedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="assignedToNotes" inverseEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="Tag" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="assignedToNotes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="taggedBy" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Note" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Tag" positionX="225" positionY="9" width="128" height="75"/>
+    </elements>
+</model>

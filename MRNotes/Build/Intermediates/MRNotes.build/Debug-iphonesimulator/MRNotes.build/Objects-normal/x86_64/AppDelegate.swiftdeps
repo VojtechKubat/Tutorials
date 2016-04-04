@@ -6,25 +6,24 @@ provides-nominal:
 provides-member:
 - ["C7MRNotes11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillResignActive"
 - "applicationDidEnterBackground"
-- "applicationWillEnterForeground"
-- "applicationDidBecomeActive"
-- "application"
-- "applicationWillTerminate"
 - "window"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
+- "applicationDidBecomeActive"
+- "applicationWillEnterForeground"
+- "application"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "UIResponder"
-- !private "storeName"
-- "NSObject"
 - "UIWindow"
-- "UIApplication"
 - "AnyObject"
 - !private "MagicalRecord"
-- "AppDelegate"
+- "NSObject"
 - "UIApplicationDelegate"
 - "Bool"
+- "UIResponder"
+- !private "BooleanLiteralType"
+- "AppDelegate"
+- "UIApplication"
 depends-member:
 - !private ["PSs9AnyObject", "MagicalRecord"]
 - ["PSs9AnyObject", "application"]
@@ -40,7 +39,7 @@ depends-member:
 - ["PSs9AnyObject", "applicationWillResignActive"]
 - ["PSs9AnyObject", "applicationWillTerminate"]
 - ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "storeName"]
+- !private ["PSs9AnyObject", "setupCoreDataStack"]
 - ["PSs9AnyObject", "window"]
 - ["PSs9AnyObject", ""]
 - ["C7MRNotes11AppDelegate", "AnyObject"]
@@ -63,7 +62,6 @@ depends-member:
 - ["C7MRNotes11AppDelegate", "applicationWillTerminate"]
 - ["C7MRNotes11AppDelegate", "deinit"]
 - ["C7MRNotes11AppDelegate", "init"]
-- !private ["C7MRNotes11AppDelegate", "storeName"]
 - ["C7MRNotes11AppDelegate", "window"]
 - !private ["PSs11CVarArgType", "MagicalRecord"]
 - ["PSs11CVarArgType", "application"]
@@ -79,7 +77,7 @@ depends-member:
 - ["PSs11CVarArgType", "applicationWillResignActive"]
 - ["PSs11CVarArgType", "applicationWillTerminate"]
 - ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "storeName"]
+- !private ["PSs11CVarArgType", "setupCoreDataStack"]
 - ["PSs11CVarArgType", "window"]
 - ["PSs11CVarArgType", ""]
 - !private ["PSs23CustomStringConvertible", "MagicalRecord"]
@@ -96,7 +94,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "applicationWillResignActive"]
 - ["PSs23CustomStringConvertible", "applicationWillTerminate"]
 - ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "storeName"]
+- !private ["PSs23CustomStringConvertible", "setupCoreDataStack"]
 - ["PSs23CustomStringConvertible", "window"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["PSs9Equatable", "MagicalRecord"]
@@ -113,7 +111,7 @@ depends-member:
 - ["PSs9Equatable", "applicationWillResignActive"]
 - ["PSs9Equatable", "applicationWillTerminate"]
 - ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "storeName"]
+- !private ["PSs9Equatable", "setupCoreDataStack"]
 - ["PSs9Equatable", "window"]
 - ["PSs9Equatable", ""]
 - !private ["PSs8Hashable", "MagicalRecord"]
@@ -130,9 +128,10 @@ depends-member:
 - ["PSs8Hashable", "applicationWillResignActive"]
 - ["PSs8Hashable", "applicationWillTerminate"]
 - ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "storeName"]
+- !private ["PSs8Hashable", "setupCoreDataStack"]
 - ["PSs8Hashable", "window"]
 - ["PSs8Hashable", ""]
+- !private ["CSo13MagicalRecord", "setupCoreDataStack"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "MagicalRecord"]
@@ -152,7 +151,7 @@ depends-member:
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "storeName"]
+- !private ["CSo8NSObject", "setupCoreDataStack"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "MagicalRecord"]
 - ["PSo16NSObjectProtocol", "application"]
@@ -168,7 +167,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "storeName"]
+- !private ["PSo16NSObjectProtocol", "setupCoreDataStack"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo21UIApplicationDelegate", "MagicalRecord"]
@@ -184,7 +183,6 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
-- !private ["PSo21UIApplicationDelegate", "storeName"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "AnyObject"]
@@ -206,7 +204,6 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - ["CSo11UIResponder", "init"]
-- !private ["CSo11UIResponder", "storeName"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
 depends-nominal:
@@ -216,6 +213,7 @@ depends-nominal:
 - "PSs23CustomStringConvertible"
 - "PSs9Equatable"
 - "PSs8Hashable"
+- !private "CSo13MagicalRecord"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "PSo21UIApplicationDelegate"
@@ -263,35 +261,4 @@ depends-external:
 - "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSAttributeDescription+MagicalDataImport.h"
 - "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSRelationshipDescription+MagicalDataImport.h"
 - "/Users/kubat/Documents/Tutorials/MRNotes/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSEntityDescription+MagicalDataImport.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSEntityDescription+MagicalDataImport.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSRelationshipDescription+MagicalDataImport.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSAttributeDescription+MagicalDataImport.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSString+MagicalDataImport.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSObject+MagicalDataImport.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSNumber+MagicalDataImport.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObject+MagicalDataImport.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalImportFunctions.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSPersistentStore+MagicalRecord.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObjectModel+MagicalRecord.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSPersistentStoreCoordinator+MagicalRecord.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalThreading.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalObserving.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalChainSave.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalRecord.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObject+MagicalAggregation.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObject+MagicalFinders.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObject+MagicalRequests.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObject+MagicalRecord.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecord+iCloud.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecord+Setup.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecord+ErrorHandling.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalSaves.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecordDeprecationMacros.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecord+Actions.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecord+Options.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecordLogging.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecordInternal.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecordXcode7CompatibilityMacros.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Headers/MagicalRecord.h"
-- "/Users/kubat/Documents/Tutorials/MRNotes/Build/Products/Debug-iphonesimulator/MagicalRecord.framework/Modules/module.modulemap"
 interface-hash: "eb6deb7e97b205db2b1f8c4c6c87743c"

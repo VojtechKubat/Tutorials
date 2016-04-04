@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["C11FRCTutorial21NewItemViewController", ""]
 provides-dynamic-lookup:
+- "cancel"
 - "textField"
 - "add"
-- "cancel"
 - "labelMain"
 depends-top-level:
 - "AnyObject"
-- "UITextField"
-- !private "BooleanLiteralType"
-- "NewItemViewController"
-- "UIViewController"
 - "UILabel"
+- "UIViewController"
+- !private "BooleanLiteralType"
+- "UITextField"
+- "NewItemViewController"
 depends-member:
 - ["PSs9AnyObject", "add"]
 - ["PSs9AnyObject", "cancel"]

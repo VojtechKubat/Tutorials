@@ -1,0 +1,123 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["C16MagicalRecordTut4Note", ""]
+- ["C16MagicalRecordTut4Note", "date"]
+- ["C16MagicalRecordTut4Note", "title"]
+- ["C16MagicalRecordTut4Note", "body"]
+- ["C16MagicalRecordTut4Note", "taggedBy"]
+provides-dynamic-lookup:
+- "taggedBy"
+- "date"
+- "title"
+- "body"
+depends-top-level:
+- "Note"
+- "NSSet"
+- "String"
+- "NSDate"
+depends-member:
+- ["PSs9AnyObject", "body"]
+- ["PSs9AnyObject", "date"]
+- ["PSs9AnyObject", "taggedBy"]
+- ["PSs9AnyObject", "title"]
+- ["PSs11CVarArgType", "body"]
+- ["PSs11CVarArgType", "date"]
+- ["PSs11CVarArgType", "taggedBy"]
+- ["PSs11CVarArgType", "title"]
+- ["PSs23CustomStringConvertible", "body"]
+- ["PSs23CustomStringConvertible", "date"]
+- ["PSs23CustomStringConvertible", "taggedBy"]
+- ["PSs23CustomStringConvertible", "title"]
+- ["PSs9Equatable", "body"]
+- ["PSs9Equatable", "date"]
+- ["PSs9Equatable", "taggedBy"]
+- ["PSs9Equatable", "title"]
+- ["PSs8Hashable", "body"]
+- ["PSs8Hashable", "date"]
+- ["PSs8Hashable", "taggedBy"]
+- ["PSs8Hashable", "title"]
+- ["PSo31MagicalRecordDataImportProtocol", "body"]
+- ["PSo31MagicalRecordDataImportProtocol", "date"]
+- ["PSo31MagicalRecordDataImportProtocol", "taggedBy"]
+- ["PSo31MagicalRecordDataImportProtocol", "title"]
+- ["CSo15NSManagedObject", "NSDate"]
+- ["CSo15NSManagedObject", "NSSet"]
+- ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "body"]
+- ["CSo15NSManagedObject", "date"]
+- ["CSo15NSManagedObject", "taggedBy"]
+- ["CSo15NSManagedObject", "title"]
+- ["CSo8NSObject", "NSDate"]
+- ["CSo8NSObject", "NSSet"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "body"]
+- ["CSo8NSObject", "date"]
+- ["CSo8NSObject", "taggedBy"]
+- ["CSo8NSObject", "title"]
+- ["PSo16NSObjectProtocol", "body"]
+- ["PSo16NSObjectProtocol", "date"]
+- ["PSo16NSObjectProtocol", "taggedBy"]
+- ["PSo16NSObjectProtocol", "title"]
+- ["C16MagicalRecordTut4Note", "NSDate"]
+- ["C16MagicalRecordTut4Note", "NSSet"]
+- ["C16MagicalRecordTut4Note", "String"]
+- ["C16MagicalRecordTut4Note", "body"]
+- ["C16MagicalRecordTut4Note", "date"]
+- ["C16MagicalRecordTut4Note", "taggedBy"]
+- ["C16MagicalRecordTut4Note", "title"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo31MagicalRecordDataImportProtocol"
+- "CSo15NSManagedObject"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C16MagicalRecordTut4Note"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/MagicalRecordTut/MagicalRecordTut-Bridging-Header.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecord.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecordXcode7CompatibilityMacros.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecordInternal.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecordLogging.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecord+Options.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecord+Actions.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecordDeprecationMacros.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObjectContext+MagicalSaves.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecord+ErrorHandling.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecord+Setup.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalRecord+iCloud.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObject+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObject+MagicalRequests.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObject+MagicalFinders.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObject+MagicalAggregation.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObjectContext+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObjectContext+MagicalChainSave.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObjectContext+MagicalObserving.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObjectContext+MagicalThreading.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSPersistentStoreCoordinator+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObjectModel+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSPersistentStore+MagicalRecord.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/MagicalImportFunctions.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSManagedObject+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSNumber+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSObject+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSString+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSAttributeDescription+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSRelationshipDescription+MagicalDataImport.h"
+- "/Users/kubat/Documents/Tutorials/MagicalRecordTut/Pods/Headers/Public/MagicalRecord/MagicalRecord/NSEntityDescription+MagicalDataImport.h"
+interface-hash: "117dda332a0c1cd30a47f5bbe26eef8b"

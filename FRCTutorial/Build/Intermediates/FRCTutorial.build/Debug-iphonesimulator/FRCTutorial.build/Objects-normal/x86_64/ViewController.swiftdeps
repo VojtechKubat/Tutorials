@@ -8,23 +8,24 @@ provides-member:
 provides-dynamic-lookup:
 - "viewDidLoad"
 - "ReuseIdentifierToDoCell"
-- "tableView"
-- "tableView"
-- "tableView"
-- "numberOfSectionsInTableView"
 - "didReceiveMemoryWarning"
+- "tableView"
+- "tableView"
+- "tableView"
 - "managedObjectContext"
+- "numberOfSectionsInTableView"
 depends-top-level:
 - "Int"
+- "UITableViewCell"
 - !private "TodoCell"
+- "NSIndexPath"
 - "ViewController"
 - "UITableView"
-- "NSIndexPath"
+- "StringLiteralType"
 - "UITableViewDelegate"
 - "UITableViewDataSource"
-- "UITableViewCell"
 - "NSManagedObjectContext"
-- "StringLiteralType"
+- !private "print"
 - "UIViewController"
 depends-member:
 - ["PSs9AnyObject", "ReuseIdentifierToDoCell"]
@@ -34,6 +35,7 @@ depends-member:
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", "managedObjectContext"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
+- !private ["PSs9AnyObject", "print"]
 - ["PSs9AnyObject", "scrollViewDidEndDecelerating"]
 - ["PSs9AnyObject", "scrollViewDidEndDragging"]
 - ["PSs9AnyObject", "scrollViewDidEndScrollingAnimation"]
@@ -58,6 +60,7 @@ depends-member:
 - ["PSs11CVarArgType", "init"]
 - ["PSs11CVarArgType", "managedObjectContext"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
+- !private ["PSs11CVarArgType", "print"]
 - ["PSs11CVarArgType", "scrollViewDidEndDecelerating"]
 - ["PSs11CVarArgType", "scrollViewDidEndDragging"]
 - ["PSs11CVarArgType", "scrollViewDidEndScrollingAnimation"]
@@ -82,6 +85,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "init"]
 - ["PSs23CustomStringConvertible", "managedObjectContext"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["PSs23CustomStringConvertible", "print"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDragging"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndScrollingAnimation"]
@@ -106,6 +110,7 @@ depends-member:
 - ["PSs9Equatable", "init"]
 - ["PSs9Equatable", "managedObjectContext"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
+- !private ["PSs9Equatable", "print"]
 - ["PSs9Equatable", "scrollViewDidEndDecelerating"]
 - ["PSs9Equatable", "scrollViewDidEndDragging"]
 - ["PSs9Equatable", "scrollViewDidEndScrollingAnimation"]
@@ -130,6 +135,7 @@ depends-member:
 - ["PSs8Hashable", "init"]
 - ["PSs8Hashable", "managedObjectContext"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
+- !private ["PSs8Hashable", "print"]
 - ["PSs8Hashable", "scrollViewDidEndDecelerating"]
 - ["PSs8Hashable", "scrollViewDidEndDragging"]
 - ["PSs8Hashable", "scrollViewDidEndScrollingAnimation"]
@@ -154,6 +160,7 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "managedObjectContext"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
 - ["PSo8NSCoding", "scrollViewDidEndScrollingAnimation"]
@@ -177,6 +184,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "managedObjectContext"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndScrollingAnimation"]
@@ -207,6 +215,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "managedObjectContext"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
 - ["CSo8NSObject", "scrollViewDidEndScrollingAnimation"]
@@ -230,6 +239,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "managedObjectContext"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndScrollingAnimation"]
@@ -257,6 +267,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "managedObjectContext"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
@@ -280,6 +291,7 @@ depends-member:
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "managedObjectContext"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
 - ["PSo18UIContentContainer", "scrollViewDidEndScrollingAnimation"]
@@ -306,6 +318,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "managedObjectContext"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -336,6 +349,7 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "managedObjectContext"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
 - ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
@@ -355,7 +369,9 @@ depends-member:
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo20UIScrollViewDelegate", "ReuseIdentifierToDoCell"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "managedObjectContext"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -378,6 +394,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "managedObjectContext"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndScrollingAnimation"]
@@ -398,7 +415,9 @@ depends-member:
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo21UITableViewDataSource", "ReuseIdentifierToDoCell"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo21UITableViewDataSource", "managedObjectContext"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
+- !private ["PSo21UITableViewDataSource", "print"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDragging"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndScrollingAnimation"]
@@ -417,7 +436,9 @@ depends-member:
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "ReuseIdentifierToDoCell"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo19UITableViewDelegate", "managedObjectContext"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo19UITableViewDelegate", "print"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -441,6 +462,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "managedObjectContext"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -471,6 +493,7 @@ depends-member:
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "managedObjectContext"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
 - ["CSo16UIViewController", "scrollViewDidEndScrollingAnimation"]
@@ -501,6 +524,7 @@ depends-member:
 - ["C11FRCTutorial14ViewController", "init"]
 - ["C11FRCTutorial14ViewController", "managedObjectContext"]
 - ["C11FRCTutorial14ViewController", "numberOfSectionsInTableView"]
+- !private ["C11FRCTutorial14ViewController", "print"]
 - ["C11FRCTutorial14ViewController", "scrollViewDidEndDecelerating"]
 - ["C11FRCTutorial14ViewController", "scrollViewDidEndDragging"]
 - ["C11FRCTutorial14ViewController", "scrollViewDidEndScrollingAnimation"]

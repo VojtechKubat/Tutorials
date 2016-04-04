@@ -7,8 +7,8 @@ provides-member:
 - ["C11FRCTutorial8TodoCell", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UITableViewCell"
 - "TodoCell"
+- "UITableViewCell"
 depends-member:
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", ""]

@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         MagicalRecord.setupCoreDataStack()
 //        MagicalRecord.setupCoreDataStackWithStoreNamed(storeName)
         
+
+        
         return true
     }
 
