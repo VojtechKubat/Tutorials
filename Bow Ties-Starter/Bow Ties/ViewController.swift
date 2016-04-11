@@ -12,6 +12,7 @@ import CoreData
 class ViewController: UIViewController {
     
     var managedContext: NSManagedObjectContext!
+    var currentBowtie: Bowtie!
   
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var imageView: UIImageView!
@@ -33,13 +34,21 @@ class ViewController: UIViewController {
         guard segmentedControl != nil else {return}
         let request = NSFetchRequest(entityName: "Bowtie")
         
-        let title = segmentedControl.titleForSegmentAtIndex(segmentedControl.selectedSegmentIndex)
-        request.predicate = NSPredicate(format: "searchKey == \"\(title!)\"")
+        // use predicate to get the right Bowtie object
+        let index = segmentedControl.titleForSegmentAtIndex(segmentedControl.selectedSegmentIndex)
+        request.predicate = NSPredicate(format: "searchKey == \"\(index!)\"")
         
         do {
             let results : [AnyObject] = try managedContext.executeFetchRequest(request)
-            
+            // resutlt contains [AnyOjbect] array, so in case, there are more than one results, only the last one will be used (this should not happen)
+            if (results.count > 1) {
+                print(">>> WARNING >>> there are multiple results for predicate, something doesn't went as expected.\n" +
+                    ">>> there are \(results.count) results, but only one was expected")
+            }
             (results.last as! Bowtie).printInfo()
+            currentBowtie = results.last as! Bowtie
+            populate()
+//            populate(results.last as! Bowtie)
         } catch let error as NSError {
             print(error)
         }
@@ -50,7 +59,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func wear(sender: AnyObject) {
-
+        let times = currentBowtie.timesWorn!.integerValue
+        currentBowtie.timesWorn = NSNumber(integer: times + 1)
+        currentBowtie.lastWorn = NSDate()
+        
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+        
+        populate()
     }
 
     @IBAction func rate(sender: AnyObject) {
@@ -65,8 +84,7 @@ class ViewController: UIViewController {
         
         // defer block will be executed after the function execution is done (return is called)
         defer {
-            count = managedContext.countForFetchRequest(fetchRequest, error: nil)
-            print("Count of bow ties: \(count)")
+            print("There are already some bowties in the database. Count of bow ties: \(count)")
         }
         
         guard count == 0 else {return}
@@ -116,8 +134,22 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    func populate(bt: Bowtie) {
+    func populate() {
+        guard currentBowtie != nil else {return}
         
+        imageView.image = UIImage(data: currentBowtie.photoData!)
+        nameLabel.text = currentBowtie.name
+        ratingLabel.text = "Rating: \(currentBowtie.rating!.doubleValue)/5"
+        timesWornLabel.text = "# times worn: \(currentBowtie.timesWorn!.integerValue))"
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .ShortStyle
+        dateFormatter.timeZone = .None
+        
+        lastWornLabel.text = "Last worn: \(dateFormatter.stringFromDate(currentBowtie.lastWorn!)))"
+        
+        favoriteLabel.hidden = !currentBowtie.isFavorite!.boolValue
+        
+        view.tintColor = currentBowtie.tintColor as! UIColor
     }
 }

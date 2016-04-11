@@ -16,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    // get the root controller ...
     let viewController = window!.rootViewController as! ViewController
+    // ... and set the right managed context - in case there are multiple managed contexts, the view controller will use the right one
     viewController.managedContext = managedObjectContext
     
 //    let bowtie = NSEntityDescription.insertNewObjectForEntityForName("Bowtie", inManagedObjectContext: managedObjectContext) as! Bowtie
@@ -49,12 +51,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   lazy var applicationDocumentsDirectory: NSURL = {
     // The directory the application uses to store the Core Data store file. This code uses a directory named "com.razeware.Bow_Ties" in the application's documents Application Support directory.
     let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+    print(">>> Application documents directory: \(urls.description)")
     return urls[urls.count-1]
     }()
   
   lazy var managedObjectModel: NSManagedObjectModel = {
     // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
     let modelURL = NSBundle.mainBundle().URLForResource("Bow_Ties", withExtension: "momd")!
+    print(">>> Model url: \(modelURL.description)")
     return NSManagedObjectModel(contentsOfURL: modelURL)!
     }()
   
