@@ -153,6 +153,7 @@ SWIFT_CLASS("_TtC8Bow_Ties6Bowtie")
 SWIFT_CLASS("_TtC8Bow_Ties14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, strong) NSManagedObjectContext * _Null_unspecified managedContext;
+@property (nonatomic, strong) Bowtie * _Null_unspecified currentBowtie;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentedControl;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
@@ -166,7 +167,8 @@ SWIFT_CLASS("_TtC8Bow_Ties14ViewController")
 - (IBAction)wear:(id _Nonnull)sender;
 - (IBAction)rate:(id _Nonnull)sender;
 - (void)insertSampleData;
-- (void)populate:(Bowtie * _Nonnull)bt;
+- (void)populate;
+- (void)updateRating:(NSString * _Nullable)numericString;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

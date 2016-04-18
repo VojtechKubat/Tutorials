@@ -9,18 +9,18 @@ provides-dynamic-lookup:
 - "printInfo"
 - "colorFromDict"
 depends-top-level:
-- "NSManagedObject"
-- !private "print"
 - !private "/"
-- !private "CGFloat"
-- !private "&&"
-- "Bowtie"
+- "NSManagedObject"
+- !private ">="
 - "UIColor"
-- !private "<="
+- !private "&&"
 - !private "StringLiteralType"
 - !private "NSNumber"
+- !private "print"
+- !private "CGFloat"
+- "Bowtie"
 - "NSDictionary"
-- !private ">="
+- !private "<="
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]

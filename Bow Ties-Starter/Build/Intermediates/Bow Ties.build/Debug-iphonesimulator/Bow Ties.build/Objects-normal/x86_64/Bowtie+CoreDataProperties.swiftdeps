@@ -12,21 +12,21 @@ provides-member:
 - ["C8Bow_Ties6Bowtie", "photoData"]
 - ["C8Bow_Ties6Bowtie", "tintColor"]
 provides-dynamic-lookup:
-- "photoData"
-- "rating"
-- "searchKey"
-- "timesWorn"
-- "tintColor"
-- "lastWorn"
 - "name"
+- "timesWorn"
+- "searchKey"
+- "lastWorn"
+- "tintColor"
+- "rating"
 - "isFavorite"
+- "photoData"
 depends-top-level:
-- "String"
-- "NSDate"
 - "NSData"
-- "NSNumber"
 - "Bowtie"
+- "NSDate"
+- "String"
 - "NSObject"
+- "NSNumber"
 depends-member:
 - ["Ps9AnyObject", "isFavorite"]
 - ["Ps9AnyObject", "lastWorn"]

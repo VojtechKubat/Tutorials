@@ -73,7 +73,37 @@ class ViewController: UIViewController {
     }
 
     @IBAction func rate(sender: AnyObject) {
-
+        let alert = UIAlertController(title: "New ratinf",
+                                      message: "Rate this bow tie",
+                                      preferredStyle: .Alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: .Cancel,
+                                         handler: {(action: UIAlertAction) in
+                                            
+        })
+        
+        let saveAction = UIAlertAction(title: "Save",
+                                       style: .Default,
+                                       handler: {(action: UIAlertAction) in
+                                            let textField = alert.textFields![0] as UITextField
+                                            self.updateRating(textField.text)
+        })
+        
+        alert.addTextFieldWithConfigurationHandler({(textField: UITextField) in
+            textField.keyboardType = .NumberPad
+        })
+        
+//        alert.view.frame = UIScreen.mainScreen().bounds
+        
+        alert.addAction(cancelAction)
+        alert.addAction(saveAction)
+        
+        presentViewController(alert,
+                              animated: true,
+                              completion: nil)
+        
+        print(">>> alert subviews: \(alert.view.subviews.description)")
     }
     
     // insert sample data
@@ -151,5 +181,23 @@ class ViewController: UIViewController {
         favoriteLabel.hidden = !currentBowtie.isFavorite!.boolValue
         
         view.tintColor = currentBowtie.tintColor as! UIColor
+    }
+    
+    func updateRating(numericString: String?) {
+        if let newRating: NSString = numericString {
+            currentBowtie.rating = newRating.doubleValue
+            
+            do {
+                try managedContext.save()
+                populate()
+            } catch let error as NSError {
+                print("Could not save \(error), \(error.userInfo)")
+                if error.domain == NSCocoaErrorDomain &&
+                    (error.code == NSValidationNumberTooLargeError ||
+                        error.code == NSValidationNumberTooSmallError) {
+                    rate(currentBowtie)
+                }
+            }
+        }
     }
 }
