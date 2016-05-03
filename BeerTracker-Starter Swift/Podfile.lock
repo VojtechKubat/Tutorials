@@ -1,0 +1,13 @@
+PODS:
+  - AMRatingControl (1.3.0)
+  - MagicalRecord/Shorthand (2.2)
+
+DEPENDENCIES:
+  - AMRatingControl (~> 1.3.0)
+  - MagicalRecord/Shorthand
+
+SPEC CHECKSUMS:
+  AMRatingControl: f209fd394188ba48a818f2df091db438123db362
+  MagicalRecord: 2dc87179ae7c1f2a274442624ec65a07d4357a6f
+
+COCOAPODS: 0.38.2

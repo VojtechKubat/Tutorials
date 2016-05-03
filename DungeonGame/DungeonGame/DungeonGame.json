@@ -1,0 +1,73 @@
+{
+	"NPC" : [{
+		"id" : 0,
+		"name" : "The Great Player",
+		"bio" : "Main character of the whole game.",
+		"level" : 1
+	},{
+		"id" : 1,
+		"name" :  "John",
+		"bio" : "Something interesting about John's life.",
+		"level" : 12
+	}, {
+		"id" : 2,
+		"name" : "Ann",
+		"bio" : "Bla bla bla bla",
+		"level" : 15
+	}, {
+		"id" : 3,
+		"name" : "Lucius",
+		"bio" : "Another NPC...",
+		"level" : 14
+	}
+
+	],
+
+	"Move" : [
+	],
+
+	"Element" : [{
+		"id" : "0",
+		"name" : "fire"
+	},{
+		"id" : "1",
+		"name" : "water"
+	},{
+		"id" : "2",
+		"name" : "earth"
+	},{
+		"id" : "3",
+		"name" : "air"
+	},{
+		"id" : "4",
+		"name" : "physic"
+	},{
+		"id" : "5",
+		"name" : "special"
+	}],
+
+	"Item" : [{
+		"id" : "0",
+		"name" : "Sword",
+		"image" : "sword.png"
+	},{
+		"id" : "1",
+		"name" : "Shield",
+		"image" : "shield.png"
+	},{
+		"id" : "2",
+		"name" : "Magic Wand",
+		"image" : "magicwand.png"
+	},{
+		"id" : "3",
+		"name" : "Health Potion",
+		"image" : "healtpotion.png"
+	}],
+
+	"ItemSet" : [],
+	
+	"Modifier" : [],
+	
+	"Requirement" : []
+
+}

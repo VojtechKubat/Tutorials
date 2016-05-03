@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
     <entity name="Element" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Item" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasEffect" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Modifier" syncable="YES"/>
+        <relationship name="requires" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Requirement" syncable="YES"/>
     </entity>
     <entity name="ItemSet" syncable="YES">
         <relationship name="contains" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" syncable="YES"/>
@@ -25,37 +28,31 @@
     </entity>
     <entity name="NPC" syncable="YES">
         <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="credits" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="exps" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="level" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
         <attribute name="name" attributeType="String" defaultValueString="N/A" syncable="YES"/>
+        <attribute name="reward" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <relationship name="hasItemSet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ItemSet" syncable="YES"/>
         <relationship name="influencedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Modifier" syncable="YES"/>
         <relationship name="isType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Type" syncable="YES"/>
-        <relationship name="relatedToPartyMember" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PartyMember" inverseName="representedByNpc" inverseEntity="PartyMember" syncable="YES"/>
     </entity>
-    <entity name="PartyMember" syncable="YES">
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="inCrewOfPlayer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="hasPartyMember" inverseEntity="Player" syncable="YES"/>
-        <relationship name="representedByNpc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NPC" inverseName="relatedToPartyMember" inverseEntity="NPC" syncable="YES"/>
-    </entity>
-    <entity name="Player" syncable="YES">
-        <attribute name="credits" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    <entity name="Requirement" syncable="YES">
         <attribute name="level" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="hasPartyMember" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PartyMember" inverseName="inCrewOfPlayer" inverseEntity="PartyMember" syncable="YES"/>
+        <relationship name="needsType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Type" syncable="YES"/>
     </entity>
     <entity name="Type" syncable="YES">
         <attribute name="name" attributeType="String" minValueString="1" syncable="YES"/>
         <relationship name="hasMove" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Move" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Element" positionX="-398" positionY="441" width="128" height="60"/>
+        <element name="Element" positionX="-407" positionY="417" width="128" height="60"/>
+        <element name="Item" positionX="-677" positionY="63" width="128" height="103"/>
         <element name="ItemSet" positionX="-405" positionY="-13" width="128" height="58"/>
-        <element name="Item" positionX="-513" positionY="86" width="128" height="58"/>
-        <element name="Modifier" positionX="-549" positionY="252" width="128" height="118"/>
+        <element name="Modifier" positionX="-513" positionY="216" width="128" height="118"/>
         <element name="Move" positionX="-54" positionY="362" width="128" height="118"/>
-        <element name="NPC" positionX="-182" positionY="59" width="128" height="148"/>
-        <element name="PartyMember" positionX="9" positionY="-72" width="108" height="88"/>
-        <element name="Player" positionX="-245" positionY="-126" width="128" height="103"/>
+        <element name="NPC" positionX="-137" positionY="36" width="128" height="178"/>
         <element name="Type" positionX="-288" positionY="296" width="128" height="73"/>
+        <element name="Requirement" positionX="-488" positionY="540" width="128" height="73"/>
     </elements>
 </model>

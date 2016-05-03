@@ -6,45 +6,50 @@ provides-nominal:
 provides-member:
 - ["C11DungeonGame27PartyMemberTCViewController", ""]
 provides-dynamic-lookup:
-- "crewNameLabel"
 - "height"
+- "crewNameLabel"
 depends-top-level:
-- "UITableViewCell"
 - "PartyMemberTCViewController"
 - "CGFloat"
+- "UITableViewCell"
 - "UILabel"
 depends-member:
-- ["PSs16AbsoluteValuable", "init"]
-- ["PSs9AnyObject", "CGFloat"]
-- ["PSs9AnyObject", "crewNameLabel"]
-- ["PSs9AnyObject", "height"]
-- ["PSs9AnyObject", "init"]
-- ["PSs9AnyObject", ""]
+- ["Ps16AbsoluteValuable", "init"]
+- ["Ps9AnyObject", "CGFloat"]
+- ["Ps9AnyObject", "crewNameLabel"]
+- ["Ps9AnyObject", "height"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
 - ["V12CoreGraphics7CGFloat", "init"]
-- ["PSs11CVarArgType", "CGFloat"]
-- ["PSs11CVarArgType", "crewNameLabel"]
-- ["PSs11CVarArgType", "height"]
-- ["PSs11CVarArgType", "init"]
-- ["PSs11CVarArgType", ""]
-- ["PSs10Comparable", "init"]
-- ["PSs23CustomStringConvertible", "CGFloat"]
-- ["PSs23CustomStringConvertible", "crewNameLabel"]
-- ["PSs23CustomStringConvertible", "height"]
-- ["PSs23CustomStringConvertible", "init"]
-- ["PSs23CustomStringConvertible", ""]
-- ["PSs9Equatable", "CGFloat"]
-- ["PSs9Equatable", "crewNameLabel"]
-- ["PSs9Equatable", "height"]
-- ["PSs9Equatable", "init"]
-- ["PSs9Equatable", ""]
-- ["PSs23FloatLiteralConvertible", "init"]
-- ["PSs17FloatingPointType", "init"]
-- ["PSs8Hashable", "CGFloat"]
-- ["PSs8Hashable", "crewNameLabel"]
-- ["PSs8Hashable", "height"]
-- ["PSs8Hashable", "init"]
-- ["PSs8Hashable", ""]
-- ["PSs25IntegerLiteralConvertible", "init"]
+- ["Ps11CVarArgType", "CGFloat"]
+- ["Ps11CVarArgType", "crewNameLabel"]
+- ["Ps11CVarArgType", "height"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", ""]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "CGFloat"]
+- ["Ps28CustomDebugStringConvertible", "crewNameLabel"]
+- ["Ps28CustomDebugStringConvertible", "height"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "CGFloat"]
+- ["Ps23CustomStringConvertible", "crewNameLabel"]
+- ["Ps23CustomStringConvertible", "height"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "CGFloat"]
+- ["Ps9Equatable", "crewNameLabel"]
+- ["Ps9Equatable", "height"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", ""]
+- ["Ps23FloatLiteralConvertible", "init"]
+- ["Ps17FloatingPointType", "init"]
+- ["Ps8Hashable", "CGFloat"]
+- ["Ps8Hashable", "crewNameLabel"]
+- ["Ps8Hashable", "height"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", ""]
+- ["Ps25IntegerLiteralConvertible", "init"]
 - ["PSo8NSCoding", "CGFloat"]
 - ["PSo8NSCoding", "crewNameLabel"]
 - ["PSo8NSCoding", "height"]
@@ -66,8 +71,8 @@ depends-member:
 - ["C11DungeonGame27PartyMemberTCViewController", "deinit"]
 - ["C11DungeonGame27PartyMemberTCViewController", "height"]
 - ["C11DungeonGame27PartyMemberTCViewController", "init"]
-- ["PSs16SignedNumberType", "init"]
-- ["PSs10Strideable", "init"]
+- ["Ps16SignedNumberType", "init"]
+- ["Ps10Strideable", "init"]
 - ["PSo29UIAccessibilityIdentification", "CGFloat"]
 - ["PSo29UIAccessibilityIdentification", "crewNameLabel"]
 - ["PSo29UIAccessibilityIdentification", "height"]
@@ -124,33 +129,33 @@ depends-member:
 - ["CSo6UIView", "crewNameLabel"]
 - ["CSo6UIView", "height"]
 - ["CSo6UIView", "init"]
-- ["PSs19_CVarArgAlignedType", "init"]
-- ["PSs22_CVarArgPassedAsDouble", "init"]
-- ["PSs21_ObjectiveCBridgeable", "init"]
-- ["PSs12_Reflectable", "CGFloat"]
-- ["PSs12_Reflectable", "crewNameLabel"]
-- ["PSs12_Reflectable", "height"]
-- ["PSs12_Reflectable", "init"]
-- ["PSs12_Reflectable", ""]
-- ["PSs11_Strideable", "init"]
+- ["Ps19_CVarArgAlignedType", "init"]
+- ["Ps22_CVarArgPassedAsDouble", "init"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps12_Reflectable", "CGFloat"]
+- ["Ps12_Reflectable", "crewNameLabel"]
+- ["Ps12_Reflectable", "height"]
+- ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", ""]
 depends-nominal:
-- "PSs16AbsoluteValuable"
-- "PSs9AnyObject"
+- "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
 - "V12CoreGraphics7CGFloat"
-- "PSs11CVarArgType"
-- "PSs10Comparable"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
-- "PSs23FloatLiteralConvertible"
-- "PSs17FloatingPointType"
-- "PSs8Hashable"
-- "PSs25IntegerLiteralConvertible"
+- "Ps11CVarArgType"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps23FloatLiteralConvertible"
+- "Ps17FloatingPointType"
+- "Ps8Hashable"
+- "Ps25IntegerLiteralConvertible"
 - "PSo8NSCoding"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "C11DungeonGame27PartyMemberTCViewController"
-- "PSs16SignedNumberType"
-- "PSs10Strideable"
+- "Ps16SignedNumberType"
+- "Ps10Strideable"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -162,11 +167,10 @@ depends-nominal:
 - "CSo15UITableViewCell"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- "PSs19_CVarArgAlignedType"
-- "PSs22_CVarArgPassedAsDouble"
-- "PSs21_ObjectiveCBridgeable"
-- "PSs12_Reflectable"
-- "PSs11_Strideable"
+- "Ps19_CVarArgAlignedType"
+- "Ps22_CVarArgPassedAsDouble"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"

@@ -1,10 +1,10 @@
-version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
-options: "7775c943e786f8b05bcf684d97896def"
-build_time: [511887577, 765878000]
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "64740a8ee7b954370d80b1de7d94d18f"
+build_time: [515587206, 994864000]
 inputs:
-  "/Users/kubat/Documents/Tutorials/DungeonGame/DungeonGame/CoreDataStack.swift": [511866588, 0]
-  "/Users/kubat/Documents/Tutorials/DungeonGame/DungeonGame/ViewControllers/Cells/PartyMemberTCViewController.swift": [511539270, 0]
   "/Users/kubat/Documents/Tutorials/DungeonGame/DungeonGame/ViewControllers/PartyViewController.swift": [511539378, 0]
-  "/Users/kubat/Documents/Tutorials/DungeonGame/DungeonGame/ViewControllers/MainViewController.swift": [511538683, 0]
   "/Users/kubat/Documents/Tutorials/DungeonGame/DungeonGame/Model/Game.swift": [511887548, 0]
+  "/Users/kubat/Documents/Tutorials/DungeonGame/DungeonGame/ViewControllers/Cells/PartyMemberTCViewController.swift": [511539270, 0]
+  "/Users/kubat/Documents/Tutorials/DungeonGame/DungeonGame/CoreDataStack.swift": [511866588, 0]
+  "/Users/kubat/Documents/Tutorials/DungeonGame/DungeonGame/ViewControllers/MainViewController.swift": [511538683, 0]
   "/Users/kubat/Documents/Tutorials/DungeonGame/DungeonGame/AppDelegate.swift": [511625042, 0]
