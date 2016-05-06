@@ -1,0 +1,7 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "4f2ece9ac3d19332a8140bbeeec0f972"
+build_time: [515675369, 995424000]
+inputs:
+  "/Users/kubat/Documents/Tutorials/StormViewer/StormViewer/DetailViewController.swift": [515673924, 0]
+  "/Users/kubat/Documents/Tutorials/StormViewer/StormViewer/MasterViewController.swift": [515675369, 0]
+  "/Users/kubat/Documents/Tutorials/StormViewer/StormViewer/AppDelegate.swift": [515673924, 0]

@@ -1,0 +1,8 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "b20c898e67da62943d1168b6a5243764"
+build_time: [515859884, 875309000]
+inputs:
+  "/Users/kubat/Documents/Tutorials/AdvanceNote/AdvanceNote/DetailViewController.swift": [515859580, 0]
+  "/Users/kubat/Documents/Tutorials/AdvanceNote/AdvanceNote/AppDelegate.swift": [515855426, 0]
+  "/Users/kubat/Documents/Tutorials/AdvanceNote/AdvanceNote/MasterViewController.swift": [515859884, 0]
+  "/Users/kubat/Documents/Tutorials/AdvanceNote/AdvanceNote/MainTableViewCell.swift": [515859732, 0]
