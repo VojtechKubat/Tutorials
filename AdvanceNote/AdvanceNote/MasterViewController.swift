@@ -38,7 +38,7 @@ class MasterViewController: UITableViewController {
             
             
             
-            (segue.destinationViewController as! DetailViewController).headline = (sender as! MainTableViewCell).headlineLabel.text!
+            print("Bar items: \((segue.destinationViewController as! DetailNavController).navigationBar.items)")
         }
     }
 }

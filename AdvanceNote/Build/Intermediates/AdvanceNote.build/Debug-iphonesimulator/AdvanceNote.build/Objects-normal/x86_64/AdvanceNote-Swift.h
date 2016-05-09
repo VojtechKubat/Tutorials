@@ -114,15 +114,18 @@ SWIFT_CLASS("_TtC11AdvanceNote11AppDelegate")
 @end
 
 @class UILabel;
+@class UIViewController;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC11AdvanceNote20DetailViewController")
-@interface DetailViewController : UIViewController
+SWIFT_CLASS("_TtC11AdvanceNote19DetailNavController")
+@interface DetailNavController : UINavigationController
 @property (nonatomic, copy) NSString * _Nonnull headline;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified mainLabel;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -150,6 +153,14 @@ SWIFT_CLASS("_TtC11AdvanceNote20MasterViewController")
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC11AdvanceNote21SummaryViewController")
+@interface SummaryViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Headline;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
