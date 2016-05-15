@@ -7,23 +7,23 @@ provides-member:
 - ["C13AdvancedNotes13CoreDataStack", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "NSURL"
 - "NSManagedObjectContext"
+- "Dictionary"
+- "NSURL"
 - "NSManagedObjectModel"
+- !private "abort"
+- "StringLiteralType"
+- !private "NSMigratePersistentStoresAutomaticallyOption"
 - "CoreDataStack"
 - !private "-"
-- "BooleanLiteralType"
 - !private "NSLog"
-- !private "NSMigratePersistentStoresAutomaticallyOption"
-- !private "!="
-- !private "abort"
-- !private "NSFileManager"
-- "Dictionary"
-- !private "NSError"
 - "NSPersistentStoreCoordinator"
+- !private "NSFileManager"
+- !private "!="
+- !private "NSError"
 - !private "NSBundle"
+- "BooleanLiteralType"
 - !private "NSSQLiteStoreType"
-- "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "NSBundle"]
 - !private ["Ps9AnyObject", "NSFileManager"]

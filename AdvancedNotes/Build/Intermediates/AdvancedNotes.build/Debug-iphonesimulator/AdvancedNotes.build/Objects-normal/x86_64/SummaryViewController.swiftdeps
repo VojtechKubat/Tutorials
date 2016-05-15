@@ -6,18 +6,18 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes21SummaryViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "headlineLabel"
 - "addAttachment"
+- "headlineLabel"
+- "viewDidLoad"
 depends-top-level:
-- "UIButton"
-- "UIViewController"
-- "UILabel"
-- !private "UIAlertAction"
-- !private "BooleanLiteralType"
 - "SummaryViewController"
+- "UIViewController"
 - !private "StringLiteralType"
+- "UIButton"
 - !private "UIAlertController"
+- !private "UIAlertAction"
+- "UILabel"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "UIAlertAction"]
 - !private ["Ps9AnyObject", "UIAlertController"]

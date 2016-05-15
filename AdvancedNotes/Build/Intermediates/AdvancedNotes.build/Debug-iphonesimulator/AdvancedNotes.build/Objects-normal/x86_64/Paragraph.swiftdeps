@@ -7,8 +7,8 @@ provides-member:
 - ["C13AdvancedNotes9Paragraph", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "NSManagedObject"
 - "Paragraph"
+- "NSManagedObject"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

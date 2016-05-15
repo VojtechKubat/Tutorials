@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes19DetailNavController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "mainLabel"
-- "didReceiveMemoryWarning"
 - "headline"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
+- "UINavigationController"
 - "DetailNavController"
 - "UILabel"
-- "UINavigationController"
 - "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]

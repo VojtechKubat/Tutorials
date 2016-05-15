@@ -6,8 +6,8 @@ provides-member:
 - ["C13AdvancedNotes8Reminder", "time"]
 - ["C13AdvancedNotes8Reminder", "type"]
 provides-dynamic-lookup:
-- "time"
 - "type"
+- "time"
 depends-top-level:
 - "Reminder"
 - "NSNumber"
