@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="Note" representedClassName=".Note" syncable="YES">
+        <attribute name="headline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastChange" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="hasChild" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" syncable="YES"/>
+        <relationship name="hasParagraph" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Paragraph" syncable="YES"/>
+        <relationship name="hasPicture" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Picture" syncable="YES"/>
+        <relationship name="hasReminder" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Reminder" syncable="YES"/>
+        <relationship name="isTagged" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="Paragraph" representedClassName=".Paragraph" syncable="YES">
+        <attribute name="lastChange" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Picture" representedClassName=".Picture" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="lastChange" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="textDetail" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Reminder" representedClassName=".Reminder" syncable="YES">
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName=".Tag" syncable="YES">
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Note" positionX="-414" positionY="-72" width="128" height="165"/>
+        <element name="Paragraph" positionX="-578" positionY="-147" width="128" height="75"/>
+        <element name="Picture" positionX="-605" positionY="117" width="128" height="90"/>
+        <element name="Reminder" positionX="-504" positionY="231" width="128" height="75"/>
+        <element name="Tag" positionX="-459" positionY="90" width="128" height="60"/>
+    </elements>
+</model>

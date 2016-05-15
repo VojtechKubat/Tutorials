@@ -24,8 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let model = coreDataStack.context.persistentStoreCoordinator!.managedObjectModel
-        fetchRequest = model.fetchRequestTemplateForName("AllVenues")
+        fetchRequest = NSFetchRequest(entityName: "Venue")
         fetchAndReload()
     }
 
@@ -34,11 +33,38 @@ class ViewController: UIViewController {
             let navController = segue.destinationViewController as! UINavigationController
             let filterVC = navController.topViewController as! FilterViewController
             filterVC.coreDataStack = coreDataStack
+            filterVC.delegate = self
         }
     }
     
     @IBAction func unwindToVenuListViewController(segue: UIStoryboardSegue) {
 
+    }
+    
+}
+
+extension ViewController: FilterViewControllerDelegate {
+    func filterViewController(filter: FilterViewController, didSelectPredicate predicate: NSPredicate?, sortDescriptor: NSSortDescriptor?) {
+        fetchRequest.predicate = nil
+        fetchRequest.sortDescriptors = nil
+        
+        if let fetchPredicate = predicate {
+            fetchRequest.predicate = fetchPredicate
+        }
+        if let sr = sortDescriptor {
+            fetchRequest.sortDescriptors = [sr]
+        }
+        
+        fetchAndReload()
+    }
+
+    func fetchAndReload() {
+        do {
+            try venues = coreDataStack.context.executeFetchRequest(fetchRequest) as! [Venue]
+            tableView.reloadData()
+        } catch let error as NSError {
+            print("Cannot fetch: \(error)")
+        }
     }
 }
 
@@ -56,14 +82,5 @@ extension ViewController: UITableViewDataSource {
         cell.detailTextLabel!.text = venue.priceInfo?.priceCategory
 
         return cell
-    }
-   
-    func fetchAndReload() {
-        do {
-            try venues = coreDataStack.context.executeFetchRequest(fetchRequest) as! [Venue]
-            tableView.reloadData()
-        } catch let error as NSError {
-            print("Cannot fetch: \(error)")
-        }
     }
 }
