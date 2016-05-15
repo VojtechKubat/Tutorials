@@ -158,6 +158,7 @@ SWIFT_CLASS("_TtC13AdvancedNotes17MainTableViewCell")
 
 SWIFT_CLASS("_TtC13AdvancedNotes20MasterViewController")
 @interface MasterViewController : UITableViewController
+- (void)viewDidLoad;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -233,6 +234,7 @@ SWIFT_CLASS("_TtC13AdvancedNotes8Reminder")
 SWIFT_CLASS("_TtC13AdvancedNotes23RemindersViewController")
 @interface RemindersViewController : UIViewController
 - (void)viewDidLoad;
+- (void)addReminder;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

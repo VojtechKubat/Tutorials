@@ -10,10 +10,22 @@ import Foundation
 import UIKit
 
 class RemindersViewController: UIViewController {
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.splitViewController?.navigationController?.topViewController?.title = "Hello"
+        
+        
+        let addReminder = UIBarButtonItem(barButtonSystemItem: .Add,
+                                          target: self,
+                                          action: #selector(RemindersViewController.addReminder))
+        self.navigationItem.rightBarButtonItem = addReminder
+        
+        self.tabBarController?.navigationItem.title = "it works!"
+        self.tabBarController?.navigationItem.rightBarButtonItem = addReminder
+        
+    }
+    
+    func addReminder() {
+        print("It works !!!")
     }
 }
