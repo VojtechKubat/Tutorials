@@ -3,57 +3,89 @@ provides-top-level:
 provides-nominal:
 provides-member:
 - ["C13AdvancedNotes7Picture", ""]
+- ["C13AdvancedNotes7Picture", "active"]
 - ["C13AdvancedNotes7Picture", "image"]
 - ["C13AdvancedNotes7Picture", "lastChange"]
 - ["C13AdvancedNotes7Picture", "textDetail"]
+- ["C13AdvancedNotes7Picture", "relatesToNote"]
 provides-dynamic-lookup:
+- "relatesToNote"
+- "active"
+- "image"
 - "lastChange"
 - "textDetail"
-- "image"
 depends-top-level:
-- "NSDate"
+- "NSNumber"
+- "Note"
 - "NSData"
-- "String"
 - "Picture"
+- "NSDate"
+- "String"
 depends-member:
+- ["Ps9AnyObject", "active"]
 - ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "lastChange"]
+- ["Ps9AnyObject", "relatesToNote"]
 - ["Ps9AnyObject", "textDetail"]
+- ["Ps11CVarArgType", "active"]
 - ["Ps11CVarArgType", "image"]
 - ["Ps11CVarArgType", "lastChange"]
+- ["Ps11CVarArgType", "relatesToNote"]
 - ["Ps11CVarArgType", "textDetail"]
+- ["Ps28CustomDebugStringConvertible", "active"]
 - ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "lastChange"]
+- ["Ps28CustomDebugStringConvertible", "relatesToNote"]
 - ["Ps28CustomDebugStringConvertible", "textDetail"]
+- ["Ps23CustomStringConvertible", "active"]
 - ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "lastChange"]
+- ["Ps23CustomStringConvertible", "relatesToNote"]
 - ["Ps23CustomStringConvertible", "textDetail"]
+- ["Ps9Equatable", "active"]
 - ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "lastChange"]
+- ["Ps9Equatable", "relatesToNote"]
 - ["Ps9Equatable", "textDetail"]
+- ["Ps8Hashable", "active"]
 - ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "lastChange"]
+- ["Ps8Hashable", "relatesToNote"]
 - ["Ps8Hashable", "textDetail"]
 - ["CSo15NSManagedObject", "NSData"]
 - ["CSo15NSManagedObject", "NSDate"]
+- ["CSo15NSManagedObject", "NSNumber"]
+- ["CSo15NSManagedObject", "Note"]
 - ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "active"]
 - ["CSo15NSManagedObject", "image"]
 - ["CSo15NSManagedObject", "lastChange"]
+- ["CSo15NSManagedObject", "relatesToNote"]
 - ["CSo15NSManagedObject", "textDetail"]
 - ["CSo8NSObject", "NSData"]
 - ["CSo8NSObject", "NSDate"]
+- ["CSo8NSObject", "NSNumber"]
+- ["CSo8NSObject", "Note"]
 - ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "active"]
 - ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "lastChange"]
+- ["CSo8NSObject", "relatesToNote"]
 - ["CSo8NSObject", "textDetail"]
+- ["PSo16NSObjectProtocol", "active"]
 - ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "lastChange"]
+- ["PSo16NSObjectProtocol", "relatesToNote"]
 - ["PSo16NSObjectProtocol", "textDetail"]
 - ["C13AdvancedNotes7Picture", "NSData"]
 - ["C13AdvancedNotes7Picture", "NSDate"]
+- ["C13AdvancedNotes7Picture", "NSNumber"]
+- ["C13AdvancedNotes7Picture", "Note"]
 - ["C13AdvancedNotes7Picture", "String"]
+- ["C13AdvancedNotes7Picture", "active"]
 - ["C13AdvancedNotes7Picture", "image"]
 - ["C13AdvancedNotes7Picture", "lastChange"]
+- ["C13AdvancedNotes7Picture", "relatesToNote"]
 - ["C13AdvancedNotes7Picture", "textDetail"]
 depends-nominal:
 - "Ps9AnyObject"
@@ -69,7 +101,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
@@ -78,4 +110,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "cd7e57f153c15163f21c833d65ba392d"
+interface-hash: "e7ed995ba750ad197b0c032a04f22404"

@@ -3,72 +3,88 @@ provides-top-level:
 provides-nominal:
 provides-member:
 - ["C13AdvancedNotes4Note", ""]
+- ["C13AdvancedNotes4Note", "active"]
 - ["C13AdvancedNotes4Note", "headline"]
 - ["C13AdvancedNotes4Note", "lastChange"]
 - ["C13AdvancedNotes4Note", "priority"]
 - ["C13AdvancedNotes4Note", "hasChild"]
 - ["C13AdvancedNotes4Note", "hasParagraph"]
+- ["C13AdvancedNotes4Note", "hasParent"]
 - ["C13AdvancedNotes4Note", "hasPicture"]
 - ["C13AdvancedNotes4Note", "hasReminder"]
 - ["C13AdvancedNotes4Note", "isTagged"]
 provides-dynamic-lookup:
-- "lastChange"
-- "hasParagraph"
-- "isTagged"
-- "headline"
 - "hasPicture"
+- "headline"
 - "priority"
 - "hasReminder"
+- "lastChange"
+- "hasParagraph"
+- "hasParent"
+- "active"
+- "isTagged"
 - "hasChild"
 depends-top-level:
-- "Note"
 - "String"
-- "NSNumber"
 - "NSDate"
 - "NSSet"
+- "Note"
+- "NSNumber"
 depends-member:
+- ["Ps9AnyObject", "active"]
 - ["Ps9AnyObject", "hasChild"]
 - ["Ps9AnyObject", "hasParagraph"]
+- ["Ps9AnyObject", "hasParent"]
 - ["Ps9AnyObject", "hasPicture"]
 - ["Ps9AnyObject", "hasReminder"]
 - ["Ps9AnyObject", "headline"]
 - ["Ps9AnyObject", "isTagged"]
 - ["Ps9AnyObject", "lastChange"]
 - ["Ps9AnyObject", "priority"]
+- ["Ps11CVarArgType", "active"]
 - ["Ps11CVarArgType", "hasChild"]
 - ["Ps11CVarArgType", "hasParagraph"]
+- ["Ps11CVarArgType", "hasParent"]
 - ["Ps11CVarArgType", "hasPicture"]
 - ["Ps11CVarArgType", "hasReminder"]
 - ["Ps11CVarArgType", "headline"]
 - ["Ps11CVarArgType", "isTagged"]
 - ["Ps11CVarArgType", "lastChange"]
 - ["Ps11CVarArgType", "priority"]
+- ["Ps28CustomDebugStringConvertible", "active"]
 - ["Ps28CustomDebugStringConvertible", "hasChild"]
 - ["Ps28CustomDebugStringConvertible", "hasParagraph"]
+- ["Ps28CustomDebugStringConvertible", "hasParent"]
 - ["Ps28CustomDebugStringConvertible", "hasPicture"]
 - ["Ps28CustomDebugStringConvertible", "hasReminder"]
 - ["Ps28CustomDebugStringConvertible", "headline"]
 - ["Ps28CustomDebugStringConvertible", "isTagged"]
 - ["Ps28CustomDebugStringConvertible", "lastChange"]
 - ["Ps28CustomDebugStringConvertible", "priority"]
+- ["Ps23CustomStringConvertible", "active"]
 - ["Ps23CustomStringConvertible", "hasChild"]
 - ["Ps23CustomStringConvertible", "hasParagraph"]
+- ["Ps23CustomStringConvertible", "hasParent"]
 - ["Ps23CustomStringConvertible", "hasPicture"]
 - ["Ps23CustomStringConvertible", "hasReminder"]
 - ["Ps23CustomStringConvertible", "headline"]
 - ["Ps23CustomStringConvertible", "isTagged"]
 - ["Ps23CustomStringConvertible", "lastChange"]
 - ["Ps23CustomStringConvertible", "priority"]
+- ["Ps9Equatable", "active"]
 - ["Ps9Equatable", "hasChild"]
 - ["Ps9Equatable", "hasParagraph"]
+- ["Ps9Equatable", "hasParent"]
 - ["Ps9Equatable", "hasPicture"]
 - ["Ps9Equatable", "hasReminder"]
 - ["Ps9Equatable", "headline"]
 - ["Ps9Equatable", "isTagged"]
 - ["Ps9Equatable", "lastChange"]
 - ["Ps9Equatable", "priority"]
+- ["Ps8Hashable", "active"]
 - ["Ps8Hashable", "hasChild"]
 - ["Ps8Hashable", "hasParagraph"]
+- ["Ps8Hashable", "hasParent"]
 - ["Ps8Hashable", "hasPicture"]
 - ["Ps8Hashable", "hasReminder"]
 - ["Ps8Hashable", "headline"]
@@ -78,9 +94,12 @@ depends-member:
 - ["CSo15NSManagedObject", "NSDate"]
 - ["CSo15NSManagedObject", "NSNumber"]
 - ["CSo15NSManagedObject", "NSSet"]
+- ["CSo15NSManagedObject", "Note"]
 - ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "active"]
 - ["CSo15NSManagedObject", "hasChild"]
 - ["CSo15NSManagedObject", "hasParagraph"]
+- ["CSo15NSManagedObject", "hasParent"]
 - ["CSo15NSManagedObject", "hasPicture"]
 - ["CSo15NSManagedObject", "hasReminder"]
 - ["CSo15NSManagedObject", "headline"]
@@ -90,17 +109,22 @@ depends-member:
 - ["CSo8NSObject", "NSDate"]
 - ["CSo8NSObject", "NSNumber"]
 - ["CSo8NSObject", "NSSet"]
+- ["CSo8NSObject", "Note"]
 - ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "active"]
 - ["CSo8NSObject", "hasChild"]
 - ["CSo8NSObject", "hasParagraph"]
+- ["CSo8NSObject", "hasParent"]
 - ["CSo8NSObject", "hasPicture"]
 - ["CSo8NSObject", "hasReminder"]
 - ["CSo8NSObject", "headline"]
 - ["CSo8NSObject", "isTagged"]
 - ["CSo8NSObject", "lastChange"]
 - ["CSo8NSObject", "priority"]
+- ["PSo16NSObjectProtocol", "active"]
 - ["PSo16NSObjectProtocol", "hasChild"]
 - ["PSo16NSObjectProtocol", "hasParagraph"]
+- ["PSo16NSObjectProtocol", "hasParent"]
 - ["PSo16NSObjectProtocol", "hasPicture"]
 - ["PSo16NSObjectProtocol", "hasReminder"]
 - ["PSo16NSObjectProtocol", "headline"]
@@ -110,9 +134,12 @@ depends-member:
 - ["C13AdvancedNotes4Note", "NSDate"]
 - ["C13AdvancedNotes4Note", "NSNumber"]
 - ["C13AdvancedNotes4Note", "NSSet"]
+- ["C13AdvancedNotes4Note", "Note"]
 - ["C13AdvancedNotes4Note", "String"]
+- ["C13AdvancedNotes4Note", "active"]
 - ["C13AdvancedNotes4Note", "hasChild"]
 - ["C13AdvancedNotes4Note", "hasParagraph"]
+- ["C13AdvancedNotes4Note", "hasParent"]
 - ["C13AdvancedNotes4Note", "hasPicture"]
 - ["C13AdvancedNotes4Note", "hasReminder"]
 - ["C13AdvancedNotes4Note", "headline"]
@@ -133,7 +160,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
@@ -142,4 +169,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "54d6a012a34578091778b395cd56f44a"
+interface-hash: "9c73ba060ac1134eb32a9eca8cb30404"

@@ -23,6 +23,10 @@ class RemindersViewController: UIViewController {
         self.tabBarController?.navigationItem.title = "it works!"
         self.tabBarController?.navigationItem.rightBarButtonItem = addReminder
         
+//        let closure = {[weak self]() in
+//            self!.addReminder()
+//        }
+        
     }
     
     func addReminder() {

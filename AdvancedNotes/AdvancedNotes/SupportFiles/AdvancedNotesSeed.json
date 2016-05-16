@@ -1,0 +1,177 @@
+{
+	"tags" : [{
+		"tagId" : 0,
+		"label" : "Important"
+	},{
+		"tagId" : 1,
+		"label" : "Clutter"
+	},{
+		"tagId" : 2,
+		"label" : "Urgent"
+	},{
+		"tagId" : 3,
+		"label" : "Work"
+	},{
+		"tagId" : 4,
+		"label" : "TODO"
+	}
+	],
+
+	"notes": [
+		{
+		"headline": "First note",
+		"active" : 1,
+		"priority" : 5,
+		"paragraphs" : [{
+				"active" : 1,
+				"text" : "Lorem ipsum dolor sit amet.",
+				"lastChange" : "2012-04-21T18:25:43-05:00",
+			},{
+				"active" : 1,
+				"text" : "Nam sit amet metus justo. Proin tincidunt ultricies lectus vitae feugiat. Nulla convallis massa eu velit semper ullamcorper. In eu justo interdum, tincidunt massa nec, bibendum sapien. Sed magna augue, hendrerit id pellentesque vel, dignissim eget elit.",
+				"lastChange" : "2014-06-12T10:13:22-05:00",
+			},{
+				"active" : 0,
+				"text" : "Archived - Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam maximus leo vestibulum, pellentesque urna vel, tristique massa. Quisque tempor vulputate massa vel porta.",
+				"lastChange" : "2011-02-10T12:12:44-02:00",
+			}],
+		"pictures" : [{
+				"active" : 1,
+				"textDetail" : "Example picture",
+				"imageURL" : "picture01.jpg",
+				"lastChange" : "2011-02-10T12:11:44-02:00"
+			},{
+				"active" : 1,
+				"textDetail" : "Another picture",
+				"imageURL" : "picture02.jpg",
+				"lastChange" : "2015-12-10T02:45:10-02:00"
+			}
+			],
+		"reminders" : [{
+				"time" : "2016-05-20T10:30:00-02:00",
+				"type" : 0,
+				"active" : 1,
+			}
+			],
+		"tags" : [0,1,3]
+		},{
+		"headline": "Work note",
+		"active" : 1,
+		"priority" : 5,
+		"paragraphs" : [{
+				"active" : 0,
+				"text" : "Archived - Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+				"lastChange" : "2014-04-27T12:14:00-05:00",
+			},{
+				"active" : 1,
+				"text" : "Nullam commodo arcu a ipsum auctor tincidunt. Phasellus euismod arcu sit amet enim pellentesque, vel finibus leo iaculis. Vivamus iaculis congue tellus. Quisque vulputate congue justo, nec dapibus felis placerat vitae.",
+				"lastChange" : "2014-11-20T05:30:00-05:00",
+			},{
+				"active" : 1,
+				"text" : "Etiam facilisis dolor et purus porta, id dictum ex congue. Quisque nibh enim, sollicitudin id ornare eget, gravida sed sem. Nam vestibulum tellus sed turpis molestie, ac varius leo consectetur.",
+				"lastChange" : "2011-02-10T12:12:44-02:00",
+			}],
+		"pictures" : [{
+				"active" : 1,
+				"textDetail" : "Example picture number two",
+				"imageURL" : "picture04.jpg",
+				"lastChange" : "2011-02-10T09:10:00-02:00"
+			},{
+				"active" : 1,
+				"textDetail" : "text detail is here",
+				"imageURL" : "picture05.jpg",
+				"lastChange" : "2010-04-23T03:14:22-04:00"
+			}
+			],
+		"reminders" : [{
+				"time" : "2016-05-20T10:30:00-02:00",
+				"type" : 0,
+				"active" : 1,
+			}
+			],
+		"tags" : [3,4]
+		},{
+		"headline": "Work note",
+		"active" : 1,
+		"priority" : 5,
+		"paragraphs" : [{
+				"active" : 0,
+				"text" : "Archived - Mauris leo dui, suscipit non lobortis a, pretium in mi. Cras suscipit velit sed elementum commodo. Ut ut facilisis urna, at porttitor sem. Morbi eget ultricies enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus eget justo sed lacus interdum malesuada ut sit amet sem. Mauris id eros facilisis, lobortis justo vel, sodales orci. Donec bibendum dolor eget risus euismod mattis.",
+				"lastChange" : "2014-04-27T12:14:00-05:00",
+			}
+			],
+		"pictures" : [{
+				"active" : 1,
+				"textDetail" : "Like this",
+				"imageURL" : "picture09.jpg",
+				"lastChange" : "2015-03-17T07:12:00-02:00"
+			},{
+				"active" : 1,
+				"textDetail" : "text detail is here",
+				"imageURL" : "picture05.jpg",
+				"lastChange" : "2015-01-28T08:50:22-02:00"
+			}
+			],
+		"reminders" : [{
+				"time" : "2016-05-20T10:30:00-02:00",
+				"type" : 0,
+				"active" : 1,
+			}
+			],
+		"tags" : [3,4]
+		},{
+		"headline": "Work note",
+		"active" : 1,
+		"priority" : 5,
+		"paragraphs" : [{
+				"active" : 1,
+				"text" : "Suspendisse dignissim tortor in purus sodales, in imperdiet dolor venenatis. Suspendisse potenti. Vestibulum venenatis tellus leo, nec rutrum leo vestibulum lobortis. Vivamus ut tempus sem. Duis elementum, nibh vitae iaculis maximus, nibh felis imperdiet lacus, sit amet pulvinar augue ante quis nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent tincidunt odio arcu, a faucibus nisl eleifend tristique. Integer egestas nisl at lorem posuere, vel vestibulum mauris condimentum. Morbi ac enim quis est consectetur fringilla in lacinia massa. Phasellus lacus leo, scelerisque sit amet augue eu, sollicitudin sollicitudin lacus. Mauris sem ipsum, rutrum sit amet tristique at, dictum sed nunc. Donec eu dapibus ex, ut rhoncus sem.",
+				"lastChange" : "2014-04-27T12:14:00-05:00",
+			}
+			],
+		"pictures" : [{
+				"active" : 1,
+				"textDetail" : "This is important",
+				"imageURL" : "picture06.jpg",
+				"lastChange" : "2015-05-12T13:23:00-02:00"
+			},{
+				"active" : 1,
+				"textDetail" : "Look at this!",
+				"imageURL" : "picture07.jpg",
+				"lastChange" : "2014-03-01T08:34:12-02:00"
+			}
+			],
+		"reminders" : [{
+				"time" : "2016-05-20T10:30:00-02:00",
+				"type" : 0,
+				"active" : 1,
+			}
+			],
+		"tags" : [3,4]
+		},{
+		"headline": "Work note",
+		"active" : 1,
+		"priority" : 5,
+		"paragraphs" : [{
+				"active" : 1,
+				"text" : "Praesent semper massa non leo pretium viverra. Mauris a enim non erat elementum euismod. Nunc quis ipsum mauris. Nulla quam elit, dignissim vitae neque sed, tristique fringilla urna. Maecenas eu lobortis lacus, quis ornare magna. Nullam urna est, posuere eu viverra vel, imperdiet eget diam. Fusce venenatis placerat mauris quis suscipit.",
+				"lastChange" : "2014-04-27T12:14:00-05:00",
+			}
+			],
+		"pictures" : [{
+				"active" : 1,
+				"textDetail" : "Look at this!",
+				"imageURL" : "picture10.jpg",
+				"lastChange" : "2016-03-28T14:12:00-02:00"
+			}
+			],
+		"reminders" : [{
+				"time" : "2016-05-20T10:30:00-02:00",
+				"type" : 0,
+				"active" : 1,
+			}
+			],
+		"tags" : [3,4]
+		}
+	]
+}

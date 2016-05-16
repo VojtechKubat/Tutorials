@@ -2,7 +2,7 @@
 //  Picture.swift
 //  AdvancedNotes
 //
-//  Created by Vojtech Kubat on 13/5/16.
+//  Created by Vojtech Kubat on 16/5/16.
 //  Copyright © 2016 CertiCon a.s. All rights reserved.
 //
 

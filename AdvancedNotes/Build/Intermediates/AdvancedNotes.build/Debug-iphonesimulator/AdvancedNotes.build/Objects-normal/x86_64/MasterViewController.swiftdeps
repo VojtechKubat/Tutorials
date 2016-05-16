@@ -7,43 +7,38 @@ provides-member:
 - ["C13AdvancedNotes20MasterViewController", ""]
 provides-dynamic-lookup:
 - "prepareForSegue"
+- "numberOfSectionsInTableView"
 - "viewDidLoad"
 - "tableView"
 - "tableView"
 - "tableView"
-- "numberOfSectionsInTableView"
 depends-top-level:
-- !private "CGFloat"
-- "MasterViewController"
-- !private "*"
-- "UITableViewCell"
-- !private "UIApplication"
-- "AnyObject"
 - "Int"
-- !private "BooleanLiteralType"
-- "UITableView"
-- "NSIndexPath"
-- !private "StringLiteralType"
+- !private "*"
 - "UIStoryboardSegue"
 - "UITableViewController"
+- !private "StringLiteralType"
+- "UITableView"
+- !private "CGFloat"
+- "NSIndexPath"
 - !private "MainTableViewCell"
 - !private "=="
+- "MasterViewController"
+- "AnyObject"
+- "UITableViewCell"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
-- !private ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "configureCell"]
 - !private ["Ps9AnyObject", "constant"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps9AnyObject", "identifier"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "leftHeading"]
-- !private ["Ps9AnyObject", "networkActivityIndicatorVisible"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
 - !private ["Ps9AnyObject", "performSegueWithIdentifier"]
 - ["Ps9AnyObject", "prepareForSegue"]
 - !private ["Ps9AnyObject", "row"]
-- !private ["Ps9AnyObject", "sharedApplication"]
 - ["Ps9AnyObject", "tableView"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
@@ -53,43 +48,36 @@ depends-member:
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
 - !private ["Ps11CVarArgType", "CGFloat"]
-- !private ["Ps11CVarArgType", "UIApplication"]
 - !private ["Ps11CVarArgType", "configureCell"]
 - !private ["Ps11CVarArgType", "constant"]
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps11CVarArgType", "identifier"]
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "leftHeading"]
-- !private ["Ps11CVarArgType", "networkActivityIndicatorVisible"]
 - ["Ps11CVarArgType", "numberOfSectionsInTableView"]
 - !private ["Ps11CVarArgType", "performSegueWithIdentifier"]
 - ["Ps11CVarArgType", "prepareForSegue"]
 - !private ["Ps11CVarArgType", "row"]
-- !private ["Ps11CVarArgType", "sharedApplication"]
 - ["Ps11CVarArgType", "tableView"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
-- !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "configureCell"]
 - !private ["Ps28CustomDebugStringConvertible", "constant"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "leftHeading"]
-- !private ["Ps28CustomDebugStringConvertible", "networkActivityIndicatorVisible"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegueWithIdentifier"]
 - ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
-- !private ["Ps28CustomDebugStringConvertible", "sharedApplication"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CGFloat"]
-- !private ["Ps23CustomStringConvertible", "UIApplication"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "configureCell"]
 - !private ["Ps23CustomStringConvertible", "constant"]
@@ -97,18 +85,15 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "identifier"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "leftHeading"]
-- !private ["Ps23CustomStringConvertible", "networkActivityIndicatorVisible"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
 - !private ["Ps23CustomStringConvertible", "performSegueWithIdentifier"]
 - ["Ps23CustomStringConvertible", "prepareForSegue"]
 - !private ["Ps23CustomStringConvertible", "row"]
-- !private ["Ps23CustomStringConvertible", "sharedApplication"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "CGFloat"]
-- !private ["Ps9Equatable", "UIApplication"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "configureCell"]
 - !private ["Ps9Equatable", "constant"]
@@ -116,12 +101,10 @@ depends-member:
 - !private ["Ps9Equatable", "identifier"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "leftHeading"]
-- !private ["Ps9Equatable", "networkActivityIndicatorVisible"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
 - !private ["Ps9Equatable", "performSegueWithIdentifier"]
 - ["Ps9Equatable", "prepareForSegue"]
 - !private ["Ps9Equatable", "row"]
-- !private ["Ps9Equatable", "sharedApplication"]
 - ["Ps9Equatable", "tableView"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
@@ -130,7 +113,6 @@ depends-member:
 - !private ["Ps23FloatLiteralConvertible", "init"]
 - !private ["Ps17FloatingPointType", "init"]
 - !private ["Ps8Hashable", "CGFloat"]
-- !private ["Ps8Hashable", "UIApplication"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "configureCell"]
 - !private ["Ps8Hashable", "constant"]
@@ -138,12 +120,10 @@ depends-member:
 - !private ["Ps8Hashable", "identifier"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "leftHeading"]
-- !private ["Ps8Hashable", "networkActivityIndicatorVisible"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
 - !private ["Ps8Hashable", "performSegueWithIdentifier"]
 - ["Ps8Hashable", "prepareForSegue"]
 - !private ["Ps8Hashable", "row"]
-- !private ["Ps8Hashable", "sharedApplication"]
 - ["Ps8Hashable", "tableView"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
@@ -160,7 +140,6 @@ depends-member:
 - ["C13AdvancedNotes20MasterViewController", "Int"]
 - !private ["C13AdvancedNotes20MasterViewController", "MainTableViewCell"]
 - ["C13AdvancedNotes20MasterViewController", "NSIndexPath"]
-- !private ["C13AdvancedNotes20MasterViewController", "UIApplication"]
 - ["C13AdvancedNotes20MasterViewController", "UIStoryboardSegue"]
 - ["C13AdvancedNotes20MasterViewController", "UITableView"]
 - ["C13AdvancedNotes20MasterViewController", "UITableViewCell"]
@@ -173,7 +152,6 @@ depends-member:
 - ["C13AdvancedNotes20MasterViewController", "viewDidLoad"]
 - !private ["Ps14MirrorPathType", "init"]
 - !private ["PSo8NSCoding", "CGFloat"]
-- !private ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "configureCell"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - ["PSo8NSCoding", "init"]
@@ -188,7 +166,6 @@ depends-member:
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
-- !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
@@ -204,7 +181,6 @@ depends-member:
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "MainTableViewCell"]
 - ["CSo8NSObject", "NSIndexPath"]
-- !private ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
@@ -214,28 +190,23 @@ depends-member:
 - !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "leftHeading"]
-- !private ["CSo8NSObject", "networkActivityIndicatorVisible"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - !private ["CSo8NSObject", "performSegueWithIdentifier"]
 - ["CSo8NSObject", "prepareForSegue"]
 - !private ["CSo8NSObject", "row"]
-- !private ["CSo8NSObject", "sharedApplication"]
 - ["CSo8NSObject", "tableView"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
-- !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "configureCell"]
 - !private ["PSo16NSObjectProtocol", "constant"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "leftHeading"]
-- !private ["PSo16NSObjectProtocol", "networkActivityIndicatorVisible"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
 - ["PSo16NSObjectProtocol", "prepareForSegue"]
 - !private ["PSo16NSObjectProtocol", "row"]
-- !private ["PSo16NSObjectProtocol", "sharedApplication"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
@@ -257,7 +228,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "leftHeading"]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
-- !private ["PSo21UIAppearanceContainer", "UIApplication"]
 - !private ["PSo21UIAppearanceContainer", "configureCell"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -268,10 +238,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "tableView"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo13UIApplication", "networkActivityIndicatorVisible"]
-- !private ["CSo13UIApplication", "sharedApplication"]
 - !private ["PSo18UIContentContainer", "CGFloat"]
-- !private ["PSo18UIContentContainer", "UIApplication"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
@@ -286,7 +253,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "leftHeading"]
 - !private ["PSo18UIFocusEnvironment", "CGFloat"]
-- !private ["PSo18UIFocusEnvironment", "UIApplication"]
 - !private ["PSo18UIFocusEnvironment", "configureCell"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "init"]
@@ -304,7 +270,6 @@ depends-member:
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "MainTableViewCell"]
 - ["CSo11UIResponder", "NSIndexPath"]
-- !private ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
@@ -312,16 +277,13 @@ depends-member:
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "leftHeading"]
-- !private ["CSo11UIResponder", "networkActivityIndicatorVisible"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - !private ["CSo11UIResponder", "performSegueWithIdentifier"]
 - ["CSo11UIResponder", "prepareForSegue"]
-- !private ["CSo11UIResponder", "sharedApplication"]
 - ["CSo11UIResponder", "tableView"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo20UIScrollViewDelegate", "CGFloat"]
-- !private ["PSo20UIScrollViewDelegate", "UIApplication"]
 - ["PSo20UIScrollViewDelegate", "init"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "performSegueWithIdentifier"]
@@ -330,7 +292,6 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "CGFloat"]
-- !private ["PSo16UIStateRestoring", "UIApplication"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
@@ -348,7 +309,6 @@ depends-member:
 - ["CSo21UITableViewController", "Int"]
 - !private ["CSo21UITableViewController", "MainTableViewCell"]
 - ["CSo21UITableViewController", "NSIndexPath"]
-- !private ["CSo21UITableViewController", "UIApplication"]
 - ["CSo21UITableViewController", "UIStoryboardSegue"]
 - ["CSo21UITableViewController", "UITableView"]
 - ["CSo21UITableViewController", "UITableViewCell"]
@@ -360,7 +320,6 @@ depends-member:
 - ["CSo21UITableViewController", "viewDidLoad"]
 - ["CSo21UITableViewController", ""]
 - !private ["PSo21UITableViewDataSource", "CGFloat"]
-- !private ["PSo21UITableViewDataSource", "UIApplication"]
 - ["PSo21UITableViewDataSource", "init"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "performSegueWithIdentifier"]
@@ -369,7 +328,6 @@ depends-member:
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "CGFloat"]
-- !private ["PSo19UITableViewDelegate", "UIApplication"]
 - ["PSo19UITableViewDelegate", "init"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITableViewDelegate", "performSegueWithIdentifier"]
@@ -378,7 +336,6 @@ depends-member:
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
 - ["PSo19UITableViewDelegate", ""]
 - !private ["PSo18UITraitEnvironment", "CGFloat"]
-- !private ["PSo18UITraitEnvironment", "UIApplication"]
 - !private ["PSo18UITraitEnvironment", "configureCell"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -397,7 +354,6 @@ depends-member:
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "MainTableViewCell"]
 - ["CSo16UIViewController", "NSIndexPath"]
-- !private ["CSo16UIViewController", "UIApplication"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
@@ -478,7 +434,6 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- !private "CSo13UIApplication"
 - "PSo18UIContentContainer"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
@@ -517,13 +472,13 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 interface-hash: "be822f97bdccf08507f776816534392b"

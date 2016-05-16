@@ -4,25 +4,41 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes3Tag", ""]
 - ["C13AdvancedNotes3Tag", "label"]
+- ["C13AdvancedNotes3Tag", "relatesToNote"]
 provides-dynamic-lookup:
+- "relatesToNote"
 - "label"
 depends-top-level:
-- "Tag"
+- "NSSet"
 - "String"
+- "Tag"
 depends-member:
 - ["Ps9AnyObject", "label"]
+- ["Ps9AnyObject", "relatesToNote"]
 - ["Ps11CVarArgType", "label"]
+- ["Ps11CVarArgType", "relatesToNote"]
 - ["Ps28CustomDebugStringConvertible", "label"]
+- ["Ps28CustomDebugStringConvertible", "relatesToNote"]
 - ["Ps23CustomStringConvertible", "label"]
+- ["Ps23CustomStringConvertible", "relatesToNote"]
 - ["Ps9Equatable", "label"]
+- ["Ps9Equatable", "relatesToNote"]
 - ["Ps8Hashable", "label"]
+- ["Ps8Hashable", "relatesToNote"]
+- ["CSo15NSManagedObject", "NSSet"]
 - ["CSo15NSManagedObject", "String"]
 - ["CSo15NSManagedObject", "label"]
+- ["CSo15NSManagedObject", "relatesToNote"]
+- ["CSo8NSObject", "NSSet"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "label"]
+- ["CSo8NSObject", "relatesToNote"]
 - ["PSo16NSObjectProtocol", "label"]
+- ["PSo16NSObjectProtocol", "relatesToNote"]
+- ["C13AdvancedNotes3Tag", "NSSet"]
 - ["C13AdvancedNotes3Tag", "String"]
 - ["C13AdvancedNotes3Tag", "label"]
+- ["C13AdvancedNotes3Tag", "relatesToNote"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Ps11CVarArgType"
@@ -37,7 +53,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
@@ -46,4 +62,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "0358a710d682f97e6c4e670736a4620c"
+interface-hash: "15d03b9f480e3c757445d9339c3d4796"

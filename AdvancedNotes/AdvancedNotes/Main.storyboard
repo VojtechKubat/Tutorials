@@ -46,15 +46,7 @@
                             <outlet property="delegate" destination="W61-Wd-SQO" id="p0P-UI-bIs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Notes" id="BEE-s2-tia">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="nEQ-eI-KfP">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="J8F-x0-KWE">
-                                <rect key="frame" x="447" y="7" width="133" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Notes" id="BEE-s2-tia"/>
                     <connections>
                         <segue destination="X3Q-IV-XuU" kind="showDetail" identifier="showDetail" id="P1s-Cu-X5K"/>
                     </connections>
@@ -98,7 +90,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xrm-tw-bxD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ParagraphCell" id="xrm-tw-bxD">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xrm-tw-bxD" id="vTz-MR-HWr">
@@ -192,11 +184,11 @@
             </objects>
             <point key="canvasLocation" x="654" y="1170"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Hello-->
         <scene sceneID="MzL-Ji-PTo">
             <objects>
                 <tabBarController id="h12-76-5Kj" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="nhM-bl-BAO"/>
+                    <navigationItem key="navigationItem" title="Hello" id="nhM-bl-BAO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="VNN-2B-hon">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -243,6 +235,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BTW-Ni-ab2"/>
+        <segue reference="P1s-Cu-X5K"/>
     </inferredMetricsTieBreakers>
 </document>

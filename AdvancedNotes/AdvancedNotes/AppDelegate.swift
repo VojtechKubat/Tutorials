@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        importDummyData()
+        
         return true
     }
 
@@ -40,6 +43,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func importDummyData() {
+        let jsonURL = NSBundle.mainBundle().URLForResource("AdvancedNotesSeed", withExtension: "json")
+        let jsonData = NSData(contentsOfURL: jsonURL!)
+        
+        do {
+            guard (jsonData != nil) else {return}
+            let jsonDict = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: .AllowFragments)
+            
+            var tags = NSArray()
+            let tagsJson = jsonDict["tags"] as! NSArray
+            
+            
+            for current in tagsJson {
+//                tags.setValue(current.valueForKey("label")! as! String, forKey: (current.valueForKey("tagId")! as! NSInteger))
+            }
+            
+            print("\(tags)")
+            
+            
+            
+        } catch let error as NSError {
+            print("ERROR - \(error.userInfo)")
+        }
+    }
 }
-
