@@ -9,17 +9,17 @@ provides-member:
 - ["C13AdvancedNotes8Reminder", "recurrence"]
 - ["C13AdvancedNotes8Reminder", "relatesToNote"]
 provides-dynamic-lookup:
-- "time"
+- "relatesToNote"
+- "type"
 - "recurrence"
 - "active"
-- "type"
-- "relatesToNote"
+- "time"
 depends-top-level:
 - "String"
-- "Reminder"
-- "NSDate"
 - "Note"
+- "NSDate"
 - "NSNumber"
+- "Reminder"
 depends-member:
 - ["Ps9AnyObject", "active"]
 - ["Ps9AnyObject", "recurrence"]

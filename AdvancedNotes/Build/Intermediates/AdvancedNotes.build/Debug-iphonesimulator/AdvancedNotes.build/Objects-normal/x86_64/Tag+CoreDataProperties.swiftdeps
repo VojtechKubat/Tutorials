@@ -6,11 +6,11 @@ provides-member:
 - ["C13AdvancedNotes3Tag", "label"]
 - ["C13AdvancedNotes3Tag", "relatesToNote"]
 provides-dynamic-lookup:
-- "relatesToNote"
 - "label"
+- "relatesToNote"
 depends-top-level:
-- "NSSet"
 - "String"
+- "NSSet"
 - "Tag"
 depends-member:
 - ["Ps9AnyObject", "label"]

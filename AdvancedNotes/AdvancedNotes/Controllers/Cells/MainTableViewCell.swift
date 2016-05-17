@@ -14,8 +14,13 @@ class MainTableViewCell: UITableViewCell {
     @IBOutlet weak var headlineLabel: UILabel!
     @IBOutlet weak var leftHeading: NSLayoutConstraint!
     
-    func configureCell(headline: String) {
-        headlineLabel.text = headline
+//    func configureCell(headline: String) {
+//        headlineLabel.text = headline
+//    }
+    
+    func configureCell(note: Note) {
+        headlineLabel.text = note.headline
+        
     }
     
 }

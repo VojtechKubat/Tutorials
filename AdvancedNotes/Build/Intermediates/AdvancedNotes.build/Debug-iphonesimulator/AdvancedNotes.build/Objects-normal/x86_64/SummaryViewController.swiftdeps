@@ -6,98 +6,155 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes21SummaryViewController", ""]
 provides-dynamic-lookup:
-- "headlineLabel"
-- "viewDidLoad"
 - "addAttachment"
+- "addBarButton"
+- "description"
+- "viewDidLoad"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "UILabel"
-- "UIButton"
+- !private "UIAlertController"
 - "UIViewController"
+- "String"
+- !private "print"
 - !private "StringLiteralType"
 - !private "UIAlertAction"
+- "UIBarButtonItem"
 - "SummaryViewController"
-- !private "UIAlertController"
+- !private "Void"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "UIAlertAction"]
 - !private ["Ps9AnyObject", "UIAlertController"]
 - !private ["Ps9AnyObject", "addAction"]
 - ["Ps9AnyObject", "addAttachment"]
-- ["Ps9AnyObject", "headlineLabel"]
+- ["Ps9AnyObject", "addBarButton"]
+- !private ["Ps9AnyObject", "bounds"]
+- ["Ps9AnyObject", "description"]
 - ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "navigationItem"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "popoverPresentationController"]
 - !private ["Ps9AnyObject", "presentViewController"]
-- !private ["Ps9AnyObject", "title"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "sourceRect"]
+- !private ["Ps9AnyObject", "sourceView"]
+- !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["Sb", "deinit"]
 - !private ["Ps11CVarArgType", "UIAlertAction"]
 - !private ["Ps11CVarArgType", "UIAlertController"]
 - !private ["Ps11CVarArgType", "addAction"]
 - ["Ps11CVarArgType", "addAttachment"]
-- ["Ps11CVarArgType", "headlineLabel"]
+- ["Ps11CVarArgType", "addBarButton"]
+- !private ["Ps11CVarArgType", "bounds"]
+- ["Ps11CVarArgType", "description"]
 - ["Ps11CVarArgType", "init"]
-- !private ["Ps11CVarArgType", "navigationItem"]
+- !private ["Ps11CVarArgType", "navigationController"]
+- !private ["Ps11CVarArgType", "popoverPresentationController"]
 - !private ["Ps11CVarArgType", "presentViewController"]
-- !private ["Ps11CVarArgType", "title"]
+- !private ["Ps11CVarArgType", "print"]
+- !private ["Ps11CVarArgType", "sourceRect"]
+- !private ["Ps11CVarArgType", "sourceView"]
+- !private ["Ps11CVarArgType", "view"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - ["Ps28CustomDebugStringConvertible", "addAttachment"]
-- ["Ps28CustomDebugStringConvertible", "headlineLabel"]
+- ["Ps28CustomDebugStringConvertible", "addBarButton"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- ["Ps28CustomDebugStringConvertible", "description"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "navigationItem"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "popoverPresentationController"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
-- !private ["Ps28CustomDebugStringConvertible", "title"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "sourceRect"]
+- !private ["Ps28CustomDebugStringConvertible", "sourceView"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
 - ["Ps23CustomStringConvertible", "addAttachment"]
-- ["Ps23CustomStringConvertible", "headlineLabel"]
+- ["Ps23CustomStringConvertible", "addBarButton"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- ["Ps23CustomStringConvertible", "description"]
 - ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "navigationItem"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "popoverPresentationController"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
-- !private ["Ps23CustomStringConvertible", "title"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "sourceRect"]
+- !private ["Ps23CustomStringConvertible", "sourceView"]
+- !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "ActionSheet"]
+- !private ["Ps9Equatable", "Cancel"]
 - !private ["Ps9Equatable", "Default"]
 - !private ["Ps9Equatable", "UIAlertAction"]
 - !private ["Ps9Equatable", "UIAlertController"]
 - !private ["Ps9Equatable", "addAction"]
 - ["Ps9Equatable", "addAttachment"]
-- ["Ps9Equatable", "headlineLabel"]
+- ["Ps9Equatable", "addBarButton"]
+- !private ["Ps9Equatable", "bounds"]
+- ["Ps9Equatable", "description"]
 - ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "navigationItem"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "popoverPresentationController"]
 - !private ["Ps9Equatable", "presentViewController"]
-- !private ["Ps9Equatable", "title"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "sourceRect"]
+- !private ["Ps9Equatable", "sourceView"]
+- !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "ActionSheet"]
+- !private ["Ps8Hashable", "Cancel"]
 - !private ["Ps8Hashable", "Default"]
 - !private ["Ps8Hashable", "UIAlertAction"]
 - !private ["Ps8Hashable", "UIAlertController"]
 - !private ["Ps8Hashable", "addAction"]
 - ["Ps8Hashable", "addAttachment"]
-- ["Ps8Hashable", "headlineLabel"]
+- ["Ps8Hashable", "addBarButton"]
+- !private ["Ps8Hashable", "bounds"]
+- ["Ps8Hashable", "description"]
 - ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "navigationItem"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "popoverPresentationController"]
 - !private ["Ps8Hashable", "presentViewController"]
-- !private ["Ps8Hashable", "title"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "sourceRect"]
+- !private ["Ps8Hashable", "sourceView"]
+- !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "init"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertController"]
 - !private ["PSo8NSCoding", "addAction"]
 - ["PSo8NSCoding", "addAttachment"]
-- ["PSo8NSCoding", "headlineLabel"]
+- ["PSo8NSCoding", "addBarButton"]
+- !private ["PSo8NSCoding", "bounds"]
+- ["PSo8NSCoding", "description"]
 - ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "navigationItem"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "popoverPresentationController"]
 - !private ["PSo8NSCoding", "presentViewController"]
-- !private ["PSo8NSCoding", "title"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
@@ -105,155 +162,293 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - ["PSo26NSExtensionRequestHandling", "addAttachment"]
-- ["PSo26NSExtensionRequestHandling", "headlineLabel"]
+- ["PSo26NSExtensionRequestHandling", "addBarButton"]
+- ["PSo26NSExtensionRequestHandling", "description"]
 - ["PSo26NSExtensionRequestHandling", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "popoverPresentationController"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIAlertAction"]
 - !private ["CSo8NSObject", "UIAlertController"]
-- ["CSo8NSObject", "UIButton"]
-- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UIBarButtonItem"]
+- !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addAction"]
 - ["CSo8NSObject", "addAttachment"]
-- ["CSo8NSObject", "headlineLabel"]
+- ["CSo8NSObject", "addBarButton"]
+- !private ["CSo8NSObject", "bounds"]
+- ["CSo8NSObject", "description"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "navigationItem"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "popoverPresentationController"]
 - !private ["CSo8NSObject", "presentViewController"]
-- !private ["CSo8NSObject", "title"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "sourceRect"]
+- !private ["CSo8NSObject", "sourceView"]
+- !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
 - ["PSo16NSObjectProtocol", "addAttachment"]
-- ["PSo16NSObjectProtocol", "headlineLabel"]
+- ["PSo16NSObjectProtocol", "addBarButton"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- ["PSo16NSObjectProtocol", "description"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "navigationItem"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "popoverPresentationController"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
-- !private ["PSo16NSObjectProtocol", "title"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "sourceRect"]
+- !private ["PSo16NSObjectProtocol", "sourceView"]
+- !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
 - !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps16RawRepresentable", "ActionSheet"]
+- !private ["Ps16RawRepresentable", "Cancel"]
 - !private ["Ps16RawRepresentable", "Default"]
+- !private ["Ps10Streamable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- ["C13AdvancedNotes21SummaryViewController", "String"]
 - !private ["C13AdvancedNotes21SummaryViewController", "UIAlertAction"]
 - !private ["C13AdvancedNotes21SummaryViewController", "UIAlertController"]
-- ["C13AdvancedNotes21SummaryViewController", "UIButton"]
-- ["C13AdvancedNotes21SummaryViewController", "UILabel"]
+- ["C13AdvancedNotes21SummaryViewController", "UIBarButtonItem"]
+- !private ["C13AdvancedNotes21SummaryViewController", "Void"]
 - ["C13AdvancedNotes21SummaryViewController", "addAttachment"]
+- ["C13AdvancedNotes21SummaryViewController", "addBarButton"]
 - ["C13AdvancedNotes21SummaryViewController", "deinit"]
-- ["C13AdvancedNotes21SummaryViewController", "headlineLabel"]
+- ["C13AdvancedNotes21SummaryViewController", "description"]
 - ["C13AdvancedNotes21SummaryViewController", "init"]
-- !private ["C13AdvancedNotes21SummaryViewController", "navigationItem"]
+- !private ["C13AdvancedNotes21SummaryViewController", "navigationController"]
 - !private ["C13AdvancedNotes21SummaryViewController", "presentViewController"]
+- !private ["C13AdvancedNotes21SummaryViewController", "print"]
 - ["C13AdvancedNotes21SummaryViewController", "viewDidLoad"]
+- !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "Cancel"]
 - !private ["OSC18UIAlertActionStyle", "Default"]
 - !private ["CSo17UIAlertController", "addAction"]
 - !private ["CSo17UIAlertController", "init"]
+- !private ["CSo17UIAlertController", "popoverPresentationController"]
 - !private ["OSC22UIAlertControllerStyle", "ActionSheet"]
+- !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
 - ["PSo21UIAppearanceContainer", "addAttachment"]
-- ["PSo21UIAppearanceContainer", "headlineLabel"]
+- ["PSo21UIAppearanceContainer", "addBarButton"]
+- !private ["PSo21UIAppearanceContainer", "bounds"]
+- ["PSo21UIAppearanceContainer", "description"]
 - ["PSo21UIAppearanceContainer", "init"]
-- !private ["PSo21UIAppearanceContainer", "navigationItem"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "popoverPresentationController"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "sourceRect"]
+- !private ["PSo21UIAppearanceContainer", "sourceView"]
+- !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "UIAlertAction"]
 - !private ["PSo18UIContentContainer", "UIAlertController"]
 - !private ["PSo18UIContentContainer", "addAction"]
 - ["PSo18UIContentContainer", "addAttachment"]
-- ["PSo18UIContentContainer", "headlineLabel"]
+- ["PSo18UIContentContainer", "addBarButton"]
+- ["PSo18UIContentContainer", "description"]
 - ["PSo18UIContentContainer", "init"]
-- !private ["PSo18UIContentContainer", "navigationItem"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "popoverPresentationController"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
+- !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "sourceRect"]
+- !private ["PSo18UIContentContainer", "sourceView"]
+- !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "bounds"]
+- !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
 - !private ["PSo18UIFocusEnvironment", "addAction"]
 - ["PSo18UIFocusEnvironment", "addAttachment"]
-- ["PSo18UIFocusEnvironment", "headlineLabel"]
+- ["PSo18UIFocusEnvironment", "addBarButton"]
+- !private ["PSo18UIFocusEnvironment", "bounds"]
+- ["PSo18UIFocusEnvironment", "description"]
 - ["PSo18UIFocusEnvironment", "init"]
-- !private ["PSo18UIFocusEnvironment", "navigationItem"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "popoverPresentationController"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "sourceRect"]
+- !private ["PSo18UIFocusEnvironment", "sourceView"]
+- !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
-- !private ["CSo16UINavigationItem", "title"]
+- !private ["CSo22UINavigationController", "navigationController"]
+- !private ["CSo22UINavigationController", "view"]
+- !private ["CSo31UIPopoverPresentationController", "sourceRect"]
+- !private ["CSo31UIPopoverPresentationController", "sourceView"]
+- !private ["CSo24UIPresentationController", "sourceRect"]
+- !private ["CSo24UIPresentationController", "sourceView"]
+- ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIAlertAction"]
 - !private ["CSo11UIResponder", "UIAlertController"]
-- ["CSo11UIResponder", "UIButton"]
-- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UIBarButtonItem"]
+- !private ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "addAction"]
 - ["CSo11UIResponder", "addAttachment"]
-- ["CSo11UIResponder", "headlineLabel"]
+- ["CSo11UIResponder", "addBarButton"]
+- !private ["CSo11UIResponder", "bounds"]
+- ["CSo11UIResponder", "description"]
 - ["CSo11UIResponder", "init"]
-- !private ["CSo11UIResponder", "navigationItem"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "popoverPresentationController"]
 - !private ["CSo11UIResponder", "presentViewController"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo16UIStateRestoring", "UIAlertAction"]
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
 - !private ["PSo16UIStateRestoring", "addAction"]
 - ["PSo16UIStateRestoring", "addAttachment"]
-- ["PSo16UIStateRestoring", "headlineLabel"]
+- ["PSo16UIStateRestoring", "addBarButton"]
+- ["PSo16UIStateRestoring", "description"]
 - ["PSo16UIStateRestoring", "init"]
-- !private ["PSo16UIStateRestoring", "navigationItem"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "popoverPresentationController"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
+- !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "UIAlertAction"]
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
 - ["PSo18UITraitEnvironment", "addAttachment"]
-- ["PSo18UITraitEnvironment", "headlineLabel"]
+- ["PSo18UITraitEnvironment", "addBarButton"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- ["PSo18UITraitEnvironment", "description"]
 - ["PSo18UITraitEnvironment", "init"]
-- !private ["PSo18UITraitEnvironment", "navigationItem"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "popoverPresentationController"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "sourceRect"]
+- !private ["PSo18UITraitEnvironment", "sourceView"]
+- !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "bounds"]
+- ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIAlertAction"]
 - !private ["CSo16UIViewController", "UIAlertController"]
-- ["CSo16UIViewController", "UIButton"]
-- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UIBarButtonItem"]
+- !private ["CSo16UIViewController", "Void"]
 - !private ["CSo16UIViewController", "addAction"]
 - ["CSo16UIViewController", "addAttachment"]
-- ["CSo16UIViewController", "headlineLabel"]
+- ["CSo16UIViewController", "addBarButton"]
+- ["CSo16UIViewController", "description"]
 - ["CSo16UIViewController", "init"]
-- !private ["CSo16UIViewController", "navigationItem"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "popoverPresentationController"]
 - !private ["CSo16UIViewController", "presentViewController"]
+- !private ["CSo16UIViewController", "print"]
+- !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps12_Reflectable", "bounds"]
+- !private ["Ps12_Reflectable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "Sb"
 - "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- !private "Sd"
 - "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
 - "Ps8Hashable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps14MirrorPathType"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - !private "Sq"
+- !private "Ps16OutputStreamType"
 - !private "Ps16RawRepresentable"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
 - "C13AdvancedNotes21SummaryViewController"
+- !private "PSo29UIAccessibilityIdentification"
 - !private "CSo13UIAlertAction"
 - !private "OSC18UIAlertActionStyle"
 - !private "CSo17UIAlertController"
 - !private "OSC22UIAlertControllerStyle"
+- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
-- !private "CSo16UINavigationItem"
+- !private "CSo22UINavigationController"
+- !private "CSo31UIPopoverPresentationController"
+- !private "CSo24UIPresentationController"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -263,7 +458,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-interface-hash: "1e69dd5949a1932bef25288b7895b2d7"
+interface-hash: "e2c0850602bbab845ae4ce26449de964"

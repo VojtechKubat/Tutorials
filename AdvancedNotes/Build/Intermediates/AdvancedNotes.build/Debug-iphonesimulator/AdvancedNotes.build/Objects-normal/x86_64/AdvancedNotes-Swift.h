@@ -94,6 +94,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import CoreGraphics;
+@import Foundation;
 @import CoreData;
 #endif
 
@@ -112,10 +113,15 @@ SWIFT_CLASS("_TtC13AdvancedNotes11AppDelegate")
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
-- (void)importDummyData;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+@interface AppDelegate (SWIFT_EXTENSION(AdvancedNotes))
+- (void)importDummyData;
+@end
+
+@class Note;
 @class UILabel;
 @class UIViewController;
 @class NSBundle;
@@ -127,6 +133,8 @@ SWIFT_CLASS("_TtC13AdvancedNotes19DetailNavController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified mainLabel;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)configureDetail:(Note * _Nonnull)note;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -148,17 +156,19 @@ SWIFT_CLASS("_TtC13AdvancedNotes17MainTableViewCell")
 @interface MainTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified headlineLabel;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified leftHeading;
-- (void)configureCell:(NSString * _Nonnull)headline;
+- (void)configureCell:(Note * _Nonnull)note;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSFetchedResultsController;
 @class UITableView;
 @class NSIndexPath;
 @class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC13AdvancedNotes20MasterViewController")
 @interface MasterViewController : UITableViewController
+@property (nonatomic, strong) NSFetchedResultsController * _Null_unspecified fetchedResultsController;
 - (void)viewDidLoad;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -170,6 +180,11 @@ SWIFT_CLASS("_TtC13AdvancedNotes20MasterViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+@interface NSDate (SWIFT_EXTENSION(AdvancedNotes))
++ (NSDate * _Nonnull)isoToDate:(NSString * _Nonnull)dateInString;
+@end
+
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -179,7 +194,6 @@ SWIFT_CLASS("_TtC13AdvancedNotes4Note")
 @end
 
 @class NSNumber;
-@class NSDate;
 @class NSSet;
 
 @interface Note (SWIFT_EXTENSION(AdvancedNotes))
@@ -207,6 +221,13 @@ SWIFT_CLASS("_TtC13AdvancedNotes9Paragraph")
 @property (nonatomic, strong) NSDate * _Nullable lastChange;
 @property (nonatomic, copy) NSString * _Nullable text;
 @property (nonatomic, strong) Note * _Nullable relatesToNote;
+@end
+
+
+SWIFT_CLASS("_TtC13AdvancedNotes23ParagraphViewController")
+@interface ParagraphViewController : UIViewController
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -245,17 +266,19 @@ SWIFT_CLASS("_TtC13AdvancedNotes23RemindersViewController")
 @interface RemindersViewController : UIViewController
 - (void)viewDidLoad;
 - (void)addReminder;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
+@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC13AdvancedNotes21SummaryViewController")
 @interface SummaryViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified headlineLabel;
-- (IBAction)addAttachment:(UIButton * _Nonnull)sender;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified addBarButton;
+- (IBAction)addAttachment:(UIBarButtonItem * _Nonnull)sender;
 - (void)viewDidLoad;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

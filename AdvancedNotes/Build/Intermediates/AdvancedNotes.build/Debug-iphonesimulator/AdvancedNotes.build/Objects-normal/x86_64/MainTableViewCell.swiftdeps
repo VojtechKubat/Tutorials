@@ -6,54 +6,60 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes17MainTableViewCell", ""]
 provides-dynamic-lookup:
-- "leftHeading"
 - "configureCell"
 - "headlineLabel"
+- "leftHeading"
 depends-top-level:
-- "MainTableViewCell"
+- "Note"
 - "NSLayoutConstraint"
 - "UILabel"
 - "UITableViewCell"
-- "String"
+- "MainTableViewCell"
 depends-member:
 - ["Ps9AnyObject", "configureCell"]
+- !private ["Ps9AnyObject", "headline"]
 - ["Ps9AnyObject", "headlineLabel"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "leftHeading"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", ""]
 - ["Ps11CVarArgType", "configureCell"]
+- !private ["Ps11CVarArgType", "headline"]
 - ["Ps11CVarArgType", "headlineLabel"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "leftHeading"]
 - !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", ""]
 - ["Ps28CustomDebugStringConvertible", "configureCell"]
+- !private ["Ps28CustomDebugStringConvertible", "headline"]
 - ["Ps28CustomDebugStringConvertible", "headlineLabel"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "leftHeading"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps23CustomStringConvertible", "configureCell"]
+- !private ["Ps23CustomStringConvertible", "headline"]
 - ["Ps23CustomStringConvertible", "headlineLabel"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "leftHeading"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Ps9Equatable", "configureCell"]
+- !private ["Ps9Equatable", "headline"]
 - ["Ps9Equatable", "headlineLabel"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "leftHeading"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", ""]
 - ["Ps8Hashable", "configureCell"]
+- !private ["Ps8Hashable", "headline"]
 - ["Ps8Hashable", "headlineLabel"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "leftHeading"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", ""]
 - ["C13AdvancedNotes17MainTableViewCell", "NSLayoutConstraint"]
-- ["C13AdvancedNotes17MainTableViewCell", "String"]
+- ["C13AdvancedNotes17MainTableViewCell", "Note"]
 - ["C13AdvancedNotes17MainTableViewCell", "UILabel"]
 - ["C13AdvancedNotes17MainTableViewCell", "configureCell"]
 - ["C13AdvancedNotes17MainTableViewCell", "deinit"]
@@ -66,20 +72,24 @@ depends-member:
 - ["PSo8NSCoding", "leftHeading"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", ""]
+- !private ["CSo15NSManagedObject", "headline"]
 - ["CSo8NSObject", "NSLayoutConstraint"]
-- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Note"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "configureCell"]
+- !private ["CSo8NSObject", "headline"]
 - ["CSo8NSObject", "headlineLabel"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "leftHeading"]
 - !private ["CSo8NSObject", "text"]
 - ["PSo16NSObjectProtocol", "configureCell"]
+- !private ["PSo16NSObjectProtocol", "headline"]
 - ["PSo16NSObjectProtocol", "headlineLabel"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "leftHeading"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["C13AdvancedNotes4Note", "headline"]
 - ["PSo29UIAccessibilityIdentification", "configureCell"]
 - ["PSo29UIAccessibilityIdentification", "headlineLabel"]
 - ["PSo29UIAccessibilityIdentification", "init"]
@@ -123,7 +133,7 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", ""]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "NSLayoutConstraint"]
-- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "Note"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "configureCell"]
 - ["CSo11UIResponder", "headlineLabel"]
@@ -131,7 +141,7 @@ depends-member:
 - ["CSo11UIResponder", "leftHeading"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo15UITableViewCell", "NSLayoutConstraint"]
-- ["CSo15UITableViewCell", "String"]
+- ["CSo15UITableViewCell", "Note"]
 - ["CSo15UITableViewCell", "UILabel"]
 - ["CSo15UITableViewCell", "configureCell"]
 - ["CSo15UITableViewCell", "headlineLabel"]
@@ -145,7 +155,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "NSLayoutConstraint"]
-- ["CSo6UIView", "String"]
+- ["CSo6UIView", "Note"]
 - ["CSo6UIView", "UILabel"]
 - ["CSo6UIView", "configureCell"]
 - ["CSo6UIView", "headlineLabel"]
@@ -167,8 +177,10 @@ depends-nominal:
 - "Ps8Hashable"
 - "C13AdvancedNotes17MainTableViewCell"
 - "PSo8NSCoding"
+- !private "CSo15NSManagedObject"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "C13AdvancedNotes4Note"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -191,7 +203,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-interface-hash: "72a16176344395c15459fb0a50b3f04f"
+interface-hash: "4ab5d438a96012b78f0234f490abd298"

@@ -1,5 +1,8 @@
 {
-	"tags" : [{
+    "tags" : [{
+      "tagId" : 5,
+      "label" : "Private"
+    },{
 		"tagId" : 0,
 		"label" : "Important"
 	},{
@@ -38,12 +41,12 @@
 		"pictures" : [{
 				"active" : 1,
 				"textDetail" : "Example picture",
-				"imageURL" : "picture01.jpg",
+				"imageURL" : "picture01",
 				"lastChange" : "2011-02-10T12:11:44-02:00"
 			},{
 				"active" : 1,
 				"textDetail" : "Another picture",
-				"imageURL" : "picture02.jpg",
+				"imageURL" : "picture02",
 				"lastChange" : "2015-12-10T02:45:10-02:00"
 			}
 			],
@@ -55,7 +58,7 @@
 			],
 		"tags" : [0,1,3]
 		},{
-		"headline": "Work note",
+		"headline": "Remember for this thing",
 		"active" : 1,
 		"priority" : 5,
 		"paragraphs" : [{
@@ -74,12 +77,12 @@
 		"pictures" : [{
 				"active" : 1,
 				"textDetail" : "Example picture number two",
-				"imageURL" : "picture04.jpg",
+				"imageURL" : "picture04",
 				"lastChange" : "2011-02-10T09:10:00-02:00"
 			},{
 				"active" : 1,
 				"textDetail" : "text detail is here",
-				"imageURL" : "picture05.jpg",
+				"imageURL" : "picture05",
 				"lastChange" : "2010-04-23T03:14:22-04:00"
 			}
 			],
@@ -103,12 +106,12 @@
 		"pictures" : [{
 				"active" : 1,
 				"textDetail" : "Like this",
-				"imageURL" : "picture09.jpg",
+				"imageURL" : "picture09",
 				"lastChange" : "2015-03-17T07:12:00-02:00"
 			},{
 				"active" : 1,
 				"textDetail" : "text detail is here",
-				"imageURL" : "picture05.jpg",
+				"imageURL" : "picture05",
 				"lastChange" : "2015-01-28T08:50:22-02:00"
 			}
 			],
@@ -120,7 +123,7 @@
 			],
 		"tags" : [3,4]
 		},{
-		"headline": "Work note",
+		"headline": "Private note",
 		"active" : 1,
 		"priority" : 5,
 		"paragraphs" : [{
@@ -132,12 +135,12 @@
 		"pictures" : [{
 				"active" : 1,
 				"textDetail" : "This is important",
-				"imageURL" : "picture06.jpg",
+				"imageURL" : "picture06",
 				"lastChange" : "2015-05-12T13:23:00-02:00"
 			},{
 				"active" : 1,
 				"textDetail" : "Look at this!",
-				"imageURL" : "picture07.jpg",
+				"imageURL" : "picture07",
 				"lastChange" : "2014-03-01T08:34:12-02:00"
 			}
 			],
@@ -147,9 +150,9 @@
 				"active" : 1,
 			}
 			],
-		"tags" : [3,4]
+		"tags" : [3,4,5]
 		},{
-		"headline": "Work note",
+		"headline": "Something else",
 		"active" : 1,
 		"priority" : 5,
 		"paragraphs" : [{
@@ -161,7 +164,7 @@
 		"pictures" : [{
 				"active" : 1,
 				"textDetail" : "Look at this!",
-				"imageURL" : "picture10.jpg",
+				"imageURL" : "picture10",
 				"lastChange" : "2016-03-28T14:12:00-02:00"
 			}
 			],

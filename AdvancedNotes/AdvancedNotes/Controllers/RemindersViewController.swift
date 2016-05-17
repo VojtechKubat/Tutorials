@@ -20,8 +20,8 @@ class RemindersViewController: UIViewController {
                                           action: #selector(RemindersViewController.addReminder))
         self.navigationItem.rightBarButtonItem = addReminder
         
-        self.tabBarController?.navigationItem.title = "it works!"
-        self.tabBarController?.navigationItem.rightBarButtonItem = addReminder
+//        self.tabBarController?.navigationItem.title = "it works!"
+//        self.tabBarController?.navigationItem.rightBarButtonItem = addReminder
         
 //        let closure = {[weak self]() in
 //            self!.addReminder()
@@ -30,6 +30,10 @@ class RemindersViewController: UIViewController {
     }
     
     func addReminder() {
-        print("It works !!!")
+        
+    }
+    
+    override var description: String {
+        return ("\(super.description) - RemindersViewController")
     }
 }
