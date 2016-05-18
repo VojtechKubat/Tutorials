@@ -134,7 +134,6 @@ SWIFT_CLASS("_TtC13AdvancedNotes19DetailNavController")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)configureDetail:(Note * _Nonnull)note;
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -275,12 +274,24 @@ SWIFT_CLASS("_TtC13AdvancedNotes23RemindersViewController")
 
 SWIFT_CLASS("_TtC13AdvancedNotes21SummaryViewController")
 @interface SummaryViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified addBarButton;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, strong) Note * _Nullable note;
 - (IBAction)addAttachment:(UIBarButtonItem * _Nonnull)sender;
 - (void)viewDidLoad;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface SummaryViewController (SWIFT_EXTENSION(AdvancedNotes)) <UITableViewDelegate, UIScrollViewDelegate>
+@end
+
+
+@interface SummaryViewController (SWIFT_EXTENSION(AdvancedNotes)) <UITableViewDataSource>
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 

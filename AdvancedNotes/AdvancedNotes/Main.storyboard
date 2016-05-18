@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jbD-HQ-mv9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jbD-HQ-mv9">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycV-oX-55Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2503" y="1212"/>
+            <point key="canvasLocation" x="2503" y="1178"/>
         </scene>
         <!--Reminders-->
         <scene sceneID="V3F-oh-pB2">
@@ -90,12 +90,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="te6-RU-6LE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2503" y="2048"/>
+            <point key="canvasLocation" x="2503" y="1954"/>
         </scene>
         <!--Summary-->
         <scene sceneID="cv1-6y-8Bx">
             <objects>
-                <viewController title="Summary" id="Zez-PL-7k0" customClass="SummaryViewController" customModule="AdvancedNotes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Summary" automaticallyAdjustsScrollViewInsets="NO" id="Zez-PL-7k0" customClass="SummaryViewController" customModule="AdvancedNotes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TzP-fK-cBR"/>
                         <viewControllerLayoutGuide type="bottom" id="I9W-LM-XdV"/>
@@ -108,15 +108,31 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ParagraphCell" id="xrm-tw-bxD">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="paragraphCell" id="xrm-tw-bxD">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xrm-tw-bxD" id="vTz-MR-HWr">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9J-Ce-LgS">
+                                                    <rect key="frame" x="8" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="U9J-Ce-LgS" firstAttribute="leading" secondItem="vTz-MR-HWr" secondAttribute="leadingMargin" id="p7d-do-r0J"/>
+                                                <constraint firstItem="U9J-Ce-LgS" firstAttribute="centerY" secondItem="vTz-MR-HWr" secondAttribute="centerY" id="zu2-nq-zjp"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zez-PL-7k0" id="Ftb-XP-oj3"/>
+                                    <outlet property="delegate" destination="Zez-PL-7k0" id="366-ho-ziQ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -136,7 +152,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addBarButton" destination="xxq-4H-diN" id="6tG-1d-VZF"/>
+                        <outlet property="tableView" destination="vIq-Dj-Y7o" id="3y6-Rd-aeq"/>
                         <segue destination="CE6-sJ-3rH" kind="show" identifier="Paragraph" id="9Al-Ic-JAn"/>
                         <segue destination="c9K-dz-CWE" kind="show" identifier="Reminder" id="WZy-ej-iTw"/>
                         <segue destination="Ehq-ei-m4m" kind="show" identifier="Picture" id="VNE-7s-TVV"/>

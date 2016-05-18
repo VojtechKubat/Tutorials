@@ -26,11 +26,7 @@ class DetailNavController: UINavigationController {
     func configureDetail(note: Note) {
         // get the top viewcontroller and set 
         self.visibleViewController?.title = note.headline
-        print("\(self.visibleViewController?.description)")
-    }
-    
-    override var description: String {
-        return ("\(super.description) - DetailNavController")
+        (self.visibleViewController as! SummaryViewController).note = note
     }
 
 }

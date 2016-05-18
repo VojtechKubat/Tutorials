@@ -8,16 +8,16 @@ provides-member:
 - ["C13AdvancedNotes9Paragraph", "text"]
 - ["C13AdvancedNotes9Paragraph", "relatesToNote"]
 provides-dynamic-lookup:
+- "text"
+- "relatesToNote"
 - "active"
 - "lastChange"
-- "relatesToNote"
-- "text"
 depends-top-level:
+- "NSDate"
+- "String"
+- "Paragraph"
 - "NSNumber"
 - "Note"
-- "String"
-- "NSDate"
-- "Paragraph"
 depends-member:
 - ["Ps9AnyObject", "active"]
 - ["Ps9AnyObject", "lastChange"]

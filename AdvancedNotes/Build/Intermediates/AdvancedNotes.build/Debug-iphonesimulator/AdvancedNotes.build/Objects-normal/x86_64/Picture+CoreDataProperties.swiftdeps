@@ -9,18 +9,18 @@ provides-member:
 - ["C13AdvancedNotes7Picture", "textDetail"]
 - ["C13AdvancedNotes7Picture", "relatesToNote"]
 provides-dynamic-lookup:
+- "textDetail"
+- "image"
 - "lastChange"
 - "active"
-- "textDetail"
 - "relatesToNote"
-- "image"
 depends-top-level:
-- "Note"
-- "NSData"
-- "NSNumber"
-- "Picture"
 - "String"
 - "NSDate"
+- "NSData"
+- "Note"
+- "Picture"
+- "NSNumber"
 depends-member:
 - ["Ps9AnyObject", "active"]
 - ["Ps9AnyObject", "image"]

@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes23RemindersViewController", ""]
 provides-dynamic-lookup:
-- "addReminder"
 - "description"
+- "addReminder"
 - "viewDidLoad"
 depends-top-level:
-- "String"
-- "RemindersViewController"
-- "UIViewController"
 - !private "UIBarButtonItem"
+- "String"
+- "UIViewController"
+- "RemindersViewController"
 - !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "RemindersViewController"]

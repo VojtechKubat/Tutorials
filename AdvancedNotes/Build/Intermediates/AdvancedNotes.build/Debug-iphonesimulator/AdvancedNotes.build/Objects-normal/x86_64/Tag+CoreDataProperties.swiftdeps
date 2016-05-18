@@ -10,8 +10,8 @@ provides-dynamic-lookup:
 - "relatesToNote"
 depends-top-level:
 - "String"
-- "NSSet"
 - "Tag"
+- "NSSet"
 depends-member:
 - ["Ps9AnyObject", "label"]
 - ["Ps9AnyObject", "relatesToNote"]

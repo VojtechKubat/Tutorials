@@ -8,15 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 - "addBorders"
 depends-top-level:
-- !private "StringLiteralType"
-- !private "NSNumber"
-- "NSCoder"
-- "FrameTextView"
-- !private "UIColor"
-- "UITextView"
 - "CGRect"
+- "UITextView"
+- !private "NSNumber"
 - "NSTextContainer"
+- !private "StringLiteralType"
+- !private "UIColor"
+- "NSCoder"
 - !private "UIEdgeInsetsMake"
+- "FrameTextView"
 depends-member:
 - !private ["Ps9AnyObject", "CGColor"]
 - !private ["Ps9AnyObject", "NSNumber"]

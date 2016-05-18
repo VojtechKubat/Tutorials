@@ -7,8 +7,8 @@ provides-member:
 - ["C13AdvancedNotes15CoreDataService", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CoreDataStack"
 - "CoreDataService"
+- "CoreDataStack"
 depends-member:
 - ["Ps9AnyObject", "CoreDataStack"]
 - ["Ps9AnyObject", "init"]

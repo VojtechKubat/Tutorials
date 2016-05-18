@@ -7,14 +7,14 @@ provides-member:
 - ["C13AdvancedNotes17MainTableViewCell", ""]
 provides-dynamic-lookup:
 - "configureCell"
-- "headlineLabel"
 - "leftHeading"
+- "headlineLabel"
 depends-top-level:
-- "Note"
+- "MainTableViewCell"
 - "NSLayoutConstraint"
 - "UILabel"
 - "UITableViewCell"
-- "MainTableViewCell"
+- "Note"
 depends-member:
 - ["Ps9AnyObject", "configureCell"]
 - !private ["Ps9AnyObject", "headline"]
