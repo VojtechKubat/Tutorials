@@ -6,40 +6,57 @@ provides-member:
 - ["C13AdvancedNotes9Paragraph", "active"]
 - ["C13AdvancedNotes9Paragraph", "lastChange"]
 - ["C13AdvancedNotes9Paragraph", "text"]
+- ["C13AdvancedNotes9Paragraph", "id"]
 - ["C13AdvancedNotes9Paragraph", "relatesToNote"]
 provides-dynamic-lookup:
 - "text"
 - "relatesToNote"
-- "active"
 - "lastChange"
+- "active"
+- "id"
 depends-top-level:
-- "NSDate"
-- "String"
 - "Paragraph"
-- "NSNumber"
+- "String"
+- "NSDate"
 - "Note"
+- "NSNumber"
 depends-member:
+- ["C13AdvancedNotes8ANEntity", "NSDate"]
+- ["C13AdvancedNotes8ANEntity", "NSNumber"]
+- ["C13AdvancedNotes8ANEntity", "Note"]
+- ["C13AdvancedNotes8ANEntity", "String"]
+- ["C13AdvancedNotes8ANEntity", "active"]
+- ["C13AdvancedNotes8ANEntity", "id"]
+- ["C13AdvancedNotes8ANEntity", "lastChange"]
+- ["C13AdvancedNotes8ANEntity", "relatesToNote"]
+- ["C13AdvancedNotes8ANEntity", "text"]
 - ["Ps9AnyObject", "active"]
+- ["Ps9AnyObject", "id"]
 - ["Ps9AnyObject", "lastChange"]
 - ["Ps9AnyObject", "relatesToNote"]
 - ["Ps9AnyObject", "text"]
 - ["Ps11CVarArgType", "active"]
+- ["Ps11CVarArgType", "id"]
 - ["Ps11CVarArgType", "lastChange"]
 - ["Ps11CVarArgType", "relatesToNote"]
 - ["Ps11CVarArgType", "text"]
 - ["Ps28CustomDebugStringConvertible", "active"]
+- ["Ps28CustomDebugStringConvertible", "id"]
 - ["Ps28CustomDebugStringConvertible", "lastChange"]
 - ["Ps28CustomDebugStringConvertible", "relatesToNote"]
 - ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "active"]
+- ["Ps23CustomStringConvertible", "id"]
 - ["Ps23CustomStringConvertible", "lastChange"]
 - ["Ps23CustomStringConvertible", "relatesToNote"]
 - ["Ps23CustomStringConvertible", "text"]
 - ["Ps9Equatable", "active"]
+- ["Ps9Equatable", "id"]
 - ["Ps9Equatable", "lastChange"]
 - ["Ps9Equatable", "relatesToNote"]
 - ["Ps9Equatable", "text"]
 - ["Ps8Hashable", "active"]
+- ["Ps8Hashable", "id"]
 - ["Ps8Hashable", "lastChange"]
 - ["Ps8Hashable", "relatesToNote"]
 - ["Ps8Hashable", "text"]
@@ -48,6 +65,7 @@ depends-member:
 - ["CSo15NSManagedObject", "Note"]
 - ["CSo15NSManagedObject", "String"]
 - ["CSo15NSManagedObject", "active"]
+- ["CSo15NSManagedObject", "id"]
 - ["CSo15NSManagedObject", "lastChange"]
 - ["CSo15NSManagedObject", "relatesToNote"]
 - ["CSo15NSManagedObject", "text"]
@@ -56,10 +74,12 @@ depends-member:
 - ["CSo8NSObject", "Note"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "active"]
+- ["CSo8NSObject", "id"]
 - ["CSo8NSObject", "lastChange"]
 - ["CSo8NSObject", "relatesToNote"]
 - ["CSo8NSObject", "text"]
 - ["PSo16NSObjectProtocol", "active"]
+- ["PSo16NSObjectProtocol", "id"]
 - ["PSo16NSObjectProtocol", "lastChange"]
 - ["PSo16NSObjectProtocol", "relatesToNote"]
 - ["PSo16NSObjectProtocol", "text"]
@@ -68,10 +88,12 @@ depends-member:
 - ["C13AdvancedNotes9Paragraph", "Note"]
 - ["C13AdvancedNotes9Paragraph", "String"]
 - ["C13AdvancedNotes9Paragraph", "active"]
+- ["C13AdvancedNotes9Paragraph", "id"]
 - ["C13AdvancedNotes9Paragraph", "lastChange"]
 - ["C13AdvancedNotes9Paragraph", "relatesToNote"]
 - ["C13AdvancedNotes9Paragraph", "text"]
 depends-nominal:
+- "C13AdvancedNotes8ANEntity"
 - "Ps9AnyObject"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
@@ -94,4 +116,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "8db629a7062e9f91999777a5c9f92559"
+interface-hash: "ca8ecd09b4d4efae313f15e59ff57353"

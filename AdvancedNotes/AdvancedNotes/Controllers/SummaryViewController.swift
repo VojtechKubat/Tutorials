@@ -8,11 +8,42 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class SummaryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var note: Note?
+    var sort = NSSortDescriptor(key: "getLastChange", ascending: false)
+    
+    var note: Note? {
+        didSet {
+//            contentList.appendContentsOf(note?.hasParagraph as! Set)
+//            contentList.appendContentsOf(note?.hasPicture as! Set)
+//            contentList.appendContentsOf(note?.hasReminder as! Set)
+            contentSet = Set<ANEntity>()
+            contentSet = contentSet.union(note?.hasParagraph as! Set)
+            contentSet = contentSet.union(note?.hasPicture as! Set)
+            contentSet = contentSet.union(note?.hasReminder as! Set)
+            contentSet = contentSet.union(note?.hasChild as! Set)
+            
+            print("----------------------------------")
+            print("\(contentSet)")
+            
+            contentListFiltered = Array(contentSet)
+            
+            print("----------------------------------")
+            print("\(contentListFiltered)")
+           
+            contentListFiltered = (Array(contentSet) as NSArray).sortedArrayUsingDescriptors([sort]) as! Array<ANEntity>
+            
+            print("----------------------------------")
+            print("\(contentListFiltered)")
+            
+        }
+    }
+    
+    var contentSet = Set<ANEntity>()
+    var contentListFiltered = Array<ANEntity>()
     
     @IBAction func addAttachment(sender: UIBarButtonItem) {
         let addAttachmentDialog = UIAlertController(title: "Add new attachment",
@@ -50,18 +81,7 @@ extension SummaryViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let _ = note {
-            var summaryItems: Int = 0
-            summaryItems += (note?.hasParagraph?.count)!
-            summaryItems += (note?.hasPicture?.count)!
-            summaryItems += (note?.hasChild?.count)!
-            summaryItems += (note?.hasReminder?.count)!
-            summaryItems += note?.hasParent != nil ? 1:0
-            
-            print("count of summary items: \(summaryItems)")
-            return summaryItems
-        }
-        return 0
+        return contentListFiltered.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

@@ -10,12 +10,13 @@ provides-dynamic-lookup:
 - "leftHeading"
 - "headlineLabel"
 depends-top-level:
-- "MainTableViewCell"
 - "NSLayoutConstraint"
 - "UILabel"
-- "UITableViewCell"
 - "Note"
+- "MainTableViewCell"
+- "UITableViewCell"
 depends-member:
+- !private ["C13AdvancedNotes8ANEntity", "headline"]
 - ["Ps9AnyObject", "configureCell"]
 - !private ["Ps9AnyObject", "headline"]
 - ["Ps9AnyObject", "headlineLabel"]
@@ -169,6 +170,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "text"]
 - ["Ps12_Reflectable", ""]
 depends-nominal:
+- !private "C13AdvancedNotes8ANEntity"
 - "Ps9AnyObject"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"

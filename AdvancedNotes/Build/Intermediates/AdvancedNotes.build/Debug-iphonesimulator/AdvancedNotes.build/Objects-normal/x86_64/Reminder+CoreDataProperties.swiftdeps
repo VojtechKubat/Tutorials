@@ -3,50 +3,68 @@ provides-top-level:
 provides-nominal:
 provides-member:
 - ["C13AdvancedNotes8Reminder", ""]
-- ["C13AdvancedNotes8Reminder", "time"]
-- ["C13AdvancedNotes8Reminder", "type"]
 - ["C13AdvancedNotes8Reminder", "active"]
 - ["C13AdvancedNotes8Reminder", "recurrence"]
+- ["C13AdvancedNotes8Reminder", "time"]
+- ["C13AdvancedNotes8Reminder", "type"]
+- ["C13AdvancedNotes8Reminder", "id"]
 - ["C13AdvancedNotes8Reminder", "relatesToNote"]
 provides-dynamic-lookup:
-- "time"
+- "recurrence"
+- "id"
+- "active"
 - "type"
 - "relatesToNote"
-- "active"
-- "recurrence"
+- "time"
 depends-top-level:
-- "NSDate"
-- "String"
 - "NSNumber"
 - "Reminder"
 - "Note"
+- "NSDate"
+- "String"
 depends-member:
+- ["C13AdvancedNotes8ANEntity", "NSDate"]
+- ["C13AdvancedNotes8ANEntity", "NSNumber"]
+- ["C13AdvancedNotes8ANEntity", "Note"]
+- ["C13AdvancedNotes8ANEntity", "String"]
+- ["C13AdvancedNotes8ANEntity", "active"]
+- ["C13AdvancedNotes8ANEntity", "id"]
+- ["C13AdvancedNotes8ANEntity", "recurrence"]
+- ["C13AdvancedNotes8ANEntity", "relatesToNote"]
+- ["C13AdvancedNotes8ANEntity", "time"]
+- ["C13AdvancedNotes8ANEntity", "type"]
 - ["Ps9AnyObject", "active"]
+- ["Ps9AnyObject", "id"]
 - ["Ps9AnyObject", "recurrence"]
 - ["Ps9AnyObject", "relatesToNote"]
 - ["Ps9AnyObject", "time"]
 - ["Ps9AnyObject", "type"]
 - ["Ps11CVarArgType", "active"]
+- ["Ps11CVarArgType", "id"]
 - ["Ps11CVarArgType", "recurrence"]
 - ["Ps11CVarArgType", "relatesToNote"]
 - ["Ps11CVarArgType", "time"]
 - ["Ps11CVarArgType", "type"]
 - ["Ps28CustomDebugStringConvertible", "active"]
+- ["Ps28CustomDebugStringConvertible", "id"]
 - ["Ps28CustomDebugStringConvertible", "recurrence"]
 - ["Ps28CustomDebugStringConvertible", "relatesToNote"]
 - ["Ps28CustomDebugStringConvertible", "time"]
 - ["Ps28CustomDebugStringConvertible", "type"]
 - ["Ps23CustomStringConvertible", "active"]
+- ["Ps23CustomStringConvertible", "id"]
 - ["Ps23CustomStringConvertible", "recurrence"]
 - ["Ps23CustomStringConvertible", "relatesToNote"]
 - ["Ps23CustomStringConvertible", "time"]
 - ["Ps23CustomStringConvertible", "type"]
 - ["Ps9Equatable", "active"]
+- ["Ps9Equatable", "id"]
 - ["Ps9Equatable", "recurrence"]
 - ["Ps9Equatable", "relatesToNote"]
 - ["Ps9Equatable", "time"]
 - ["Ps9Equatable", "type"]
 - ["Ps8Hashable", "active"]
+- ["Ps8Hashable", "id"]
 - ["Ps8Hashable", "recurrence"]
 - ["Ps8Hashable", "relatesToNote"]
 - ["Ps8Hashable", "time"]
@@ -56,6 +74,7 @@ depends-member:
 - ["CSo15NSManagedObject", "Note"]
 - ["CSo15NSManagedObject", "String"]
 - ["CSo15NSManagedObject", "active"]
+- ["CSo15NSManagedObject", "id"]
 - ["CSo15NSManagedObject", "recurrence"]
 - ["CSo15NSManagedObject", "relatesToNote"]
 - ["CSo15NSManagedObject", "time"]
@@ -65,11 +84,13 @@ depends-member:
 - ["CSo8NSObject", "Note"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "active"]
+- ["CSo8NSObject", "id"]
 - ["CSo8NSObject", "recurrence"]
 - ["CSo8NSObject", "relatesToNote"]
 - ["CSo8NSObject", "time"]
 - ["CSo8NSObject", "type"]
 - ["PSo16NSObjectProtocol", "active"]
+- ["PSo16NSObjectProtocol", "id"]
 - ["PSo16NSObjectProtocol", "recurrence"]
 - ["PSo16NSObjectProtocol", "relatesToNote"]
 - ["PSo16NSObjectProtocol", "time"]
@@ -79,11 +100,13 @@ depends-member:
 - ["C13AdvancedNotes8Reminder", "Note"]
 - ["C13AdvancedNotes8Reminder", "String"]
 - ["C13AdvancedNotes8Reminder", "active"]
+- ["C13AdvancedNotes8Reminder", "id"]
 - ["C13AdvancedNotes8Reminder", "recurrence"]
 - ["C13AdvancedNotes8Reminder", "relatesToNote"]
 - ["C13AdvancedNotes8Reminder", "time"]
 - ["C13AdvancedNotes8Reminder", "type"]
 depends-nominal:
+- "C13AdvancedNotes8ANEntity"
 - "Ps9AnyObject"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
@@ -106,4 +129,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "1362f251b37a768ae3f0f1897c053a42"
+interface-hash: "8878e99a0552640c10baff79a577457d"

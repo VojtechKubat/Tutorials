@@ -7,47 +7,66 @@ provides-member:
 - ["C13AdvancedNotes7Picture", "image"]
 - ["C13AdvancedNotes7Picture", "lastChange"]
 - ["C13AdvancedNotes7Picture", "textDetail"]
+- ["C13AdvancedNotes7Picture", "id"]
 - ["C13AdvancedNotes7Picture", "relatesToNote"]
 provides-dynamic-lookup:
 - "textDetail"
+- "relatesToNote"
 - "image"
 - "lastChange"
 - "active"
-- "relatesToNote"
+- "id"
 depends-top-level:
 - "String"
 - "NSDate"
-- "NSData"
 - "Note"
-- "Picture"
+- "NSData"
 - "NSNumber"
+- "Picture"
 depends-member:
+- ["C13AdvancedNotes8ANEntity", "NSData"]
+- ["C13AdvancedNotes8ANEntity", "NSDate"]
+- ["C13AdvancedNotes8ANEntity", "NSNumber"]
+- ["C13AdvancedNotes8ANEntity", "Note"]
+- ["C13AdvancedNotes8ANEntity", "String"]
+- ["C13AdvancedNotes8ANEntity", "active"]
+- ["C13AdvancedNotes8ANEntity", "id"]
+- ["C13AdvancedNotes8ANEntity", "image"]
+- ["C13AdvancedNotes8ANEntity", "lastChange"]
+- ["C13AdvancedNotes8ANEntity", "relatesToNote"]
+- ["C13AdvancedNotes8ANEntity", "textDetail"]
 - ["Ps9AnyObject", "active"]
+- ["Ps9AnyObject", "id"]
 - ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "lastChange"]
 - ["Ps9AnyObject", "relatesToNote"]
 - ["Ps9AnyObject", "textDetail"]
 - ["Ps11CVarArgType", "active"]
+- ["Ps11CVarArgType", "id"]
 - ["Ps11CVarArgType", "image"]
 - ["Ps11CVarArgType", "lastChange"]
 - ["Ps11CVarArgType", "relatesToNote"]
 - ["Ps11CVarArgType", "textDetail"]
 - ["Ps28CustomDebugStringConvertible", "active"]
+- ["Ps28CustomDebugStringConvertible", "id"]
 - ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "lastChange"]
 - ["Ps28CustomDebugStringConvertible", "relatesToNote"]
 - ["Ps28CustomDebugStringConvertible", "textDetail"]
 - ["Ps23CustomStringConvertible", "active"]
+- ["Ps23CustomStringConvertible", "id"]
 - ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "lastChange"]
 - ["Ps23CustomStringConvertible", "relatesToNote"]
 - ["Ps23CustomStringConvertible", "textDetail"]
 - ["Ps9Equatable", "active"]
+- ["Ps9Equatable", "id"]
 - ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "lastChange"]
 - ["Ps9Equatable", "relatesToNote"]
 - ["Ps9Equatable", "textDetail"]
 - ["Ps8Hashable", "active"]
+- ["Ps8Hashable", "id"]
 - ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "lastChange"]
 - ["Ps8Hashable", "relatesToNote"]
@@ -58,6 +77,7 @@ depends-member:
 - ["CSo15NSManagedObject", "Note"]
 - ["CSo15NSManagedObject", "String"]
 - ["CSo15NSManagedObject", "active"]
+- ["CSo15NSManagedObject", "id"]
 - ["CSo15NSManagedObject", "image"]
 - ["CSo15NSManagedObject", "lastChange"]
 - ["CSo15NSManagedObject", "relatesToNote"]
@@ -68,11 +88,13 @@ depends-member:
 - ["CSo8NSObject", "Note"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "active"]
+- ["CSo8NSObject", "id"]
 - ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "lastChange"]
 - ["CSo8NSObject", "relatesToNote"]
 - ["CSo8NSObject", "textDetail"]
 - ["PSo16NSObjectProtocol", "active"]
+- ["PSo16NSObjectProtocol", "id"]
 - ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "lastChange"]
 - ["PSo16NSObjectProtocol", "relatesToNote"]
@@ -83,11 +105,13 @@ depends-member:
 - ["C13AdvancedNotes7Picture", "Note"]
 - ["C13AdvancedNotes7Picture", "String"]
 - ["C13AdvancedNotes7Picture", "active"]
+- ["C13AdvancedNotes7Picture", "id"]
 - ["C13AdvancedNotes7Picture", "image"]
 - ["C13AdvancedNotes7Picture", "lastChange"]
 - ["C13AdvancedNotes7Picture", "relatesToNote"]
 - ["C13AdvancedNotes7Picture", "textDetail"]
 depends-nominal:
+- "C13AdvancedNotes8ANEntity"
 - "Ps9AnyObject"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
@@ -110,4 +134,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "e7ed995ba750ad197b0c032a04f22404"
+interface-hash: "8f9eb4a49949562b1847294dbe44db83"

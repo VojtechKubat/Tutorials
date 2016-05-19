@@ -6,40 +6,211 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes3Tag", ""]
 provides-dynamic-lookup:
+- "parseJsonToTag"
+- "parseJsonToTag"
 depends-top-level:
+- !private "NSNumber"
+- !private "StringLiteralType"
+- !private "Int"
 - "NSManagedObject"
+- !private "CoreDataService"
+- "NSDictionary"
 - "Tag"
+- "NSManagedObjectContext"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "!="
+- !private "String"
 depends-member:
+- !private ["Ps9AnyObject", "CoreDataService"]
+- !private ["Ps9AnyObject", "NSNumber"]
+- !private ["Ps9AnyObject", "Tag"]
+- !private ["Ps9AnyObject", "count"]
+- !private ["Ps9AnyObject", "id"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "label"]
+- !private ["Ps9AnyObject", "myNewEntity"]
+- ["Ps9AnyObject", "parseJsonToTag"]
+- !private ["Ps9AnyObject", "trySave"]
+- !private ["Ps9AnyObject", "valueForKey"]
 - ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "init"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "CoreDataService"]
+- !private ["Ps11CVarArgType", "NSNumber"]
+- !private ["Ps11CVarArgType", "Tag"]
+- !private ["Ps11CVarArgType", "count"]
+- !private ["Ps11CVarArgType", "id"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "label"]
+- !private ["Ps11CVarArgType", "myNewEntity"]
+- ["Ps11CVarArgType", "parseJsonToTag"]
+- !private ["Ps11CVarArgType", "valueForKey"]
 - ["Ps11CVarArgType", ""]
+- !private ["C13AdvancedNotes15CoreDataService", "trySave"]
+- !private ["Ps28CustomDebugStringConvertible", "CoreDataService"]
+- !private ["Ps28CustomDebugStringConvertible", "NSNumber"]
+- !private ["Ps28CustomDebugStringConvertible", "Tag"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "id"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "label"]
+- !private ["Ps28CustomDebugStringConvertible", "myNewEntity"]
+- ["Ps28CustomDebugStringConvertible", "parseJsonToTag"]
+- !private ["Ps28CustomDebugStringConvertible", "valueForKey"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "CoreDataService"]
+- !private ["Ps23CustomStringConvertible", "NSNumber"]
+- !private ["Ps23CustomStringConvertible", "Tag"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "id"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "label"]
+- !private ["Ps23CustomStringConvertible", "myNewEntity"]
+- ["Ps23CustomStringConvertible", "parseJsonToTag"]
+- !private ["Ps23CustomStringConvertible", "valueForKey"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps28DictionaryLiteralConvertible", "count"]
+- !private ["Ps28DictionaryLiteralConvertible", "valueForKey"]
+- !private ["Ps9Equatable", "CoreDataService"]
+- !private ["Ps9Equatable", "NSNumber"]
+- !private ["Ps9Equatable", "Tag"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "count"]
+- !private ["Ps9Equatable", "id"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "label"]
+- !private ["Ps9Equatable", "myNewEntity"]
+- ["Ps9Equatable", "parseJsonToTag"]
+- !private ["Ps9Equatable", "valueForKey"]
 - ["Ps9Equatable", ""]
+- !private ["Ps23FloatLiteralConvertible", "init"]
+- !private ["Ps8Hashable", "CoreDataService"]
+- !private ["Ps8Hashable", "NSNumber"]
+- !private ["Ps8Hashable", "Tag"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "count"]
+- !private ["Ps8Hashable", "id"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "label"]
+- !private ["Ps8Hashable", "myNewEntity"]
+- ["Ps8Hashable", "parseJsonToTag"]
+- !private ["Ps8Hashable", "valueForKey"]
 - ["Ps8Hashable", ""]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["PSo8NSCoding", "count"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "valueForKey"]
+- !private ["PSo9NSCopying", "count"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "valueForKey"]
+- !private ["CSo12NSDictionary", "count"]
+- !private ["CSo12NSDictionary", "valueForKey"]
+- !private ["PSo17NSFastEnumeration", "count"]
+- !private ["PSo17NSFastEnumeration", "valueForKey"]
+- ["CSo15NSManagedObject", "Bool"]
+- !private ["CSo15NSManagedObject", "CoreDataService"]
+- !private ["CSo15NSManagedObject", "Int"]
+- ["CSo15NSManagedObject", "NSDictionary"]
+- ["CSo15NSManagedObject", "NSManagedObjectContext"]
+- !private ["CSo15NSManagedObject", "NSNumber"]
+- !private ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "Tag"]
+- !private ["CSo15NSManagedObject", "id"]
 - ["CSo15NSManagedObject", "init"]
+- !private ["CSo15NSManagedObject", "label"]
+- !private ["CSo15NSManagedObject", "myNewEntity"]
+- ["CSo15NSManagedObject", "parseJsonToTag"]
 - ["CSo15NSManagedObject", ""]
+- !private ["PSo16NSMutableCopying", "count"]
+- !private ["PSo16NSMutableCopying", "valueForKey"]
+- !private ["CSo8NSNumber", "init"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CoreDataService"]
+- !private ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSDictionary"]
+- ["CSo8NSObject", "NSManagedObjectContext"]
+- !private ["CSo8NSObject", "NSNumber"]
+- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Tag"]
+- !private ["CSo8NSObject", "count"]
+- !private ["CSo8NSObject", "id"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "label"]
+- !private ["CSo8NSObject", "myNewEntity"]
+- ["CSo8NSObject", "parseJsonToTag"]
+- !private ["CSo8NSObject", "valueForKey"]
+- !private ["PSo16NSObjectProtocol", "CoreDataService"]
+- !private ["PSo16NSObjectProtocol", "NSNumber"]
+- !private ["PSo16NSObjectProtocol", "Tag"]
+- !private ["PSo16NSObjectProtocol", "count"]
+- !private ["PSo16NSObjectProtocol", "id"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "label"]
+- !private ["PSo16NSObjectProtocol", "myNewEntity"]
+- ["PSo16NSObjectProtocol", "parseJsonToTag"]
+- !private ["PSo16NSObjectProtocol", "valueForKey"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "count"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "valueForKey"]
+- !private ["CSo7NSValue", "init"]
+- !private ["Sq", "deinit"]
+- !private ["Ps12SequenceType", "count"]
+- !private ["Ps12SequenceType", "valueForKey"]
+- ["C13AdvancedNotes3Tag", "Bool"]
+- !private ["C13AdvancedNotes3Tag", "CoreDataService"]
+- !private ["C13AdvancedNotes3Tag", "Int"]
+- ["C13AdvancedNotes3Tag", "NSDictionary"]
+- ["C13AdvancedNotes3Tag", "NSManagedObjectContext"]
+- !private ["C13AdvancedNotes3Tag", "NSNumber"]
+- !private ["C13AdvancedNotes3Tag", "String"]
+- ["C13AdvancedNotes3Tag", "Tag"]
 - ["C13AdvancedNotes3Tag", "deinit"]
+- !private ["C13AdvancedNotes3Tag", "id"]
 - ["C13AdvancedNotes3Tag", "init"]
+- !private ["C13AdvancedNotes3Tag", "label"]
+- !private ["C13AdvancedNotes3Tag", "myNewEntity"]
+- ["C13AdvancedNotes3Tag", "parseJsonToTag"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "count"]
+- !private ["Ps12_Reflectable", "valueForKey"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - "Ps11CVarArgType"
+- !private "C13AdvancedNotes15CoreDataService"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- !private "Ps28DictionaryLiteralConvertible"
 - "Ps9Equatable"
+- !private "Ps23FloatLiteralConvertible"
 - "Ps8Hashable"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo12NSDictionary"
+- !private "PSo17NSFastEnumeration"
 - "CSo15NSManagedObject"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSNumber"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo7NSValue"
+- !private "Sq"
+- !private "Ps12SequenceType"
 - "C13AdvancedNotes3Tag"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -52,4 +223,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "ac9b840a31c947b639ff354a22a59f45"
+interface-hash: "6d0baa3d45f43ff9f030f3853b1deed7"

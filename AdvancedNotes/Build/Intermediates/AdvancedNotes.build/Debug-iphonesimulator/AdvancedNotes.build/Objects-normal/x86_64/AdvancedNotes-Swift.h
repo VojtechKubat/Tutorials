@@ -92,14 +92,24 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 # endif
 #endif
 #if defined(__has_feature) && __has_feature(modules)
+@import CoreData;
 @import UIKit;
 @import CoreGraphics;
 @import Foundation;
-@import CoreData;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class NSDate;
+@class NSEntityDescription;
+@class NSManagedObjectContext;
+
+SWIFT_CLASS("_TtC13AdvancedNotes8ANEntity")
+@interface ANEntity : NSManagedObject
+@property (nonatomic, readonly, strong) NSDate * _Null_unspecified getLastChange;
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIApplication;
 @class NSObject;
@@ -119,6 +129,20 @@ SWIFT_CLASS("_TtC13AdvancedNotes11AppDelegate")
 
 @interface AppDelegate (SWIFT_EXTENSION(AdvancedNotes))
 - (void)importDummyData;
+@end
+
+
+SWIFT_CLASS("_TtC13AdvancedNotes12DescendantID")
+@interface DescendantID : NSManagedObject
++ (DescendantID * _Nullable)parseJsonToDescendantID:(NSInteger)descID context:(NSManagedObjectContext * _Nonnull)context;
++ (DescendantID * _Nullable)parseJsonToDescendantID:(NSInteger)descID context:(NSManagedObjectContext * _Nonnull)context save:(BOOL)save;
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSNumber;
+
+@interface DescendantID (SWIFT_EXTENSION(AdvancedNotes))
+@property (nonatomic, strong) NSNumber * _Nullable id;
 @end
 
 @class Note;
@@ -184,15 +208,21 @@ SWIFT_CLASS("_TtC13AdvancedNotes20MasterViewController")
 + (NSDate * _Nonnull)isoToDate:(NSString * _Nonnull)dateInString;
 @end
 
-@class NSEntityDescription;
-@class NSManagedObjectContext;
+
+@interface NSManagedObject (SWIFT_EXTENSION(AdvancedNotes))
++ (NSManagedObject * _Nullable)myNewEntity:(NSManagedObjectContext * _Nonnull)context;
+@end
+
+@class NSDictionary;
 
 SWIFT_CLASS("_TtC13AdvancedNotes4Note")
-@interface Note : NSManagedObject
+@interface Note : ANEntity
+@property (nonatomic, readonly, strong) NSDate * _Null_unspecified getLastChange;
++ (Note * _Nullable)parseJsonToNote:(NSDictionary * _Nonnull)jsonDict context:(NSManagedObjectContext * _Nonnull)context;
++ (Note * _Nullable)parseJsonToNote:(NSDictionary * _Nonnull)jsonDict context:(NSManagedObjectContext * _Nonnull)context save:(BOOL)save;
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSNumber;
 @class NSSet;
 
 @interface Note (SWIFT_EXTENSION(AdvancedNotes))
@@ -200,17 +230,22 @@ SWIFT_CLASS("_TtC13AdvancedNotes4Note")
 @property (nonatomic, copy) NSString * _Nullable headline;
 @property (nonatomic, strong) NSDate * _Nullable lastChange;
 @property (nonatomic, strong) NSNumber * _Nullable priority;
+@property (nonatomic, strong) NSNumber * _Nullable id;
 @property (nonatomic, strong) NSSet * _Nullable hasChild;
 @property (nonatomic, strong) NSSet * _Nullable hasParagraph;
-@property (nonatomic, strong) Note * _Nullable hasParent;
 @property (nonatomic, strong) NSSet * _Nullable hasPicture;
 @property (nonatomic, strong) NSSet * _Nullable hasReminder;
 @property (nonatomic, strong) NSSet * _Nullable isTagged;
+@property (nonatomic, strong) Note * _Nullable hasParent;
+@property (nonatomic, strong) NSSet * _Nullable hasDescendantID;
 @end
 
 
 SWIFT_CLASS("_TtC13AdvancedNotes9Paragraph")
-@interface Paragraph : NSManagedObject
+@interface Paragraph : ANEntity
+@property (nonatomic, readonly, strong) NSDate * _Null_unspecified getLastChange;
++ (Paragraph * _Nullable)parseJsonToParagraph:(NSDictionary * _Nonnull)jsonDict context:(NSManagedObjectContext * _Nonnull)context;
++ (Paragraph * _Nullable)parseJsonToParagraph:(NSDictionary * _Nonnull)jsonDict context:(NSManagedObjectContext * _Nonnull)context save:(BOOL)save;
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -219,6 +254,7 @@ SWIFT_CLASS("_TtC13AdvancedNotes9Paragraph")
 @property (nonatomic, strong) NSNumber * _Nullable active;
 @property (nonatomic, strong) NSDate * _Nullable lastChange;
 @property (nonatomic, copy) NSString * _Nullable text;
+@property (nonatomic, strong) NSNumber * _Nullable id;
 @property (nonatomic, strong) Note * _Nullable relatesToNote;
 @end
 
@@ -229,34 +265,44 @@ SWIFT_CLASS("_TtC13AdvancedNotes23ParagraphViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSURL;
+@class NSData;
 
 SWIFT_CLASS("_TtC13AdvancedNotes7Picture")
-@interface Picture : NSManagedObject
+@interface Picture : ANEntity
+@property (nonatomic, readonly, strong) NSDate * _Null_unspecified getLastChange;
++ (Picture * _Nullable)parseJsonToPicture:(NSDictionary * _Nonnull)jsonDict context:(NSManagedObjectContext * _Nonnull)context;
++ (Picture * _Nullable)parseJsonToPicture:(NSDictionary * _Nonnull)jsonDict context:(NSManagedObjectContext * _Nonnull)context save:(BOOL)save;
++ (NSData * _Nonnull)dataForURLImage:(NSURL * _Nonnull)url;
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSData;
 
 @interface Picture (SWIFT_EXTENSION(AdvancedNotes))
 @property (nonatomic, strong) NSNumber * _Nullable active;
 @property (nonatomic, strong) NSData * _Nullable image;
 @property (nonatomic, strong) NSDate * _Nullable lastChange;
 @property (nonatomic, copy) NSString * _Nullable textDetail;
+@property (nonatomic, strong) NSNumber * _Nullable id;
 @property (nonatomic, strong) Note * _Nullable relatesToNote;
 @end
 
 
 SWIFT_CLASS("_TtC13AdvancedNotes8Reminder")
-@interface Reminder : NSManagedObject
+@interface Reminder : ANEntity
+@property (nonatomic, readonly, strong) NSDate * _Null_unspecified getLastChange;
++ (Reminder * _Nullable)parseJsonToReminder:(NSDictionary * _Nonnull)jsonDict context:(NSManagedObjectContext * _Nonnull)context;
++ (Reminder * _Nullable)parseJsonToReminder:(NSDictionary * _Nonnull)jsonDict context:(NSManagedObjectContext * _Nonnull)context save:(BOOL)save;
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 @interface Reminder (SWIFT_EXTENSION(AdvancedNotes))
-@property (nonatomic, strong) NSDate * _Nullable time;
-@property (nonatomic, strong) NSNumber * _Nullable type;
 @property (nonatomic, strong) NSNumber * _Nullable active;
 @property (nonatomic, copy) NSString * _Nullable recurrence;
+@property (nonatomic, strong) NSDate * _Nullable time;
+@property (nonatomic, strong) NSNumber * _Nullable type;
+@property (nonatomic, strong) NSNumber * _Nullable id;
 @property (nonatomic, strong) Note * _Nullable relatesToNote;
 @end
 
@@ -270,12 +316,16 @@ SWIFT_CLASS("_TtC13AdvancedNotes23RemindersViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSSortDescriptor;
 @class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC13AdvancedNotes21SummaryViewController")
 @interface SummaryViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, strong) NSSortDescriptor * _Nonnull sort;
 @property (nonatomic, strong) Note * _Nullable note;
+@property (nonatomic, copy) NSSet<ANEntity *> * _Nonnull contentSet;
+@property (nonatomic, copy) NSArray<ANEntity *> * _Nonnull contentListFiltered;
 - (IBAction)addAttachment:(UIBarButtonItem * _Nonnull)sender;
 - (void)viewDidLoad;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
@@ -297,12 +347,15 @@ SWIFT_CLASS("_TtC13AdvancedNotes21SummaryViewController")
 
 SWIFT_CLASS("_TtC13AdvancedNotes3Tag")
 @interface Tag : NSManagedObject
++ (Tag * _Nullable)parseJsonToTag:(NSDictionary * _Nonnull)jsonDict context:(NSManagedObjectContext * _Nonnull)context;
++ (Tag * _Nullable)parseJsonToTag:(NSDictionary * _Nonnull)jsonDict context:(NSManagedObjectContext * _Nonnull)context save:(BOOL)save;
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 @interface Tag (SWIFT_EXTENSION(AdvancedNotes))
 @property (nonatomic, copy) NSString * _Nullable label;
+@property (nonatomic, strong) NSNumber * _Nullable id;
 @property (nonatomic, strong) NSSet * _Nullable relatesToNote;
 @end
 

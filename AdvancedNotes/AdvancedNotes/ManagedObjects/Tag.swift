@@ -12,6 +12,19 @@ import CoreData
 
 class Tag: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
-
+    static func parseJsonToTag(jsonDict: NSDictionary, context: NSManagedObjectContext) -> Tag? {
+        return Tag.parseJsonToTag(jsonDict, context: context, save: false)
+    }
+    
+    static func parseJsonToTag(jsonDict: NSDictionary, context: NSManagedObjectContext, save: Bool) -> Tag? {
+        let tag = myNewEntity(context) as! Tag
+        guard (jsonDict.count != 0) else {return nil}
+        
+        tag.id = NSNumber(integer: jsonDict.valueForKey("id") as! Int)
+        tag.label = (jsonDict.valueForKey("label") as! String)
+        
+        if save {CoreDataService.trySave(context)}
+        
+        return tag
+    }
 }

@@ -6,19 +6,20 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes19DetailNavController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "headline"
-- "configureDetail"
 - "didReceiveMemoryWarning"
 - "mainLabel"
+- "configureDetail"
+- "headline"
+- "viewDidLoad"
 depends-top-level:
-- "StringLiteralType"
-- "DetailNavController"
-- "UINavigationController"
-- "UILabel"
-- "Note"
 - !private "SummaryViewController"
+- "StringLiteralType"
+- "UILabel"
+- "UINavigationController"
+- "DetailNavController"
+- "Note"
 depends-member:
+- !private ["C13AdvancedNotes8ANEntity", "headline"]
 - ["Ps9AnyObject", "configureDetail"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "headline"]
@@ -225,6 +226,7 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - !private ["CSo16UIViewController", "visibleViewController"]
 depends-nominal:
+- !private "C13AdvancedNotes8ANEntity"
 - "Ps9AnyObject"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
