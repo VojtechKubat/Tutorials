@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes9Paragraph", ""]
 provides-dynamic-lookup:
-- "parseJsonToParagraph"
-- "parseJsonToParagraph"
 - "getLastChange"
+- "parseJsonToParagraph"
+- "parseJsonToParagraph"
 depends-top-level:
-- !private "String"
-- "Paragraph"
-- !private "!="
-- !private "StringLiteralType"
-- "Bool"
-- !private "=="
-- !private "CoreDataService"
-- "NSDate"
-- "NSManagedObjectContext"
-- !private "??"
 - "ANEntity"
+- "Paragraph"
 - !private "NSNumber"
+- "Bool"
+- !private "StringLiteralType"
+- !private "=="
+- !private "??"
+- !private "!="
+- "NSDate"
+- !private "CoreDataService"
+- "NSManagedObjectContext"
 - !private "Int"
-- !private "BooleanLiteralType"
 - "NSDictionary"
+- !private "BooleanLiteralType"
+- !private "String"
 depends-member:
 - ["C13AdvancedNotes8ANEntity", "Bool"]
 - !private ["C13AdvancedNotes8ANEntity", "CoreDataService"]

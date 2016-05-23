@@ -259,6 +259,13 @@ SWIFT_CLASS("_TtC13AdvancedNotes9Paragraph")
 @end
 
 
+SWIFT_CLASS("_TtC13AdvancedNotes17ParagraphViewCell")
+@interface ParagraphViewCell : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC13AdvancedNotes23ParagraphViewController")
 @interface ParagraphViewController : UIViewController
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

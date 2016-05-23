@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 - "getLastChange"
 depends-top-level:
-- !private "StringLiteralType"
 - "NSDate"
-- "ANEntity"
+- !private "StringLiteralType"
 - !private "preconditionFailure"
 - "NSManagedObject"
+- "ANEntity"
 depends-member:
 - ["C13AdvancedNotes8ANEntity", "NSDate"]
 - ["C13AdvancedNotes8ANEntity", "deinit"]

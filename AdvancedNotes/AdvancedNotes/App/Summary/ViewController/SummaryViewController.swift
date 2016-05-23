@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 import CoreData
 
+let cellDefaultID = "defaultCell"
+let cellParagraphID = "cellParagraph"
+
 class SummaryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
@@ -17,27 +20,17 @@ class SummaryViewController: UIViewController {
     
     var note: Note? {
         didSet {
-//            contentList.appendContentsOf(note?.hasParagraph as! Set)
-//            contentList.appendContentsOf(note?.hasPicture as! Set)
-//            contentList.appendContentsOf(note?.hasReminder as! Set)
             contentSet = Set<ANEntity>()
             contentSet = contentSet.union(note?.hasParagraph as! Set)
             contentSet = contentSet.union(note?.hasPicture as! Set)
             contentSet = contentSet.union(note?.hasReminder as! Set)
             contentSet = contentSet.union(note?.hasChild as! Set)
             
-            print("----------------------------------")
-            print("\(contentSet)")
-            
             contentListFiltered = Array(contentSet)
-            
-            print("----------------------------------")
-            print("\(contentListFiltered)")
-           
             contentListFiltered = (Array(contentSet) as NSArray).sortedArrayUsingDescriptors([sort]) as! Array<ANEntity>
             
-            print("----------------------------------")
-            print("\(contentListFiltered)")
+//            print("----------------------------------")
+//            print("\(contentListFiltered)")
             
         }
     }
@@ -51,11 +44,12 @@ class SummaryViewController: UIViewController {
             preferredStyle: .ActionSheet )
         
         let addParagraph = UIAlertAction(title: "Text note", style: .Default , handler: {(action) in
-            self.performSegueWithIdentifier("", sender: self)
+            self.performSegueWithIdentifier("addParagraphSegue", sender: self)
         })
         addAttachmentDialog.addAction(addParagraph)
         
         let addImage = UIAlertAction(title: "Image", style: .Default, handler: {(action) in
+            self.performSegueWithIdentifier("addPictureSegue", sender: self)
         })
         addAttachmentDialog.addAction(addImage)
     
@@ -67,6 +61,9 @@ class SummaryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.registerNib(UINib(nibName: "ParagraphCellView", bundle: nil) , forCellReuseIdentifier: cellParagraphID)
+        
     }
     
     override var description: String {
@@ -85,8 +82,9 @@ extension SummaryViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = (tableView.dequeueReusableCellWithIdentifier("paragraphCell"))!
-        return cell
+        let cell = (tableView.dequeueReusableCellWithIdentifier(cellParagraphID))
+        
+        return cell!
     }
 }
 

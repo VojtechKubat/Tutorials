@@ -7,14 +7,14 @@ provides-member:
 - ["C13AdvancedNotes3Tag", "id"]
 - ["C13AdvancedNotes3Tag", "relatesToNote"]
 provides-dynamic-lookup:
-- "relatesToNote"
 - "label"
 - "id"
+- "relatesToNote"
 depends-top-level:
 - "String"
-- "NSNumber"
-- "NSSet"
 - "Tag"
+- "NSSet"
+- "NSNumber"
 depends-member:
 - ["Ps9AnyObject", "id"]
 - ["Ps9AnyObject", "label"]

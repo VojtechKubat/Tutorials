@@ -16,22 +16,22 @@ provides-member:
 - ["C13AdvancedNotes4Note", "hasParent"]
 - ["C13AdvancedNotes4Note", "hasDescendantID"]
 provides-dynamic-lookup:
-- "hasPicture"
-- "hasReminder"
-- "hasParent"
-- "headline"
 - "priority"
-- "lastChange"
+- "hasDescendantID"
+- "hasPicture"
 - "isTagged"
 - "active"
-- "hasDescendantID"
+- "id"
+- "headline"
+- "hasReminder"
+- "hasParent"
+- "lastChange"
 - "hasChild"
 - "hasParagraph"
-- "id"
 depends-top-level:
-- "String"
-- "NSDate"
 - "Note"
+- "NSDate"
+- "String"
 - "NSSet"
 - "NSNumber"
 depends-member:

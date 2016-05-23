@@ -9,12 +9,12 @@ provides-dynamic-lookup:
 - "parseJsonToDescendantID"
 - "parseJsonToDescendantID"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "Bool"
-- "NSManagedObject"
-- "Int"
 - "NSManagedObjectContext"
+- "Int"
+- !private "BooleanLiteralType"
 - "DescendantID"
+- "NSManagedObject"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "DescendantID"]
 - !private ["Ps9AnyObject", "id"]

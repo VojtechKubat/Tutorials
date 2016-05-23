@@ -18,10 +18,10 @@ provides-dynamic-lookup:
 - "time"
 depends-top-level:
 - "NSNumber"
-- "Reminder"
-- "Note"
 - "NSDate"
+- "Reminder"
 - "String"
+- "Note"
 depends-member:
 - ["C13AdvancedNotes8ANEntity", "NSDate"]
 - ["C13AdvancedNotes8ANEntity", "NSNumber"]

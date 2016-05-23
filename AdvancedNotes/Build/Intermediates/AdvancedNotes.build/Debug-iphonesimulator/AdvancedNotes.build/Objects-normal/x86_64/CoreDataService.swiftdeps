@@ -7,12 +7,12 @@ provides-member:
 - ["C13AdvancedNotes15CoreDataService", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "print"
-- "CoreDataService"
-- !private "StringLiteralType"
 - !private "NSError"
-- "NSManagedObjectContext"
+- !private "StringLiteralType"
+- !private "print"
 - "CoreDataStack"
+- "CoreDataService"
+- "NSManagedObjectContext"
 depends-member:
 - ["Ps9AnyObject", "CoreDataStack"]
 - ["Ps9AnyObject", "init"]
