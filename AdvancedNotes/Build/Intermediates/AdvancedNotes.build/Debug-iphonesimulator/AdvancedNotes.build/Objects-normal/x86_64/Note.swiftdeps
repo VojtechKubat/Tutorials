@@ -10,31 +10,31 @@ provides-dynamic-lookup:
 - "parseJsonToNote"
 - "parseJsonToNote"
 depends-top-level:
-- !private "CoreDataService"
-- !private "Paragraph"
-- !private "??"
-- !private "Int"
-- !private "String"
-- !private "NSError"
-- !private "StringLiteralType"
+- "Bool"
 - "NSDate"
-- !private "=="
-- "NSDictionary"
+- "Note"
 - !private "Picture"
 - !private "NSArray"
-- "ANEntity"
-- "Note"
-- !private "print"
-- !private "Reminder"
 - !private "NSFetchRequest"
-- !private "!="
-- "Bool"
+- !private "StringLiteralType"
 - !private "AnyObject"
-- "NSManagedObjectContext"
-- !private "BooleanLiteralType"
+- !private "=="
+- !private "Paragraph"
 - !private "NSMutableSet"
-- !private "NSNumber"
+- !private "String"
 - !private "NSPredicate"
+- !private "Reminder"
+- !private "Int"
+- !private "NSError"
+- "ANEntity"
+- !private "NSNumber"
+- !private "print"
+- !private "CoreDataService"
+- !private "??"
+- !private "!="
+- !private "BooleanLiteralType"
+- "NSManagedObjectContext"
+- "NSDictionary"
 depends-member:
 - !private ["C13AdvancedNotes8ANEntity", "AnyObject"]
 - ["C13AdvancedNotes8ANEntity", "Bool"]
@@ -653,7 +653,9 @@ depends-member:
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
+- !private ["C13AdvancedNotes9Paragraph", "deinit"]
 - !private ["C13AdvancedNotes9Paragraph", "parseJsonToParagraph"]
+- !private ["C13AdvancedNotes7Picture", "deinit"]
 - !private ["C13AdvancedNotes7Picture", "parseJsonToPicture"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
@@ -664,6 +666,7 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "_Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "count"]
 - !private ["Ps30RangeReplaceableCollectionType", "init"]
+- !private ["C13AdvancedNotes8Reminder", "deinit"]
 - !private ["C13AdvancedNotes8Reminder", "parseJsonToReminder"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
@@ -865,7 +868,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"

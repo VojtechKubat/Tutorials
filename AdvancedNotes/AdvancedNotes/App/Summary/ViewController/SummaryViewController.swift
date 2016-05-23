@@ -12,6 +12,8 @@ import CoreData
 
 let cellDefaultID = "defaultCell"
 let cellParagraphID = "cellParagraph"
+let cellPictureID = "cellPicture"
+let cellReminderID = "cellReminder"
 
 class SummaryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -63,6 +65,8 @@ class SummaryViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.registerNib(UINib(nibName: "ParagraphCellView", bundle: nil) , forCellReuseIdentifier: cellParagraphID)
+        tableView.registerNib(UINib(nibName: "PictureCellView", bundle: nil) , forCellReuseIdentifier: cellPictureID)
+        tableView.registerNib(UINib(nibName: "ReminderCellView", bundle: nil) , forCellReuseIdentifier: cellReminderID)
         
     }
     
@@ -82,9 +86,34 @@ extension SummaryViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = (tableView.dequeueReusableCellWithIdentifier(cellParagraphID))
+        if let _ = contentListFiltered[indexPath.row] as? Paragraph {
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellParagraphID)
+            // as! ANTableViewCell
+            
+            // todo
+            
+            return cell!
+        }
         
-        return cell!
+        if let _ = contentListFiltered[indexPath.row] as? Picture {
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellPictureID) as! ANTableViewCell
+            
+            // todo
+            
+            return cell
+        
+        }
+        
+        if let _ = contentListFiltered[indexPath.row] as? Reminder {
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellReminderID) as! ANTableViewCell
+            
+            // todo
+            
+            return cell
+            
+        }
+        
+        return (tableView.dequeueReusableCellWithIdentifier("cellDefault"))!
     }
 }
 

@@ -7,8 +7,9 @@
 //
 
 import Foundation
-import UIKit
 
-class ParagraphViewCell: UITableViewCell {
+class ParagraphViewCell: ANTableViewCell {
+    
+    
     
 }
