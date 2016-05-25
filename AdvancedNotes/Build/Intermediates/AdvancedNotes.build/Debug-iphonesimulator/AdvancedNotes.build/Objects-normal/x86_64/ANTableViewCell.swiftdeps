@@ -8,17 +8,18 @@ provides-member:
 provides-dynamic-lookup:
 - "height"
 depends-top-level:
-- "Int"
 - "UITableViewCell"
 - "ANTableViewCell"
+- "CGFloat"
 depends-member:
-- ["C13AdvancedNotes15ANTableViewCell", "Int"]
+- ["C13AdvancedNotes15ANTableViewCell", "CGFloat"]
 - ["C13AdvancedNotes15ANTableViewCell", "deinit"]
 - ["C13AdvancedNotes15ANTableViewCell", "height"]
 - ["C13AdvancedNotes15ANTableViewCell", "init"]
 - ["Ps9AnyObject", "height"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
 - ["Ps11CVarArgType", "height"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", ""]
@@ -37,7 +38,7 @@ depends-member:
 - ["PSo8NSCoding", "height"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", ""]
-- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "height"]
 - ["CSo8NSObject", "init"]
 - ["PSo16NSObjectProtocol", "height"]
@@ -64,17 +65,17 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", "height"]
 - ["PSo27UIGestureRecognizerDelegate", "init"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
-- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "height"]
 - ["CSo11UIResponder", "init"]
-- ["CSo15UITableViewCell", "Int"]
+- ["CSo15UITableViewCell", "CGFloat"]
 - ["CSo15UITableViewCell", "height"]
 - ["CSo15UITableViewCell", "init"]
 - ["CSo15UITableViewCell", ""]
 - ["PSo18UITraitEnvironment", "height"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", ""]
-- ["CSo6UIView", "Int"]
+- ["CSo6UIView", "CGFloat"]
 - ["CSo6UIView", "height"]
 - ["CSo6UIView", "init"]
 - ["Ps12_Reflectable", "height"]
@@ -83,6 +84,7 @@ depends-member:
 depends-nominal:
 - "C13AdvancedNotes15ANTableViewCell"
 - "Ps9AnyObject"
+- !private "V12CoreGraphics7CGFloat"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
@@ -106,7 +108,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
@@ -115,4 +117,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "b7464e9d77bcd31ca66d64fc0abfd006"
+interface-hash: "9fc598662b2858ccc6946f7f381907bd"

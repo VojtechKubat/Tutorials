@@ -64,6 +64,9 @@ class SummaryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.estimatedRowHeight = 85.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
         tableView.registerNib(UINib(nibName: "ParagraphCellView", bundle: nil) , forCellReuseIdentifier: cellParagraphID)
         tableView.registerNib(UINib(nibName: "PictureCellView", bundle: nil) , forCellReuseIdentifier: cellPictureID)
         tableView.registerNib(UINib(nibName: "ReminderCellView", bundle: nil) , forCellReuseIdentifier: cellReminderID)
@@ -92,6 +95,8 @@ extension SummaryViewController: UITableViewDataSource {
             
             // todo
             
+            
+            
             return cell!
         }
         
@@ -115,6 +120,13 @@ extension SummaryViewController: UITableViewDataSource {
         
         return (tableView.dequeueReusableCellWithIdentifier("cellDefault"))!
     }
+    
+//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+////        if let cell = (self.tableView.cellForRowAtIndexPath(indexPath) as? ANTableViewCell) {
+////            return (cell as ANTableViewCell).height()
+////        }
+//        return 250
+//    }
 }
 
 extension SummaryViewController: UITableViewDelegate {

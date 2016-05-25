@@ -11,7 +11,7 @@ import UIKit
 
 class ANTableViewCell: UITableViewCell {
     
-    func height() -> Int {
+    func height() -> CGFloat {
         return 20
     }
 }

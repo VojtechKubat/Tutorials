@@ -7,9 +7,20 @@
 //
 
 import Foundation
+import UIKit
 
 class ParagraphViewCell: ANTableViewCell {
     
+    @IBOutlet weak var paragraphTextView: FrameTextView!
     
     
+    
+    func setParagraph (paragraph: Paragraph) {
+        paragraphTextView.text = paragraph.text
+        layoutIfNeeded()
+    }
+    
+    override func height() -> CGFloat {
+        return 20
+    }
 }

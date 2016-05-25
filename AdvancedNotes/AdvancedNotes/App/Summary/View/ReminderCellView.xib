@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,16 +12,24 @@
             <rect key="frame" x="0.0" y="0.0" width="486" height="75"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NJn-kU-1JL" id="fdP-oB-mc9">
-                <rect key="frame" x="0.0" y="0.0" width="486" height="75"/>
+                <rect key="frame" x="0.0" y="0.0" width="486" height="74.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6t-wH-ZNG">
-                        <rect key="frame" x="8" y="8" width="470" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6t-wH-ZNG">
+                        <rect key="frame" x="8" y="8" width="73" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="CyC-VF-Tby"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="i6t-wH-ZNG" firstAttribute="top" secondItem="fdP-oB-mc9" secondAttribute="topMargin" id="AJC-4X-sab"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="i6t-wH-ZNG" secondAttribute="bottom" constant="37.5" id="W9P-bV-B9i"/>
+                    <constraint firstItem="i6t-wH-ZNG" firstAttribute="leading" secondItem="fdP-oB-mc9" secondAttribute="leadingMargin" id="olm-cE-gER"/>
+                </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="303" y="373.5"/>
         </tableViewCell>

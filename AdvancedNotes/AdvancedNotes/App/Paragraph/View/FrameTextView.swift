@@ -11,6 +11,14 @@ import UIKit
 
 class FrameTextView: UITextView {
     
+    var autoShrink = true
+    
+    override func didMoveToSuperview() {
+        if autoShrink {
+            self.frame.size = self.contentSize
+        }
+    }
+    
     override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         addBorders()

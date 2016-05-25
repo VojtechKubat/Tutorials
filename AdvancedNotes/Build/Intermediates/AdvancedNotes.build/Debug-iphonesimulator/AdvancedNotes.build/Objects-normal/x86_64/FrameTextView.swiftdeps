@@ -6,38 +6,53 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes13FrameTextView", ""]
 provides-dynamic-lookup:
+- "didMoveToSuperview"
 - "addBorders"
+- "autoShrink"
 depends-top-level:
-- !private "StringLiteralType"
-- !private "UIColor"
-- "FrameTextView"
-- "NSCoder"
-- "UITextView"
-- "NSTextContainer"
-- !private "NSNumber"
 - !private "UIEdgeInsetsMake"
+- "UITextView"
+- !private "NSNumber"
+- !private "StringLiteralType"
 - "CGRect"
+- "NSTextContainer"
+- "FrameTextView"
+- !private "UIColor"
+- "NSCoder"
+- "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "CGColor"]
 - !private ["Ps9AnyObject", "NSNumber"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIEdgeInsetsMake"]
 - ["Ps9AnyObject", "addBorders"]
+- ["Ps9AnyObject", "autoShrink"]
+- !private ["Ps9AnyObject", "contentSize"]
+- ["Ps9AnyObject", "didMoveToSuperview"]
+- !private ["Ps9AnyObject", "frame"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "lightGrayColor"]
 - !private ["Ps9AnyObject", "setValue"]
 - !private ["Ps9AnyObject", "textContainerInset"]
 - ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25BooleanLiteralConvertible", "init"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["CSo7CALayer", "setValue"]
 - !private ["PSo13CAMediaTiming", "setValue"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "size"]
 - !private ["Ps11CVarArgType", "CGColor"]
 - !private ["Ps11CVarArgType", "NSNumber"]
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIEdgeInsetsMake"]
 - ["Ps11CVarArgType", "addBorders"]
+- ["Ps11CVarArgType", "autoShrink"]
+- !private ["Ps11CVarArgType", "contentSize"]
+- ["Ps11CVarArgType", "didMoveToSuperview"]
+- !private ["Ps11CVarArgType", "frame"]
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "layer"]
 - !private ["Ps11CVarArgType", "lightGrayColor"]
@@ -49,6 +64,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIEdgeInsetsMake"]
 - ["Ps28CustomDebugStringConvertible", "addBorders"]
+- ["Ps28CustomDebugStringConvertible", "autoShrink"]
+- !private ["Ps28CustomDebugStringConvertible", "contentSize"]
+- ["Ps28CustomDebugStringConvertible", "didMoveToSuperview"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "lightGrayColor"]
@@ -59,7 +78,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSNumber"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIEdgeInsetsMake"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "addBorders"]
+- ["Ps23CustomStringConvertible", "autoShrink"]
+- !private ["Ps23CustomStringConvertible", "contentSize"]
+- ["Ps23CustomStringConvertible", "didMoveToSuperview"]
+- !private ["Ps23CustomStringConvertible", "frame"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "lightGrayColor"]
@@ -70,11 +94,17 @@ depends-member:
 - !private ["Ps9Equatable", "NSNumber"]
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIEdgeInsetsMake"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "addBorders"]
+- ["Ps9Equatable", "autoShrink"]
+- !private ["Ps9Equatable", "contentSize"]
+- ["Ps9Equatable", "didMoveToSuperview"]
+- !private ["Ps9Equatable", "frame"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "lightGrayColor"]
 - !private ["Ps9Equatable", "setValue"]
+- !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "textContainerInset"]
 - ["Ps9Equatable", ""]
 - !private ["Ps23FloatLiteralConvertible", "init"]
@@ -85,7 +115,11 @@ depends-member:
 - !private ["C13AdvancedNotes13FrameTextView", "UIColor"]
 - !private ["C13AdvancedNotes13FrameTextView", "UIEdgeInsetsMake"]
 - ["C13AdvancedNotes13FrameTextView", "addBorders"]
+- ["C13AdvancedNotes13FrameTextView", "autoShrink"]
+- !private ["C13AdvancedNotes13FrameTextView", "contentSize"]
 - ["C13AdvancedNotes13FrameTextView", "deinit"]
+- ["C13AdvancedNotes13FrameTextView", "didMoveToSuperview"]
+- !private ["C13AdvancedNotes13FrameTextView", "frame"]
 - ["C13AdvancedNotes13FrameTextView", "init"]
 - !private ["C13AdvancedNotes13FrameTextView", "layer"]
 - !private ["C13AdvancedNotes13FrameTextView", "textContainerInset"]
@@ -93,7 +127,12 @@ depends-member:
 - !private ["Ps8Hashable", "NSNumber"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIEdgeInsetsMake"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "addBorders"]
+- ["Ps8Hashable", "autoShrink"]
+- !private ["Ps8Hashable", "contentSize"]
+- ["Ps8Hashable", "didMoveToSuperview"]
+- !private ["Ps8Hashable", "frame"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "lightGrayColor"]
@@ -106,6 +145,10 @@ depends-member:
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIEdgeInsetsMake"]
 - ["PSo8NSCoding", "addBorders"]
+- ["PSo8NSCoding", "autoShrink"]
+- !private ["PSo8NSCoding", "contentSize"]
+- ["PSo8NSCoding", "didMoveToSuperview"]
+- !private ["PSo8NSCoding", "frame"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "lightGrayColor"]
@@ -124,6 +167,10 @@ depends-member:
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIEdgeInsetsMake"]
 - ["CSo8NSObject", "addBorders"]
+- ["CSo8NSObject", "autoShrink"]
+- !private ["CSo8NSObject", "contentSize"]
+- ["CSo8NSObject", "didMoveToSuperview"]
+- !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "lightGrayColor"]
@@ -134,6 +181,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIEdgeInsetsMake"]
 - ["PSo16NSObjectProtocol", "addBorders"]
+- ["PSo16NSObjectProtocol", "autoShrink"]
+- !private ["PSo16NSObjectProtocol", "contentSize"]
+- ["PSo16NSObjectProtocol", "didMoveToSuperview"]
+- !private ["PSo16NSObjectProtocol", "frame"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "lightGrayColor"]
@@ -148,6 +199,10 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "UIColor"]
 - !private ["PSo29UIAccessibilityIdentification", "UIEdgeInsetsMake"]
 - ["PSo29UIAccessibilityIdentification", "addBorders"]
+- ["PSo29UIAccessibilityIdentification", "autoShrink"]
+- !private ["PSo29UIAccessibilityIdentification", "contentSize"]
+- ["PSo29UIAccessibilityIdentification", "didMoveToSuperview"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "textContainerInset"]
@@ -156,6 +211,10 @@ depends-member:
 - !private ["PSo12UIAppearance", "UIColor"]
 - !private ["PSo12UIAppearance", "UIEdgeInsetsMake"]
 - ["PSo12UIAppearance", "addBorders"]
+- ["PSo12UIAppearance", "autoShrink"]
+- !private ["PSo12UIAppearance", "contentSize"]
+- ["PSo12UIAppearance", "didMoveToSuperview"]
+- !private ["PSo12UIAppearance", "frame"]
 - ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "textContainerInset"]
@@ -164,6 +223,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIEdgeInsetsMake"]
 - ["PSo21UIAppearanceContainer", "addBorders"]
+- ["PSo21UIAppearanceContainer", "autoShrink"]
+- !private ["PSo21UIAppearanceContainer", "contentSize"]
+- ["PSo21UIAppearanceContainer", "didMoveToSuperview"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - !private ["PSo21UIAppearanceContainer", "textContainerInset"]
@@ -174,6 +237,10 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "UIColor"]
 - !private ["PSo17UICoordinateSpace", "UIEdgeInsetsMake"]
 - ["PSo17UICoordinateSpace", "addBorders"]
+- ["PSo17UICoordinateSpace", "autoShrink"]
+- !private ["PSo17UICoordinateSpace", "contentSize"]
+- ["PSo17UICoordinateSpace", "didMoveToSuperview"]
+- !private ["PSo17UICoordinateSpace", "frame"]
 - ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "textContainerInset"]
@@ -182,6 +249,10 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "UIColor"]
 - !private ["PSo13UIDynamicItem", "UIEdgeInsetsMake"]
 - ["PSo13UIDynamicItem", "addBorders"]
+- ["PSo13UIDynamicItem", "autoShrink"]
+- !private ["PSo13UIDynamicItem", "contentSize"]
+- ["PSo13UIDynamicItem", "didMoveToSuperview"]
+- !private ["PSo13UIDynamicItem", "frame"]
 - ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "textContainerInset"]
@@ -190,6 +261,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIEdgeInsetsMake"]
 - ["PSo18UIFocusEnvironment", "addBorders"]
+- ["PSo18UIFocusEnvironment", "autoShrink"]
+- !private ["PSo18UIFocusEnvironment", "contentSize"]
+- ["PSo18UIFocusEnvironment", "didMoveToSuperview"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
 - !private ["PSo18UIFocusEnvironment", "textContainerInset"]
@@ -198,6 +273,10 @@ depends-member:
 - !private ["PSo10UIKeyInput", "UIColor"]
 - !private ["PSo10UIKeyInput", "UIEdgeInsetsMake"]
 - ["PSo10UIKeyInput", "addBorders"]
+- ["PSo10UIKeyInput", "autoShrink"]
+- !private ["PSo10UIKeyInput", "contentSize"]
+- ["PSo10UIKeyInput", "didMoveToSuperview"]
+- !private ["PSo10UIKeyInput", "frame"]
 - ["PSo10UIKeyInput", "init"]
 - !private ["PSo10UIKeyInput", "layer"]
 - !private ["PSo10UIKeyInput", "textContainerInset"]
@@ -209,6 +288,10 @@ depends-member:
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIEdgeInsetsMake"]
 - ["CSo11UIResponder", "addBorders"]
+- ["CSo11UIResponder", "autoShrink"]
+- !private ["CSo11UIResponder", "contentSize"]
+- ["CSo11UIResponder", "didMoveToSuperview"]
+- !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "layer"]
 - !private ["CSo11UIResponder", "textContainerInset"]
@@ -219,6 +302,10 @@ depends-member:
 - !private ["CSo12UIScrollView", "UIColor"]
 - !private ["CSo12UIScrollView", "UIEdgeInsetsMake"]
 - ["CSo12UIScrollView", "addBorders"]
+- ["CSo12UIScrollView", "autoShrink"]
+- !private ["CSo12UIScrollView", "contentSize"]
+- ["CSo12UIScrollView", "didMoveToSuperview"]
+- !private ["CSo12UIScrollView", "frame"]
 - ["CSo12UIScrollView", "init"]
 - !private ["CSo12UIScrollView", "layer"]
 - !private ["CSo12UIScrollView", "textContainerInset"]
@@ -226,6 +313,10 @@ depends-member:
 - !private ["PSo11UITextInput", "UIColor"]
 - !private ["PSo11UITextInput", "UIEdgeInsetsMake"]
 - ["PSo11UITextInput", "addBorders"]
+- ["PSo11UITextInput", "autoShrink"]
+- !private ["PSo11UITextInput", "contentSize"]
+- ["PSo11UITextInput", "didMoveToSuperview"]
+- !private ["PSo11UITextInput", "frame"]
 - ["PSo11UITextInput", "init"]
 - !private ["PSo11UITextInput", "layer"]
 - !private ["PSo11UITextInput", "textContainerInset"]
@@ -234,6 +325,10 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "UIColor"]
 - !private ["PSo17UITextInputTraits", "UIEdgeInsetsMake"]
 - ["PSo17UITextInputTraits", "addBorders"]
+- ["PSo17UITextInputTraits", "autoShrink"]
+- !private ["PSo17UITextInputTraits", "contentSize"]
+- ["PSo17UITextInputTraits", "didMoveToSuperview"]
+- !private ["PSo17UITextInputTraits", "frame"]
 - ["PSo17UITextInputTraits", "init"]
 - !private ["PSo17UITextInputTraits", "layer"]
 - !private ["PSo17UITextInputTraits", "textContainerInset"]
@@ -245,6 +340,10 @@ depends-member:
 - !private ["CSo10UITextView", "UIColor"]
 - !private ["CSo10UITextView", "UIEdgeInsetsMake"]
 - ["CSo10UITextView", "addBorders"]
+- ["CSo10UITextView", "autoShrink"]
+- !private ["CSo10UITextView", "contentSize"]
+- ["CSo10UITextView", "didMoveToSuperview"]
+- !private ["CSo10UITextView", "frame"]
 - ["CSo10UITextView", "init"]
 - !private ["CSo10UITextView", "layer"]
 - !private ["CSo10UITextView", "textContainerInset"]
@@ -253,6 +352,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIEdgeInsetsMake"]
 - ["PSo18UITraitEnvironment", "addBorders"]
+- ["PSo18UITraitEnvironment", "autoShrink"]
+- !private ["PSo18UITraitEnvironment", "contentSize"]
+- ["PSo18UITraitEnvironment", "didMoveToSuperview"]
+- !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "layer"]
 - !private ["PSo18UITraitEnvironment", "textContainerInset"]
@@ -264,25 +367,40 @@ depends-member:
 - !private ["CSo6UIView", "UIColor"]
 - !private ["CSo6UIView", "UIEdgeInsetsMake"]
 - ["CSo6UIView", "addBorders"]
+- ["CSo6UIView", "autoShrink"]
+- !private ["CSo6UIView", "contentSize"]
+- ["CSo6UIView", "didMoveToSuperview"]
+- !private ["CSo6UIView", "frame"]
 - ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "textContainerInset"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps24_ColorLiteralConvertible", "CGColor"]
 - !private ["Ps24_ColorLiteralConvertible", "lightGrayColor"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "NSNumber"]
 - !private ["Ps12_Reflectable", "UIColor"]
 - !private ["Ps12_Reflectable", "UIEdgeInsetsMake"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - ["Ps12_Reflectable", "addBorders"]
+- ["Ps12_Reflectable", "autoShrink"]
+- !private ["Ps12_Reflectable", "contentSize"]
+- ["Ps12_Reflectable", "didMoveToSuperview"]
+- !private ["Ps12_Reflectable", "frame"]
 - ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "layer"]
+- !private ["Ps12_Reflectable", "size"]
 - !private ["Ps12_Reflectable", "textContainerInset"]
 - ["Ps12_Reflectable", ""]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "Sb"
 - !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - !private "CSo7CALayer"
 - !private "PSo13CAMediaTiming"
 - !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
@@ -313,12 +431,14 @@ depends-nominal:
 - "CSo10UITextView"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps24_ColorLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
 - "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
@@ -327,4 +447,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "c0123028f77084a3d99458041ab3b61f"
+interface-hash: "3cb2083239c53d070a6a0c2ddeb71181"
