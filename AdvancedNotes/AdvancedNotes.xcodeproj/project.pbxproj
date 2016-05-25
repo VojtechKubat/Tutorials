@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		797BBD8D1CF63D6C00420DDF /* FrameTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797BBD8C1CF63D6C00420DDF /* FrameTextView.swift */; };
 		79D9C96E1CF3A2A400D93BF5 /* ParagraphCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D9C96C1CF3A2A400D93BF5 /* ParagraphCellView.swift */; };
 		79D9C96F1CF3A2A400D93BF5 /* ParagraphCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D9C96D1CF3A2A400D93BF5 /* ParagraphCellView.xib */; };
-		79D9C9711CF3A30900D93BF5 /* ANTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D9C9701CF3A30900D93BF5 /* ANTableViewCell.swift */; };
 		79D9C9731CF3A59300D93BF5 /* ReminderCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D9C9721CF3A59300D93BF5 /* ReminderCellView.xib */; };
 		79D9C9751CF3A95E00D93BF5 /* ReminderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D9C9741CF3A95E00D93BF5 /* ReminderCellView.swift */; };
 		79D9C9771CF3A9A100D93BF5 /* PictureCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D9C9761CF3A9A100D93BF5 /* PictureCellView.swift */; };
@@ -46,7 +46,6 @@
 		BD7C1B6F1CEF336C002B542A /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C1B611CEF336C002B542A /* MainTableViewCell.swift */; };
 		BD7C1B701CEF336C002B542A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C1B631CEF336C002B542A /* MasterViewController.swift */; };
 		BD7C1B711CEF336C002B542A /* ParagraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C1B651CEF336C002B542A /* ParagraphViewController.swift */; };
-		BD7C1B721CEF336C002B542A /* FrameTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C1B671CEF336C002B542A /* FrameTextView.swift */; };
 		BD7C1B731CEF336C002B542A /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C1B691CEF336C002B542A /* RemindersViewController.swift */; };
 		BD7C1B741CEF336C002B542A /* DetailNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C1B6B1CEF336C002B542A /* DetailNavController.swift */; };
 		BD7C1B751CEF336C002B542A /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C1B6E1CEF336C002B542A /* SummaryViewController.swift */; };
@@ -58,9 +57,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		797BBD8C1CF63D6C00420DDF /* FrameTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameTextView.swift; sourceTree = "<group>"; };
 		79D9C96C1CF3A2A400D93BF5 /* ParagraphCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParagraphCellView.swift; sourceTree = "<group>"; };
 		79D9C96D1CF3A2A400D93BF5 /* ParagraphCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParagraphCellView.xib; sourceTree = "<group>"; };
-		79D9C9701CF3A30900D93BF5 /* ANTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANTableViewCell.swift; sourceTree = "<group>"; };
 		79D9C9721CF3A59300D93BF5 /* ReminderCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderCellView.xib; sourceTree = "<group>"; };
 		79D9C9741CF3A95E00D93BF5 /* ReminderCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderCellView.swift; sourceTree = "<group>"; };
 		79D9C9761CF3A9A100D93BF5 /* PictureCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureCellView.swift; sourceTree = "<group>"; };
@@ -97,7 +96,6 @@
 		BD7C1B611CEF336C002B542A /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		BD7C1B631CEF336C002B542A /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		BD7C1B651CEF336C002B542A /* ParagraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParagraphViewController.swift; sourceTree = "<group>"; };
-		BD7C1B671CEF336C002B542A /* FrameTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameTextView.swift; sourceTree = "<group>"; };
 		BD7C1B691CEF336C002B542A /* RemindersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
 		BD7C1B6B1CEF336C002B542A /* DetailNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailNavController.swift; sourceTree = "<group>"; };
 		BD7C1B6E1CEF336C002B542A /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
@@ -156,10 +154,10 @@
 		BD383F441CEB18310075D32D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				797BBD8C1CF63D6C00420DDF /* FrameTextView.swift */,
 				BD383F451CEB18510075D32D /* NSDate+ISO8601.swift */,
 				BD54F5611CEDA5140003E145 /* NSManagedObject+Utils.swift */,
 				BD54F57D1CEE02340003E145 /* ANEntity.swift */,
-				79D9C9701CF3A30900D93BF5 /* ANTableViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -229,7 +227,6 @@
 		BD7C1B661CEF336C002B542A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BD7C1B671CEF336C002B542A /* FrameTextView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -404,16 +401,15 @@
 				BD54F5761CEDEB360003E145 /* Paragraph+CoreDataProperties.swift in Sources */,
 				BD54F5741CEDEB360003E145 /* Picture+CoreDataProperties.swift in Sources */,
 				BD7C1B741CEF336C002B542A /* DetailNavController.swift in Sources */,
-				79D9C9711CF3A30900D93BF5 /* ANTableViewCell.swift in Sources */,
 				79D9C9751CF3A95E00D93BF5 /* ReminderCellView.swift in Sources */,
 				BD7C1B701CEF336C002B542A /* MasterViewController.swift in Sources */,
 				BD383F461CEB18510075D32D /* NSDate+ISO8601.swift in Sources */,
 				BD54F57E1CEE02340003E145 /* ANEntity.swift in Sources */,
 				BDEFCEA61CE5E8CA00807924 /* AdvancedNotesModel.xcdatamodeld in Sources */,
 				BD54F57A1CEDEB360003E145 /* Reminder+CoreDataProperties.swift in Sources */,
+				797BBD8D1CF63D6C00420DDF /* FrameTextView.swift in Sources */,
 				BD7C1B711CEF336C002B542A /* ParagraphViewController.swift in Sources */,
 				BD54F5781CEDEB360003E145 /* DescendantID+CoreDataProperties.swift in Sources */,
-				BD7C1B721CEF336C002B542A /* FrameTextView.swift in Sources */,
 				79D9C9771CF3A9A100D93BF5 /* PictureCellView.swift in Sources */,
 				BD383F5C1CEB3D550075D32D /* AppDelegate+DummyDataImport.swift in Sources */,
 				BD54F5791CEDEB360003E145 /* DescendantID.swift in Sources */,
@@ -529,7 +525,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AdvancedNotes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.certicon.AdvancedNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -544,7 +540,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AdvancedNotes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.certicon.AdvancedNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";

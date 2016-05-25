@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import UIKit
 
-class PictureCellView: ANTableViewCell {
+class PictureCellView: UITableViewCell {
     
 }

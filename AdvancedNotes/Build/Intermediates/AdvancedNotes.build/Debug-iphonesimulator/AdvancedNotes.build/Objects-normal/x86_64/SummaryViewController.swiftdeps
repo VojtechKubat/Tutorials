@@ -10,50 +10,49 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes21SummaryViewController", ""]
 provides-dynamic-lookup:
-- "note"
-- "contentSet"
-- "addAttachment"
-- "viewDidLoad"
 - "numberOfSectionsInTableView"
-- "description"
-- "sort"
-- "tableView"
-- "tableView"
-- "tableView"
 - "contentListFiltered"
+- "sort"
+- "description"
+- "note"
+- "addAttachment"
+- "tableView"
+- "tableView"
+- "tableView"
+- "viewDidLoad"
+- "contentSet"
 depends-top-level:
-- !private "UIAlertController"
-- !private "UINib"
-- "cellParagraphID"
-- "Set"
-- !private "ANTableViewCell"
 - "SummaryViewController"
-- "ANEntity"
-- "StringLiteralType"
-- "NSIndexPath"
-- "UITableView"
-- !private "NSArray"
-- "cellReminderID"
-- "UITableViewDataSource"
-- "cellDefaultID"
-- "NSSortDescriptor"
-- !private "Reminder"
 - "Note"
-- !private "Picture"
-- !private "UITableViewAutomaticDimension"
-- "UITableViewCell"
-- "UIBarButtonItem"
-- "UIViewController"
-- "cellPictureID"
-- !private "UIAlertAction"
-- "Array"
-- "String"
-- !private "Paragraph"
-- "BooleanLiteralType"
+- !private "NSArray"
 - "UITableViewDelegate"
+- "UIBarButtonItem"
+- !private "UINib"
+- "ANEntity"
+- "UITableView"
+- !private "Picture"
+- !private "Paragraph"
+- "StringLiteralType"
+- "Array"
+- "cellDefaultID"
+- !private "UIAlertAction"
+- "String"
+- "cellReminderID"
+- "NSIndexPath"
+- !private "UITableViewAutomaticDimension"
+- !private "Reminder"
 - "Int"
+- "cellPictureID"
+- !private "UIAlertController"
+- "Set"
+- "UITableViewDataSource"
+- "cellParagraphID"
+- "UITableViewCell"
+- "BooleanLiteralType"
+- "NSSortDescriptor"
+- "UIViewController"
 depends-member:
-- !private ["C13AdvancedNotes8ANEntity", "deinit"]
+- ["C13AdvancedNotes8ANEntity", "deinit"]
 - !private ["C13AdvancedNotes8ANEntity", "hasChild"]
 - !private ["C13AdvancedNotes8ANEntity", "hasParagraph"]
 - !private ["C13AdvancedNotes8ANEntity", "hasPicture"]
@@ -607,7 +606,6 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "sortedArrayUsingDescriptors"]
 - ["CSo8NSObject", "ANEntity"]
-- !private ["CSo8NSObject", "ANTableViewCell"]
 - ["CSo8NSObject", "Array"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSArray"]
@@ -778,7 +776,6 @@ depends-member:
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
 - ["C13AdvancedNotes21SummaryViewController", "ANEntity"]
-- !private ["C13AdvancedNotes21SummaryViewController", "ANTableViewCell"]
 - ["C13AdvancedNotes21SummaryViewController", "Array"]
 - ["C13AdvancedNotes21SummaryViewController", "Int"]
 - !private ["C13AdvancedNotes21SummaryViewController", "NSArray"]
@@ -995,7 +992,6 @@ depends-member:
 - !private ["CSo31UIPopoverPresentationController", "barButtonItem"]
 - !private ["CSo24UIPresentationController", "barButtonItem"]
 - ["CSo11UIResponder", "ANEntity"]
-- !private ["CSo11UIResponder", "ANTableViewCell"]
 - ["CSo11UIResponder", "Array"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "NSArray"]
@@ -1256,7 +1252,6 @@ depends-member:
 - !private ["CSo6UIView", "registerNib"]
 - !private ["CSo6UIView", "rowHeight"]
 - ["CSo16UIViewController", "ANEntity"]
-- !private ["CSo16UIViewController", "ANTableViewCell"]
 - ["CSo16UIViewController", "Array"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NSArray"]
@@ -1378,7 +1373,7 @@ depends-member:
 - ["Ps18_SignedIntegerType", "Distance"]
 - ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
-- !private "C13AdvancedNotes8ANEntity"
+- "C13AdvancedNotes8ANEntity"
 - "Ps9AnyObject"
 - "Sa"
 - "Ps23ArrayLiteralConvertible"
@@ -1494,7 +1489,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"

@@ -1,0 +1,501 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Picture"
+provides-nominal:
+- "C13AdvancedNotes7Picture"
+provides-member:
+- ["C13AdvancedNotes7Picture", ""]
+provides-dynamic-lookup:
+- "dataForURLImage"
+- "getLastChange"
+- "parseJsonToPicture"
+- "parseJsonToPicture"
+depends-top-level:
+- "NSDate"
+- !private "CoreDataService"
+- "NSManagedObjectContext"
+- "NSData"
+- !private "StringLiteralType"
+- "NSDictionary"
+- !private "String"
+- !private "=="
+- !private "print"
+- !private "NSNumber"
+- !private "!="
+- "Picture"
+- "NSURL"
+- "Bool"
+- !private "??"
+- "ANEntity"
+- !private "NSBundle"
+- !private "BooleanLiteralType"
+- !private "Int"
+depends-member:
+- ["C13AdvancedNotes8ANEntity", "Bool"]
+- !private ["C13AdvancedNotes8ANEntity", "CoreDataService"]
+- !private ["C13AdvancedNotes8ANEntity", "Int"]
+- !private ["C13AdvancedNotes8ANEntity", "NSBundle"]
+- ["C13AdvancedNotes8ANEntity", "NSData"]
+- ["C13AdvancedNotes8ANEntity", "NSDate"]
+- ["C13AdvancedNotes8ANEntity", "NSDictionary"]
+- ["C13AdvancedNotes8ANEntity", "NSManagedObjectContext"]
+- !private ["C13AdvancedNotes8ANEntity", "NSNumber"]
+- ["C13AdvancedNotes8ANEntity", "NSURL"]
+- ["C13AdvancedNotes8ANEntity", "Picture"]
+- !private ["C13AdvancedNotes8ANEntity", "String"]
+- !private ["C13AdvancedNotes8ANEntity", "active"]
+- ["C13AdvancedNotes8ANEntity", "dataForURLImage"]
+- ["C13AdvancedNotes8ANEntity", "getLastChange"]
+- !private ["C13AdvancedNotes8ANEntity", "id"]
+- !private ["C13AdvancedNotes8ANEntity", "image"]
+- ["C13AdvancedNotes8ANEntity", "init"]
+- !private ["C13AdvancedNotes8ANEntity", "lastChange"]
+- !private ["C13AdvancedNotes8ANEntity", "myNewEntity"]
+- ["C13AdvancedNotes8ANEntity", "parseJsonToPicture"]
+- !private ["C13AdvancedNotes8ANEntity", "print"]
+- !private ["C13AdvancedNotes8ANEntity", "textDetail"]
+- ["C13AdvancedNotes8ANEntity", ""]
+- !private ["Ps9AnyObject", "CoreDataService"]
+- !private ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "NSBundle"]
+- !private ["Ps9AnyObject", "NSData"]
+- !private ["Ps9AnyObject", "NSDate"]
+- !private ["Ps9AnyObject", "NSNumber"]
+- !private ["Ps9AnyObject", "Picture"]
+- !private ["Ps9AnyObject", "URLForResource"]
+- !private ["Ps9AnyObject", "active"]
+- !private ["Ps9AnyObject", "count"]
+- ["Ps9AnyObject", "dataForURLImage"]
+- !private ["Ps9AnyObject", "distantFuture"]
+- ["Ps9AnyObject", "getLastChange"]
+- !private ["Ps9AnyObject", "id"]
+- !private ["Ps9AnyObject", "image"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isoToDate"]
+- !private ["Ps9AnyObject", "lastChange"]
+- !private ["Ps9AnyObject", "mainBundle"]
+- !private ["Ps9AnyObject", "myNewEntity"]
+- ["Ps9AnyObject", "parseJsonToPicture"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "textDetail"]
+- !private ["Ps9AnyObject", "trySave"]
+- !private ["Ps9AnyObject", "valueForKey"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps22BidirectionalIndexType", "init"]
+- !private ["Ps21BitwiseOperationsType", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "init"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "CoreDataService"]
+- !private ["Ps11CVarArgType", "Int"]
+- !private ["Ps11CVarArgType", "NSBundle"]
+- !private ["Ps11CVarArgType", "NSData"]
+- !private ["Ps11CVarArgType", "NSDate"]
+- !private ["Ps11CVarArgType", "NSNumber"]
+- !private ["Ps11CVarArgType", "Picture"]
+- !private ["Ps11CVarArgType", "URLForResource"]
+- !private ["Ps11CVarArgType", "active"]
+- !private ["Ps11CVarArgType", "count"]
+- ["Ps11CVarArgType", "dataForURLImage"]
+- !private ["Ps11CVarArgType", "distantFuture"]
+- ["Ps11CVarArgType", "getLastChange"]
+- !private ["Ps11CVarArgType", "id"]
+- !private ["Ps11CVarArgType", "image"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "isoToDate"]
+- !private ["Ps11CVarArgType", "lastChange"]
+- !private ["Ps11CVarArgType", "mainBundle"]
+- !private ["Ps11CVarArgType", "myNewEntity"]
+- ["Ps11CVarArgType", "parseJsonToPicture"]
+- !private ["Ps11CVarArgType", "print"]
+- !private ["Ps11CVarArgType", "textDetail"]
+- !private ["Ps11CVarArgType", "valueForKey"]
+- ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "init"]
+- !private ["C13AdvancedNotes15CoreDataService", "trySave"]
+- !private ["Ps28CustomDebugStringConvertible", "CoreDataService"]
+- !private ["Ps28CustomDebugStringConvertible", "Int"]
+- !private ["Ps28CustomDebugStringConvertible", "NSBundle"]
+- !private ["Ps28CustomDebugStringConvertible", "NSData"]
+- !private ["Ps28CustomDebugStringConvertible", "NSDate"]
+- !private ["Ps28CustomDebugStringConvertible", "NSNumber"]
+- !private ["Ps28CustomDebugStringConvertible", "Picture"]
+- !private ["Ps28CustomDebugStringConvertible", "URLForResource"]
+- !private ["Ps28CustomDebugStringConvertible", "active"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- ["Ps28CustomDebugStringConvertible", "dataForURLImage"]
+- !private ["Ps28CustomDebugStringConvertible", "distantFuture"]
+- ["Ps28CustomDebugStringConvertible", "getLastChange"]
+- !private ["Ps28CustomDebugStringConvertible", "id"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isoToDate"]
+- !private ["Ps28CustomDebugStringConvertible", "lastChange"]
+- !private ["Ps28CustomDebugStringConvertible", "mainBundle"]
+- !private ["Ps28CustomDebugStringConvertible", "myNewEntity"]
+- ["Ps28CustomDebugStringConvertible", "parseJsonToPicture"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "textDetail"]
+- !private ["Ps28CustomDebugStringConvertible", "valueForKey"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "CoreDataService"]
+- !private ["Ps23CustomStringConvertible", "Int"]
+- !private ["Ps23CustomStringConvertible", "NSBundle"]
+- !private ["Ps23CustomStringConvertible", "NSData"]
+- !private ["Ps23CustomStringConvertible", "NSDate"]
+- !private ["Ps23CustomStringConvertible", "NSNumber"]
+- !private ["Ps23CustomStringConvertible", "Picture"]
+- !private ["Ps23CustomStringConvertible", "URLForResource"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "active"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- ["Ps23CustomStringConvertible", "dataForURLImage"]
+- !private ["Ps23CustomStringConvertible", "distantFuture"]
+- ["Ps23CustomStringConvertible", "getLastChange"]
+- !private ["Ps23CustomStringConvertible", "id"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isoToDate"]
+- !private ["Ps23CustomStringConvertible", "lastChange"]
+- !private ["Ps23CustomStringConvertible", "mainBundle"]
+- !private ["Ps23CustomStringConvertible", "myNewEntity"]
+- ["Ps23CustomStringConvertible", "parseJsonToPicture"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "textDetail"]
+- !private ["Ps23CustomStringConvertible", "valueForKey"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps28DictionaryLiteralConvertible", "count"]
+- !private ["Ps28DictionaryLiteralConvertible", "valueForKey"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "CoreDataService"]
+- !private ["Ps9Equatable", "Int"]
+- !private ["Ps9Equatable", "NSBundle"]
+- !private ["Ps9Equatable", "NSData"]
+- !private ["Ps9Equatable", "NSDate"]
+- !private ["Ps9Equatable", "NSNumber"]
+- !private ["Ps9Equatable", "Picture"]
+- !private ["Ps9Equatable", "URLForResource"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "active"]
+- !private ["Ps9Equatable", "count"]
+- ["Ps9Equatable", "dataForURLImage"]
+- !private ["Ps9Equatable", "distantFuture"]
+- ["Ps9Equatable", "getLastChange"]
+- !private ["Ps9Equatable", "id"]
+- !private ["Ps9Equatable", "image"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isoToDate"]
+- !private ["Ps9Equatable", "lastChange"]
+- !private ["Ps9Equatable", "mainBundle"]
+- !private ["Ps9Equatable", "myNewEntity"]
+- ["Ps9Equatable", "parseJsonToPicture"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "textDetail"]
+- !private ["Ps9Equatable", "valueForKey"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps23FloatLiteralConvertible", "init"]
+- !private ["Ps16ForwardIndexType", "init"]
+- !private ["Ps8Hashable", "CoreDataService"]
+- !private ["Ps8Hashable", "Int"]
+- !private ["Ps8Hashable", "NSBundle"]
+- !private ["Ps8Hashable", "NSData"]
+- !private ["Ps8Hashable", "NSDate"]
+- !private ["Ps8Hashable", "NSNumber"]
+- !private ["Ps8Hashable", "Picture"]
+- !private ["Ps8Hashable", "URLForResource"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "active"]
+- !private ["Ps8Hashable", "count"]
+- ["Ps8Hashable", "dataForURLImage"]
+- !private ["Ps8Hashable", "distantFuture"]
+- ["Ps8Hashable", "getLastChange"]
+- !private ["Ps8Hashable", "id"]
+- !private ["Ps8Hashable", "image"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isoToDate"]
+- !private ["Ps8Hashable", "lastChange"]
+- !private ["Ps8Hashable", "mainBundle"]
+- !private ["Ps8Hashable", "myNewEntity"]
+- ["Ps8Hashable", "parseJsonToPicture"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "textDetail"]
+- !private ["Ps8Hashable", "valueForKey"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "deinit"]
+- !private ["Si", "init"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps21IntegerArithmeticType", "init"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["Ps11IntegerType", "init"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["CSo8NSBundle", "URLForResource"]
+- !private ["CSo8NSBundle", "mainBundle"]
+- !private ["PSo8NSCoding", "count"]
+- !private ["PSo8NSCoding", "distantFuture"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isoToDate"]
+- !private ["PSo8NSCoding", "valueForKey"]
+- !private ["PSo9NSCopying", "count"]
+- !private ["PSo9NSCopying", "distantFuture"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "isoToDate"]
+- !private ["PSo9NSCopying", "valueForKey"]
+- !private ["CSo6NSData", "init"]
+- !private ["CSo6NSDate", "distantFuture"]
+- !private ["CSo6NSDate", "isoToDate"]
+- !private ["CSo12NSDictionary", "count"]
+- !private ["CSo12NSDictionary", "valueForKey"]
+- !private ["PSo17NSFastEnumeration", "count"]
+- !private ["PSo17NSFastEnumeration", "valueForKey"]
+- ["CSo15NSManagedObject", "Bool"]
+- !private ["CSo15NSManagedObject", "CoreDataService"]
+- !private ["CSo15NSManagedObject", "Int"]
+- !private ["CSo15NSManagedObject", "NSBundle"]
+- ["CSo15NSManagedObject", "NSData"]
+- ["CSo15NSManagedObject", "NSDate"]
+- ["CSo15NSManagedObject", "NSDictionary"]
+- ["CSo15NSManagedObject", "NSManagedObjectContext"]
+- !private ["CSo15NSManagedObject", "NSNumber"]
+- ["CSo15NSManagedObject", "NSURL"]
+- ["CSo15NSManagedObject", "Picture"]
+- !private ["CSo15NSManagedObject", "String"]
+- !private ["CSo15NSManagedObject", "active"]
+- ["CSo15NSManagedObject", "dataForURLImage"]
+- ["CSo15NSManagedObject", "getLastChange"]
+- !private ["CSo15NSManagedObject", "id"]
+- !private ["CSo15NSManagedObject", "image"]
+- ["CSo15NSManagedObject", "init"]
+- !private ["CSo15NSManagedObject", "lastChange"]
+- !private ["CSo15NSManagedObject", "myNewEntity"]
+- ["CSo15NSManagedObject", "parseJsonToPicture"]
+- !private ["CSo15NSManagedObject", "print"]
+- !private ["CSo15NSManagedObject", "textDetail"]
+- !private ["PSo16NSMutableCopying", "count"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "valueForKey"]
+- !private ["CSo8NSNumber", "init"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CoreDataService"]
+- !private ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "NSBundle"]
+- ["CSo8NSObject", "NSData"]
+- ["CSo8NSObject", "NSDate"]
+- ["CSo8NSObject", "NSDictionary"]
+- ["CSo8NSObject", "NSManagedObjectContext"]
+- !private ["CSo8NSObject", "NSNumber"]
+- ["CSo8NSObject", "NSURL"]
+- ["CSo8NSObject", "Picture"]
+- !private ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "URLForResource"]
+- !private ["CSo8NSObject", "active"]
+- !private ["CSo8NSObject", "count"]
+- ["CSo8NSObject", "dataForURLImage"]
+- !private ["CSo8NSObject", "distantFuture"]
+- ["CSo8NSObject", "getLastChange"]
+- !private ["CSo8NSObject", "id"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isoToDate"]
+- !private ["CSo8NSObject", "lastChange"]
+- !private ["CSo8NSObject", "mainBundle"]
+- !private ["CSo8NSObject", "myNewEntity"]
+- ["CSo8NSObject", "parseJsonToPicture"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "textDetail"]
+- !private ["CSo8NSObject", "valueForKey"]
+- !private ["PSo16NSObjectProtocol", "CoreDataService"]
+- !private ["PSo16NSObjectProtocol", "Int"]
+- !private ["PSo16NSObjectProtocol", "NSBundle"]
+- !private ["PSo16NSObjectProtocol", "NSData"]
+- !private ["PSo16NSObjectProtocol", "NSDate"]
+- !private ["PSo16NSObjectProtocol", "NSNumber"]
+- !private ["PSo16NSObjectProtocol", "Picture"]
+- !private ["PSo16NSObjectProtocol", "URLForResource"]
+- !private ["PSo16NSObjectProtocol", "active"]
+- !private ["PSo16NSObjectProtocol", "count"]
+- ["PSo16NSObjectProtocol", "dataForURLImage"]
+- !private ["PSo16NSObjectProtocol", "distantFuture"]
+- ["PSo16NSObjectProtocol", "getLastChange"]
+- !private ["PSo16NSObjectProtocol", "id"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isoToDate"]
+- !private ["PSo16NSObjectProtocol", "lastChange"]
+- !private ["PSo16NSObjectProtocol", "mainBundle"]
+- !private ["PSo16NSObjectProtocol", "myNewEntity"]
+- ["PSo16NSObjectProtocol", "parseJsonToPicture"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "textDetail"]
+- !private ["PSo16NSObjectProtocol", "valueForKey"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "count"]
+- !private ["PSo14NSSecureCoding", "distantFuture"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "isoToDate"]
+- !private ["PSo14NSSecureCoding", "valueForKey"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo7NSValue", "init"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
+- ["C13AdvancedNotes7Picture", "Bool"]
+- !private ["C13AdvancedNotes7Picture", "CoreDataService"]
+- !private ["C13AdvancedNotes7Picture", "Int"]
+- !private ["C13AdvancedNotes7Picture", "NSBundle"]
+- ["C13AdvancedNotes7Picture", "NSData"]
+- ["C13AdvancedNotes7Picture", "NSDate"]
+- ["C13AdvancedNotes7Picture", "NSDictionary"]
+- ["C13AdvancedNotes7Picture", "NSManagedObjectContext"]
+- !private ["C13AdvancedNotes7Picture", "NSNumber"]
+- ["C13AdvancedNotes7Picture", "NSURL"]
+- ["C13AdvancedNotes7Picture", "Picture"]
+- !private ["C13AdvancedNotes7Picture", "String"]
+- !private ["C13AdvancedNotes7Picture", "active"]
+- ["C13AdvancedNotes7Picture", "dataForURLImage"]
+- ["C13AdvancedNotes7Picture", "deinit"]
+- ["C13AdvancedNotes7Picture", "getLastChange"]
+- !private ["C13AdvancedNotes7Picture", "id"]
+- !private ["C13AdvancedNotes7Picture", "image"]
+- ["C13AdvancedNotes7Picture", "init"]
+- !private ["C13AdvancedNotes7Picture", "lastChange"]
+- !private ["C13AdvancedNotes7Picture", "myNewEntity"]
+- ["C13AdvancedNotes7Picture", "parseJsonToPicture"]
+- !private ["C13AdvancedNotes7Picture", "print"]
+- !private ["C13AdvancedNotes7Picture", "textDetail"]
+- !private ["Ps21RandomAccessIndexType", "init"]
+- !private ["Ps12SequenceType", "count"]
+- !private ["Ps12SequenceType", "valueForKey"]
+- !private ["Ps17SignedIntegerType", "init"]
+- !private ["Ps16SignedNumberType", "init"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps22_IntegerArithmeticType", "init"]
+- !private ["Ps12_IntegerType", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "init"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "count"]
+- !private ["Ps12_Reflectable", "distantFuture"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "isoToDate"]
+- !private ["Ps12_Reflectable", "valueForKey"]
+- !private ["Ps18_SignedIntegerType", "init"]
+depends-nominal:
+- "C13AdvancedNotes8ANEntity"
+- "Ps9AnyObject"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
+- !private "C13AdvancedNotes15CoreDataService"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Ps28DictionaryLiteralConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "Ps23FloatLiteralConvertible"
+- !private "Ps16ForwardIndexType"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "CSo8NSBundle"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSData"
+- !private "CSo6NSDate"
+- !private "CSo12NSDictionary"
+- !private "PSo17NSFastEnumeration"
+- "CSo15NSManagedObject"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSNumber"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo7NSValue"
+- !private "Sq"
+- !private "Ps16OutputStreamType"
+- "C13AdvancedNotes7Picture"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps12SequenceType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+interface-hash: "86e412c2cc29f8cc54769ad3d95718c7"

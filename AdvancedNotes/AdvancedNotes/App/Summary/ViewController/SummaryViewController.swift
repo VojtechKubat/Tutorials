@@ -91,9 +91,7 @@ extension SummaryViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if let _ = contentListFiltered[indexPath.row] as? Paragraph {
             let cell = tableView.dequeueReusableCellWithIdentifier(cellParagraphID)
-            // as! ANTableViewCell
-            
-            // todo
+            (cell as! ParagraphViewCell).setParagraph(contentListFiltered[indexPath.row] as! Paragraph)
             
             
             
@@ -101,8 +99,7 @@ extension SummaryViewController: UITableViewDataSource {
         }
         
         if let _ = contentListFiltered[indexPath.row] as? Picture {
-            let cell = tableView.dequeueReusableCellWithIdentifier(cellPictureID) as! ANTableViewCell
-            
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellPictureID)!
             // todo
             
             return cell
@@ -110,8 +107,7 @@ extension SummaryViewController: UITableViewDataSource {
         }
         
         if let _ = contentListFiltered[indexPath.row] as? Reminder {
-            let cell = tableView.dequeueReusableCellWithIdentifier(cellReminderID) as! ANTableViewCell
-            
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellReminderID)!
             // todo
             
             return cell

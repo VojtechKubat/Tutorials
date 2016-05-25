@@ -9,18 +9,26 @@
 import Foundation
 import UIKit
 
-class ParagraphViewCell: ANTableViewCell {
+class ParagraphViewCell: UITableViewCell {
+    
+    weak var myParagraph: Paragraph?
     
     @IBOutlet weak var paragraphTextView: FrameTextView!
     
+    @IBAction func remove(sender: UIButton) {
+        print("remove")
+    }
     
+    @IBAction func edit(sender: UIButton) {
+        print("edit")
+    }
     
     func setParagraph (paragraph: Paragraph) {
-        paragraphTextView.text = paragraph.text
-        layoutIfNeeded()
+        myParagraph = paragraph
+        
+        if let _ = myParagraph {
+            paragraphTextView.text = myParagraph!.text
+        }
     }
-    
-    override func height() -> CGFloat {
-        return 20
-    }
+
 }

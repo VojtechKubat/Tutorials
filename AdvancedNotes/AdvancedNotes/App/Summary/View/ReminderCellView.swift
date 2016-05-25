@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import UIKit
 
-class ReminderViewCell: ANTableViewCell {
+class ReminderViewCell: UITableViewCell {
     
 }

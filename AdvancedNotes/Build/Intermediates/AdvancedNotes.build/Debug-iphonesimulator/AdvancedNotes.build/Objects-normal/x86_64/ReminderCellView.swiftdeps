@@ -7,11 +7,9 @@ provides-member:
 - ["C13AdvancedNotes16ReminderViewCell", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "UITableViewCell"
 - "ReminderViewCell"
-- "ANTableViewCell"
 depends-member:
-- ["C13AdvancedNotes15ANTableViewCell", "init"]
-- ["C13AdvancedNotes15ANTableViewCell", ""]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]
 - ["Ps11CVarArgType", "init"]
@@ -47,13 +45,13 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", ""]
 - ["CSo11UIResponder", "init"]
 - ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", ""]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "init"]
 - ["Ps12_Reflectable", "init"]
 - ["Ps12_Reflectable", ""]
 depends-nominal:
-- "C13AdvancedNotes15ANTableViewCell"
 - "Ps9AnyObject"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
@@ -79,7 +77,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
@@ -88,4 +86,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "c9e0a97784175588c1946e3e17070de1"
+interface-hash: "8f1332b23ea3bcbbb86c042b1067eac1"

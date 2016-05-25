@@ -1,0 +1,81 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["C13AdvancedNotes3Tag", ""]
+- ["C13AdvancedNotes3Tag", "label"]
+- ["C13AdvancedNotes3Tag", "id"]
+- ["C13AdvancedNotes3Tag", "relatesToNote"]
+provides-dynamic-lookup:
+- "label"
+- "id"
+- "relatesToNote"
+depends-top-level:
+- "Tag"
+- "NSSet"
+- "NSNumber"
+- "String"
+depends-member:
+- ["Ps9AnyObject", "id"]
+- ["Ps9AnyObject", "label"]
+- ["Ps9AnyObject", "relatesToNote"]
+- ["Ps11CVarArgType", "id"]
+- ["Ps11CVarArgType", "label"]
+- ["Ps11CVarArgType", "relatesToNote"]
+- ["Ps28CustomDebugStringConvertible", "id"]
+- ["Ps28CustomDebugStringConvertible", "label"]
+- ["Ps28CustomDebugStringConvertible", "relatesToNote"]
+- ["Ps23CustomStringConvertible", "id"]
+- ["Ps23CustomStringConvertible", "label"]
+- ["Ps23CustomStringConvertible", "relatesToNote"]
+- ["Ps9Equatable", "id"]
+- ["Ps9Equatable", "label"]
+- ["Ps9Equatable", "relatesToNote"]
+- ["Ps8Hashable", "id"]
+- ["Ps8Hashable", "label"]
+- ["Ps8Hashable", "relatesToNote"]
+- ["CSo15NSManagedObject", "NSNumber"]
+- ["CSo15NSManagedObject", "NSSet"]
+- ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "id"]
+- ["CSo15NSManagedObject", "label"]
+- ["CSo15NSManagedObject", "relatesToNote"]
+- ["CSo8NSObject", "NSNumber"]
+- ["CSo8NSObject", "NSSet"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "id"]
+- ["CSo8NSObject", "label"]
+- ["CSo8NSObject", "relatesToNote"]
+- ["PSo16NSObjectProtocol", "id"]
+- ["PSo16NSObjectProtocol", "label"]
+- ["PSo16NSObjectProtocol", "relatesToNote"]
+- ["C13AdvancedNotes3Tag", "NSNumber"]
+- ["C13AdvancedNotes3Tag", "NSSet"]
+- ["C13AdvancedNotes3Tag", "String"]
+- ["C13AdvancedNotes3Tag", "id"]
+- ["C13AdvancedNotes3Tag", "label"]
+- ["C13AdvancedNotes3Tag", "relatesToNote"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "CSo15NSManagedObject"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C13AdvancedNotes3Tag"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+interface-hash: "ac8e654b4260cf56445b0c068573b50a"

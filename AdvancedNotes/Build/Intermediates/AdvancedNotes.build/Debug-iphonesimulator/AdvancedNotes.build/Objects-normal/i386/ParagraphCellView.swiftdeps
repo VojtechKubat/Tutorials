@@ -1,0 +1,289 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ParagraphViewCell"
+provides-nominal:
+- "C13AdvancedNotes17ParagraphViewCell"
+provides-member:
+- ["C13AdvancedNotes17ParagraphViewCell", ""]
+provides-dynamic-lookup:
+- "paragraphTextView"
+- "edit"
+- "remove"
+- "myParagraph"
+- "setParagraph"
+depends-top-level:
+- "ParagraphViewCell"
+- "UIButton"
+- !private "StringLiteralType"
+- !private "print"
+- "Paragraph"
+- "UITableViewCell"
+- "FrameTextView"
+depends-member:
+- !private ["C13AdvancedNotes8ANEntity", "text"]
+- ["Ps9AnyObject", "edit"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "myParagraph"]
+- ["Ps9AnyObject", "paragraphTextView"]
+- !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "remove"]
+- ["Ps9AnyObject", "setParagraph"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "edit"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "myParagraph"]
+- ["Ps11CVarArgType", "paragraphTextView"]
+- !private ["Ps11CVarArgType", "print"]
+- ["Ps11CVarArgType", "remove"]
+- ["Ps11CVarArgType", "setParagraph"]
+- !private ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- ["Ps28CustomDebugStringConvertible", "edit"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "myParagraph"]
+- ["Ps28CustomDebugStringConvertible", "paragraphTextView"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- ["Ps28CustomDebugStringConvertible", "remove"]
+- ["Ps28CustomDebugStringConvertible", "setParagraph"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "edit"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "myParagraph"]
+- ["Ps23CustomStringConvertible", "paragraphTextView"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- ["Ps23CustomStringConvertible", "remove"]
+- ["Ps23CustomStringConvertible", "setParagraph"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "edit"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "myParagraph"]
+- ["Ps9Equatable", "paragraphTextView"]
+- !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "remove"]
+- ["Ps9Equatable", "setParagraph"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", ""]
+- !private ["C13AdvancedNotes13FrameTextView", "text"]
+- ["Ps8Hashable", "edit"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "myParagraph"]
+- ["Ps8Hashable", "paragraphTextView"]
+- !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "remove"]
+- ["Ps8Hashable", "setParagraph"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", ""]
+- ["PSo8NSCoding", "edit"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "myParagraph"]
+- ["PSo8NSCoding", "paragraphTextView"]
+- !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "remove"]
+- ["PSo8NSCoding", "setParagraph"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", ""]
+- !private ["CSo15NSManagedObject", "text"]
+- ["CSo8NSObject", "FrameTextView"]
+- ["CSo8NSObject", "Paragraph"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "edit"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "myParagraph"]
+- ["CSo8NSObject", "paragraphTextView"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "remove"]
+- ["CSo8NSObject", "setParagraph"]
+- !private ["CSo8NSObject", "text"]
+- ["PSo16NSObjectProtocol", "edit"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "myParagraph"]
+- ["PSo16NSObjectProtocol", "paragraphTextView"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "remove"]
+- ["PSo16NSObjectProtocol", "setParagraph"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["C13AdvancedNotes9Paragraph", "text"]
+- ["C13AdvancedNotes17ParagraphViewCell", "FrameTextView"]
+- ["C13AdvancedNotes17ParagraphViewCell", "Paragraph"]
+- ["C13AdvancedNotes17ParagraphViewCell", "UIButton"]
+- ["C13AdvancedNotes17ParagraphViewCell", "deinit"]
+- ["C13AdvancedNotes17ParagraphViewCell", "edit"]
+- ["C13AdvancedNotes17ParagraphViewCell", "init"]
+- ["C13AdvancedNotes17ParagraphViewCell", "myParagraph"]
+- ["C13AdvancedNotes17ParagraphViewCell", "paragraphTextView"]
+- !private ["C13AdvancedNotes17ParagraphViewCell", "print"]
+- ["C13AdvancedNotes17ParagraphViewCell", "remove"]
+- ["C13AdvancedNotes17ParagraphViewCell", "setParagraph"]
+- ["PSo29UIAccessibilityIdentification", "edit"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "myParagraph"]
+- ["PSo29UIAccessibilityIdentification", "paragraphTextView"]
+- !private ["PSo29UIAccessibilityIdentification", "print"]
+- ["PSo29UIAccessibilityIdentification", "remove"]
+- ["PSo29UIAccessibilityIdentification", "setParagraph"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "edit"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "myParagraph"]
+- ["PSo12UIAppearance", "paragraphTextView"]
+- !private ["PSo12UIAppearance", "print"]
+- ["PSo12UIAppearance", "remove"]
+- ["PSo12UIAppearance", "setParagraph"]
+- !private ["PSo12UIAppearance", "text"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "edit"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "myParagraph"]
+- ["PSo21UIAppearanceContainer", "paragraphTextView"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "remove"]
+- ["PSo21UIAppearanceContainer", "setParagraph"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo17UICoordinateSpace", "edit"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "myParagraph"]
+- ["PSo17UICoordinateSpace", "paragraphTextView"]
+- !private ["PSo17UICoordinateSpace", "print"]
+- ["PSo17UICoordinateSpace", "remove"]
+- ["PSo17UICoordinateSpace", "setParagraph"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "edit"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "myParagraph"]
+- ["PSo13UIDynamicItem", "paragraphTextView"]
+- !private ["PSo13UIDynamicItem", "print"]
+- ["PSo13UIDynamicItem", "remove"]
+- ["PSo13UIDynamicItem", "setParagraph"]
+- !private ["PSo13UIDynamicItem", "text"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "edit"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "myParagraph"]
+- ["PSo18UIFocusEnvironment", "paragraphTextView"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "remove"]
+- ["PSo18UIFocusEnvironment", "setParagraph"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo27UIGestureRecognizerDelegate", "edit"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "myParagraph"]
+- ["PSo27UIGestureRecognizerDelegate", "paragraphTextView"]
+- !private ["PSo27UIGestureRecognizerDelegate", "print"]
+- ["PSo27UIGestureRecognizerDelegate", "remove"]
+- ["PSo27UIGestureRecognizerDelegate", "setParagraph"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["PSo10UIKeyInput", "text"]
+- ["CSo11UIResponder", "FrameTextView"]
+- ["CSo11UIResponder", "Paragraph"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "edit"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "myParagraph"]
+- ["CSo11UIResponder", "paragraphTextView"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "remove"]
+- ["CSo11UIResponder", "setParagraph"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo12UIScrollView", "text"]
+- ["CSo15UITableViewCell", "FrameTextView"]
+- ["CSo15UITableViewCell", "Paragraph"]
+- ["CSo15UITableViewCell", "UIButton"]
+- ["CSo15UITableViewCell", "edit"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "myParagraph"]
+- ["CSo15UITableViewCell", "paragraphTextView"]
+- !private ["CSo15UITableViewCell", "print"]
+- ["CSo15UITableViewCell", "remove"]
+- ["CSo15UITableViewCell", "setParagraph"]
+- ["CSo15UITableViewCell", ""]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "text"]
+- !private ["CSo10UITextView", "text"]
+- ["PSo18UITraitEnvironment", "edit"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "myParagraph"]
+- ["PSo18UITraitEnvironment", "paragraphTextView"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "remove"]
+- ["PSo18UITraitEnvironment", "setParagraph"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "FrameTextView"]
+- ["CSo6UIView", "Paragraph"]
+- ["CSo6UIView", "UIButton"]
+- ["CSo6UIView", "edit"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "myParagraph"]
+- ["CSo6UIView", "paragraphTextView"]
+- !private ["CSo6UIView", "print"]
+- ["CSo6UIView", "remove"]
+- ["CSo6UIView", "setParagraph"]
+- !private ["CSo6UIView", "text"]
+- ["Ps12_Reflectable", "Some"]
+- ["Ps12_Reflectable", "edit"]
+- ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", "myParagraph"]
+- ["Ps12_Reflectable", "paragraphTextView"]
+- !private ["Ps12_Reflectable", "print"]
+- ["Ps12_Reflectable", "remove"]
+- ["Ps12_Reflectable", "setParagraph"]
+- !private ["Ps12_Reflectable", "text"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- !private "C13AdvancedNotes8ANEntity"
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "C13AdvancedNotes13FrameTextView"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- !private "CSo15NSManagedObject"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "C13AdvancedNotes9Paragraph"
+- "C13AdvancedNotes17ParagraphViewCell"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- !private "PSo10UIKeyInput"
+- "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- "CSo15UITableViewCell"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- !private "CSo10UITextView"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+interface-hash: "fc14c6b344c28ebeef9a568fcd9e418d"
