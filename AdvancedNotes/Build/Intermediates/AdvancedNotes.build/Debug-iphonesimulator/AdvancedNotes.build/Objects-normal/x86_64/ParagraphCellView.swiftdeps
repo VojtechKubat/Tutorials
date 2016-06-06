@@ -9,10 +9,18 @@ provides-dynamic-lookup:
 - "paragraphTextView"
 - "setParagraph"
 depends-top-level:
+<<<<<<< Updated upstream
 - "UITableViewCell"
 - "Paragraph"
 - "ParagraphViewCell"
 - "FrameTextView"
+=======
+- "CGFloat"
+- "FrameTextView"
+- "Paragraph"
+- "ParagraphViewCell"
+- "ANTableViewCell"
+>>>>>>> Stashed changes
 depends-member:
 - !private ["C13AdvancedNotes8ANEntity", "text"]
 - ["Ps9AnyObject", "init"]

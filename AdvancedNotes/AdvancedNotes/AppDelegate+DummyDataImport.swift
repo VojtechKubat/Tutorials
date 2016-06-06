@@ -23,6 +23,11 @@ extension AppDelegate {
         if (results.count == 0) {
             let jsonURL = NSBundle.mainBundle().URLForResource("AdvancedNotesSeed", withExtension: "json")
             let jsonData = NSData(contentsOfURL: jsonURL!)
+            
+            for _ in 0...1000 {
+                
+            
+            
             do {
                 let jsonDict = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: .AllowFragments)
                 
@@ -40,6 +45,7 @@ extension AppDelegate {
                 CoreDataService.trySave(coreDataStack.context)
             } catch let error as NSError {
                 print("ERROR - \(error.userInfo)")
+            }
             }
         } else {
             print("There are \(results.count) notes")

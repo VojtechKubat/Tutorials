@@ -11,10 +11,17 @@ provides-dynamic-lookup:
 - "label"
 - "relatesToNote"
 depends-top-level:
+<<<<<<< Updated upstream
 - "Tag"
 - "NSNumber"
 - "String"
 - "NSSet"
+=======
+- "NSNumber"
+- "Tag"
+- "NSSet"
+- "String"
+>>>>>>> Stashed changes
 depends-member:
 - ["Ps9AnyObject", "id"]
 - ["Ps9AnyObject", "label"]

@@ -10,6 +10,7 @@ provides-dynamic-lookup:
 - "parseJsonToReminder"
 - "parseJsonToReminder"
 depends-top-level:
+<<<<<<< Updated upstream
 - !private "Int"
 - "Reminder"
 - !private "NSNumber"
@@ -24,6 +25,22 @@ depends-top-level:
 - !private "!="
 - "NSDate"
 - !private "BooleanLiteralType"
+=======
+- "NSDictionary"
+- "NSManagedObjectContext"
+- "Reminder"
+- !private "NSNumber"
+- !private "=="
+- !private "StringLiteralType"
+- !private "Int"
+- !private "!="
+- "Bool"
+- !private "CoreDataService"
+- !private "String"
+- !private "BooleanLiteralType"
+- "NSDate"
+- "ANEntity"
+>>>>>>> Stashed changes
 depends-member:
 - ["C13AdvancedNotes8ANEntity", "Bool"]
 - !private ["C13AdvancedNotes8ANEntity", "CoreDataService"]

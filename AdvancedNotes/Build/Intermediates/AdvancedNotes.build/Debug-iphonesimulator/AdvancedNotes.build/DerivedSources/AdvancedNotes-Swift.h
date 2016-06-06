@@ -351,10 +351,11 @@ SWIFT_CLASS("_TtC13AdvancedNotes23RemindersViewController")
 SWIFT_CLASS("_TtC13AdvancedNotes21SummaryViewController")
 @interface SummaryViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
-@property (nonatomic, strong) NSSortDescriptor * _Nonnull sort;
+@property (nonatomic, readonly, strong) NSSortDescriptor * _Nonnull sort;
+@property (nonatomic, readonly, copy) BOOL (^ _Nonnull compareByLastChange)(ANEntity * _Nonnull, ANEntity * _Nonnull);
 @property (nonatomic, strong) Note * _Nullable note;
-@property (nonatomic, copy) NSSet<ANEntity *> * _Nonnull contentSet;
-@property (nonatomic, copy) NSArray<ANEntity *> * _Nonnull contentListFiltered;
+@property (nonatomic, copy) NSSet<ANEntity *> * _Nullable contentSet;
+@property (nonatomic, copy) NSArray<ANEntity *> * _Nullable contentListFiltered;
 - (IBAction)addAttachment:(UIBarButtonItem * _Nonnull)sender;
 - (void)viewDidLoad;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;

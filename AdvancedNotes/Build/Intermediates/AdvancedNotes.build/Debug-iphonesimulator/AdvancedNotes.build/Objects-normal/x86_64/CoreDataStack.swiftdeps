@@ -7,6 +7,7 @@ provides-member:
 - ["C13AdvancedNotes13CoreDataStack", ""]
 provides-dynamic-lookup:
 depends-top-level:
+<<<<<<< Updated upstream
 - "NSManagedObjectContext"
 - !private "NSError"
 - "NSManagedObjectModel"
@@ -22,6 +23,23 @@ depends-top-level:
 - !private "abort"
 - !private "NSSQLiteStoreType"
 - "NSURL"
+=======
+- !private "abort"
+- !private "NSFileManager"
+- !private "NSBundle"
+- !private "-"
+- "StringLiteralType"
+- "CoreDataStack"
+- !private "NSLog"
+- !private "NSError"
+- !private "NSMigratePersistentStoresAutomaticallyOption"
+- "NSManagedObjectContext"
+- !private "!="
+- "NSManagedObjectModel"
+- "NSURL"
+- !private "NSSQLiteStoreType"
+- "NSPersistentStoreCoordinator"
+>>>>>>> Stashed changes
 - "BooleanLiteralType"
 - "Dictionary"
 depends-member:

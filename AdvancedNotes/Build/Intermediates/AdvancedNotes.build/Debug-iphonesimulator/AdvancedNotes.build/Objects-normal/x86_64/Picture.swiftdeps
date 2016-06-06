@@ -11,6 +11,7 @@ provides-dynamic-lookup:
 - "parseJsonToPicture"
 - "dataForURLImage"
 depends-top-level:
+<<<<<<< Updated upstream
 - !private "NSNumber"
 - !private "NSBundle"
 - !private "=="
@@ -29,6 +30,26 @@ depends-top-level:
 - !private "print"
 - "ANEntity"
 - "Picture"
+=======
+- !private "??"
+- !private "NSBundle"
+- "ANEntity"
+- !private "=="
+- !private "StringLiteralType"
+- !private "NSNumber"
+- !private "print"
+- !private "Int"
+- "NSData"
+- !private "CoreDataService"
+- !private "String"
+- "NSManagedObjectContext"
+- "NSDictionary"
+- !private "!="
+- "Picture"
+- "NSURL"
+- "NSDate"
+- "Bool"
+>>>>>>> Stashed changes
 - !private "BooleanLiteralType"
 depends-member:
 - ["C13AdvancedNotes8ANEntity", "Bool"]

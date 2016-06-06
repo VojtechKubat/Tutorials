@@ -9,6 +9,7 @@ provides-dynamic-lookup:
 - "parseJsonToTag"
 - "parseJsonToTag"
 depends-top-level:
+<<<<<<< Updated upstream
 - !private "CoreDataService"
 - !private "NSNumber"
 - !private "StringLiteralType"
@@ -21,6 +22,20 @@ depends-top-level:
 - !private "BooleanLiteralType"
 - "Bool"
 - !private "Int"
+=======
+- !private "String"
+- "Tag"
+- "Bool"
+- !private "CoreDataService"
+- "NSManagedObjectContext"
+- !private "StringLiteralType"
+- !private "!="
+- "NSDictionary"
+- "NSManagedObject"
+- !private "Int"
+- !private "NSNumber"
+- !private "BooleanLiteralType"
+>>>>>>> Stashed changes
 depends-member:
 - !private ["Ps9AnyObject", "CoreDataService"]
 - !private ["Ps9AnyObject", "NSNumber"]

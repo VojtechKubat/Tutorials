@@ -18,27 +18,30 @@ let cellReminderID = "cellReminder"
 class SummaryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var sort = NSSortDescriptor(key: "getLastChange", ascending: false)
+    let sort = NSSortDescriptor(key: "getLastChange", ascending: false)
+
+    let compareByLastChange = {(element1: ANEntity, element2: ANEntity) -> Bool in
+        return (element1.getLastChange.compare(element2.getLastChange) == .OrderedDescending)
+    }
     
     var note: Note? {
         didSet {
+            contentSet = nil
+            contentListFiltered = nil
+            
             contentSet = Set<ANEntity>()
-            contentSet = contentSet.union(note?.hasParagraph as! Set)
-            contentSet = contentSet.union(note?.hasPicture as! Set)
-            contentSet = contentSet.union(note?.hasReminder as! Set)
-            contentSet = contentSet.union(note?.hasChild as! Set)
+            contentSet = contentSet!.union(note?.hasParagraph as! Set)
+            contentSet = contentSet!.union(note?.hasPicture as! Set)
+            contentSet = contentSet!.union(note?.hasReminder as! Set)
+            contentSet = contentSet!.union(note?.hasChild as! Set)
             
-            contentListFiltered = Array(contentSet)
-            contentListFiltered = (Array(contentSet) as NSArray).sortedArrayUsingDescriptors([sort]) as! Array<ANEntity>
-            
-//            print("----------------------------------")
-//            print("\(contentListFiltered)")
-            
+//            contentListFiltered = (Array(contentSet!) as NSArray).sortedArrayUsingDescriptors([sort]) as? Array<ANEntity>
+            contentListFiltered = (Array(contentSet!) as Array<ANEntity>).sort(compareByLastChange)
         }
     }
     
-    var contentSet = Set<ANEntity>()
-    var contentListFiltered = Array<ANEntity>()
+    var contentSet: Set<ANEntity>? = Set<ANEntity>()
+    var contentListFiltered: Array<ANEntity>? = Array<ANEntity>()
     
     @IBAction func addAttachment(sender: UIBarButtonItem) {
         let addAttachmentDialog = UIAlertController(title: "Add new attachment",
@@ -85,44 +88,60 @@ extension SummaryViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contentListFiltered.count
+        if (contentListFiltered == nil) {
+            
+            if (contentListFiltered == nil) {
+                return 0
+            }
+        }
+        return contentListFiltered!.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+<<<<<<< Updated upstream
         if let _ = contentListFiltered[indexPath.row] as? Paragraph {
             let cell = tableView.dequeueReusableCellWithIdentifier(cellParagraphID)
             (cell as! ParagraphViewCell).setParagraph(contentListFiltered[indexPath.row] as! Paragraph)
+=======
+        if let _ = contentListFiltered![indexPath.row] as? Paragraph {
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellParagraphID)!
+            // as! ANTableViewCell
+            
+            // todo
+>>>>>>> Stashed changes
             
             
-            
-            return cell!
+            return cell
         }
+<<<<<<< Updated upstream
         
         if let _ = contentListFiltered[indexPath.row] as? Picture {
             let cell = tableView.dequeueReusableCellWithIdentifier(cellPictureID)!
+=======
+        if let _ = contentListFiltered![indexPath.row] as? Picture {
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellPictureID) as! ANTableViewCell
+            
+>>>>>>> Stashed changes
             // todo
             
             return cell
         
         }
+<<<<<<< Updated upstream
         
         if let _ = contentListFiltered[indexPath.row] as? Reminder {
             let cell = tableView.dequeueReusableCellWithIdentifier(cellReminderID)!
+=======
+        if let _ = contentListFiltered![indexPath.row] as? Reminder {
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellReminderID) as! ANTableViewCell
+            
+>>>>>>> Stashed changes
             // todo
             
             return cell
-            
         }
-        
         return (tableView.dequeueReusableCellWithIdentifier("cellDefault"))!
     }
-    
-//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-////        if let cell = (self.tableView.cellForRowAtIndexPath(indexPath) as? ANTableViewCell) {
-////            return (cell as ANTableViewCell).height()
-////        }
-//        return 250
-//    }
 }
 
 extension SummaryViewController: UITableViewDelegate {

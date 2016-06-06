@@ -6,10 +6,11 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes4Note", ""]
 provides-dynamic-lookup:
-- "parseJsonToNote"
-- "parseJsonToNote"
 - "getLastChange"
+- "parseJsonToNote"
+- "parseJsonToNote"
 depends-top-level:
+<<<<<<< Updated upstream
 - !private "NSNumber"
 - "ANEntity"
 - !private "print"
@@ -35,6 +36,33 @@ depends-top-level:
 - !private "??"
 - !private "Paragraph"
 - !private "BooleanLiteralType"
+=======
+- !private "AnyObject"
+- !private "String"
+- !private "!="
+- !private "Paragraph"
+- !private "Picture"
+- !private "NSPredicate"
+- "Bool"
+- !private "StringLiteralType"
+- !private "=="
+- !private "print"
+- "NSDate"
+- !private "NSMutableSet"
+- !private "Reminder"
+- !private "NSError"
+- !private "NSArray"
+- "ANEntity"
+- !private "CoreDataService"
+- "NSDictionary"
+- "NSManagedObjectContext"
+- !private "??"
+- "Note"
+- !private "NSNumber"
+- !private "NSFetchRequest"
+- !private "BooleanLiteralType"
+- !private "Int"
+>>>>>>> Stashed changes
 depends-member:
 - !private ["C13AdvancedNotes8ANEntity", "AnyObject"]
 - ["C13AdvancedNotes8ANEntity", "Bool"]
