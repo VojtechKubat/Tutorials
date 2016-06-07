@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "6c54a4713b88e24bfd5b17fd98ecbb5c"
-build_time: [518613243, 276165000]
+build_time: [518627017, 532399000]
 inputs:
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/ManagedObjects/Paragraph+CoreDataProperties.swift": [518612414, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/ManagedObjects/Picture+CoreDataProperties.swift": [518612414, 0]
@@ -11,7 +11,8 @@ inputs:
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/Base/ANEntity.swift": [518612414, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/ManagedObjects/Reminder+CoreDataProperties.swift": [518612414, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/Base/FrameTextView.swift": [518612414, 0]
-  "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/App/Paragraph/ParagraphViewController.swift": [518612414, 0]
+  "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/App/Paragraph/ParagraphViewController.swift": [518625525, 0]
+  "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/App/Summary/View/SummaryCellView.swift": [9223372036854775807, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/ManagedObjects/DescendantID+CoreDataProperties.swift": [518612414, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/App/Summary/View/PictureCellView.swift": [518612414, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AppDelegate+DummyDataImport.swift": [518613243, 0]
@@ -28,6 +29,6 @@ inputs:
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/ManagedObjects/Note+CoreDataProperties.swift": [518612414, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/ManagedObjects/Picture.swift": [518612414, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/Base/NSManagedObject+Utils.swift": [518612414, 0]
-  "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/App/Reminder/RemindersViewController.swift": [518612414, 0]
-  "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/App/Summary/ViewController/SummaryViewController.swift": [518612779, 0]
-  "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/App/Summary/View/ParagraphCellView.swift": [518612414, 0]
+  "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/App/Reminder/RemindersViewController.swift": [518615510, 0]
+  "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/App/Summary/ViewController/SummaryViewController.swift": [518626953, 0]
+  "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/App/Summary/View/ParagraphCellView.swift": [518627013, 0]

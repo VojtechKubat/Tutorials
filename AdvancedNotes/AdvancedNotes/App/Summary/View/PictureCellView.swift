@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class PictureCellView: UITableViewCell {
+class PictureCellView: SummaryCellView {
     
 }

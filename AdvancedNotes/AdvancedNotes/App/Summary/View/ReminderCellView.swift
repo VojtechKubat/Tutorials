@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class ReminderViewCell: UITableViewCell {
+class ReminderViewCell: SummaryCellView {
     
 }

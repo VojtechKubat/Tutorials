@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ParagraphViewCell: UITableViewCell {
+class ParagraphViewCell: SummaryCellView {
     
     weak var myParagraph: Paragraph?
     
@@ -21,6 +21,7 @@ class ParagraphViewCell: UITableViewCell {
     
     @IBAction func edit(sender: UIButton) {
         print("edit")
+        
     }
     
     func setParagraph (paragraph: Paragraph) {
@@ -30,5 +31,5 @@ class ParagraphViewCell: UITableViewCell {
             paragraphTextView.text = myParagraph!.text
         }
     }
-
+    
 }

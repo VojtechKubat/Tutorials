@@ -273,9 +273,14 @@ SWIFT_CLASS("_TtC13AdvancedNotes17ParagraphViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC13AdvancedNotes23ParagraphViewController")
 @interface ParagraphViewController : UIViewController
+@property (nonatomic, strong) Paragraph * _Nullable paragraph;
+@property (nonatomic, weak) IBOutlet FrameTextView * _Null_unspecified textView;
+- (IBAction)discardChanges:(UIBarButtonItem * _Nonnull)sender;
+- (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -346,7 +351,6 @@ SWIFT_CLASS("_TtC13AdvancedNotes23RemindersViewController")
 @end
 
 @class NSSortDescriptor;
-@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC13AdvancedNotes21SummaryViewController")
 @interface SummaryViewController : UIViewController
@@ -359,6 +363,7 @@ SWIFT_CLASS("_TtC13AdvancedNotes21SummaryViewController")
 - (IBAction)addAttachment:(UIBarButtonItem * _Nonnull)sender;
 - (void)viewDidLoad;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (void)editItem:(NSManagedObject * _Nonnull)item calledByCell:(UITableViewCell * _Nonnull)calledByCell;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

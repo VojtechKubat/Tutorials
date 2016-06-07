@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes17ParagraphViewCell", ""]
 provides-dynamic-lookup:
-- "setParagraph"
+- "remove"
 - "edit"
 - "paragraphTextView"
-- "remove"
+- "setParagraph"
 - "myParagraph"
 depends-top-level:
+- !private "print"
 - !private "StringLiteralType"
 - "UIButton"
-- !private "print"
-- "UITableViewCell"
+- "FrameTextView"
 - "Paragraph"
 - "ParagraphViewCell"
-- "FrameTextView"
+- "UITableViewCell"
 depends-member:
 - !private ["C13AdvancedNotes8ANEntity", "text"]
 - ["Ps9AnyObject", "edit"]

@@ -10,50 +10,52 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes21SummaryViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "contentListFiltered"
-- "description"
-- "compareByLastChange"
-- "addAttachment"
 - "note"
-- "sort"
-- "numberOfSectionsInTableView"
+- "addAttachment"
 - "contentSet"
+- "contentListFiltered"
+- "sort"
+- "editItem"
+- "compareByLastChange"
+- "description"
+- "viewDidLoad"
 - "tableView"
 - "tableView"
 - "tableView"
+- "numberOfSectionsInTableView"
 depends-top-level:
-- "cellParagraphID"
-- "Int"
-- "UITableViewCell"
-- "NSIndexPath"
-- "StringLiteralType"
-- "UITableViewDelegate"
-- !private "ParagraphViewCell"
-- "=="
+- "Set"
 - "Array"
-- !private "Reminder"
-- "Note"
-- !private "UIAlertController"
-- !private "UINib"
-- "String"
 - "UITableView"
 - "SummaryViewController"
-- "cellReminderID"
-- !private "Paragraph"
-- "UITableViewDataSource"
-- "Set"
-- "UIViewController"
+- "=="
+- "NSIndexPath"
+- "NSManagedObject"
+- "cellPictureID"
+- !private "ParagraphViewCell"
+- "ANEntity"
+- "StringLiteralType"
+- "UITableViewCell"
 - "cellDefaultID"
 - "Bool"
-- "cellPictureID"
-- "NSSortDescriptor"
-- "ANEntity"
-- !private "UIAlertAction"
-- "BooleanLiteralType"
 - !private "Picture"
+- !private "UIAlertController"
+- "cellReminderID"
+- "NSSortDescriptor"
+- "UITableViewDataSource"
 - "UIBarButtonItem"
+- !private "Paragraph"
+- "String"
+- !private "Reminder"
+- "UITableViewDelegate"
+- "Int"
+- !private "UIAlertAction"
 - !private "UITableViewAutomaticDimension"
+- "cellParagraphID"
+- "UIViewController"
+- !private "UINib"
+- "BooleanLiteralType"
+- "Note"
 depends-member:
 - !private ["C13AdvancedNotes8ANEntity", "deinit"]
 - ["C13AdvancedNotes8ANEntity", "getLastChange"]
@@ -80,6 +82,7 @@ depends-member:
 - ["Ps9AnyObject", "contentSet"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
 - ["Ps9AnyObject", "description"]
+- ["Ps9AnyObject", "editItem"]
 - !private ["Ps9AnyObject", "estimatedRowHeight"]
 - ["Ps9AnyObject", "getLastChange"]
 - !private ["Ps9AnyObject", "hasChild"]
@@ -165,6 +168,7 @@ depends-member:
 - ["Ps11CVarArgType", "contentSet"]
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
 - ["Ps11CVarArgType", "description"]
+- ["Ps11CVarArgType", "editItem"]
 - !private ["Ps11CVarArgType", "estimatedRowHeight"]
 - ["Ps11CVarArgType", "getLastChange"]
 - !private ["Ps11CVarArgType", "hasChild"]
@@ -240,6 +244,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithIdentifier"]
 - ["Ps28CustomDebugStringConvertible", "description"]
+- ["Ps28CustomDebugStringConvertible", "editItem"]
 - !private ["Ps28CustomDebugStringConvertible", "estimatedRowHeight"]
 - ["Ps28CustomDebugStringConvertible", "getLastChange"]
 - !private ["Ps28CustomDebugStringConvertible", "hasChild"]
@@ -305,6 +310,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
 - ["Ps23CustomStringConvertible", "description"]
+- ["Ps23CustomStringConvertible", "editItem"]
 - !private ["Ps23CustomStringConvertible", "estimatedRowHeight"]
 - ["Ps23CustomStringConvertible", "getLastChange"]
 - !private ["Ps23CustomStringConvertible", "hasChild"]
@@ -371,6 +377,7 @@ depends-member:
 - ["Ps9Equatable", "contentSet"]
 - !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
 - ["Ps9Equatable", "description"]
+- ["Ps9Equatable", "editItem"]
 - !private ["Ps9Equatable", "estimatedRowHeight"]
 - ["Ps9Equatable", "getLastChange"]
 - !private ["Ps9Equatable", "hasChild"]
@@ -440,6 +447,7 @@ depends-member:
 - ["Ps8Hashable", "contentSet"]
 - !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
 - ["Ps8Hashable", "description"]
+- ["Ps8Hashable", "editItem"]
 - !private ["Ps8Hashable", "estimatedRowHeight"]
 - ["Ps8Hashable", "getLastChange"]
 - !private ["Ps8Hashable", "hasChild"]
@@ -546,6 +554,7 @@ depends-member:
 - ["PSo8NSCoding", "contentSet"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - ["PSo8NSCoding", "description"]
+- ["PSo8NSCoding", "editItem"]
 - !private ["PSo8NSCoding", "estimatedRowHeight"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo8NSCoding", "init"]
@@ -601,6 +610,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "contentListFiltered"]
 - ["PSo26NSExtensionRequestHandling", "contentSet"]
 - ["PSo26NSExtensionRequestHandling", "description"]
+- ["PSo26NSExtensionRequestHandling", "editItem"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "note"]
@@ -639,6 +649,7 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSIndexPath"]
+- ["CSo8NSObject", "NSManagedObject"]
 - ["CSo8NSObject", "NSSortDescriptor"]
 - ["CSo8NSObject", "Note"]
 - !private ["CSo8NSObject", "Paragraph"]
@@ -666,6 +677,7 @@ depends-member:
 - ["CSo8NSObject", "contentSet"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
 - ["CSo8NSObject", "description"]
+- ["CSo8NSObject", "editItem"]
 - !private ["CSo8NSObject", "estimatedRowHeight"]
 - ["CSo8NSObject", "getLastChange"]
 - !private ["CSo8NSObject", "hasChild"]
@@ -721,6 +733,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "contentSet"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
 - ["PSo16NSObjectProtocol", "description"]
+- ["PSo16NSObjectProtocol", "editItem"]
 - !private ["PSo16NSObjectProtocol", "estimatedRowHeight"]
 - ["PSo16NSObjectProtocol", "getLastChange"]
 - !private ["PSo16NSObjectProtocol", "hasChild"]
@@ -819,6 +832,7 @@ depends-member:
 - ["C13AdvancedNotes21SummaryViewController", "Bool"]
 - ["C13AdvancedNotes21SummaryViewController", "Int"]
 - ["C13AdvancedNotes21SummaryViewController", "NSIndexPath"]
+- ["C13AdvancedNotes21SummaryViewController", "NSManagedObject"]
 - ["C13AdvancedNotes21SummaryViewController", "NSSortDescriptor"]
 - ["C13AdvancedNotes21SummaryViewController", "Note"]
 - !private ["C13AdvancedNotes21SummaryViewController", "Paragraph"]
@@ -843,6 +857,7 @@ depends-member:
 - ["C13AdvancedNotes21SummaryViewController", "contentSet"]
 - ["C13AdvancedNotes21SummaryViewController", "deinit"]
 - ["C13AdvancedNotes21SummaryViewController", "description"]
+- ["C13AdvancedNotes21SummaryViewController", "editItem"]
 - ["C13AdvancedNotes21SummaryViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C13AdvancedNotes21SummaryViewController", "init"]
 - ["C13AdvancedNotes21SummaryViewController", "note"]
@@ -903,6 +918,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "contentSet"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "description"]
+- ["PSo21UIAppearanceContainer", "editItem"]
 - !private ["PSo21UIAppearanceContainer", "estimatedRowHeight"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -951,6 +967,7 @@ depends-member:
 - ["PSo18UIContentContainer", "contentListFiltered"]
 - ["PSo18UIContentContainer", "contentSet"]
 - ["PSo18UIContentContainer", "description"]
+- ["PSo18UIContentContainer", "editItem"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "note"]
@@ -1007,6 +1024,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "contentSet"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "description"]
+- ["PSo18UIFocusEnvironment", "editItem"]
 - !private ["PSo18UIFocusEnvironment", "estimatedRowHeight"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIFocusEnvironment", "init"]
@@ -1047,6 +1065,7 @@ depends-member:
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSIndexPath"]
+- ["CSo11UIResponder", "NSManagedObject"]
 - ["CSo11UIResponder", "NSSortDescriptor"]
 - ["CSo11UIResponder", "Note"]
 - !private ["CSo11UIResponder", "Paragraph"]
@@ -1072,6 +1091,7 @@ depends-member:
 - ["CSo11UIResponder", "contentSet"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "description"]
+- ["CSo11UIResponder", "editItem"]
 - !private ["CSo11UIResponder", "estimatedRowHeight"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
@@ -1156,6 +1176,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "contentListFiltered"]
 - ["PSo16UIStateRestoring", "contentSet"]
 - ["PSo16UIStateRestoring", "description"]
+- ["PSo16UIStateRestoring", "editItem"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "note"]
@@ -1273,6 +1294,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "contentSet"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "description"]
+- ["PSo18UITraitEnvironment", "editItem"]
 - !private ["PSo18UITraitEnvironment", "estimatedRowHeight"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -1315,6 +1337,7 @@ depends-member:
 - ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "NSIndexPath"]
+- ["CSo16UIViewController", "NSManagedObject"]
 - ["CSo16UIViewController", "NSSortDescriptor"]
 - ["CSo16UIViewController", "Note"]
 - !private ["CSo16UIViewController", "Paragraph"]
@@ -1339,6 +1362,7 @@ depends-member:
 - ["CSo16UIViewController", "contentListFiltered"]
 - ["CSo16UIViewController", "contentSet"]
 - ["CSo16UIViewController", "description"]
+- ["CSo16UIViewController", "editItem"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "note"]
@@ -1563,4 +1587,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "0f05e2f4f1b7be2b250c95664ed82d89"
+interface-hash: "a89fea38f393e6f98ae5f8752259330e"

@@ -33,7 +33,6 @@ class SummaryViewController: UIViewController {
             contentSet = contentSet.union(note?.hasChild as! Set)
             
             contentListFiltered = (Array(contentSet) as Array<ANEntity>).sort(compareByLastChange)
-            
         }
     }
     
@@ -76,6 +75,11 @@ class SummaryViewController: UIViewController {
     override var description: String {
         return ("\(super.description) - SummaryViewController")
     }
+    
+    func editItem(entitiy: ANEntity ,calledByCell: UITableViewCell) {
+        
+    }
+    
 }
 
 extension SummaryViewController: UITableViewDataSource {
@@ -92,8 +96,7 @@ extension SummaryViewController: UITableViewDataSource {
         if let _ = contentListFiltered[indexPath.row] as? Paragraph {
             let cell = tableView.dequeueReusableCellWithIdentifier(cellParagraphID)
             (cell as! ParagraphViewCell).setParagraph(contentListFiltered[indexPath.row] as! Paragraph)
-            
-            
+            (cell as! SummaryCellView).summaryVC = self
             
             return cell!
         }
@@ -102,6 +105,7 @@ extension SummaryViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCellWithIdentifier(cellPictureID)!
             // todo
             
+            (cell as! SummaryCellView).summaryVC = self
             return cell
         
         }
@@ -110,6 +114,7 @@ extension SummaryViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCellWithIdentifier(cellReminderID)!
             // todo
             
+            (cell as! SummaryCellView).summaryVC = self
             return cell
             
         }
@@ -117,12 +122,6 @@ extension SummaryViewController: UITableViewDataSource {
         return (tableView.dequeueReusableCellWithIdentifier("cellDefault"))!
     }
     
-//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-////        if let cell = (self.tableView.cellForRowAtIndexPath(indexPath) as? ANTableViewCell) {
-////            return (cell as ANTableViewCell).height()
-////        }
-//        return 250
-//    }
 }
 
 extension SummaryViewController: UITableViewDelegate {
