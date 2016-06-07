@@ -8,22 +8,22 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "NSManagedObjectContext"
-- !private "NSError"
-- "NSManagedObjectModel"
-- !private "NSFileManager"
-- !private "NSBundle"
-- !private "NSMigratePersistentStoresAutomaticallyOption"
-- "StringLiteralType"
 - "CoreDataStack"
+- !private "NSMigratePersistentStoresAutomaticallyOption"
+- "NSURL"
+- "NSManagedObjectModel"
+- "StringLiteralType"
 - !private "-"
 - !private "!="
 - !private "NSLog"
 - "NSPersistentStoreCoordinator"
+- !private "NSBundle"
 - !private "abort"
+- !private "NSFileManager"
 - !private "NSSQLiteStoreType"
-- "NSURL"
-- "BooleanLiteralType"
 - "Dictionary"
+- "BooleanLiteralType"
+- !private "NSError"
 depends-member:
 - !private ["Ps9AnyObject", "NSBundle"]
 - !private ["Ps9AnyObject", "NSFileManager"]
@@ -501,7 +501,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"

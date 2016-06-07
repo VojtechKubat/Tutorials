@@ -32,8 +32,10 @@ extension AppDelegate {
                 }
                 
                 let notesJson = jsonDict["notes"] as! NSArray
-                for currentNote in notesJson {
-                    Note.parseJsonToNote(currentNote as! NSDictionary, context: coreDataStack.context)
+                for _ in 0...1000 {
+                    for currentNote in notesJson {
+                        Note.parseJsonToNote(currentNote as! NSDictionary, context: coreDataStack.context)
+                    }
                 }
                 print("Dummy data was inserted")
                 

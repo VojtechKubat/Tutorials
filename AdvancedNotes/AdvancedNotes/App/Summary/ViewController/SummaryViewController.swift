@@ -20,6 +20,10 @@ class SummaryViewController: UIViewController {
     
     var sort = NSSortDescriptor(key: "getLastChange", ascending: false)
     
+    let compareByLastChange = {(element1: ANEntity, element2: ANEntity) -> Bool in
+        return (element1.getLastChange.compare(element2.getLastChange) == .OrderedDescending)
+    }
+    
     var note: Note? {
         didSet {
             contentSet = Set<ANEntity>()
@@ -28,11 +32,7 @@ class SummaryViewController: UIViewController {
             contentSet = contentSet.union(note?.hasReminder as! Set)
             contentSet = contentSet.union(note?.hasChild as! Set)
             
-            contentListFiltered = Array(contentSet)
-            contentListFiltered = (Array(contentSet) as NSArray).sortedArrayUsingDescriptors([sort]) as! Array<ANEntity>
-            
-//            print("----------------------------------")
-//            print("\(contentListFiltered)")
+            contentListFiltered = (Array(contentSet) as Array<ANEntity>).sort(compareByLastChange)
             
         }
     }

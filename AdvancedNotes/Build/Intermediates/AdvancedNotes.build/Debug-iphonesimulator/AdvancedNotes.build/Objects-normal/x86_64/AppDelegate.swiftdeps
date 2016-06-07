@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
-- "window"
 - "applicationWillResignActive"
-- "applicationWillTerminate"
+- "applicationDidBecomeActive"
 - "application"
-- "applicationDidEnterBackground"
 - "applicationWillEnterForeground"
+- "applicationDidEnterBackground"
+- "window"
+- "applicationWillTerminate"
 depends-top-level:
-- "CoreDataService"
-- "UIResponder"
-- "UIApplicationDelegate"
-- "UIApplication"
-- "AnyObject"
-- "NSObject"
-- "AppDelegate"
-- "UIWindow"
-- "Bool"
 - !private "BooleanLiteralType"
+- "AppDelegate"
+- "AnyObject"
+- "UIApplication"
+- "Bool"
+- "CoreDataService"
+- "NSObject"
+- "UIResponder"
+- "UIWindow"
+- "UIApplicationDelegate"
 depends-member:
 - ["Ps9AnyObject", "CoreDataService"]
 - ["Ps9AnyObject", "application"]
@@ -278,7 +278,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
