@@ -16,9 +16,7 @@ provides-member:
 - ["C13AdvancedNotes4Note", "hasParent"]
 - ["C13AdvancedNotes4Note", "hasDescendantID"]
 provides-dynamic-lookup:
-- "hasChild"
 - "isTagged"
-<<<<<<< Updated upstream
 - "hasReminder"
 - "hasParagraph"
 - "headline"
@@ -30,18 +28,6 @@ provides-dynamic-lookup:
 - "active"
 - "hasPicture"
 - "id"
-=======
-- "hasParagraph"
-- "hasPicture"
-- "priority"
-- "lastChange"
-- "hasDescendantID"
-- "hasParent"
-- "id"
-- "active"
-- "headline"
-- "hasReminder"
->>>>>>> Stashed changes
 depends-top-level:
 - "String"
 - "NSDate"

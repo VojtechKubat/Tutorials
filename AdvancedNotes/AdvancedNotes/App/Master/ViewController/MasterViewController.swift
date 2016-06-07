@@ -22,38 +22,22 @@ class MasterViewController: UITableViewController {
         let sortDescriptior = NSSortDescriptor(key: "lastChange", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptior]
         
-        let privateContext = NSManagedObjectContext(concurrencyType: .PrivateQueueConcurrencyType)
-        privateContext.parentContext = CoreDataService.sharedInstance.context
-        
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest,
-                                                              managedObjectContext: privateContext,
+                                                              managedObjectContext: CoreDataService.sharedInstance.context,
                                                               sectionNameKeyPath: nil,
                                                               cacheName: "notesCache")
-        
-        fetchedResultsController.managedObjectContext.performBlock{() in
-            do {
-            try self.fetchedResultsController.performFetch()
-            } catch let error as NSError {
-                print("ERROR: \(error.userInfo)")
-            }
-            dispatch_async(dispatch_get_main_queue(), {() in
-                self.tableView.reloadData()
-            })
+        do {
+            try fetchedResultsController.performFetch()
+        } catch let error as NSError {
+            print("ERROR: \(error.userInfo)")
         }
-        
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        if ((fetchedResultsController.sections) == nil) {
-            return 1
-        }
         return fetchedResultsController.sections!.count
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if ((fetchedResultsController.sections) == nil) {
-            return 0
-        }
         return fetchedResultsController.sections![section].numberOfObjects
     }
     

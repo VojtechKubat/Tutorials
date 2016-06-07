@@ -7,12 +7,8 @@ provides-member:
 - ["C13AdvancedNotes15PictureCellView", ""]
 provides-dynamic-lookup:
 depends-top-level:
-<<<<<<< Updated upstream
 - "UITableViewCell"
-=======
->>>>>>> Stashed changes
 - "PictureCellView"
-- "ANTableViewCell"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

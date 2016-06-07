@@ -6,7 +6,6 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes11AppDelegate", ""]
 provides-dynamic-lookup:
-<<<<<<< Updated upstream
 - "applicationDidBecomeActive"
 - "window"
 - "applicationWillResignActive"
@@ -15,36 +14,16 @@ provides-dynamic-lookup:
 - "applicationDidEnterBackground"
 - "applicationWillEnterForeground"
 depends-top-level:
-=======
-- "applicationWillEnterForeground"
-- "window"
-- "applicationDidBecomeActive"
-- "applicationWillTerminate"
-- "applicationWillResignActive"
-- "applicationDidEnterBackground"
-- "application"
-depends-top-level:
-- "Bool"
-- !private "BooleanLiteralType"
->>>>>>> Stashed changes
 - "CoreDataService"
 - "UIResponder"
 - "UIApplicationDelegate"
 - "UIApplication"
-<<<<<<< Updated upstream
 - "AnyObject"
 - "NSObject"
 - "AppDelegate"
 - "UIWindow"
 - "Bool"
 - !private "BooleanLiteralType"
-=======
-- "AppDelegate"
-- "AnyObject"
-- "NSObject"
-- "UIApplicationDelegate"
-- "UIWindow"
->>>>>>> Stashed changes
 depends-member:
 - ["Ps9AnyObject", "CoreDataService"]
 - ["Ps9AnyObject", "application"]

@@ -6,27 +6,15 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes17MainTableViewCell", ""]
 provides-dynamic-lookup:
-<<<<<<< Updated upstream
 - "leftHeading"
 - "headlineLabel"
 - "configureCell"
 depends-top-level:
 - "MainTableViewCell"
 - "NSLayoutConstraint"
-=======
-- "headlineLabel"
-- "configureCell"
-- "leftHeading"
-depends-top-level:
->>>>>>> Stashed changes
 - "UILabel"
-- "MainTableViewCell"
 - "Note"
 - "UITableViewCell"
-<<<<<<< Updated upstream
-=======
-- "NSLayoutConstraint"
->>>>>>> Stashed changes
 depends-member:
 - !private ["C13AdvancedNotes8ANEntity", "headline"]
 - ["Ps9AnyObject", "configureCell"]

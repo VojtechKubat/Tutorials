@@ -6,11 +6,10 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes13FrameTextView", ""]
 provides-dynamic-lookup:
-- "autoShrink"
-- "addBorders"
 - "didMoveToSuperview"
+- "addBorders"
+- "autoShrink"
 depends-top-level:
-<<<<<<< Updated upstream
 - "FrameTextView"
 - "NSTextContainer"
 - !private "UIEdgeInsetsMake"
@@ -21,18 +20,6 @@ depends-top-level:
 - "CGRect"
 - "BooleanLiteralType"
 - "UITextView"
-=======
-- !private "StringLiteralType"
-- "UITextView"
-- "BooleanLiteralType"
-- "NSTextContainer"
-- !private "UIColor"
-- !private "NSNumber"
-- !private "UIEdgeInsetsMake"
-- "NSCoder"
-- "FrameTextView"
-- "CGRect"
->>>>>>> Stashed changes
 depends-member:
 - !private ["Ps9AnyObject", "CGColor"]
 - !private ["Ps9AnyObject", "NSNumber"]

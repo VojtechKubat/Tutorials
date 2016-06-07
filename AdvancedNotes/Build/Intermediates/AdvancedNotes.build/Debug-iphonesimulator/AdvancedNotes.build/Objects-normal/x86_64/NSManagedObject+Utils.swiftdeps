@@ -7,17 +7,11 @@ provides-member:
 provides-dynamic-lookup:
 - "myNewEntity"
 depends-top-level:
-<<<<<<< Updated upstream
 - !private "StringLiteralType"
 - !private "NSEntityDescription"
 - "NSManagedObject"
-=======
->>>>>>> Stashed changes
 - "NSManagedObjectContext"
-- !private "StringLiteralType"
 - !private "!="
-- !private "NSEntityDescription"
-- "NSManagedObject"
 depends-member:
 - !private ["Ps9AnyObject", "NSEntityDescription"]
 - !private ["Ps9AnyObject", "NSManagedObject"]

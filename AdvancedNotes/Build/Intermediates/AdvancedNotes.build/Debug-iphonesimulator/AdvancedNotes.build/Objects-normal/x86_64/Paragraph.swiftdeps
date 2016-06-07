@@ -10,28 +10,12 @@ provides-dynamic-lookup:
 - "parseJsonToParagraph"
 - "parseJsonToParagraph"
 depends-top-level:
-<<<<<<< Updated upstream
 - "NSDictionary"
 - !private "=="
 - !private "CoreDataService"
 - "NSDate"
 - !private "String"
 - !private "StringLiteralType"
-=======
-- "Bool"
-- !private "=="
-- !private "StringLiteralType"
-- !private "CoreDataService"
-- !private "??"
-- !private "!="
-- !private "NSNumber"
-- "NSManagedObjectContext"
-- !private "String"
-- !private "Int"
-- "ANEntity"
-- "NSDictionary"
-- "NSDate"
->>>>>>> Stashed changes
 - "Paragraph"
 - !private "NSNumber"
 - "NSManagedObjectContext"
@@ -40,6 +24,7 @@ depends-top-level:
 - !private "??"
 - "ANEntity"
 - !private "BooleanLiteralType"
+- !private "Int"
 depends-member:
 - ["C13AdvancedNotes8ANEntity", "Bool"]
 - !private ["C13AdvancedNotes8ANEntity", "CoreDataService"]
