@@ -20,8 +20,7 @@ class ParagraphViewCell: SummaryCellView {
     }
     
     @IBAction func edit(sender: UIButton) {
-        print("edit")
-        
+        parentVC?.editItem(myParagraph)
     }
     
     func setParagraph (paragraph: Paragraph) {

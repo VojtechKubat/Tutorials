@@ -7,8 +7,8 @@ provides-member:
 - ["C13AdvancedNotes16ReminderViewCell", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "SummaryCellView"
 - "ReminderViewCell"
-- "UITableViewCell"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]
@@ -29,6 +29,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - ["C13AdvancedNotes16ReminderViewCell", "deinit"]
 - ["C13AdvancedNotes16ReminderViewCell", "init"]
+- ["C13AdvancedNotes15SummaryCellView", "init"]
+- ["C13AdvancedNotes15SummaryCellView", ""]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - ["PSo12UIAppearance", "init"]
@@ -45,7 +47,6 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", ""]
 - ["CSo11UIResponder", "init"]
 - ["CSo15UITableViewCell", "init"]
-- ["CSo15UITableViewCell", ""]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "init"]
@@ -62,6 +63,7 @@ depends-nominal:
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "C13AdvancedNotes16ReminderViewCell"
+- "C13AdvancedNotes15SummaryCellView"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -86,4 +88,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
-interface-hash: "8f1332b23ea3bcbbb86c042b1067eac1"
+interface-hash: "55896b7b7e5fce5b3f07c0d1fe1b295b"

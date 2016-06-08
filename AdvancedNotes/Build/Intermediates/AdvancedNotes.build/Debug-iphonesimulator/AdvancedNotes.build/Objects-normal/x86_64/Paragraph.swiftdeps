@@ -10,21 +10,21 @@ provides-dynamic-lookup:
 - "parseJsonToParagraph"
 - "getLastChange"
 depends-top-level:
-- !private "BooleanLiteralType"
+- !private "=="
 - "NSDictionary"
-- !private "NSNumber"
-- !private "Int"
-- !private "String"
-- "NSManagedObjectContext"
-- !private "CoreDataService"
-- !private "!="
-- "Paragraph"
-- "Bool"
 - !private "StringLiteralType"
 - "ANEntity"
+- "Bool"
+- !private "NSNumber"
+- !private "!="
+- "NSManagedObjectContext"
+- "Paragraph"
+- !private "String"
+- !private "CoreDataService"
 - !private "??"
-- !private "=="
+- !private "Int"
 - "NSDate"
+- !private "BooleanLiteralType"
 depends-member:
 - ["C13AdvancedNotes8ANEntity", "Bool"]
 - !private ["C13AdvancedNotes8ANEntity", "CoreDataService"]
@@ -348,7 +348,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"

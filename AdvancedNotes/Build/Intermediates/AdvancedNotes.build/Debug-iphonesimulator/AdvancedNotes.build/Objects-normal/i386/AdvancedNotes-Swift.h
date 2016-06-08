@@ -260,10 +260,19 @@ SWIFT_CLASS("_TtC13AdvancedNotes9Paragraph")
 @property (nonatomic, strong) Note * _Nullable relatesToNote;
 @end
 
+@class SummaryViewController;
+
+SWIFT_CLASS("_TtC13AdvancedNotes15SummaryCellView")
+@interface SummaryCellView : UITableViewCell
+@property (nonatomic, strong) SummaryViewController * _Nullable summaryVC;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIButton;
 
 SWIFT_CLASS("_TtC13AdvancedNotes17ParagraphViewCell")
-@interface ParagraphViewCell : UITableViewCell
+@interface ParagraphViewCell : SummaryCellView
 @property (nonatomic, weak) Paragraph * _Nullable myParagraph;
 @property (nonatomic, weak) IBOutlet FrameTextView * _Null_unspecified paragraphTextView;
 - (IBAction)remove:(UIButton * _Nonnull)sender;
@@ -273,9 +282,14 @@ SWIFT_CLASS("_TtC13AdvancedNotes17ParagraphViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC13AdvancedNotes23ParagraphViewController")
 @interface ParagraphViewController : UIViewController
+@property (nonatomic, strong) Paragraph * _Nullable paragraph;
+@property (nonatomic, weak) IBOutlet FrameTextView * _Null_unspecified textView;
+- (IBAction)discardChanges:(UIBarButtonItem * _Nonnull)sender;
+- (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -304,7 +318,7 @@ SWIFT_CLASS("_TtC13AdvancedNotes7Picture")
 
 
 SWIFT_CLASS("_TtC13AdvancedNotes15PictureCellView")
-@interface PictureCellView : UITableViewCell
+@interface PictureCellView : SummaryCellView
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -330,7 +344,7 @@ SWIFT_CLASS("_TtC13AdvancedNotes8Reminder")
 
 
 SWIFT_CLASS("_TtC13AdvancedNotes16ReminderViewCell")
-@interface ReminderViewCell : UITableViewCell
+@interface ReminderViewCell : SummaryCellView
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -345,19 +359,22 @@ SWIFT_CLASS("_TtC13AdvancedNotes23RemindersViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class NSSortDescriptor;
-@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC13AdvancedNotes21SummaryViewController")
 @interface SummaryViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, strong) NSSortDescriptor * _Nonnull sort;
+@property (nonatomic, readonly, copy) BOOL (^ _Nonnull compareByLastChange)(ANEntity * _Nonnull, ANEntity * _Nonnull);
 @property (nonatomic, strong) Note * _Nullable note;
 @property (nonatomic, copy) NSSet<ANEntity *> * _Nonnull contentSet;
 @property (nonatomic, copy) NSArray<ANEntity *> * _Nonnull contentListFiltered;
 - (IBAction)addAttachment:(UIBarButtonItem * _Nonnull)sender;
 - (void)viewDidLoad;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (void)editItem:(ANEntity * _Nonnull)entitiy calledByCell:(UITableViewCell * _Nonnull)calledByCell;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

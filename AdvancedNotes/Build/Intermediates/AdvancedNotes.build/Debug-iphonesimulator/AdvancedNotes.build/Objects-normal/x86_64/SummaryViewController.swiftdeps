@@ -10,61 +10,66 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes21SummaryViewController", ""]
 provides-dynamic-lookup:
-- "note"
-- "addAttachment"
-- "contentSet"
-- "contentListFiltered"
-- "sort"
-- "editItem"
-- "compareByLastChange"
+- "tableView"
+- "tableView"
+- "tableView"
 - "description"
-- "viewDidLoad"
-- "tableView"
-- "tableView"
-- "tableView"
+- "sort"
 - "numberOfSectionsInTableView"
+- "contentSet"
+- "note"
+- "contentListFiltered"
+- "editItem"
+- "addAttachment"
+- "compareByLastChange"
+- "viewDidLoad"
 depends-top-level:
-- "Set"
-- "Array"
-- "UITableView"
-- "SummaryViewController"
-- "=="
-- "NSIndexPath"
-- "NSManagedObject"
-- "cellPictureID"
-- !private "ParagraphViewCell"
-- "ANEntity"
-- "StringLiteralType"
-- "UITableViewCell"
-- "cellDefaultID"
-- "Bool"
-- !private "Picture"
 - !private "UIAlertController"
+- !private "UITableViewAutomaticDimension"
 - "cellReminderID"
-- "NSSortDescriptor"
-- "UITableViewDataSource"
-- "UIBarButtonItem"
-- !private "Paragraph"
-- "String"
-- !private "Reminder"
 - "UITableViewDelegate"
 - "Int"
-- !private "UIAlertAction"
-- !private "UITableViewAutomaticDimension"
-- "cellParagraphID"
-- "UIViewController"
+- !private "Picture"
+- "Set"
+- "cellDefaultID"
+- "ANEntity"
+- !private "!="
+- "Bool"
+- !private "SummaryCellView"
+- "StringLiteralType"
+- "=="
+- "cellPictureID"
+- "UIBarButtonItem"
+- !private "EditService"
+- "UITableViewCell"
 - !private "UINib"
-- "BooleanLiteralType"
+- !private "UIAlertAction"
+- "UITableViewDataSource"
+- "NSSortDescriptor"
+- "SummaryViewController"
+- "UIViewController"
+- "cellParagraphID"
+- "NSIndexPath"
+- !private "Reminder"
 - "Note"
+- "UITableView"
+- "Array"
+- !private "Paragraph"
+- "String"
+- "BooleanLiteralType"
+- !private "ParagraphViewCell"
 depends-member:
-- !private ["C13AdvancedNotes8ANEntity", "deinit"]
+- ["C13AdvancedNotes8ANEntity", "deinit"]
 - ["C13AdvancedNotes8ANEntity", "getLastChange"]
 - !private ["C13AdvancedNotes8ANEntity", "hasChild"]
 - !private ["C13AdvancedNotes8ANEntity", "hasParagraph"]
 - !private ["C13AdvancedNotes8ANEntity", "hasPicture"]
 - !private ["C13AdvancedNotes8ANEntity", "hasReminder"]
+- !private ["C13AdvancedNotes8ANEntity", "isKindOfClass"]
 - ["Ps9AnyObject", "Array"]
+- !private ["Ps9AnyObject", "EditService"]
 - ["Ps9AnyObject", "NSSortDescriptor"]
+- !private ["Ps9AnyObject", "Paragraph"]
 - ["Ps9AnyObject", "Set"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
 - !private ["Ps9AnyObject", "UIAlertController"]
@@ -80,6 +85,7 @@ depends-member:
 - ["Ps9AnyObject", "compareByLastChange"]
 - ["Ps9AnyObject", "contentListFiltered"]
 - ["Ps9AnyObject", "contentSet"]
+- !private ["Ps9AnyObject", "currentEntity"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
 - ["Ps9AnyObject", "description"]
 - ["Ps9AnyObject", "editItem"]
@@ -91,9 +97,11 @@ depends-member:
 - !private ["Ps9AnyObject", "hasReminder"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isKindOfClass"]
 - !private ["Ps9AnyObject", "layoutIfNeeded"]
 - ["Ps9AnyObject", "note"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
+- !private ["Ps9AnyObject", "parentVC"]
 - !private ["Ps9AnyObject", "performSegueWithIdentifier"]
 - !private ["Ps9AnyObject", "popoverPresentationController"]
 - !private ["Ps9AnyObject", "presentViewController"]
@@ -114,6 +122,7 @@ depends-member:
 - ["Ps9AnyObject", "scrollViewWillEndDragging"]
 - ["Ps9AnyObject", "sectionIndexTitlesForTableView"]
 - !private ["Ps9AnyObject", "setParagraph"]
+- !private ["Ps9AnyObject", "sharedInstance"]
 - ["Ps9AnyObject", "sort"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "view"]
@@ -145,12 +154,17 @@ depends-member:
 - ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - ["Ps21BitwiseOperationsType", "Distance"]
 - ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - ["Ps11CVarArgType", "Array"]
 - ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "EditService"]
 - ["Ps11CVarArgType", "IntegerLiteralType"]
 - ["Ps11CVarArgType", "NSSortDescriptor"]
+- !private ["Ps11CVarArgType", "Paragraph"]
 - ["Ps11CVarArgType", "Set"]
 - !private ["Ps11CVarArgType", "UIAlertAction"]
 - !private ["Ps11CVarArgType", "UIAlertController"]
@@ -177,9 +191,11 @@ depends-member:
 - !private ["Ps11CVarArgType", "hasReminder"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "isKindOfClass"]
 - !private ["Ps11CVarArgType", "layoutIfNeeded"]
 - ["Ps11CVarArgType", "note"]
 - ["Ps11CVarArgType", "numberOfSectionsInTableView"]
+- !private ["Ps11CVarArgType", "parentVC"]
 - !private ["Ps11CVarArgType", "performSegueWithIdentifier"]
 - !private ["Ps11CVarArgType", "popoverPresentationController"]
 - !private ["Ps11CVarArgType", "presentViewController"]
@@ -220,9 +236,11 @@ depends-member:
 - ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "init"]
 - ["Ps28CustomDebugStringConvertible", "Array"]
+- !private ["Ps28CustomDebugStringConvertible", "EditService"]
 - ["Ps28CustomDebugStringConvertible", "Generator"]
 - ["Ps28CustomDebugStringConvertible", "Index"]
 - ["Ps28CustomDebugStringConvertible", "NSSortDescriptor"]
+- !private ["Ps28CustomDebugStringConvertible", "Paragraph"]
 - ["Ps28CustomDebugStringConvertible", "Set"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - ["Ps28CustomDebugStringConvertible", "SubSequence"]
@@ -253,9 +271,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "hasReminder"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isKindOfClass"]
 - !private ["Ps28CustomDebugStringConvertible", "layoutIfNeeded"]
 - ["Ps28CustomDebugStringConvertible", "note"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "parentVC"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegueWithIdentifier"]
 - !private ["Ps28CustomDebugStringConvertible", "popoverPresentationController"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
@@ -286,10 +306,12 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps23CustomStringConvertible", "Array"]
 - ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "EditService"]
 - ["Ps23CustomStringConvertible", "Generator"]
 - ["Ps23CustomStringConvertible", "Index"]
 - ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - ["Ps23CustomStringConvertible", "NSSortDescriptor"]
+- !private ["Ps23CustomStringConvertible", "Paragraph"]
 - ["Ps23CustomStringConvertible", "Set"]
 - ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
@@ -297,6 +319,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UINib"]
 - !private ["Ps23CustomStringConvertible", "UITableViewAutomaticDimension"]
 - ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
 - ["Ps23CustomStringConvertible", "addAttachment"]
 - !private ["Ps23CustomStringConvertible", "barButtonItem"]
@@ -319,9 +342,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "hasReminder"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isKindOfClass"]
 - !private ["Ps23CustomStringConvertible", "layoutIfNeeded"]
 - ["Ps23CustomStringConvertible", "note"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps23CustomStringConvertible", "parentVC"]
 - !private ["Ps23CustomStringConvertible", "performSegueWithIdentifier"]
 - !private ["Ps23CustomStringConvertible", "popoverPresentationController"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
@@ -351,20 +376,25 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
+- !private ["C13AdvancedNotes11EditService", "currentEntity"]
+- !private ["C13AdvancedNotes11EditService", "sharedInstance"]
 - !private ["Ps9Equatable", "ActionSheet"]
 - ["Ps9Equatable", "Array"]
 - !private ["Ps9Equatable", "Default"]
 - ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "EditService"]
 - !private ["Ps9Equatable", "Generator"]
 - ["Ps9Equatable", "IntegerLiteralType"]
 - ["Ps9Equatable", "NSSortDescriptor"]
 - ["Ps9Equatable", "OrderedDescending"]
+- !private ["Ps9Equatable", "Paragraph"]
 - ["Ps9Equatable", "RawValue"]
 - ["Ps9Equatable", "Set"]
 - !private ["Ps9Equatable", "UIAlertAction"]
 - !private ["Ps9Equatable", "UIAlertController"]
 - !private ["Ps9Equatable", "UINib"]
 - !private ["Ps9Equatable", "UITableViewAutomaticDimension"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addAction"]
 - ["Ps9Equatable", "addAttachment"]
 - !private ["Ps9Equatable", "barButtonItem"]
@@ -386,9 +416,11 @@ depends-member:
 - !private ["Ps9Equatable", "hasReminder"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isKindOfClass"]
 - !private ["Ps9Equatable", "layoutIfNeeded"]
 - ["Ps9Equatable", "note"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
+- !private ["Ps9Equatable", "parentVC"]
 - !private ["Ps9Equatable", "performSegueWithIdentifier"]
 - !private ["Ps9Equatable", "popoverPresentationController"]
 - !private ["Ps9Equatable", "presentViewController"]
@@ -425,16 +457,19 @@ depends-member:
 - ["Ps8Hashable", "Array"]
 - !private ["Ps8Hashable", "Default"]
 - ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "EditService"]
 - !private ["Ps8Hashable", "Generator"]
 - ["Ps8Hashable", "IntegerLiteralType"]
 - ["Ps8Hashable", "NSSortDescriptor"]
 - ["Ps8Hashable", "OrderedDescending"]
+- !private ["Ps8Hashable", "Paragraph"]
 - ["Ps8Hashable", "RawValue"]
 - ["Ps8Hashable", "Set"]
 - !private ["Ps8Hashable", "UIAlertAction"]
 - !private ["Ps8Hashable", "UIAlertController"]
 - !private ["Ps8Hashable", "UINib"]
 - !private ["Ps8Hashable", "UITableViewAutomaticDimension"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addAction"]
 - ["Ps8Hashable", "addAttachment"]
 - !private ["Ps8Hashable", "barButtonItem"]
@@ -456,9 +491,11 @@ depends-member:
 - !private ["Ps8Hashable", "hasReminder"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isKindOfClass"]
 - !private ["Ps8Hashable", "layoutIfNeeded"]
 - ["Ps8Hashable", "note"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps8Hashable", "parentVC"]
 - !private ["Ps8Hashable", "performSegueWithIdentifier"]
 - !private ["Ps8Hashable", "popoverPresentationController"]
 - !private ["Ps8Hashable", "presentViewController"]
@@ -537,7 +574,9 @@ depends-member:
 - !private ["Ps16MutableSliceable", "sort"]
 - !private ["Ps16MutableSliceable", "subscript"]
 - ["PSo8NSCoding", "Array"]
+- !private ["PSo8NSCoding", "EditService"]
 - ["PSo8NSCoding", "NSSortDescriptor"]
+- !private ["PSo8NSCoding", "Paragraph"]
 - ["PSo8NSCoding", "Set"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertController"]
@@ -561,6 +600,7 @@ depends-member:
 - !private ["PSo8NSCoding", "layoutIfNeeded"]
 - ["PSo8NSCoding", "note"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- !private ["PSo8NSCoding", "parentVC"]
 - !private ["PSo8NSCoding", "performSegueWithIdentifier"]
 - !private ["PSo8NSCoding", "popoverPresentationController"]
 - !private ["PSo8NSCoding", "presentViewController"]
@@ -595,7 +635,9 @@ depends-member:
 - !private ["PSo9NSCopying", "row"]
 - ["CSo6NSDate", "compare"]
 - ["PSo26NSExtensionRequestHandling", "Array"]
+- !private ["PSo26NSExtensionRequestHandling", "EditService"]
 - ["PSo26NSExtensionRequestHandling", "NSSortDescriptor"]
+- !private ["PSo26NSExtensionRequestHandling", "Paragraph"]
 - ["PSo26NSExtensionRequestHandling", "Set"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
@@ -643,13 +685,14 @@ depends-member:
 - !private ["CSo15NSManagedObject", "hasParagraph"]
 - !private ["CSo15NSManagedObject", "hasPicture"]
 - !private ["CSo15NSManagedObject", "hasReminder"]
+- !private ["CSo15NSManagedObject", "isKindOfClass"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "ANEntity"]
 - ["CSo8NSObject", "Array"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "EditService"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSIndexPath"]
-- ["CSo8NSObject", "NSManagedObject"]
 - ["CSo8NSObject", "NSSortDescriptor"]
 - ["CSo8NSObject", "Note"]
 - !private ["CSo8NSObject", "Paragraph"]
@@ -658,6 +701,7 @@ depends-member:
 - !private ["CSo8NSObject", "Reminder"]
 - ["CSo8NSObject", "Set"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "SummaryCellView"]
 - !private ["CSo8NSObject", "UIAlertAction"]
 - !private ["CSo8NSObject", "UIAlertController"]
 - ["CSo8NSObject", "UIBarButtonItem"]
@@ -686,9 +730,11 @@ depends-member:
 - !private ["CSo8NSObject", "hasReminder"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isKindOfClass"]
 - !private ["CSo8NSObject", "layoutIfNeeded"]
 - ["CSo8NSObject", "note"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "parentVC"]
 - !private ["CSo8NSObject", "performSegueWithIdentifier"]
 - !private ["CSo8NSObject", "popoverPresentationController"]
 - !private ["CSo8NSObject", "presentViewController"]
@@ -715,7 +761,9 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "Array"]
+- !private ["PSo16NSObjectProtocol", "EditService"]
 - ["PSo16NSObjectProtocol", "NSSortDescriptor"]
+- !private ["PSo16NSObjectProtocol", "Paragraph"]
 - ["PSo16NSObjectProtocol", "Set"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
@@ -742,9 +790,11 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "hasReminder"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isKindOfClass"]
 - !private ["PSo16NSObjectProtocol", "layoutIfNeeded"]
 - ["PSo16NSObjectProtocol", "note"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "parentVC"]
 - !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "popoverPresentationController"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
@@ -784,6 +834,7 @@ depends-member:
 - ["Sq", "Some"]
 - ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
+- !private ["C13AdvancedNotes9Paragraph", "deinit"]
 - !private ["C13AdvancedNotes17ParagraphViewCell", "setParagraph"]
 - ["Ps21RandomAccessIndexType", "Distance"]
 - ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
@@ -827,12 +878,14 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["C13AdvancedNotes15SummaryCellView", "parentVC"]
+- !private ["C13AdvancedNotes15SummaryCellView", "setParagraph"]
 - ["C13AdvancedNotes21SummaryViewController", "ANEntity"]
 - ["C13AdvancedNotes21SummaryViewController", "Array"]
 - ["C13AdvancedNotes21SummaryViewController", "Bool"]
+- !private ["C13AdvancedNotes21SummaryViewController", "EditService"]
 - ["C13AdvancedNotes21SummaryViewController", "Int"]
 - ["C13AdvancedNotes21SummaryViewController", "NSIndexPath"]
-- ["C13AdvancedNotes21SummaryViewController", "NSManagedObject"]
 - ["C13AdvancedNotes21SummaryViewController", "NSSortDescriptor"]
 - ["C13AdvancedNotes21SummaryViewController", "Note"]
 - !private ["C13AdvancedNotes21SummaryViewController", "Paragraph"]
@@ -841,6 +894,7 @@ depends-member:
 - !private ["C13AdvancedNotes21SummaryViewController", "Reminder"]
 - ["C13AdvancedNotes21SummaryViewController", "Set"]
 - ["C13AdvancedNotes21SummaryViewController", "String"]
+- !private ["C13AdvancedNotes21SummaryViewController", "SummaryCellView"]
 - !private ["C13AdvancedNotes21SummaryViewController", "UIAlertAction"]
 - !private ["C13AdvancedNotes21SummaryViewController", "UIAlertController"]
 - ["C13AdvancedNotes21SummaryViewController", "UIBarButtonItem"]
@@ -884,6 +938,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "estimatedRowHeight"]
 - !private ["PSo29UIAccessibilityIdentification", "layoutIfNeeded"]
+- !private ["PSo29UIAccessibilityIdentification", "parentVC"]
 - !private ["PSo29UIAccessibilityIdentification", "registerNib"]
 - !private ["PSo29UIAccessibilityIdentification", "rowHeight"]
 - !private ["PSo29UIAccessibilityIdentification", "setParagraph"]
@@ -897,11 +952,14 @@ depends-member:
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "estimatedRowHeight"]
 - !private ["PSo12UIAppearance", "layoutIfNeeded"]
+- !private ["PSo12UIAppearance", "parentVC"]
 - !private ["PSo12UIAppearance", "registerNib"]
 - !private ["PSo12UIAppearance", "rowHeight"]
 - !private ["PSo12UIAppearance", "setParagraph"]
 - ["PSo21UIAppearanceContainer", "Array"]
+- !private ["PSo21UIAppearanceContainer", "EditService"]
 - ["PSo21UIAppearanceContainer", "NSSortDescriptor"]
+- !private ["PSo21UIAppearanceContainer", "Paragraph"]
 - ["PSo21UIAppearanceContainer", "Set"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
@@ -925,6 +983,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "layoutIfNeeded"]
 - ["PSo21UIAppearanceContainer", "note"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- !private ["PSo21UIAppearanceContainer", "parentVC"]
 - !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
 - !private ["PSo21UIAppearanceContainer", "popoverPresentationController"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
@@ -951,7 +1010,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["PSo18UIContentContainer", "Array"]
+- !private ["PSo18UIContentContainer", "EditService"]
 - ["PSo18UIContentContainer", "NSSortDescriptor"]
+- !private ["PSo18UIContentContainer", "Paragraph"]
 - ["PSo18UIContentContainer", "Set"]
 - !private ["PSo18UIContentContainer", "UIAlertAction"]
 - !private ["PSo18UIContentContainer", "UIAlertController"]
@@ -997,17 +1058,21 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo17UICoordinateSpace", "estimatedRowHeight"]
 - !private ["PSo17UICoordinateSpace", "layoutIfNeeded"]
+- !private ["PSo17UICoordinateSpace", "parentVC"]
 - !private ["PSo17UICoordinateSpace", "registerNib"]
 - !private ["PSo17UICoordinateSpace", "rowHeight"]
 - !private ["PSo17UICoordinateSpace", "setParagraph"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "estimatedRowHeight"]
 - !private ["PSo13UIDynamicItem", "layoutIfNeeded"]
+- !private ["PSo13UIDynamicItem", "parentVC"]
 - !private ["PSo13UIDynamicItem", "registerNib"]
 - !private ["PSo13UIDynamicItem", "rowHeight"]
 - !private ["PSo13UIDynamicItem", "setParagraph"]
 - ["PSo18UIFocusEnvironment", "Array"]
+- !private ["PSo18UIFocusEnvironment", "EditService"]
 - ["PSo18UIFocusEnvironment", "NSSortDescriptor"]
+- !private ["PSo18UIFocusEnvironment", "Paragraph"]
 - ["PSo18UIFocusEnvironment", "Set"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
@@ -1031,6 +1096,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "layoutIfNeeded"]
 - ["PSo18UIFocusEnvironment", "note"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UIFocusEnvironment", "parentVC"]
 - !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
 - !private ["PSo18UIFocusEnvironment", "popoverPresentationController"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
@@ -1056,6 +1122,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo27UIGestureRecognizerDelegate", "parentVC"]
 - !private ["PSo27UIGestureRecognizerDelegate", "setParagraph"]
 - !private ["CSo5UINib", "init"]
 - !private ["CSo31UIPopoverPresentationController", "barButtonItem"]
@@ -1063,9 +1130,9 @@ depends-member:
 - ["CSo11UIResponder", "ANEntity"]
 - ["CSo11UIResponder", "Array"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "EditService"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSIndexPath"]
-- ["CSo11UIResponder", "NSManagedObject"]
 - ["CSo11UIResponder", "NSSortDescriptor"]
 - ["CSo11UIResponder", "Note"]
 - !private ["CSo11UIResponder", "Paragraph"]
@@ -1074,6 +1141,7 @@ depends-member:
 - !private ["CSo11UIResponder", "Reminder"]
 - ["CSo11UIResponder", "Set"]
 - ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "SummaryCellView"]
 - !private ["CSo11UIResponder", "UIAlertAction"]
 - !private ["CSo11UIResponder", "UIAlertController"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
@@ -1098,6 +1166,7 @@ depends-member:
 - !private ["CSo11UIResponder", "layoutIfNeeded"]
 - ["CSo11UIResponder", "note"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- !private ["CSo11UIResponder", "parentVC"]
 - !private ["CSo11UIResponder", "performSegueWithIdentifier"]
 - !private ["CSo11UIResponder", "popoverPresentationController"]
 - !private ["CSo11UIResponder", "presentViewController"]
@@ -1127,7 +1196,9 @@ depends-member:
 - !private ["CSo12UIScrollView", "registerNib"]
 - !private ["CSo12UIScrollView", "rowHeight"]
 - ["PSo20UIScrollViewDelegate", "Array"]
+- !private ["PSo20UIScrollViewDelegate", "EditService"]
 - ["PSo20UIScrollViewDelegate", "NSSortDescriptor"]
+- !private ["PSo20UIScrollViewDelegate", "Paragraph"]
 - ["PSo20UIScrollViewDelegate", "Set"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertAction"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
@@ -1161,7 +1232,9 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo20UIScrollViewDelegate", ""]
 - ["PSo16UIStateRestoring", "Array"]
+- !private ["PSo16UIStateRestoring", "EditService"]
 - ["PSo16UIStateRestoring", "NSSortDescriptor"]
+- !private ["PSo16UIStateRestoring", "Paragraph"]
 - ["PSo16UIStateRestoring", "Set"]
 - !private ["PSo16UIStateRestoring", "UIAlertAction"]
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
@@ -1207,9 +1280,12 @@ depends-member:
 - !private ["CSo11UITableView", "estimatedRowHeight"]
 - !private ["CSo11UITableView", "registerNib"]
 - !private ["CSo11UITableView", "rowHeight"]
+- !private ["CSo15UITableViewCell", "parentVC"]
 - !private ["CSo15UITableViewCell", "setParagraph"]
 - ["PSo21UITableViewDataSource", "Array"]
+- !private ["PSo21UITableViewDataSource", "EditService"]
 - ["PSo21UITableViewDataSource", "NSSortDescriptor"]
+- !private ["PSo21UITableViewDataSource", "Paragraph"]
 - ["PSo21UITableViewDataSource", "Set"]
 - !private ["PSo21UITableViewDataSource", "UIAlertAction"]
 - !private ["PSo21UITableViewDataSource", "UIAlertController"]
@@ -1243,7 +1319,9 @@ depends-member:
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - ["PSo21UITableViewDataSource", ""]
 - ["PSo19UITableViewDelegate", "Array"]
+- !private ["PSo19UITableViewDelegate", "EditService"]
 - ["PSo19UITableViewDelegate", "NSSortDescriptor"]
+- !private ["PSo19UITableViewDelegate", "Paragraph"]
 - ["PSo19UITableViewDelegate", "Set"]
 - !private ["PSo19UITableViewDelegate", "UIAlertAction"]
 - !private ["PSo19UITableViewDelegate", "UIAlertController"]
@@ -1277,7 +1355,9 @@ depends-member:
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo19UITableViewDelegate", ""]
 - ["PSo18UITraitEnvironment", "Array"]
+- !private ["PSo18UITraitEnvironment", "EditService"]
 - ["PSo18UITraitEnvironment", "NSSortDescriptor"]
+- !private ["PSo18UITraitEnvironment", "Paragraph"]
 - ["PSo18UITraitEnvironment", "Set"]
 - !private ["PSo18UITraitEnvironment", "UIAlertAction"]
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
@@ -1301,6 +1381,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "layoutIfNeeded"]
 - ["PSo18UITraitEnvironment", "note"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UITraitEnvironment", "parentVC"]
 - !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
 - !private ["PSo18UITraitEnvironment", "popoverPresentationController"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
@@ -1329,15 +1410,16 @@ depends-member:
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo6UIView", "estimatedRowHeight"]
 - !private ["CSo6UIView", "layoutIfNeeded"]
+- !private ["CSo6UIView", "parentVC"]
 - !private ["CSo6UIView", "registerNib"]
 - !private ["CSo6UIView", "rowHeight"]
 - !private ["CSo6UIView", "setParagraph"]
 - ["CSo16UIViewController", "ANEntity"]
 - ["CSo16UIViewController", "Array"]
 - ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "EditService"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "NSIndexPath"]
-- ["CSo16UIViewController", "NSManagedObject"]
 - ["CSo16UIViewController", "NSSortDescriptor"]
 - ["CSo16UIViewController", "Note"]
 - !private ["CSo16UIViewController", "Paragraph"]
@@ -1346,6 +1428,7 @@ depends-member:
 - !private ["CSo16UIViewController", "Reminder"]
 - ["CSo16UIViewController", "Set"]
 - ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "SummaryCellView"]
 - !private ["CSo16UIViewController", "UIAlertAction"]
 - !private ["CSo16UIViewController", "UIAlertController"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
@@ -1404,6 +1487,7 @@ depends-member:
 - ["Ps10_ArrayType", "init"]
 - !private ["Ps10_ArrayType", "sort"]
 - !private ["Ps10_ArrayType", "subscript"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
@@ -1430,11 +1514,13 @@ depends-member:
 - ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - ["Ps21_ObjectiveCBridgeable", "SubSequence"]
 - ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "sort"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "union"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - ["Ps22_RandomAccessAmbiguity", "Distance"]
 - ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - ["Ps12_Reflectable", "Distance"]
@@ -1444,12 +1530,14 @@ depends-member:
 - ["Ps12_Reflectable", "Some"]
 - ["Ps12_Reflectable", "SubSequence"]
 - ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - ["Ps12_Reflectable", "compare"]
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps12_Reflectable", "estimatedRowHeight"]
 - ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "layoutIfNeeded"]
+- !private ["Ps12_Reflectable", "parentVC"]
 - !private ["Ps12_Reflectable", "registerNib"]
 - !private ["Ps12_Reflectable", "rowHeight"]
 - !private ["Ps12_Reflectable", "setParagraph"]
@@ -1467,6 +1555,8 @@ depends-nominal:
 - "Ps22BidirectionalIndexType"
 - "Ps21BitwiseOperationsType"
 - !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - !private "V12CoreGraphics7CGFloat"
 - "Ps11CVarArgType"
 - !private "Vs9Character"
@@ -1475,6 +1565,7 @@ depends-nominal:
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - !private "Sd"
+- !private "C13AdvancedNotes11EditService"
 - "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Sf"
@@ -1512,6 +1603,7 @@ depends-nominal:
 - !private "C13AdvancedNotes4Note"
 - "Sq"
 - !private "Ps16OutputStreamType"
+- !private "C13AdvancedNotes9Paragraph"
 - !private "C13AdvancedNotes17ParagraphViewCell"
 - "Ps21RandomAccessIndexType"
 - "Ps30RangeReplaceableCollectionType"
@@ -1527,6 +1619,7 @@ depends-nominal:
 - !private "SS"
 - !private "Ps30StringInterpolationConvertible"
 - !private "Ps24StringLiteralConvertible"
+- !private "C13AdvancedNotes15SummaryCellView"
 - "C13AdvancedNotes21SummaryViewController"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "CSo13UIAlertAction"
@@ -1562,6 +1655,7 @@ depends-nominal:
 - !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
 - "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - "Ps33_BuiltinIntegerLiteralConvertible"
 - !private "Ps32_BuiltinStringLiteralConvertible"
@@ -1572,13 +1666,14 @@ depends-nominal:
 - "Ps22_IntegerArithmeticType"
 - "Ps12_IntegerType"
 - "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
 - "Ps22_RandomAccessAmbiguity"
 - "Ps12_Reflectable"
 - "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
@@ -1587,4 +1682,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "a89fea38f393e6f98ae5f8752259330e"
+interface-hash: "360d5d502b5d1cb76d796267390a5536"

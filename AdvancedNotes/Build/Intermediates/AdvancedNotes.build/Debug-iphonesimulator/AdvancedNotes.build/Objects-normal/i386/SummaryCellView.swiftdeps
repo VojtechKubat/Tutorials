@@ -1,0 +1,118 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SummaryCellView"
+provides-nominal:
+- "C13AdvancedNotes15SummaryCellView"
+provides-member:
+- ["C13AdvancedNotes15SummaryCellView", ""]
+provides-dynamic-lookup:
+- "summaryVC"
+depends-top-level:
+- "UITableViewCell"
+- "SummaryCellView"
+- "SummaryViewController"
+depends-member:
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "summaryVC"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "summaryVC"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "summaryVC"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "summaryVC"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "summaryVC"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "summaryVC"]
+- ["Ps8Hashable", ""]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "summaryVC"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "SummaryViewController"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "summaryVC"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "summaryVC"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C13AdvancedNotes15SummaryCellView", "SummaryViewController"]
+- ["C13AdvancedNotes15SummaryCellView", "deinit"]
+- ["C13AdvancedNotes15SummaryCellView", "init"]
+- ["C13AdvancedNotes15SummaryCellView", "summaryVC"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "summaryVC"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "summaryVC"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "summaryVC"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "summaryVC"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "summaryVC"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "summaryVC"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "summaryVC"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "SummaryViewController"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "summaryVC"]
+- ["CSo15UITableViewCell", "SummaryViewController"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "summaryVC"]
+- ["CSo15UITableViewCell", ""]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "summaryVC"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "SummaryViewController"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "summaryVC"]
+- ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", "summaryVC"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C13AdvancedNotes15SummaryCellView"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- "CSo11UIResponder"
+- "CSo15UITableViewCell"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+interface-hash: "d2aa9bfcbb2edf8451ef398e6efe4e27"

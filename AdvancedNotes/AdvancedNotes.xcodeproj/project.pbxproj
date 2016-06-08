@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		797BBD8D1CF63D6C00420DDF /* FrameTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797BBD8C1CF63D6C00420DDF /* FrameTextView.swift */; };
+		79998C9F1D08B98E00CCE6CE /* EditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79998C9E1D08B98E00CCE6CE /* EditService.swift */; };
+		79998CA11D08BBDD00CCE6CE /* SummaryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79998CA01D08BBDD00CCE6CE /* SummaryCellView.swift */; };
+		79998CA31D08C19A00CCE6CE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79998CA21D08C19A00CCE6CE /* Constants.swift */; };
 		79D9C96E1CF3A2A400D93BF5 /* ParagraphCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D9C96C1CF3A2A400D93BF5 /* ParagraphCellView.swift */; };
 		79D9C96F1CF3A2A400D93BF5 /* ParagraphCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D9C96D1CF3A2A400D93BF5 /* ParagraphCellView.xib */; };
 		79D9C9731CF3A59300D93BF5 /* ReminderCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D9C9721CF3A59300D93BF5 /* ReminderCellView.xib */; };
@@ -43,7 +46,6 @@
 		BD54F5791CEDEB360003E145 /* DescendantID.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD54F5721CEDEB360003E145 /* DescendantID.swift */; };
 		BD54F57A1CEDEB360003E145 /* Reminder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD54F5731CEDEB360003E145 /* Reminder+CoreDataProperties.swift */; };
 		BD54F57E1CEE02340003E145 /* ANEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD54F57D1CEE02340003E145 /* ANEntity.swift */; };
-		BD73605E1D0719C400065FAE /* SummaryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73605D1D0719C400065FAE /* SummaryCellView.swift */; };
 		BD7C1B6F1CEF336C002B542A /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C1B611CEF336C002B542A /* MainTableViewCell.swift */; };
 		BD7C1B701CEF336C002B542A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C1B631CEF336C002B542A /* MasterViewController.swift */; };
 		BD7C1B711CEF336C002B542A /* ParagraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C1B651CEF336C002B542A /* ParagraphViewController.swift */; };
@@ -59,6 +61,9 @@
 
 /* Begin PBXFileReference section */
 		797BBD8C1CF63D6C00420DDF /* FrameTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameTextView.swift; sourceTree = "<group>"; };
+		79998C9E1D08B98E00CCE6CE /* EditService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditService.swift; sourceTree = "<group>"; };
+		79998CA01D08BBDD00CCE6CE /* SummaryCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryCellView.swift; sourceTree = "<group>"; };
+		79998CA21D08C19A00CCE6CE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		79D9C96C1CF3A2A400D93BF5 /* ParagraphCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParagraphCellView.swift; sourceTree = "<group>"; };
 		79D9C96D1CF3A2A400D93BF5 /* ParagraphCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParagraphCellView.xib; sourceTree = "<group>"; };
 		79D9C9721CF3A59300D93BF5 /* ReminderCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderCellView.xib; sourceTree = "<group>"; };
@@ -94,7 +99,6 @@
 		BD54F5721CEDEB360003E145 /* DescendantID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescendantID.swift; sourceTree = "<group>"; };
 		BD54F5731CEDEB360003E145 /* Reminder+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reminder+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BD54F57D1CEE02340003E145 /* ANEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANEntity.swift; sourceTree = "<group>"; };
-		BD73605D1D0719C400065FAE /* SummaryCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryCellView.swift; sourceTree = "<group>"; };
 		BD7C1B611CEF336C002B542A /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		BD7C1B631CEF336C002B542A /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		BD7C1B651CEF336C002B542A /* ParagraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParagraphViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +129,7 @@
 		79D9C96B1CF3A2A400D93BF5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BD73605D1D0719C400065FAE /* SummaryCellView.swift */,
+				79998CA01D08BBDD00CCE6CE /* SummaryCellView.swift */,
 				79D9C96C1CF3A2A400D93BF5 /* ParagraphCellView.swift */,
 				79D9C96D1CF3A2A400D93BF5 /* ParagraphCellView.xib */,
 				79D9C9761CF3A9A100D93BF5 /* PictureCellView.swift */,
@@ -170,6 +174,7 @@
 			children = (
 				BD383F5E1CEB48380075D32D /* CoreDataService.swift */,
 				BD383F601CEB48520075D32D /* CoreDataStack.swift */,
+				79998C9E1D08B98E00CCE6CE /* EditService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				BDEFCEA11CE5D20800807924 /* Main.storyboard */,
 				BDEFCE931CE5D1FC00807924 /* AppDelegate.swift */,
 				BD383F5B1CEB3D550075D32D /* AppDelegate+DummyDataImport.swift */,
+				79998CA21D08C19A00CCE6CE /* Constants.swift */,
 				BDEFCE851CE5D1D100807924 /* Assets.xcassets */,
 				BDEFCE8A1CE5D1D100807924 /* Info.plist */,
 				BDEFCE901CE5D1FB00807924 /* AdvancedNotes-Bridging-Header.h */,
@@ -402,8 +408,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD54F5761CEDEB360003E145 /* Paragraph+CoreDataProperties.swift in Sources */,
+				79998CA31D08C19A00CCE6CE /* Constants.swift in Sources */,
 				BD54F5741CEDEB360003E145 /* Picture+CoreDataProperties.swift in Sources */,
 				BD7C1B741CEF336C002B542A /* DetailNavController.swift in Sources */,
+				79998C9F1D08B98E00CCE6CE /* EditService.swift in Sources */,
 				79D9C9751CF3A95E00D93BF5 /* ReminderCellView.swift in Sources */,
 				BD7C1B701CEF336C002B542A /* MasterViewController.swift in Sources */,
 				BD383F461CEB18510075D32D /* NSDate+ISO8601.swift in Sources */,
@@ -412,7 +420,6 @@
 				BD54F57A1CEDEB360003E145 /* Reminder+CoreDataProperties.swift in Sources */,
 				797BBD8D1CF63D6C00420DDF /* FrameTextView.swift in Sources */,
 				BD7C1B711CEF336C002B542A /* ParagraphViewController.swift in Sources */,
-				BD73605E1D0719C400065FAE /* SummaryCellView.swift in Sources */,
 				BD54F5781CEDEB360003E145 /* DescendantID+CoreDataProperties.swift in Sources */,
 				79D9C9771CF3A9A100D93BF5 /* PictureCellView.swift in Sources */,
 				BD383F5C1CEB3D550075D32D /* AppDelegate+DummyDataImport.swift in Sources */,
@@ -426,6 +433,7 @@
 				BD383F611CEB48520075D32D /* CoreDataStack.swift in Sources */,
 				BDEFCE9A1CE5D1FC00807924 /* AppDelegate.swift in Sources */,
 				BD0A95E91CE9CF1500A364AE /* Tag.swift in Sources */,
+				79998CA11D08BBDD00CCE6CE /* SummaryCellView.swift in Sources */,
 				BD54F5771CEDEB360003E145 /* Note+CoreDataProperties.swift in Sources */,
 				BD0A95ED1CE9CF1500A364AE /* Picture.swift in Sources */,
 				BD54F5621CEDA5140003E145 /* NSManagedObject+Utils.swift in Sources */,

@@ -45,11 +45,13 @@ class SummaryViewController: UIViewController {
             preferredStyle: .ActionSheet )
         
         let addParagraph = UIAlertAction(title: "Text note", style: .Default , handler: {(action) in
+            EditService.sharedInstance.currentEntity = nil
             self.performSegueWithIdentifier("addParagraphSegue", sender: self)
         })
         addAttachmentDialog.addAction(addParagraph)
         
         let addImage = UIAlertAction(title: "Image", style: .Default, handler: {(action) in
+            EditService.sharedInstance.currentEntity = nil
             self.performSegueWithIdentifier("addPictureSegue", sender: self)
         })
         addAttachmentDialog.addAction(addImage)
@@ -76,8 +78,15 @@ class SummaryViewController: UIViewController {
         return ("\(super.description) - SummaryViewController")
     }
     
-    func editItem(entitiy: ANEntity ,calledByCell: UITableViewCell) {
+    func editItem(entitiy: ANEntity?) {
+        if (entitiy == nil) {
+            return
+        }
+        EditService.sharedInstance.currentEntity = entitiy
         
+        if (entitiy!.isKindOfClass(Paragraph)) {
+            self.performSegueWithIdentifier("addParagraphSegue", sender: self)
+        }
     }
     
 }
@@ -93,32 +102,29 @@ extension SummaryViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell: UITableViewCell?
         if let _ = contentListFiltered[indexPath.row] as? Paragraph {
-            let cell = tableView.dequeueReusableCellWithIdentifier(cellParagraphID)
+            cell = tableView.dequeueReusableCellWithIdentifier(cellParagraphID)
             (cell as! ParagraphViewCell).setParagraph(contentListFiltered[indexPath.row] as! Paragraph)
-            (cell as! SummaryCellView).summaryVC = self
             
-            return cell!
         }
         
         if let _ = contentListFiltered[indexPath.row] as? Picture {
-            let cell = tableView.dequeueReusableCellWithIdentifier(cellPictureID)!
+            cell = tableView.dequeueReusableCellWithIdentifier(cellPictureID)!
             // todo
             
-            (cell as! SummaryCellView).summaryVC = self
-            return cell
-        
         }
         
         if let _ = contentListFiltered[indexPath.row] as? Reminder {
-            let cell = tableView.dequeueReusableCellWithIdentifier(cellReminderID)!
+            cell = tableView.dequeueReusableCellWithIdentifier(cellReminderID)!
             // todo
-            
-            (cell as! SummaryCellView).summaryVC = self
-            return cell
             
         }
         
+        if (cell != nil) {
+            (cell as! SummaryCellView).parentVC = self
+            return cell!
+        }
         return (tableView.dequeueReusableCellWithIdentifier("cellDefault"))!
     }
     

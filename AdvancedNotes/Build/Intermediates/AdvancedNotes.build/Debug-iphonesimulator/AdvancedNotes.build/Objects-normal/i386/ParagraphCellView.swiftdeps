@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes17ParagraphViewCell", ""]
 provides-dynamic-lookup:
+- "myParagraph"
 - "paragraphTextView"
+- "setParagraph"
 - "edit"
 - "remove"
-- "myParagraph"
-- "setParagraph"
 depends-top-level:
-- "ParagraphViewCell"
-- "UIButton"
-- !private "StringLiteralType"
-- !private "print"
-- "Paragraph"
-- "UITableViewCell"
+- "SummaryCellView"
 - "FrameTextView"
+- !private "StringLiteralType"
+- "UIButton"
+- !private "print"
+- "ParagraphViewCell"
+- "Paragraph"
 depends-member:
 - !private ["C13AdvancedNotes8ANEntity", "text"]
 - ["Ps9AnyObject", "edit"]
@@ -121,6 +121,17 @@ depends-member:
 - !private ["C13AdvancedNotes17ParagraphViewCell", "print"]
 - ["C13AdvancedNotes17ParagraphViewCell", "remove"]
 - ["C13AdvancedNotes17ParagraphViewCell", "setParagraph"]
+- ["C13AdvancedNotes15SummaryCellView", "FrameTextView"]
+- ["C13AdvancedNotes15SummaryCellView", "Paragraph"]
+- ["C13AdvancedNotes15SummaryCellView", "UIButton"]
+- ["C13AdvancedNotes15SummaryCellView", "edit"]
+- ["C13AdvancedNotes15SummaryCellView", "init"]
+- ["C13AdvancedNotes15SummaryCellView", "myParagraph"]
+- ["C13AdvancedNotes15SummaryCellView", "paragraphTextView"]
+- !private ["C13AdvancedNotes15SummaryCellView", "print"]
+- ["C13AdvancedNotes15SummaryCellView", "remove"]
+- ["C13AdvancedNotes15SummaryCellView", "setParagraph"]
+- ["C13AdvancedNotes15SummaryCellView", ""]
 - ["PSo29UIAccessibilityIdentification", "edit"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "myParagraph"]
@@ -206,7 +217,6 @@ depends-member:
 - !private ["CSo15UITableViewCell", "print"]
 - ["CSo15UITableViewCell", "remove"]
 - ["CSo15UITableViewCell", "setParagraph"]
-- ["CSo15UITableViewCell", ""]
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["CSo10UITextView", "text"]
@@ -257,6 +267,7 @@ depends-nominal:
 - "Sq"
 - !private "C13AdvancedNotes9Paragraph"
 - "C13AdvancedNotes17ParagraphViewCell"
+- "C13AdvancedNotes15SummaryCellView"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -286,4 +297,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
-interface-hash: "fc14c6b344c28ebeef9a568fcd9e418d"
+interface-hash: "90073de32f25c886b672d7157900d9f7"

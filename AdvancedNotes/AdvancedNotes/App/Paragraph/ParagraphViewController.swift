@@ -19,13 +19,14 @@ class ParagraphViewController: UIViewController {
                                                     message: "",
                                                     preferredStyle: .Alert)
         
-        let actionDiscard = UIAlertAction(title: "Discard changes", style: .Default , handler: {(action) in
+        let actionDiscard = UIAlertAction(title: "Discard changes", style: .Destructive , handler: {(action) in
+            print("response: \(action)")
             
         })
         dialogDiscard.addAction(actionDiscard)
         
         let actionCancel = UIAlertAction(title: "Cancel", style: .Default, handler: {(action) in
-            
+            print("response: \(action)")
         })
         dialogDiscard.addAction(actionCancel)
         
@@ -33,7 +34,10 @@ class ParagraphViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        textView.text = paragraph?.text
+        if (EditService.sharedInstance.isClass(Paragraph)) {
+            textView.text = (EditService.sharedInstance.currentEntity! as! Paragraph).text
+        }
+        
     }
     
 }
