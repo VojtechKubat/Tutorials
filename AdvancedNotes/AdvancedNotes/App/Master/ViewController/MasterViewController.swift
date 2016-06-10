@@ -22,12 +22,8 @@ class MasterViewController: UITableViewController {
         let sortDescriptior = NSSortDescriptor(key: "lastChange", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptior]
         
-        
-        let privateContext = NSManagedObjectContext(concurrencyType: .PrivateQueueConcurrencyType)
-        privateContext.parentContext = CoreDataService.sharedInstance.context
-        
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest,
-                                                              managedObjectContext: CoreDataService.sharedInstance.context,
+                                                              managedObjectContext: CoreDataService.sharedInstance.privateContext,
                                                               sectionNameKeyPath: nil,
                                                               cacheName: "notesCache")
         

@@ -50,12 +50,26 @@ class CoreDataStack {
         return managedObjectContext
     }()
     
+    lazy var privateContext: NSManagedObjectContext = {
+        let managedObjectContext = NSManagedObjectContext(concurrencyType: .PrivateQueueConcurrencyType)
+        managedObjectContext.parentContext = self.context
+        return managedObjectContext
+    }()
+    
     func  saveContext() {
+        if privateContext.hasChanges {
+            do {
+                try privateContext.save()
+            } catch let error as NSError {
+                NSLog("ERROR: PRIVATE Managed Object Context - \(error.description)")
+            }
+        }
+        
         if context.hasChanges {
             do {
                 try context.save()
             } catch let error as NSError {
-                NSLog("ERROR: \(error.description)")
+                NSLog("ERROR: Managed Object Context - \(error.description)")
             }
         }
     }

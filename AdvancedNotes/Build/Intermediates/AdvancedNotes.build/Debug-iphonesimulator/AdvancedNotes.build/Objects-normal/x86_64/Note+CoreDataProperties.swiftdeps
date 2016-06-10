@@ -16,18 +16,18 @@ provides-member:
 - ["C13AdvancedNotes4Note", "hasParent"]
 - ["C13AdvancedNotes4Note", "hasDescendantID"]
 provides-dynamic-lookup:
-- "isTagged"
-- "headline"
-- "hasPicture"
-- "hasParent"
 - "hasDescendantID"
-- "lastChange"
+- "hasParent"
+- "id"
 - "hasParagraph"
-- "hasReminder"
-- "active"
 - "hasChild"
 - "priority"
-- "id"
+- "hasReminder"
+- "lastChange"
+- "isTagged"
+- "active"
+- "hasPicture"
+- "headline"
 depends-top-level:
 - "String"
 - "NSDate"
@@ -202,7 +202,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"

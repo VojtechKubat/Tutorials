@@ -2,6 +2,7 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
     <entity name="DescendantID" representedClassName=".DescendantID" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="belongsToNote" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="hasDescendantID" inverseEntity="Note" syncable="YES"/>
     </entity>
     <entity name="Note" representedClassName=".Note" syncable="YES">
         <attribute name="active" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -10,7 +11,7 @@
         <attribute name="lastChange" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="priority" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="hasChild" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="hasParent" inverseEntity="Note" syncable="YES"/>
-        <relationship name="hasDescendantID" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DescendantID" syncable="YES"/>
+        <relationship name="hasDescendantID" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DescendantID" inverseName="belongsToNote" inverseEntity="DescendantID" syncable="YES"/>
         <relationship name="hasParagraph" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Paragraph" inverseName="relatesToNote" inverseEntity="Paragraph" syncable="YES"/>
         <relationship name="hasParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="hasChild" inverseEntity="Note" syncable="YES"/>
         <relationship name="hasPicture" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Picture" inverseName="relatesToNote" inverseEntity="Picture" syncable="YES"/>
@@ -46,11 +47,11 @@
         <relationship name="relatesToNote" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="isTagged" inverseEntity="Note" syncable="YES"/>
     </entity>
     <elements>
+        <element name="DescendantID" positionX="-495" positionY="9" width="128" height="75"/>
         <element name="Note" positionX="-414" positionY="-72" width="128" height="225"/>
         <element name="Paragraph" positionX="-578" positionY="-147" width="128" height="120"/>
         <element name="Picture" positionX="-605" positionY="117" width="128" height="135"/>
         <element name="Reminder" positionX="-504" positionY="231" width="128" height="135"/>
         <element name="Tag" positionX="-459" positionY="90" width="128" height="90"/>
-        <element name="DescendantID" positionX="-495" positionY="9" width="128" height="60"/>
     </elements>
 </model>

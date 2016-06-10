@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class ParagraphViewController: UIViewController {
-    var paragraph: Paragraph?
     
     @IBOutlet weak var textView: FrameTextView!
     
@@ -37,7 +36,13 @@ class ParagraphViewController: UIViewController {
         if (EditService.sharedInstance.isClass(Paragraph)) {
             textView.text = (EditService.sharedInstance.currentEntity! as! Paragraph).text
         }
-        
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        
+        if let currentParagraph: Paragraph = EditService.sharedInstance.currentEntity as? Paragraph {
+            currentParagraph.text = textView.text
+        }
+        EditService.sharedInstance.saveEntityChanges()
+    }
 }

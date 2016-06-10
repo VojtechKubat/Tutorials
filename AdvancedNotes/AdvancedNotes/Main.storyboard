@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jbD-HQ-mv9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jbD-HQ-mv9">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -155,28 +155,12 @@
                         <outlet property="tableView" destination="vIq-Dj-Y7o" id="3y6-Rd-aeq"/>
                         <segue destination="c9K-dz-CWE" kind="show" identifier="Reminder" id="WZy-ej-iTw"/>
                         <segue destination="Ehq-ei-m4m" kind="show" identifier="addPictureSegue" id="VNE-7s-TVV"/>
-                        <segue destination="fo6-dX-lS7" kind="show" identifier="addParagraphSegue" id="pbi-ao-HM0"/>
+                        <segue destination="CE6-sJ-3rH" kind="show" identifier="addParagraphSegue" id="Tg6-Io-ZRo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7U7-hm-SJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1474" y="1170"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="uVF-Ja-BGX">
-            <objects>
-                <navigationController id="fo6-dX-lS7" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Goj-F2-5Dq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="CE6-sJ-3rH" kind="relationship" relationship="rootViewController" id="Tqt-KD-JD5"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YnK-cG-ulO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2503" y="317"/>
         </scene>
         <!--Paragraph-->
         <scene sceneID="vxG-eF-XBq">
@@ -220,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8B-hB-caJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3264" y="317"/>
+            <point key="canvasLocation" x="2503" y="323"/>
         </scene>
         <!--Detail Nav Controller-->
         <scene sceneID="Pvu-XM-yZl">

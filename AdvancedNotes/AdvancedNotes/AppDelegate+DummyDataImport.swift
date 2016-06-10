@@ -47,9 +47,9 @@ extension AppDelegate {
             print("There are \(results.count) notes")
             print("No dummy data was inserted")
             
-            for currentNote in results {
-                print("\((currentNote as! Note).headline) \((currentNote as! Note).lastChange)")
-            }
+//            for currentNote in results {
+//                print("\((currentNote as! Note).headline) \((currentNote as! Note).lastChange)")
+//            }
         }
     }
 }

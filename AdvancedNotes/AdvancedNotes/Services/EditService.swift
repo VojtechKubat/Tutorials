@@ -15,19 +15,18 @@ class EditService {
     var currentEntity: ANEntity?
     
     func saveEntityChanges() {
-        currentEntity?.managedObjectContext?.performBlock({
-            do {
-                try self.currentEntity?.managedObjectContext?.save()
-            } catch let error as NSError {
-                print("error: \(error)")
-            }
+      
+        if (currentEntity != nil) {
+            
+            CoreDataService.sharedInstance.saveContext()
+            
+            print("save context")
             
             // if observer has no designated queue, then the thread of calling event will be used (can be useful for UI updates, so main thread is used)
             dispatch_async(dispatch_get_main_queue(), {
                 NSNotificationCenter.defaultCenter().postNotificationName(changesPerformedKey, object: nil)
             })
-            
-        })
+        }
     }
     
     func isClass(theClass: AnyClass) -> Bool {

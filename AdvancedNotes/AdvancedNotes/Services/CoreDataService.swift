@@ -13,12 +13,14 @@ class CoreDataService {
     static var sharedInstance = CoreDataStack()
     
     static func trySave(context: NSManagedObjectContext) {
-        do {
-            try context.save()
-            print("Changes in context were saved")
-        } catch let error as NSError {
-            print("context save error - \(error) - \(error.userInfo)")
-        }
+        // perform save on the context's thread
+        context.performBlock({
+            do {
+                try context.save()
+                print("Changes in context were saved")
+            } catch let error as NSError {
+                print("context save error - \(error) - \(error.userInfo)")
+            }
+        })
     }
-    
 }

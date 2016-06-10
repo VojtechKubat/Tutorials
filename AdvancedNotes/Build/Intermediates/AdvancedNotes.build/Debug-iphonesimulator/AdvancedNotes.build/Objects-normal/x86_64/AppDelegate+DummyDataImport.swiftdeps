@@ -7,26 +7,23 @@ provides-member:
 provides-dynamic-lookup:
 - "importDummyData"
 depends-top-level:
-- !private "NSBundle"
-- !private "Tag"
-- !private "NSError"
-- !private "NSData"
-- !private "CoreDataService"
-- !private "NSDictionary"
-- !private "NSArray"
 - !private "NSFetchRequest"
-- !private "=="
 - !private "AnyObject"
-- !private "UnicodeScalarType"
-- !private "Note"
-- !private "NSJSONSerialization"
-- !private "StringLiteralType"
-- !private "print"
-- !private "..."
+- !private "NSArray"
+- !private "NSDictionary"
 - "AppDelegate"
+- !private "..."
+- !private "NSData"
+- !private "=="
+- !private "NSJSONSerialization"
+- !private "NSError"
+- !private "CoreDataService"
+- !private "print"
+- !private "Note"
+- !private "Tag"
+- !private "StringLiteralType"
+- !private "NSBundle"
 depends-member:
-- !private ["C13AdvancedNotes8ANEntity", "headline"]
-- !private ["C13AdvancedNotes8ANEntity", "lastChange"]
 - !private ["C13AdvancedNotes8ANEntity", "parseJsonToNote"]
 - !private ["Ps9AnyObject", "AnyObject"]
 - !private ["Ps9AnyObject", "CoreDataService"]
@@ -43,10 +40,8 @@ depends-member:
 - !private ["Ps9AnyObject", "context"]
 - !private ["Ps9AnyObject", "coreDataStack"]
 - !private ["Ps9AnyObject", "executeFetchRequest"]
-- !private ["Ps9AnyObject", "headline"]
 - ["Ps9AnyObject", "importDummyData"]
 - !private ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "lastChange"]
 - !private ["Ps9AnyObject", "mainBundle"]
 - !private ["Ps9AnyObject", "parseJsonToNote"]
 - !private ["Ps9AnyObject", "parseJsonToTag"]
@@ -109,10 +104,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "_DisabledRangeIndex"]
 - !private ["Ps11CVarArgType", "coreDataStack"]
 - !private ["Ps11CVarArgType", "executeFetchRequest"]
-- !private ["Ps11CVarArgType", "headline"]
 - ["Ps11CVarArgType", "importDummyData"]
 - !private ["Ps11CVarArgType", "init"]
-- !private ["Ps11CVarArgType", "lastChange"]
 - !private ["Ps11CVarArgType", "mainBundle"]
 - !private ["Ps11CVarArgType", "parseJsonToNote"]
 - !private ["Ps11CVarArgType", "parseJsonToTag"]
@@ -149,10 +142,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "coreDataStack"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "executeFetchRequest"]
-- !private ["Ps28CustomDebugStringConvertible", "headline"]
 - ["Ps28CustomDebugStringConvertible", "importDummyData"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "lastChange"]
 - !private ["Ps28CustomDebugStringConvertible", "mainBundle"]
 - !private ["Ps28CustomDebugStringConvertible", "parseJsonToNote"]
 - !private ["Ps28CustomDebugStringConvertible", "parseJsonToTag"]
@@ -179,10 +170,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "coreDataStack"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "executeFetchRequest"]
-- !private ["Ps23CustomStringConvertible", "headline"]
 - ["Ps23CustomStringConvertible", "importDummyData"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "lastChange"]
 - !private ["Ps23CustomStringConvertible", "mainBundle"]
 - !private ["Ps23CustomStringConvertible", "parseJsonToNote"]
 - !private ["Ps23CustomStringConvertible", "parseJsonToTag"]
@@ -207,10 +196,8 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "coreDataStack"]
 - !private ["Ps9Equatable", "executeFetchRequest"]
-- !private ["Ps9Equatable", "headline"]
 - ["Ps9Equatable", "importDummyData"]
 - !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "lastChange"]
 - !private ["Ps9Equatable", "mainBundle"]
 - !private ["Ps9Equatable", "parseJsonToNote"]
 - !private ["Ps9Equatable", "parseJsonToTag"]
@@ -240,10 +227,8 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "coreDataStack"]
 - !private ["Ps8Hashable", "executeFetchRequest"]
-- !private ["Ps8Hashable", "headline"]
 - ["Ps8Hashable", "importDummyData"]
 - !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "lastChange"]
 - !private ["Ps8Hashable", "mainBundle"]
 - !private ["Ps8Hashable", "parseJsonToNote"]
 - !private ["Ps8Hashable", "parseJsonToTag"]
@@ -315,8 +300,6 @@ depends-member:
 - !private ["VSC20NSJSONReadingOptions", "AllowFragments"]
 - !private ["CSo19NSJSONSerialization", "JSONObjectWithData"]
 - !private ["PSo9NSLocking", "executeFetchRequest"]
-- !private ["CSo15NSManagedObject", "headline"]
-- !private ["CSo15NSManagedObject", "lastChange"]
 - !private ["CSo15NSManagedObject", "parseJsonToNote"]
 - !private ["CSo15NSManagedObject", "parseJsonToTag"]
 - !private ["CSo22NSManagedObjectContext", "executeFetchRequest"]
@@ -338,10 +321,8 @@ depends-member:
 - !private ["CSo8NSObject", "URLForResource"]
 - !private ["CSo8NSObject", "coreDataStack"]
 - !private ["CSo8NSObject", "executeFetchRequest"]
-- !private ["CSo8NSObject", "headline"]
 - ["CSo8NSObject", "importDummyData"]
 - !private ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "lastChange"]
 - !private ["CSo8NSObject", "mainBundle"]
 - !private ["CSo8NSObject", "parseJsonToNote"]
 - !private ["CSo8NSObject", "parseJsonToTag"]
@@ -360,10 +341,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "URLForResource"]
 - !private ["PSo16NSObjectProtocol", "coreDataStack"]
 - !private ["PSo16NSObjectProtocol", "executeFetchRequest"]
-- !private ["PSo16NSObjectProtocol", "headline"]
 - ["PSo16NSObjectProtocol", "importDummyData"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "lastChange"]
 - !private ["PSo16NSObjectProtocol", "mainBundle"]
 - !private ["PSo16NSObjectProtocol", "parseJsonToNote"]
 - !private ["PSo16NSObjectProtocol", "parseJsonToTag"]
@@ -375,8 +354,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "userInfo"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
-- !private ["C13AdvancedNotes4Note", "headline"]
-- !private ["C13AdvancedNotes4Note", "lastChange"]
 - !private ["C13AdvancedNotes4Note", "parseJsonToNote"]
 - !private ["Ps13OptionSetType", "AllowFragments"]
 - !private ["Sq", "deinit"]
@@ -613,7 +590,7 @@ depends-dynamic-lookup:
 - !private "subscript"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/Vojta/Documents/dev/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
+- "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AdvancedNotes-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"

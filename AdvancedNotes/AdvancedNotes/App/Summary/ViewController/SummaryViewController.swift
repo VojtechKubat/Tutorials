@@ -46,13 +46,29 @@ class SummaryViewController: UIViewController {
         
         let addParagraph = UIAlertAction(title: "Text note", style: .Default , handler: {(action) in
             EditService.sharedInstance.currentEntity = nil
-            self.performSegueWithIdentifier("addParagraphSegue", sender: self)
+            
+            if (self.note != nil) {
+                let paragraphED = NSEntityDescription.entityForName("Paragraph",
+                    inManagedObjectContext: (self.note?.managedObjectContext)!)!
+                
+                let newParagraph = NSManagedObject(entity: paragraphED,
+                    insertIntoManagedObjectContext: (self.note?.managedObjectContext)!)
+                let allParagraphs: NSMutableSet = (self.note!.hasParagraph?.mutableCopy())! as! NSMutableSet
+                allParagraphs.addObject(newParagraph)
+                self.note!.hasParagraph = allParagraphs
+                EditService.sharedInstance.currentEntity = newParagraph as? ANEntity
+                
+                self.performSegueWithIdentifier("addParagraphSegue", sender: self)
+            }
+            
         })
         addAttachmentDialog.addAction(addParagraph)
         
         let addImage = UIAlertAction(title: "Image", style: .Default, handler: {(action) in
-            EditService.sharedInstance.currentEntity = nil
-            self.performSegueWithIdentifier("addPictureSegue", sender: self)
+            if (self.note != nil) {
+                EditService.sharedInstance.currentEntity = nil
+                self.performSegueWithIdentifier("addPictureSegue", sender: self)
+            }
         })
         addAttachmentDialog.addAction(addImage)
     
@@ -71,7 +87,19 @@ class SummaryViewController: UIViewController {
         tableView.registerNib(UINib(nibName: "ParagraphCellView", bundle: nil) , forCellReuseIdentifier: cellParagraphID)
         tableView.registerNib(UINib(nibName: "PictureCellView", bundle: nil) , forCellReuseIdentifier: cellPictureID)
         tableView.registerNib(UINib(nibName: "ReminderCellView", bundle: nil) , forCellReuseIdentifier: cellReminderID)
-        
+     
+        NSNotificationCenter.defaultCenter().addObserver(self,
+                                                         selector: #selector(refresh),
+                                                         name: changesPerformedKey,
+                                                         object: nil)
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    func refresh() {
+        tableView.reloadData()
     }
     
     override var description: String {
@@ -106,7 +134,6 @@ extension SummaryViewController: UITableViewDataSource {
         if let _ = contentListFiltered[indexPath.row] as? Paragraph {
             cell = tableView.dequeueReusableCellWithIdentifier(cellParagraphID)
             (cell as! ParagraphViewCell).setParagraph(contentListFiltered[indexPath.row] as! Paragraph)
-            
         }
         
         if let _ = contentListFiltered[indexPath.row] as? Picture {
