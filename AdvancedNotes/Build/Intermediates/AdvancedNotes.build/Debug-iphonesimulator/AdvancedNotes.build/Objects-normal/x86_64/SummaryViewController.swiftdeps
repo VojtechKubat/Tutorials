@@ -10,60 +10,61 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes21SummaryViewController", ""]
 provides-dynamic-lookup:
-- "numberOfSectionsInTableView"
-- "viewDidLoad"
-- "note"
-- "compareByLastChange"
-- "addAttachment"
-- "refresh"
-- "sort"
-- "description"
-- "contentSet"
-- "contentListFiltered"
 - "editItem"
 - "tableView"
 - "tableView"
 - "tableView"
+- "viewDidLoad"
+- "contentListFiltered"
+- "sort"
+- "note"
+- "filter"
+- "numberOfSectionsInTableView"
+- "refresh"
+- "contentSet"
+- "addAttachment"
+- "compareByLastChange"
+- "description"
 depends-top-level:
-- !private "ParagraphViewCell"
-- "cellParagraphID"
-- "SummaryViewController"
-- "UITableViewDataSource"
-- "NSSortDescriptor"
-- !private "EditService"
-- "UIViewController"
-- !private "NSManagedObject"
-- "StringLiteralType"
-- "UITableView"
-- "ANEntity"
-- !private "changesPerformedKey"
-- !private "!="
-- !private "NSEntityDescription"
-- !private "Picture"
-- "=="
-- !private "NSMutableSet"
-- !private "NSNotificationCenter"
-- "NSIndexPath"
 - !private "UIAlertAction"
-- "String"
-- !private "UIAlertController"
-- "UITableViewDelegate"
-- !private "UINib"
-- "cellReminderID"
-- "BooleanLiteralType"
-- !private "Reminder"
-- "Set"
-- "Array"
 - "Int"
-- "UITableViewCell"
-- !private "SummaryCellView"
-- !private "Paragraph"
-- "cellDefaultID"
-- !private "UITableViewAutomaticDimension"
+- "cellParagraphID"
+- !private "NSManagedObjectContextObjectsDidChangeNotification"
+- "UIViewController"
 - "cellPictureID"
+- "UITableView"
+- "=="
+- "NSIndexPath"
 - "Note"
-- "UIBarButtonItem"
+- "StringLiteralType"
+- "Set"
+- "SummaryViewController"
+- !private "!="
+- !private "Paragraph"
+- !private "Reminder"
+- "cellDefaultID"
+- !private "SummaryCellView"
+- "cellReminderID"
+- !private "NSEntityDescription"
+- !private "NSManagedObject"
+- "String"
+- !private "Picture"
+- !private "UIAlertController"
+- !private "UITableViewAutomaticDimension"
+- !private "ParagraphViewCell"
+- !private "UINib"
+- !private "NSNotificationCenter"
+- "UITableViewCell"
+- "NSSortDescriptor"
 - "Bool"
+- "Array"
+- "ANEntity"
+- !private "NSMutableSet"
+- !private "EditService"
+- "UIBarButtonItem"
+- "UITableViewDataSource"
+- "UITableViewDelegate"
+- "BooleanLiteralType"
 depends-member:
 - !private ["C13AdvancedNotes8ANEntity", "deinit"]
 - ["C13AdvancedNotes8ANEntity", "getLastChange"]
@@ -77,6 +78,7 @@ depends-member:
 - !private ["Ps9AnyObject", "EditService"]
 - !private ["Ps9AnyObject", "NSEntityDescription"]
 - !private ["Ps9AnyObject", "NSManagedObject"]
+- !private ["Ps9AnyObject", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["Ps9AnyObject", "NSNotificationCenter"]
 - ["Ps9AnyObject", "NSSortDescriptor"]
 - !private ["Ps9AnyObject", "Paragraph"]
@@ -93,7 +95,6 @@ depends-member:
 - !private ["Ps9AnyObject", "cellParagraphID"]
 - !private ["Ps9AnyObject", "cellPictureID"]
 - !private ["Ps9AnyObject", "cellReminderID"]
-- !private ["Ps9AnyObject", "changesPerformedKey"]
 - ["Ps9AnyObject", "compare"]
 - ["Ps9AnyObject", "compareByLastChange"]
 - ["Ps9AnyObject", "contentListFiltered"]
@@ -105,6 +106,7 @@ depends-member:
 - ["Ps9AnyObject", "editItem"]
 - !private ["Ps9AnyObject", "entityForName"]
 - !private ["Ps9AnyObject", "estimatedRowHeight"]
+- ["Ps9AnyObject", "filter"]
 - ["Ps9AnyObject", "getLastChange"]
 - !private ["Ps9AnyObject", "hasChild"]
 - !private ["Ps9AnyObject", "hasParagraph"]
@@ -187,6 +189,7 @@ depends-member:
 - ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "NSEntityDescription"]
 - !private ["Ps11CVarArgType", "NSManagedObject"]
+- !private ["Ps11CVarArgType", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["Ps11CVarArgType", "NSNotificationCenter"]
 - ["Ps11CVarArgType", "NSSortDescriptor"]
 - !private ["Ps11CVarArgType", "Paragraph"]
@@ -203,7 +206,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "cellParagraphID"]
 - !private ["Ps11CVarArgType", "cellPictureID"]
 - !private ["Ps11CVarArgType", "cellReminderID"]
-- !private ["Ps11CVarArgType", "changesPerformedKey"]
 - ["Ps11CVarArgType", "compare"]
 - ["Ps11CVarArgType", "compareByLastChange"]
 - ["Ps11CVarArgType", "contentListFiltered"]
@@ -214,6 +216,7 @@ depends-member:
 - ["Ps11CVarArgType", "editItem"]
 - !private ["Ps11CVarArgType", "entityForName"]
 - !private ["Ps11CVarArgType", "estimatedRowHeight"]
+- ["Ps11CVarArgType", "filter"]
 - ["Ps11CVarArgType", "getLastChange"]
 - !private ["Ps11CVarArgType", "hasChild"]
 - !private ["Ps11CVarArgType", "hasParagraph"]
@@ -276,6 +279,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "NSEntityDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "NSManagedObject"]
+- !private ["Ps28CustomDebugStringConvertible", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["Ps28CustomDebugStringConvertible", "NSNotificationCenter"]
 - ["Ps28CustomDebugStringConvertible", "NSSortDescriptor"]
 - !private ["Ps28CustomDebugStringConvertible", "Paragraph"]
@@ -295,7 +299,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "cellParagraphID"]
 - !private ["Ps28CustomDebugStringConvertible", "cellPictureID"]
 - !private ["Ps28CustomDebugStringConvertible", "cellReminderID"]
-- !private ["Ps28CustomDebugStringConvertible", "changesPerformedKey"]
 - ["Ps28CustomDebugStringConvertible", "compare"]
 - ["Ps28CustomDebugStringConvertible", "compareByLastChange"]
 - ["Ps28CustomDebugStringConvertible", "contentListFiltered"]
@@ -307,6 +310,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "editItem"]
 - !private ["Ps28CustomDebugStringConvertible", "entityForName"]
 - !private ["Ps28CustomDebugStringConvertible", "estimatedRowHeight"]
+- ["Ps28CustomDebugStringConvertible", "filter"]
 - ["Ps28CustomDebugStringConvertible", "getLastChange"]
 - !private ["Ps28CustomDebugStringConvertible", "hasChild"]
 - !private ["Ps28CustomDebugStringConvertible", "hasParagraph"]
@@ -360,6 +364,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "NSEntityDescription"]
 - !private ["Ps23CustomStringConvertible", "NSManagedObject"]
+- !private ["Ps23CustomStringConvertible", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["Ps23CustomStringConvertible", "NSNotificationCenter"]
 - ["Ps23CustomStringConvertible", "NSSortDescriptor"]
 - !private ["Ps23CustomStringConvertible", "Paragraph"]
@@ -379,7 +384,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "cellParagraphID"]
 - !private ["Ps23CustomStringConvertible", "cellPictureID"]
 - !private ["Ps23CustomStringConvertible", "cellReminderID"]
-- !private ["Ps23CustomStringConvertible", "changesPerformedKey"]
 - ["Ps23CustomStringConvertible", "compare"]
 - ["Ps23CustomStringConvertible", "compareByLastChange"]
 - ["Ps23CustomStringConvertible", "contentListFiltered"]
@@ -391,6 +395,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "editItem"]
 - !private ["Ps23CustomStringConvertible", "entityForName"]
 - !private ["Ps23CustomStringConvertible", "estimatedRowHeight"]
+- ["Ps23CustomStringConvertible", "filter"]
 - ["Ps23CustomStringConvertible", "getLastChange"]
 - !private ["Ps23CustomStringConvertible", "hasChild"]
 - !private ["Ps23CustomStringConvertible", "hasParagraph"]
@@ -448,6 +453,7 @@ depends-member:
 - ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "NSEntityDescription"]
 - !private ["Ps9Equatable", "NSManagedObject"]
+- !private ["Ps9Equatable", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["Ps9Equatable", "NSNotificationCenter"]
 - ["Ps9Equatable", "NSSortDescriptor"]
 - ["Ps9Equatable", "OrderedDescending"]
@@ -467,7 +473,6 @@ depends-member:
 - !private ["Ps9Equatable", "cellParagraphID"]
 - !private ["Ps9Equatable", "cellPictureID"]
 - !private ["Ps9Equatable", "cellReminderID"]
-- !private ["Ps9Equatable", "changesPerformedKey"]
 - ["Ps9Equatable", "compare"]
 - ["Ps9Equatable", "compareByLastChange"]
 - ["Ps9Equatable", "contentListFiltered"]
@@ -478,6 +483,7 @@ depends-member:
 - ["Ps9Equatable", "editItem"]
 - !private ["Ps9Equatable", "entityForName"]
 - !private ["Ps9Equatable", "estimatedRowHeight"]
+- ["Ps9Equatable", "filter"]
 - ["Ps9Equatable", "getLastChange"]
 - !private ["Ps9Equatable", "hasChild"]
 - !private ["Ps9Equatable", "hasParagraph"]
@@ -536,6 +542,7 @@ depends-member:
 - ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "NSEntityDescription"]
 - !private ["Ps8Hashable", "NSManagedObject"]
+- !private ["Ps8Hashable", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["Ps8Hashable", "NSNotificationCenter"]
 - ["Ps8Hashable", "NSSortDescriptor"]
 - ["Ps8Hashable", "OrderedDescending"]
@@ -555,7 +562,6 @@ depends-member:
 - !private ["Ps8Hashable", "cellParagraphID"]
 - !private ["Ps8Hashable", "cellPictureID"]
 - !private ["Ps8Hashable", "cellReminderID"]
-- !private ["Ps8Hashable", "changesPerformedKey"]
 - ["Ps8Hashable", "compare"]
 - ["Ps8Hashable", "compareByLastChange"]
 - ["Ps8Hashable", "contentListFiltered"]
@@ -566,6 +572,7 @@ depends-member:
 - ["Ps8Hashable", "editItem"]
 - !private ["Ps8Hashable", "entityForName"]
 - !private ["Ps8Hashable", "estimatedRowHeight"]
+- ["Ps8Hashable", "filter"]
 - ["Ps8Hashable", "getLastChange"]
 - !private ["Ps8Hashable", "hasChild"]
 - !private ["Ps8Hashable", "hasParagraph"]
@@ -664,6 +671,7 @@ depends-member:
 - !private ["PSo8NSCoding", "EditService"]
 - !private ["PSo8NSCoding", "NSEntityDescription"]
 - !private ["PSo8NSCoding", "NSManagedObject"]
+- !private ["PSo8NSCoding", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["PSo8NSCoding", "NSNotificationCenter"]
 - ["PSo8NSCoding", "NSSortDescriptor"]
 - !private ["PSo8NSCoding", "Paragraph"]
@@ -678,7 +686,6 @@ depends-member:
 - !private ["PSo8NSCoding", "cellParagraphID"]
 - !private ["PSo8NSCoding", "cellPictureID"]
 - !private ["PSo8NSCoding", "cellReminderID"]
-- !private ["PSo8NSCoding", "changesPerformedKey"]
 - ["PSo8NSCoding", "compare"]
 - ["PSo8NSCoding", "compareByLastChange"]
 - ["PSo8NSCoding", "contentListFiltered"]
@@ -688,6 +695,7 @@ depends-member:
 - ["PSo8NSCoding", "editItem"]
 - !private ["PSo8NSCoding", "entityForName"]
 - !private ["PSo8NSCoding", "estimatedRowHeight"]
+- ["PSo8NSCoding", "filter"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "layoutIfNeeded"]
@@ -738,6 +746,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "EditService"]
 - !private ["PSo26NSExtensionRequestHandling", "NSEntityDescription"]
 - !private ["PSo26NSExtensionRequestHandling", "NSManagedObject"]
+- !private ["PSo26NSExtensionRequestHandling", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["PSo26NSExtensionRequestHandling", "NSNotificationCenter"]
 - ["PSo26NSExtensionRequestHandling", "NSSortDescriptor"]
 - !private ["PSo26NSExtensionRequestHandling", "Paragraph"]
@@ -751,12 +760,12 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "cellParagraphID"]
 - !private ["PSo26NSExtensionRequestHandling", "cellPictureID"]
 - !private ["PSo26NSExtensionRequestHandling", "cellReminderID"]
-- !private ["PSo26NSExtensionRequestHandling", "changesPerformedKey"]
 - ["PSo26NSExtensionRequestHandling", "compareByLastChange"]
 - ["PSo26NSExtensionRequestHandling", "contentListFiltered"]
 - ["PSo26NSExtensionRequestHandling", "contentSet"]
 - ["PSo26NSExtensionRequestHandling", "description"]
 - ["PSo26NSExtensionRequestHandling", "editItem"]
+- ["PSo26NSExtensionRequestHandling", "filter"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "note"]
@@ -812,6 +821,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSEntityDescription"]
 - ["CSo8NSObject", "NSIndexPath"]
 - !private ["CSo8NSObject", "NSManagedObject"]
+- !private ["CSo8NSObject", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["CSo8NSObject", "NSMutableSet"]
 - !private ["CSo8NSObject", "NSNotificationCenter"]
 - ["CSo8NSObject", "NSSortDescriptor"]
@@ -838,7 +848,6 @@ depends-member:
 - !private ["CSo8NSObject", "cellParagraphID"]
 - !private ["CSo8NSObject", "cellPictureID"]
 - !private ["CSo8NSObject", "cellReminderID"]
-- !private ["CSo8NSObject", "changesPerformedKey"]
 - ["CSo8NSObject", "compare"]
 - ["CSo8NSObject", "compareByLastChange"]
 - ["CSo8NSObject", "contentListFiltered"]
@@ -849,6 +858,7 @@ depends-member:
 - ["CSo8NSObject", "editItem"]
 - !private ["CSo8NSObject", "entityForName"]
 - !private ["CSo8NSObject", "estimatedRowHeight"]
+- ["CSo8NSObject", "filter"]
 - ["CSo8NSObject", "getLastChange"]
 - !private ["CSo8NSObject", "hasChild"]
 - !private ["CSo8NSObject", "hasParagraph"]
@@ -895,6 +905,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "EditService"]
 - !private ["PSo16NSObjectProtocol", "NSEntityDescription"]
 - !private ["PSo16NSObjectProtocol", "NSManagedObject"]
+- !private ["PSo16NSObjectProtocol", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["PSo16NSObjectProtocol", "NSNotificationCenter"]
 - ["PSo16NSObjectProtocol", "NSSortDescriptor"]
 - !private ["PSo16NSObjectProtocol", "Paragraph"]
@@ -911,7 +922,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "cellParagraphID"]
 - !private ["PSo16NSObjectProtocol", "cellPictureID"]
 - !private ["PSo16NSObjectProtocol", "cellReminderID"]
-- !private ["PSo16NSObjectProtocol", "changesPerformedKey"]
 - ["PSo16NSObjectProtocol", "compare"]
 - ["PSo16NSObjectProtocol", "compareByLastChange"]
 - ["PSo16NSObjectProtocol", "contentListFiltered"]
@@ -922,6 +932,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "editItem"]
 - !private ["PSo16NSObjectProtocol", "entityForName"]
 - !private ["PSo16NSObjectProtocol", "estimatedRowHeight"]
+- ["PSo16NSObjectProtocol", "filter"]
 - ["PSo16NSObjectProtocol", "getLastChange"]
 - !private ["PSo16NSObjectProtocol", "hasChild"]
 - !private ["PSo16NSObjectProtocol", "hasParagraph"]
@@ -1038,6 +1049,7 @@ depends-member:
 - !private ["C13AdvancedNotes21SummaryViewController", "NSEntityDescription"]
 - ["C13AdvancedNotes21SummaryViewController", "NSIndexPath"]
 - !private ["C13AdvancedNotes21SummaryViewController", "NSManagedObject"]
+- !private ["C13AdvancedNotes21SummaryViewController", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["C13AdvancedNotes21SummaryViewController", "NSMutableSet"]
 - !private ["C13AdvancedNotes21SummaryViewController", "NSNotificationCenter"]
 - ["C13AdvancedNotes21SummaryViewController", "NSSortDescriptor"]
@@ -1060,13 +1072,13 @@ depends-member:
 - !private ["C13AdvancedNotes21SummaryViewController", "cellParagraphID"]
 - !private ["C13AdvancedNotes21SummaryViewController", "cellPictureID"]
 - !private ["C13AdvancedNotes21SummaryViewController", "cellReminderID"]
-- !private ["C13AdvancedNotes21SummaryViewController", "changesPerformedKey"]
 - ["C13AdvancedNotes21SummaryViewController", "compareByLastChange"]
 - ["C13AdvancedNotes21SummaryViewController", "contentListFiltered"]
 - ["C13AdvancedNotes21SummaryViewController", "contentSet"]
 - ["C13AdvancedNotes21SummaryViewController", "deinit"]
 - ["C13AdvancedNotes21SummaryViewController", "description"]
 - ["C13AdvancedNotes21SummaryViewController", "editItem"]
+- ["C13AdvancedNotes21SummaryViewController", "filter"]
 - ["C13AdvancedNotes21SummaryViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C13AdvancedNotes21SummaryViewController", "init"]
 - ["C13AdvancedNotes21SummaryViewController", "note"]
@@ -1118,6 +1130,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "EditService"]
 - !private ["PSo21UIAppearanceContainer", "NSEntityDescription"]
 - !private ["PSo21UIAppearanceContainer", "NSManagedObject"]
+- !private ["PSo21UIAppearanceContainer", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["PSo21UIAppearanceContainer", "NSNotificationCenter"]
 - ["PSo21UIAppearanceContainer", "NSSortDescriptor"]
 - !private ["PSo21UIAppearanceContainer", "Paragraph"]
@@ -1132,7 +1145,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "cellParagraphID"]
 - !private ["PSo21UIAppearanceContainer", "cellPictureID"]
 - !private ["PSo21UIAppearanceContainer", "cellReminderID"]
-- !private ["PSo21UIAppearanceContainer", "changesPerformedKey"]
 - ["PSo21UIAppearanceContainer", "compareByLastChange"]
 - ["PSo21UIAppearanceContainer", "contentListFiltered"]
 - ["PSo21UIAppearanceContainer", "contentSet"]
@@ -1140,6 +1152,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "description"]
 - ["PSo21UIAppearanceContainer", "editItem"]
 - !private ["PSo21UIAppearanceContainer", "estimatedRowHeight"]
+- ["PSo21UIAppearanceContainer", "filter"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "layoutIfNeeded"]
@@ -1177,6 +1190,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "EditService"]
 - !private ["PSo18UIContentContainer", "NSEntityDescription"]
 - !private ["PSo18UIContentContainer", "NSManagedObject"]
+- !private ["PSo18UIContentContainer", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["PSo18UIContentContainer", "NSNotificationCenter"]
 - ["PSo18UIContentContainer", "NSSortDescriptor"]
 - !private ["PSo18UIContentContainer", "Paragraph"]
@@ -1191,12 +1205,12 @@ depends-member:
 - !private ["PSo18UIContentContainer", "cellParagraphID"]
 - !private ["PSo18UIContentContainer", "cellPictureID"]
 - !private ["PSo18UIContentContainer", "cellReminderID"]
-- !private ["PSo18UIContentContainer", "changesPerformedKey"]
 - ["PSo18UIContentContainer", "compareByLastChange"]
 - ["PSo18UIContentContainer", "contentListFiltered"]
 - ["PSo18UIContentContainer", "contentSet"]
 - ["PSo18UIContentContainer", "description"]
 - ["PSo18UIContentContainer", "editItem"]
+- ["PSo18UIContentContainer", "filter"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "note"]
@@ -1244,6 +1258,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "EditService"]
 - !private ["PSo18UIFocusEnvironment", "NSEntityDescription"]
 - !private ["PSo18UIFocusEnvironment", "NSManagedObject"]
+- !private ["PSo18UIFocusEnvironment", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["PSo18UIFocusEnvironment", "NSNotificationCenter"]
 - ["PSo18UIFocusEnvironment", "NSSortDescriptor"]
 - !private ["PSo18UIFocusEnvironment", "Paragraph"]
@@ -1258,7 +1273,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "cellParagraphID"]
 - !private ["PSo18UIFocusEnvironment", "cellPictureID"]
 - !private ["PSo18UIFocusEnvironment", "cellReminderID"]
-- !private ["PSo18UIFocusEnvironment", "changesPerformedKey"]
 - ["PSo18UIFocusEnvironment", "compareByLastChange"]
 - ["PSo18UIFocusEnvironment", "contentListFiltered"]
 - ["PSo18UIFocusEnvironment", "contentSet"]
@@ -1266,6 +1280,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "description"]
 - ["PSo18UIFocusEnvironment", "editItem"]
 - !private ["PSo18UIFocusEnvironment", "estimatedRowHeight"]
+- ["PSo18UIFocusEnvironment", "filter"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "layoutIfNeeded"]
@@ -1312,6 +1327,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSEntityDescription"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - !private ["CSo11UIResponder", "NSManagedObject"]
+- !private ["CSo11UIResponder", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["CSo11UIResponder", "NSMutableSet"]
 - !private ["CSo11UIResponder", "NSNotificationCenter"]
 - ["CSo11UIResponder", "NSSortDescriptor"]
@@ -1335,7 +1351,6 @@ depends-member:
 - !private ["CSo11UIResponder", "cellParagraphID"]
 - !private ["CSo11UIResponder", "cellPictureID"]
 - !private ["CSo11UIResponder", "cellReminderID"]
-- !private ["CSo11UIResponder", "changesPerformedKey"]
 - ["CSo11UIResponder", "compareByLastChange"]
 - ["CSo11UIResponder", "contentListFiltered"]
 - ["CSo11UIResponder", "contentSet"]
@@ -1343,6 +1358,7 @@ depends-member:
 - ["CSo11UIResponder", "description"]
 - ["CSo11UIResponder", "editItem"]
 - !private ["CSo11UIResponder", "estimatedRowHeight"]
+- ["CSo11UIResponder", "filter"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "layoutIfNeeded"]
@@ -1384,6 +1400,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "EditService"]
 - !private ["PSo20UIScrollViewDelegate", "NSEntityDescription"]
 - !private ["PSo20UIScrollViewDelegate", "NSManagedObject"]
+- !private ["PSo20UIScrollViewDelegate", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["PSo20UIScrollViewDelegate", "NSNotificationCenter"]
 - ["PSo20UIScrollViewDelegate", "NSSortDescriptor"]
 - !private ["PSo20UIScrollViewDelegate", "Paragraph"]
@@ -1395,10 +1412,10 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "cellParagraphID"]
 - !private ["PSo20UIScrollViewDelegate", "cellPictureID"]
 - !private ["PSo20UIScrollViewDelegate", "cellReminderID"]
-- !private ["PSo20UIScrollViewDelegate", "changesPerformedKey"]
 - !private ["PSo20UIScrollViewDelegate", "compareByLastChange"]
 - !private ["PSo20UIScrollViewDelegate", "contentListFiltered"]
 - !private ["PSo20UIScrollViewDelegate", "contentSet"]
+- !private ["PSo20UIScrollViewDelegate", "filter"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "note"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
@@ -1425,6 +1442,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "EditService"]
 - !private ["PSo16UIStateRestoring", "NSEntityDescription"]
 - !private ["PSo16UIStateRestoring", "NSManagedObject"]
+- !private ["PSo16UIStateRestoring", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["PSo16UIStateRestoring", "NSNotificationCenter"]
 - ["PSo16UIStateRestoring", "NSSortDescriptor"]
 - !private ["PSo16UIStateRestoring", "Paragraph"]
@@ -1438,12 +1456,12 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "cellParagraphID"]
 - !private ["PSo16UIStateRestoring", "cellPictureID"]
 - !private ["PSo16UIStateRestoring", "cellReminderID"]
-- !private ["PSo16UIStateRestoring", "changesPerformedKey"]
 - ["PSo16UIStateRestoring", "compareByLastChange"]
 - ["PSo16UIStateRestoring", "contentListFiltered"]
 - ["PSo16UIStateRestoring", "contentSet"]
 - ["PSo16UIStateRestoring", "description"]
 - ["PSo16UIStateRestoring", "editItem"]
+- ["PSo16UIStateRestoring", "filter"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "note"]
@@ -1482,6 +1500,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "EditService"]
 - !private ["PSo21UITableViewDataSource", "NSEntityDescription"]
 - !private ["PSo21UITableViewDataSource", "NSManagedObject"]
+- !private ["PSo21UITableViewDataSource", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["PSo21UITableViewDataSource", "NSNotificationCenter"]
 - ["PSo21UITableViewDataSource", "NSSortDescriptor"]
 - !private ["PSo21UITableViewDataSource", "Paragraph"]
@@ -1493,10 +1512,10 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "cellParagraphID"]
 - !private ["PSo21UITableViewDataSource", "cellPictureID"]
 - !private ["PSo21UITableViewDataSource", "cellReminderID"]
-- !private ["PSo21UITableViewDataSource", "changesPerformedKey"]
 - !private ["PSo21UITableViewDataSource", "compareByLastChange"]
 - !private ["PSo21UITableViewDataSource", "contentListFiltered"]
 - !private ["PSo21UITableViewDataSource", "contentSet"]
+- !private ["PSo21UITableViewDataSource", "filter"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "note"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
@@ -1523,6 +1542,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "EditService"]
 - !private ["PSo19UITableViewDelegate", "NSEntityDescription"]
 - !private ["PSo19UITableViewDelegate", "NSManagedObject"]
+- !private ["PSo19UITableViewDelegate", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["PSo19UITableViewDelegate", "NSNotificationCenter"]
 - ["PSo19UITableViewDelegate", "NSSortDescriptor"]
 - !private ["PSo19UITableViewDelegate", "Paragraph"]
@@ -1534,10 +1554,10 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "cellParagraphID"]
 - !private ["PSo19UITableViewDelegate", "cellPictureID"]
 - !private ["PSo19UITableViewDelegate", "cellReminderID"]
-- !private ["PSo19UITableViewDelegate", "changesPerformedKey"]
 - !private ["PSo19UITableViewDelegate", "compareByLastChange"]
 - !private ["PSo19UITableViewDelegate", "contentListFiltered"]
 - !private ["PSo19UITableViewDelegate", "contentSet"]
+- !private ["PSo19UITableViewDelegate", "filter"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "note"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
@@ -1564,6 +1584,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "EditService"]
 - !private ["PSo18UITraitEnvironment", "NSEntityDescription"]
 - !private ["PSo18UITraitEnvironment", "NSManagedObject"]
+- !private ["PSo18UITraitEnvironment", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["PSo18UITraitEnvironment", "NSNotificationCenter"]
 - ["PSo18UITraitEnvironment", "NSSortDescriptor"]
 - !private ["PSo18UITraitEnvironment", "Paragraph"]
@@ -1578,7 +1599,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "cellParagraphID"]
 - !private ["PSo18UITraitEnvironment", "cellPictureID"]
 - !private ["PSo18UITraitEnvironment", "cellReminderID"]
-- !private ["PSo18UITraitEnvironment", "changesPerformedKey"]
 - ["PSo18UITraitEnvironment", "compareByLastChange"]
 - ["PSo18UITraitEnvironment", "contentListFiltered"]
 - ["PSo18UITraitEnvironment", "contentSet"]
@@ -1586,6 +1606,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "description"]
 - ["PSo18UITraitEnvironment", "editItem"]
 - !private ["PSo18UITraitEnvironment", "estimatedRowHeight"]
+- ["PSo18UITraitEnvironment", "filter"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "layoutIfNeeded"]
@@ -1635,6 +1656,7 @@ depends-member:
 - !private ["CSo16UIViewController", "NSEntityDescription"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - !private ["CSo16UIViewController", "NSManagedObject"]
+- !private ["CSo16UIViewController", "NSManagedObjectContextObjectsDidChangeNotification"]
 - !private ["CSo16UIViewController", "NSMutableSet"]
 - !private ["CSo16UIViewController", "NSNotificationCenter"]
 - ["CSo16UIViewController", "NSSortDescriptor"]
@@ -1658,12 +1680,12 @@ depends-member:
 - !private ["CSo16UIViewController", "cellParagraphID"]
 - !private ["CSo16UIViewController", "cellPictureID"]
 - !private ["CSo16UIViewController", "cellReminderID"]
-- !private ["CSo16UIViewController", "changesPerformedKey"]
 - ["CSo16UIViewController", "compareByLastChange"]
 - ["CSo16UIViewController", "contentListFiltered"]
 - ["CSo16UIViewController", "contentSet"]
 - ["CSo16UIViewController", "description"]
 - ["CSo16UIViewController", "editItem"]
+- ["CSo16UIViewController", "filter"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "note"]
@@ -1908,4 +1930,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "76b559bc4c54eb9cc5e424ae7ad7e074"
+interface-hash: "ccf83db20623c0b8599e2e10b5b548dc"

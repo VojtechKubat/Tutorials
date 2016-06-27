@@ -7,89 +7,45 @@ provides-member:
 - ["C13AdvancedNotes11EditService", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "ANEntity"
+- "Bool"
+- "EditService"
+- !private "BooleanLiteralType"
+- "Note"
 - !private "=="
 - "AnyClass"
-- !private "CoreDataService"
-- "ANEntity"
-- !private "StringLiteralType"
-- !private "!="
-- !private "NSNotificationCenter"
-- "EditService"
-- !private "dispatch_async"
-- !private "changesPerformedKey"
-- !private "dispatch_get_main_queue"
-- "Bool"
-- "Note"
-- !private "BooleanLiteralType"
-- !private "print"
 depends-member:
 - !private ["C13AdvancedNotes8ANEntity", "isKindOfClass"]
-- !private ["Ps9AnyObject", "CoreDataService"]
 - ["Ps9AnyObject", "EditService"]
-- !private ["Ps9AnyObject", "NSNotificationCenter"]
-- !private ["Ps9AnyObject", "changesPerformedKey"]
 - !private ["Ps9AnyObject", "currentEntity"]
-- !private ["Ps9AnyObject", "defaultCenter"]
-- !private ["Ps9AnyObject", "dispatch_async"]
-- !private ["Ps9AnyObject", "dispatch_get_main_queue"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isKindOfClass"]
-- !private ["Ps9AnyObject", "postNotificationName"]
-- !private ["Ps9AnyObject", "print"]
-- !private ["Ps9AnyObject", "saveContext"]
-- !private ["Ps9AnyObject", "sharedInstance"]
 - ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
-- !private ["Ps11CVarArgType", "defaultCenter"]
 - !private ["Ps11CVarArgType", "isKindOfClass"]
-- !private ["Ps11CVarArgType", "postNotificationName"]
-- !private ["C13AdvancedNotes15CoreDataService", "sharedInstance"]
-- !private ["C13AdvancedNotes13CoreDataStack", "saveContext"]
-- !private ["Ps28CustomDebugStringConvertible", "defaultCenter"]
 - !private ["Ps28CustomDebugStringConvertible", "isKindOfClass"]
-- !private ["Ps28CustomDebugStringConvertible", "postNotificationName"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "defaultCenter"]
 - !private ["Ps23CustomStringConvertible", "isKindOfClass"]
-- !private ["Ps23CustomStringConvertible", "postNotificationName"]
 - ["C13AdvancedNotes11EditService", "ANEntity"]
 - ["C13AdvancedNotes11EditService", "AnyClass"]
 - ["C13AdvancedNotes11EditService", "Bool"]
-- !private ["C13AdvancedNotes11EditService", "CoreDataService"]
 - ["C13AdvancedNotes11EditService", "EditService"]
-- !private ["C13AdvancedNotes11EditService", "NSNotificationCenter"]
 - ["C13AdvancedNotes11EditService", "Note"]
-- !private ["C13AdvancedNotes11EditService", "changesPerformedKey"]
 - ["C13AdvancedNotes11EditService", "currentEntity"]
 - ["C13AdvancedNotes11EditService", "deinit"]
-- !private ["C13AdvancedNotes11EditService", "dispatch_async"]
-- !private ["C13AdvancedNotes11EditService", "dispatch_get_main_queue"]
 - ["C13AdvancedNotes11EditService", "init"]
 - ["C13AdvancedNotes11EditService", "isClass"]
 - ["C13AdvancedNotes11EditService", "note"]
-- !private ["C13AdvancedNotes11EditService", "print"]
-- ["C13AdvancedNotes11EditService", "saveEntityChanges"]
 - ["C13AdvancedNotes11EditService", "sharedInstance"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- !private ["Ps9Equatable", "defaultCenter"]
 - !private ["Ps9Equatable", "isKindOfClass"]
-- !private ["Ps9Equatable", "postNotificationName"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps8Hashable", "defaultCenter"]
 - !private ["Ps8Hashable", "isKindOfClass"]
-- !private ["Ps8Hashable", "postNotificationName"]
-- !private ["SQ", "deinit"]
 - !private ["CSo15NSManagedObject", "isKindOfClass"]
-- !private ["CSo20NSNotificationCenter", "defaultCenter"]
-- !private ["CSo20NSNotificationCenter", "postNotificationName"]
-- !private ["CSo8NSObject", "defaultCenter"]
 - !private ["CSo8NSObject", "isKindOfClass"]
-- !private ["CSo8NSObject", "postNotificationName"]
-- !private ["PSo16NSObjectProtocol", "defaultCenter"]
 - !private ["PSo16NSObjectProtocol", "isKindOfClass"]
-- !private ["PSo16NSObjectProtocol", "postNotificationName"]
 - !private ["Sq", "deinit"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
@@ -102,16 +58,12 @@ depends-nominal:
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
 - !private "Ps11CVarArgType"
-- !private "C13AdvancedNotes15CoreDataService"
-- !private "C13AdvancedNotes13CoreDataStack"
 - !private "Ps28CustomDebugStringConvertible"
 - !private "Ps23CustomStringConvertible"
 - "C13AdvancedNotes11EditService"
 - !private "Ps9Equatable"
 - !private "Ps8Hashable"
-- !private "SQ"
 - !private "CSo15NSManagedObject"
-- !private "CSo20NSNotificationCenter"
 - !private "CSo8NSObject"
 - !private "PSo16NSObjectProtocol"
 - !private "Sq"
@@ -131,4 +83,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "599426f1036243395addc01d0976ae49"
+interface-hash: "1a210f6babb5342d2bf45419f013f1f7"

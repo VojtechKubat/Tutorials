@@ -12,13 +12,13 @@ provides-dynamic-lookup:
 - "setParagraph"
 - "myParagraph"
 depends-top-level:
+- "UIButton"
 - !private "StringLiteralType"
+- !private "print"
+- "FrameTextView"
 - "ParagraphViewCell"
 - "SummaryCellView"
-- !private "print"
 - "Paragraph"
-- "UIButton"
-- "FrameTextView"
 depends-member:
 - !private ["C13AdvancedNotes8ANEntity", "text"]
 - ["Ps9AnyObject", "edit"]

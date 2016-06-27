@@ -41,8 +41,9 @@ class ParagraphViewController: UIViewController {
     override func viewWillDisappear(animated: Bool) {
         
         if let currentParagraph: Paragraph = EditService.sharedInstance.currentEntity as? Paragraph {
+            currentParagraph.lastChange = NSDate()
             currentParagraph.text = textView.text
         }
-        EditService.sharedInstance.saveEntityChanges()
+        CoreDataService.sharedInstance.saveContext()
     }
 }

@@ -26,13 +26,7 @@ class SummaryViewController: UIViewController {
     
     var note: Note? {
         didSet {
-            contentSet = Set<ANEntity>()
-            contentSet = contentSet.union(note?.hasParagraph as! Set)
-            contentSet = contentSet.union(note?.hasPicture as! Set)
-            contentSet = contentSet.union(note?.hasReminder as! Set)
-            contentSet = contentSet.union(note?.hasChild as! Set)
-            
-            contentListFiltered = (Array(contentSet) as Array<ANEntity>).sort(compareByLastChange)
+            filter()
         }
     }
     
@@ -90,7 +84,7 @@ class SummaryViewController: UIViewController {
      
         NSNotificationCenter.defaultCenter().addObserver(self,
                                                          selector: #selector(refresh),
-                                                         name: changesPerformedKey,
+                                                         name: NSManagedObjectContextObjectsDidChangeNotification,
                                                          object: nil)
     }
     
@@ -99,6 +93,7 @@ class SummaryViewController: UIViewController {
     }
     
     func refresh() {
+        filter()
         tableView.reloadData()
     }
     
@@ -153,6 +148,16 @@ extension SummaryViewController: UITableViewDataSource {
             return cell!
         }
         return (tableView.dequeueReusableCellWithIdentifier("cellDefault"))!
+    }
+    
+    func filter() {
+        contentSet = Set<ANEntity>()
+        contentSet = contentSet.union(note?.hasParagraph as! Set)
+        contentSet = contentSet.union(note?.hasPicture as! Set)
+        contentSet = contentSet.union(note?.hasReminder as! Set)
+        contentSet = contentSet.union(note?.hasChild as! Set)
+        
+        contentListFiltered = (Array(contentSet) as Array<ANEntity>).sort(compareByLastChange)
     }
     
 }

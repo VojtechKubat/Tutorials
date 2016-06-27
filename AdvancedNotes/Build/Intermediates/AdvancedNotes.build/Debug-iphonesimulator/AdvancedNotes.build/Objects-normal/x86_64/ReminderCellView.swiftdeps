@@ -7,8 +7,8 @@ provides-member:
 - ["C13AdvancedNotes16ReminderViewCell", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ReminderViewCell"
 - "SummaryCellView"
+- "ReminderViewCell"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]
