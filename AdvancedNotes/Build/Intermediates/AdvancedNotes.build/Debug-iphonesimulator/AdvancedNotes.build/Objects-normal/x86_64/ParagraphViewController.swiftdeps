@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C13AdvancedNotes23ParagraphViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "discardChanges"
+- "viewDidLoad"
 - "viewWillDisappear"
 - "textView"
 depends-top-level:
-- !private "print"
-- !private "EditService"
-- !private "Paragraph"
-- !private "UIAlertAction"
-- !private "BooleanLiteralType"
 - "Bool"
+- !private "UIAlertAction"
 - !private "NSDate"
 - "ParagraphViewController"
-- !private "UIAlertController"
-- "FrameTextView"
-- !private "CoreDataService"
-- "UIViewController"
 - "UIBarButtonItem"
+- "FrameTextView"
+- !private "EditService"
+- !private "UIAlertController"
 - !private "StringLiteralType"
+- !private "print"
+- "UIViewController"
+- !private "Paragraph"
+- !private "BooleanLiteralType"
+- !private "CoreDataService"
 depends-member:
 - !private ["C13AdvancedNotes8ANEntity", "deinit"]
 - !private ["C13AdvancedNotes8ANEntity", "lastChange"]

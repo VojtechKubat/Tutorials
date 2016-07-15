@@ -17,7 +17,6 @@ class ParagraphViewController: UIViewController {
         let dialogDiscard = UIAlertController(title: "Discard all changes?",
                                                     message: "",
                                                     preferredStyle: .Alert)
-        
         let actionDiscard = UIAlertAction(title: "Discard changes", style: .Destructive , handler: {(action) in
             print("response: \(action)")
             
@@ -39,7 +38,6 @@ class ParagraphViewController: UIViewController {
     }
     
     override func viewWillDisappear(animated: Bool) {
-        
         if let currentParagraph: Paragraph = EditService.sharedInstance.currentEntity as? Paragraph {
             currentParagraph.lastChange = NSDate()
             currentParagraph.text = textView.text

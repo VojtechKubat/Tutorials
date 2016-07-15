@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "6c54a4713b88e24bfd5b17fd98ecbb5c"
-build_time: [520357010, 964827000]
+build_time: [520431152, 375864000]
 inputs:
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/ManagedObjects/Paragraph+CoreDataProperties.swift": [518612414, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/Constants.swift": [518773079, 0]
@@ -13,7 +13,7 @@ inputs:
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/Base/ANEntity.swift": [518612414, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/ManagedObjects/Reminder+CoreDataProperties.swift": [518612414, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/Base/FrameTextView.swift": [518612414, 0]
-  "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/App/Paragraph/ParagraphViewController.swift": [520357010, 0]
+  "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/App/Paragraph/ParagraphViewController.swift": [520431147, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/ManagedObjects/DescendantID+CoreDataProperties.swift": [518612414, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/App/Summary/View/PictureCellView.swift": [518627250, 0]
   "/Users/kubat/Documents/Tutorials/AdvancedNotes/AdvancedNotes/AppDelegate+DummyDataImport.swift": [518878560, 0]
